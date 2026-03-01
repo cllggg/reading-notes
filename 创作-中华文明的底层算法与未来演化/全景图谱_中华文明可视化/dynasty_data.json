@@ -1,0 +1,514 @@
+[
+  {
+    "id": "xia",
+    "name": "夏 (Xia)",
+    "period": "BC 2070 - BC 1600",
+    "start_year": -2070,
+    "end_year": -1600,
+    "duration": 470,
+    "capital": ["阳城 (Yangcheng)", "二里头 (Erlitou)"],
+    "key_figures": ["大禹 (Yu the Great)", "启 (Qi)", "桀 (Jie)"],
+    "territory": "河南中西部、山西南部 (Henan/Shanxi)",
+    "territory_desc": "松散的方国联盟，核心控制区仅限于伊洛河流域。",
+    "fall_analysis": {
+      "trigger": "鸣条之战 (Battle of Mingtiao)",
+      "structural": "方国联盟松散，神权与王权未完全整合 (Loose Alliance)",
+      "external": "商部落在东方的崛起与青铜技术优势 (Rise of Shang)"
+    },
+    "conquest_chain": {
+      "victor": "商 (Shang)",
+      "loser": "夏 (Xia)",
+      "battle": "鸣条之战",
+      "factor": "商汤的'网开一面'政治联盟策略 vs 夏桀的孤立"
+    },
+    "stats": {
+      "population_million": 2.5,
+      "temperature_anomaly": -0.5,
+      "war_frequency": 0.2,
+      "territory_sq_km": 0.5
+    },
+    "events": [
+      {"year": -2070, "name": "大禹治水成功，建立夏朝", "type": "politic"},
+      {"year": -1900, "name": "二里头文化兴起", "type": "culture"},
+      {"year": -1600, "name": "鸣条之战，夏亡", "type": "war"}
+    ],
+    "culture": ["青铜萌芽", "二里头宫殿"]
+  },
+  {
+    "id": "shang",
+    "name": "商 (Shang)",
+    "period": "BC 1600 - BC 1046",
+    "start_year": -1600,
+    "end_year": -1046,
+    "duration": 554,
+    "capital": ["亳 (Bo)", "殷 (Yin)"],
+    "key_figures": ["成汤 (Tang)", "武丁 (Wu Ding)", "纣王 (Zhou)"],
+    "territory": "黄河中下游，势力达长江流域",
+    "territory_desc": "以大邑商为中心，通过方国进行间接统治，影响力远达江西吴城。",
+    "fall_analysis": {
+      "trigger": "牧野之战 (Battle of Muye)",
+      "structural": "人祭导致的恐怖统治引发周边方国反感 (Terror Rule)",
+      "external": "周部落利用战车技术与羌人结盟 (Zhou-Qiang Alliance)"
+    },
+    "conquest_chain": {
+      "victor": "周 (Zhou)",
+      "loser": "商 (Shang)",
+      "battle": "牧野之战",
+      "factor": "周武王的闪电战与商军奴隶倒戈"
+    },
+    "stats": {
+      "population_million": 5.0,
+      "temperature_anomaly": 0.2,
+      "war_frequency": 0.5,
+      "territory_sq_km": 1.2
+    },
+    "events": [
+      {"year": -1600, "name": "商汤灭夏", "type": "war"},
+      {"year": -1300, "name": "盘庚迁殷", "type": "politic"},
+      {"year": -1250, "name": "武丁盛世", "type": "politic"},
+      {"year": -1046, "name": "牧野之战，商亡", "type": "war"}
+    ],
+    "culture": ["甲骨文", "青铜巅峰", "人祭"]
+  },
+  {
+    "id": "zhou_west",
+    "name": "西周 (Western Zhou)",
+    "period": "BC 1046 - BC 771",
+    "start_year": -1046,
+    "end_year": -771,
+    "duration": 275,
+    "capital": ["镐京 (Haojing)"],
+    "key_figures": ["周公旦 (Duke of Zhou)", "周穆王 (King Mu)", "周幽王 (King You)"],
+    "territory": "分封制覆盖黄河及汉水流域",
+    "territory_desc": "通过分封制将统治范围扩展至山东、河北及汉水流域。",
+    "fall_analysis": {
+      "trigger": "申侯联合犬戎攻破镐京 (Quanrong Invasion)",
+      "structural": "血缘纽带随代际衰减，王室领地经济崩溃 (Feudal Decay)",
+      "external": "西北戎狄族群的军事压力 (Nomadic Pressure)"
+    },
+    "conquest_chain": {
+      "victor": "犬戎/诸侯",
+      "loser": "西周",
+      "battle": "镐京之乱",
+      "factor": "王室丧失对周边诸侯的军事威慑力"
+    },
+    "stats": {
+      "population_million": 10.0,
+      "temperature_anomaly": -0.8,
+      "war_frequency": 0.3,
+      "territory_sq_km": 1.5
+    },
+    "events": [
+      {"year": -1046, "name": "武王伐纣，建立西周", "type": "war"},
+      {"year": -1042, "name": "周公摄政，制礼作乐", "type": "culture"},
+      {"year": -841, "name": "国人暴动，共和行政", "type": "politic"},
+      {"year": -771, "name": "犬戎攻破镐京，西周亡", "type": "war"}
+    ],
+    "culture": ["礼乐制度", "宗法制", "金文"]
+  },
+  {
+    "id": "chunqiu_zhanguo",
+    "name": "春秋战国 (Spring & Autumn / Warring States)",
+    "period": "BC 770 - BC 221",
+    "start_year": -770,
+    "end_year": -221,
+    "duration": 549,
+    "capital": ["洛邑 (Luoyi) - Nominal"],
+    "key_figures": ["齐桓公", "孔子", "商鞅", "秦始皇"],
+    "territory": "诸侯割据，范围扩大至辽东、巴蜀、岭南",
+    "territory_desc": "华夏文化圈大幅扩展，秦灭巴蜀，楚吞吴越，赵武灵王胡服骑射扩展北疆。",
+    "fall_analysis": {
+      "trigger": "秦灭六国之战 (Qin's Wars of Unification)",
+      "structural": "封建贵族制无法适应铁器时代的高强度战争 (System Failure)",
+      "external": "秦国全动员体制的降维打击 (Total War)"
+    },
+    "conquest_chain": {
+      "victor": "秦 (Qin)",
+      "loser": "六国 (Six States)",
+      "battle": "长平之战(关键)",
+      "factor": "秦国的耕战体系与军功爵制"
+    },
+    "stats": {
+      "population_million": 30.0,
+      "temperature_anomaly": 0.0,
+      "war_frequency": 2.5,
+      "territory_sq_km": 2.8
+    },
+    "events": [
+      {"year": -770, "name": "平王东迁，春秋开始", "type": "politic"},
+      {"year": -685, "name": "齐桓公称霸", "type": "politic"},
+      {"year": -551, "name": "孔子诞生", "type": "culture"},
+      {"year": -453, "name": "三家分晋，战国开始", "type": "politic"},
+      {"year": -356, "name": "商鞅变法", "type": "reform"},
+      {"year": -260, "name": "长平之战", "type": "war"}
+    ],
+    "culture": ["百家争鸣", "铁器普及", "法家思想"]
+  },
+  {
+    "id": "qin",
+    "name": "秦 (Qin)",
+    "period": "BC 221 - BC 207",
+    "start_year": -221,
+    "end_year": -207,
+    "duration": 14,
+    "capital": ["咸阳 (Xianyang)"],
+    "key_figures": ["始皇帝 (First Emperor)", "李斯", "胡亥"],
+    "territory": "东至海，西至临洮，南至北向户，北据河为塞",
+    "territory_desc": "首次实现大一统，设郡县，筑长城，通直道，疆域囊括岭南。",
+    "fall_analysis": {
+      "trigger": "大泽乡起义 (Dazexiang Uprising)",
+      "structural": "过度动员导致民力枯竭，六国贵族复辟力量 (Over-mobilization)",
+      "external": "无（主要为内部崩溃）"
+    },
+    "conquest_chain": {
+      "victor": "汉 (Han)",
+      "loser": "秦 (Qin)",
+      "battle": "巨鹿之战/垓下之战",
+      "factor": "秦系统的刚性断裂与刘邦的统战策略"
+    },
+    "stats": {
+      "population_million": 20.0,
+      "temperature_anomaly": 0.5,
+      "war_frequency": 1.0,
+      "territory_sq_km": 3.4
+    },
+    "events": [
+      {"year": -221, "name": "秦始皇统一六国", "type": "politic"},
+      {"year": -214, "name": "征服百越，修筑灵渠", "type": "war"},
+      {"year": -210, "name": "秦始皇驾崩", "type": "politic"},
+      {"year": -209, "name": "陈胜吴广起义", "type": "war"}
+    ],
+    "culture": ["书同文", "车同轨", "郡县制"]
+  },
+  {
+    "id": "han_west",
+    "name": "西汉 (Western Han)",
+    "period": "BC 202 - AD 8",
+    "start_year": -202,
+    "end_year": 8,
+    "duration": 210,
+    "capital": ["长安 (Chang'an)"],
+    "key_figures": ["汉武帝 (Wu)", "霍去病", "王莽"],
+    "territory": "西域都护府，朝鲜四郡，百越九郡",
+    "territory_desc": "汉武帝时期大幅扩张，打通西域，设立西域都护府，实际控制塔里木盆地。",
+    "fall_analysis": {
+      "trigger": "王莽篡汉 (Usurpation of Wang Mang)",
+      "structural": "土地兼并与外戚干政 (Land Annexation)",
+      "external": "无"
+    },
+    "conquest_chain": {
+      "victor": "新 (Xin)",
+      "loser": "西汉",
+      "battle": "和平演变",
+      "factor": "儒家谶纬学说为王莽提供了合法性"
+    },
+    "stats": {
+      "population_million": 60.0,
+      "temperature_anomaly": 0.3,
+      "war_frequency": 0.8,
+      "territory_sq_km": 6.0
+    },
+    "events": [
+      {"year": -202, "name": "刘邦称帝，建立西汉", "type": "politic"},
+      {"year": -138, "name": "张骞出使西域", "type": "culture"},
+      {"year": -119, "name": "漠北之战，击溃匈奴", "type": "war"},
+      {"year": -60, "name": "设立西域都护府", "type": "politic"},
+      {"year": 8, "name": "王莽篡汉", "type": "politic"}
+    ],
+    "culture": ["丝绸之路", "独尊儒术", "史记"]
+  },
+  {
+    "id": "han_east",
+    "name": "东汉 (Eastern Han)",
+    "period": "AD 25 - AD 220",
+    "start_year": 25,
+    "end_year": 220,
+    "duration": 195,
+    "capital": ["洛阳 (Luoyang)"],
+    "key_figures": ["光武帝", "蔡伦", "曹操"],
+    "territory": "恢复西汉疆域，但对西域控制减弱",
+    "territory_desc": "光武中兴恢复版图，班超经营西域，但后期对边疆控制力减弱。",
+    "fall_analysis": {
+      "trigger": "黄巾起义 (Yellow Turban Rebellion)",
+      "structural": "豪强地主经济瓦解中央集权，宦官外戚轮流执政",
+      "external": "羌乱持续百年消耗帝国财政"
+    },
+    "conquest_chain": {
+      "victor": "魏/晋",
+      "loser": "东汉",
+      "battle": "赤壁之战(分裂)",
+      "factor": "州牧割据导致中央政权名存实亡"
+    },
+    "stats": {
+      "population_million": 50.0,
+      "temperature_anomaly": -0.2,
+      "war_frequency": 1.5,
+      "territory_sq_km": 5.8
+    },
+    "events": [
+      {"year": 25, "name": "光武中兴", "type": "politic"},
+      {"year": 105, "name": "蔡伦改进造纸术", "type": "culture"},
+      {"year": 184, "name": "黄巾起义", "type": "war"},
+      {"year": 208, "name": "赤壁之战", "type": "war"},
+      {"year": 220, "name": "曹丕代汉", "type": "politic"}
+    ],
+    "culture": ["造纸术", "佛教传入", "地动仪"]
+  },
+  {
+    "id": "three_kingdoms",
+    "name": "三国两晋南北朝 (Wei/Jin/Northern-Southern)",
+    "period": "AD 220 - AD 589",
+    "start_year": 220,
+    "end_year": 589,
+    "duration": 369,
+    "capital": ["洛阳", "建康", "大同"],
+    "key_figures": ["曹丕", "司马炎", "孝文帝", "王羲之"],
+    "territory": "分裂时期，北方游牧民族入主中原",
+    "territory_desc": "北方五胡十六国更替，南方东晋南朝偏安，疆域破碎。",
+    "fall_analysis": {
+      "trigger": "八王之乱与五胡乱华",
+      "structural": "门阀士族垄断政治资源，皇权衰落",
+      "external": "气候变冷导致北方游牧民族大规模南迁 (Climate Cooling)"
+    },
+    "conquest_chain": {
+      "victor": "隋 (Sui)",
+      "loser": "陈/北周",
+      "battle": "隋灭陈之战",
+      "factor": "北方胡汉融合完成，南方士族腐朽"
+    },
+    "stats": {
+      "population_million": 35.0,
+      "temperature_anomaly": -1.0,
+      "war_frequency": 3.0,
+      "territory_sq_km": 4.5
+    },
+    "events": [
+      {"year": 280, "name": "西晋统一", "type": "politic"},
+      {"year": 311, "name": "永嘉之乱", "type": "war"},
+      {"year": 383, "name": "淝水之战", "type": "war"},
+      {"year": 493, "name": "北魏孝文帝迁都洛阳", "type": "reform"},
+      {"year": 589, "name": "隋灭陈，统一全国", "type": "war"}
+    ],
+    "culture": ["玄学", "书法", "石窟艺术"]
+  },
+  {
+    "id": "sui",
+    "name": "隋 (Sui)",
+    "period": "AD 581 - AD 618",
+    "start_year": 581,
+    "end_year": 618,
+    "duration": 37,
+    "capital": ["大兴 (Daxing)", "洛阳"],
+    "key_figures": ["隋文帝", "隋炀帝"],
+    "territory": "重新统一，大运河贯通南北",
+    "territory_desc": "结束近400年分裂，疆域包括中原、江南及西域东部。",
+    "fall_analysis": {
+      "trigger": "高句丽战争失败与瓦岗军起义",
+      "structural": "大工程与战争导致国力透支 (Over-extension)",
+      "external": "突厥始毕可汗对北方起义军的支持"
+    },
+    "conquest_chain": {
+      "victor": "唐 (Tang)",
+      "loser": "隋",
+      "battle": "霍邑之战",
+      "factor": "李渊集团利用关陇贵族背景与农民军矛盾"
+    },
+    "stats": {
+      "population_million": 46.0,
+      "temperature_anomaly": -0.3,
+      "war_frequency": 1.2,
+      "territory_sq_km": 4.7
+    },
+    "events": [
+      {"year": 581, "name": "杨坚建立隋朝", "type": "politic"},
+      {"year": 605, "name": "开凿大运河", "type": "economy"},
+      {"year": 606, "name": "创立科举制", "type": "culture"},
+      {"year": 612, "name": "三征高句丽", "type": "war"}
+    ],
+    "culture": ["科举制", "大运河", "三省六部"]
+  },
+  {
+    "id": "tang",
+    "name": "唐 (Tang)",
+    "period": "AD 618 - AD 907",
+    "start_year": 618,
+    "end_year": 907,
+    "duration": 289,
+    "capital": ["长安", "洛阳"],
+    "key_figures": ["李世民", "武则天", "李隆基"],
+    "territory": "极盛时辖境西至咸海，北逾贝加尔湖",
+    "territory_desc": "中国历史上版图极盛之一，羁縻州制度覆盖广泛，安史之乱后收缩。",
+    "fall_analysis": {
+      "trigger": "黄巢起义与朱温篡位",
+      "structural": "均田制瓦解导致府兵制失效，藩镇割据",
+      "external": "吐蕃与回纥对边疆的长期挤压"
+    },
+    "conquest_chain": {
+      "victor": "后梁 (Later Liang)",
+      "loser": "唐",
+      "battle": "白马之祸",
+      "factor": "中央禁军被藩镇彻底取代"
+    },
+    "stats": {
+      "population_million": 80.0,
+      "temperature_anomaly": 0.4,
+      "war_frequency": 1.8,
+      "territory_sq_km": 12.3
+    },
+    "events": [
+      {"year": 626, "name": "玄武门之变", "type": "politic"},
+      {"year": 640, "name": "设立安西都护府", "type": "war"},
+      {"year": 690, "name": "武则天称帝", "type": "politic"},
+      {"year": 755, "name": "安史之乱", "type": "war"},
+      {"year": 878, "name": "黄巢起义", "type": "war"}
+    ],
+    "culture": ["唐诗", "雕版印刷", "万国来朝"]
+  },
+  {
+    "id": "song",
+    "name": "宋 (Song)",
+    "period": "AD 960 - AD 1279",
+    "start_year": 960,
+    "end_year": 1279,
+    "duration": 319,
+    "capital": ["开封 (Kaifeng)", "临安 (Lin'an)"],
+    "key_figures": ["赵匡胤", "王安石", "岳飞"],
+    "territory": "失去幽云十六州，南宋偏安江南",
+    "territory_desc": "北宋失去燕云十六州，南宋退守秦岭淮河以南，版图最小的大一统王朝。",
+    "fall_analysis": {
+      "trigger": "崖山海战 (Battle of Yamen)",
+      "structural": "重文轻武导致军事积弱，冗官冗费财政危机",
+      "external": "蒙古铁骑的降维打击 (Mongol Conquest)"
+    },
+    "conquest_chain": {
+      "victor": "元 (Yuan)",
+      "loser": "宋",
+      "battle": "襄阳之战",
+      "factor": "蒙古的回回炮技术与水军建设"
+    },
+    "stats": {
+      "population_million": 110.0,
+      "temperature_anomaly": -0.5,
+      "war_frequency": 2.0,
+      "territory_sq_km": 2.8
+    },
+    "events": [
+      {"year": 960, "name": "陈桥兵变", "type": "politic"},
+      {"year": 1004, "name": "澶渊之盟", "type": "politic"},
+      {"year": 1069, "name": "王安石变法", "type": "reform"},
+      {"year": 1127, "name": "靖康之变，北宋亡", "type": "war"},
+      {"year": 1279, "name": "崖山海战，南宋亡", "type": "war"}
+    ],
+    "culture": ["宋词", "理学", "活字印刷", "交子"]
+  },
+  {
+    "id": "yuan",
+    "name": "元 (Yuan)",
+    "period": "AD 1271 - AD 1368",
+    "start_year": 1271,
+    "end_year": 1368,
+    "duration": 97,
+    "capital": ["大都 (Dadu)"],
+    "key_figures": ["忽必烈", "耶律楚材"],
+    "territory": "中国历史上最大疆域，包括西伯利亚与西藏",
+    "territory_desc": "疆域空前辽阔，首次将西藏纳入行政版图，设立行省制度。",
+    "fall_analysis": {
+      "trigger": "红巾军起义与黄河大决口",
+      "structural": "四等人制导致民族矛盾激化，科举中断导致士大夫离心",
+      "external": "无（主要为内部崩溃）"
+    },
+    "conquest_chain": {
+      "victor": "明 (Ming)",
+      "loser": "元",
+      "battle": "徐达北伐",
+      "factor": "朱元璋'驱除胡虏'的民族主义动员"
+    },
+    "stats": {
+      "population_million": 85.0,
+      "temperature_anomaly": -0.2,
+      "war_frequency": 1.5,
+      "territory_sq_km": 13.7
+    },
+    "events": [
+      {"year": 1271, "name": "忽必烈定国号为元", "type": "politic"},
+      {"year": 1279, "name": "统一中国", "type": "war"},
+      {"year": 1292, "name": "马可波罗离开中国", "type": "culture"},
+      {"year": 1351, "name": "红巾军起义", "type": "war"}
+    ],
+    "culture": ["元曲", "行省制", "青花瓷"]
+  },
+  {
+    "id": "ming",
+    "name": "明 (Ming)",
+    "period": "AD 1368 - AD 1644",
+    "start_year": 1368,
+    "end_year": 1644,
+    "duration": 276,
+    "capital": ["南京", "北京"],
+    "key_figures": ["朱元璋", "郑和", "崇祯"],
+    "territory": "继承元制，但失去了内亚控制权",
+    "territory_desc": "恢复汉地十八省，前期控制东北及越南，后期收缩至长城以内。",
+    "fall_analysis": {
+      "trigger": "李自成攻破北京与清军入关",
+      "structural": "白银流入骤减导致通货紧缩，驿站裁撤制造流民",
+      "external": "小冰期 (Little Ice Age) 导致北方饥荒，满洲崛起"
+    },
+    "conquest_chain": {
+      "victor": "清 (Qing)",
+      "loser": "明",
+      "battle": "山海关之战",
+      "factor": "吴三桂倒戈与满洲八旗的军事组织力"
+    },
+    "stats": {
+      "population_million": 150.0,
+      "temperature_anomaly": -1.5,
+      "war_frequency": 1.6,
+      "territory_sq_km": 6.5
+    },
+    "events": [
+      {"year": 1368, "name": "朱元璋建立明朝", "type": "politic"},
+      {"year": 1405, "name": "郑和下西洋", "type": "culture"},
+      {"year": 1449, "name": "土木堡之变", "type": "war"},
+      {"year": 1581, "name": "一条鞭法", "type": "reform"},
+      {"year": 1644, "name": "甲申之变，明亡", "type": "war"}
+    ],
+    "culture": ["小说", "阳明心学", "本草纲目"]
+  },
+  {
+    "id": "qing",
+    "name": "清 (Qing)",
+    "period": "AD 1644 - AD 1912",
+    "start_year": 1644,
+    "end_year": 1912,
+    "duration": 268,
+    "capital": ["北京"],
+    "key_figures": ["康熙", "乾隆", "慈禧"],
+    "territory": "奠定现代中国版图，收复新疆、台湾",
+    "territory_desc": "奠定了现代中国版图基础，有效统治蒙古、新疆、西藏。",
+    "fall_analysis": {
+      "trigger": "辛亥革命 (Xinhai Revolution)",
+      "structural": "人口爆炸突破土地承载极限，满汉矛盾",
+      "external": "工业文明的冲击 (Western Imperialism)"
+    },
+    "conquest_chain": {
+      "victor": "民国 (Republic)",
+      "loser": "清",
+      "battle": "武昌起义",
+      "factor": "新军失控与立宪派的背离"
+    },
+    "stats": {
+      "population_million": 400.0,
+      "temperature_anomaly": 0.1,
+      "war_frequency": 1.1,
+      "territory_sq_km": 13.1
+    },
+    "events": [
+      {"year": 1644, "name": "清军入关", "type": "war"},
+      {"year": 1683, "name": "收复台湾", "type": "war"},
+      {"year": 1793, "name": "马戛尔尼访华", "type": "culture"},
+      {"year": 1840, "name": "鸦片战争", "type": "war"},
+      {"year": 1911, "name": "武昌起义", "type": "war"}
+    ],
+    "culture": ["京剧", "红楼梦", "考据学"]
+  }
+]
