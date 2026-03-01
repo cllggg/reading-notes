@@ -224,14 +224,57 @@
             pointer-events: none;
             text-shadow: 0 0 3px #000;
         }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.9em;
+        }
+
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            border-radius: 4px;
+            flex-shrink: 0;
+        }
     </style>
 </head>
 <body>
 
     <h1>中华文明全景图谱 (Panorama of Chinese Civilization)</h1>
+    <p style="text-align: center; color: #666; margin-top: 0; margin-bottom: 20px;">文明即计算——一套在东亚大陆运行了五千年的生存算法</p>
+    
+    <div style="background: var(--card-bg); padding: 20px; border-radius: 8px; margin-bottom: 20px; border: 1px solid #444;">
+        <h2 style="color: var(--accent-color); margin-top: 0; font-size: 1.3em;">📖 使用说明</h2>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+            <div>
+                <h3 style="color: #aaa; font-size: 1em; margin-bottom: 10px;">📊 坐标轴说明</h3>
+                <p style="margin: 5px 0; font-size: 0.9em;"><strong>横坐标（X轴）：</strong>时间轴，从 BC 5200（公元前5200年）到 AD 1950（公元1950年）</p>
+                <p style="margin: 5px 0; font-size: 0.9em;"><strong>纵坐标（Y轴）：</strong>共5行，仅用于错开显示不同文明，无特殊含义</p>
+            </div>
+            <div>
+                <h3 style="color: #aaa; font-size: 1em; margin-bottom: 10px;">🎮 交互操作</h3>
+                <p style="margin: 5px 0; font-size: 0.9em;"><strong>鼠标滚轮：</strong>缩放时间轴，查看详细区间</p>
+                <p style="margin: 5px 0; font-size: 0.9em;"><strong>拖拽平移：</strong>左右拖动查看不同时期</p>
+                <p style="margin: 5px 0; font-size: 0.9em;"><strong>点击文明条：</strong>查看该文明的详细信息</p>
+                <p style="margin: 5px 0; font-size: 0.9em;"><strong>悬停事件点：</strong>查看历史事件详情</p>
+            </div>
+        </div>
+        <div style="margin-top: 15px; padding-top: 15px; border-top: 1px solid #444;">
+            <h3 style="color: #aaa; font-size: 1em; margin-bottom: 10px;">📌 图例说明</h3>
+            <div style="display: flex; flex-wrap: wrap; gap: 15px;">
+                <div class="legend-item"><span class="legend-color" style="background: linear-gradient(90deg, #e74c3c, #9b59b6);"></span> 文明时间条（长度=持续时间）</div>
+                <div class="legend-item"><span class="legend-color" style="background: #fff; border: 1px solid #000; border-radius: 50%;"></span> 历史事件点</div>
+                <div class="legend-item"><span class="legend-color" style="background: #4facfe;"></span> 气候冷暖周期</div>
+                <div class="legend-item"><span class="legend-color" style="background: #ff9a9e;"></span> 人口波动曲线</div>
+                <div class="legend-item"><span class="legend-color" style="background: #2ecc71;"></span> 疆域面积变化</div>
+            </div>
+        </div>
+    </div>
+    
     <div id="controls">
         <button class="btn" onclick="resetZoom()">🔄 重置视图 (Reset Zoom)</button>
-        <span style="margin-left: 20px; color: #666; font-size: 0.9em;">提示：鼠标滚轮缩放，拖拽平移，点击王朝查看详情</span>
     </div>
 
     <div id="container">
@@ -316,7 +359,7 @@
 
             // Scales
             const x = d3.scaleLinear()
-                .domain([-2200, 1950])
+                .domain([-5200, 1950])
                 .range([margin.left, width - margin.right]);
 
             const y = d3.scaleBand()
@@ -486,7 +529,7 @@
                 .attr("width", width).attr("height", height);
 
             const x = d3.scaleLinear()
-                .domain([-2200, 1950])
+                .domain([-5200, 1950])
                 .range([margin.left, width - margin.right]);
 
             const y = d3.scaleLinear()
@@ -524,7 +567,7 @@
                 .attr("width", width).attr("height", height);
 
             const x = d3.scaleLinear()
-                .domain([-2200, 1950])
+                .domain([-5200, 1950])
                 .range([margin.left, width - margin.right]);
 
             const y = d3.scaleLinear()
@@ -564,7 +607,7 @@
                 .attr("width", width).attr("height", height);
 
             const x = d3.scaleLinear()
-                .domain([-2200, 1950])
+                .domain([-5200, 1950])
                 .range([margin.left, width - margin.right]);
 
             const y = d3.scaleLinear()

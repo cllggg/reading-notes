@@ -1,0 +1,2060 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中华文明全景图谱 - 终极优化版</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #0f0f1a;
+            --bg-secondary: #1a1a2e;
+            --bg-card: #16213e;
+            --bg-card-hover: #1f2a48;
+            --text-primary: #e8e8e8;
+            --text-secondary: #a0a0a0;
+            --accent-gold: #d4af37;
+            --accent-red: #e74c3c;
+            --accent-orange: #f39c12;
+            --accent-yellow: #f1c40f;
+            --accent-green: #2ecc71;
+            --accent-blue: #3498db;
+            --accent-purple: #9b59b6;
+            --accent-cyan: #1abc9c;
+            --border-color: #2a2a4a;
+            --shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+            --shadow-light: 0 4px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        body {
+            font-family: "Microsoft YaHei", "PingFang SC", "Segoe UI", sans-serif;
+            background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+            color: var(--text-primary);
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .header {
+            background: linear-gradient(180deg, rgba(212, 175, 55, 0.15) 0%, transparent 100%);
+            padding: 30px 20px 20px;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin: 0 0 10px;
+            background: linear-gradient(90deg, var(--accent-gold), #f5d76e, var(--accent-gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: 4px;
+            font-weight: 300;
+        }
+
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 1em;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+
+        .container {
+            max-width: 1800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .control-panel {
+            background: var(--bg-card);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow-light);
+        }
+
+        .control-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .control-row:last-child {
+            margin-bottom: 0;
+        }
+
+        .search-box {
+            flex: 1;
+            min-width: 250px;
+            position: relative;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 12px 45px 12px 40px;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            color: var(--text-primary);
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+
+        .search-box input:focus {
+            outline: none;
+            border-color: var(--accent-gold);
+            box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-secondary);
+            font-size: 16px;
+        }
+
+        .search-clear {
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-secondary);
+            cursor: pointer;
+            font-size: 18px;
+            display: none;
+        }
+
+        .search-clear:hover {
+            color: var(--text-primary);
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            color: var(--text-primary);
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .btn:hover {
+            background: var(--bg-card-hover);
+            border-color: var(--accent-gold);
+            transform: translateY(-2px);
+        }
+
+        .btn.active {
+            background: linear-gradient(135deg, var(--accent-gold), #b8960c);
+            border-color: var(--accent-gold);
+            color: #000;
+            font-weight: 500;
+        }
+
+        .btn.icon-btn {
+            padding: 10px 14px;
+        }
+
+        .filter-chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .chip {
+            padding: 6px 14px;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            color: var(--text-secondary);
+            cursor: pointer;
+            font-size: 13px;
+            transition: all 0.3s;
+        }
+
+        .chip:hover {
+            border-color: var(--accent-gold);
+            color: var(--text-primary);
+        }
+
+        .chip.active {
+            background: var(--accent-gold);
+            border-color: var(--accent-gold);
+            color: #000;
+            font-weight: 500;
+        }
+
+        .timeline-container {
+            background: var(--bg-card);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .timeline-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .timeline-title {
+            font-size: 1.2em;
+            color: var(--accent-gold);
+            font-weight: 500;
+        }
+
+        .timeline-hint {
+            color: var(--text-secondary);
+            font-size: 12px;
+        }
+
+        #timeline-view {
+            width: 100%;
+            height: 500px;
+            background: var(--bg-secondary);
+            border-radius: 8px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .charts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .chart-card {
+            background: var(--bg-card);
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow-light);
+            transition: all 0.3s;
+        }
+
+        .chart-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow);
+            border-color: var(--accent-gold);
+        }
+
+        .chart-title {
+            font-size: 1.1em;
+            color: var(--accent-gold);
+            margin: 0 0 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .chart-container {
+            min-height: 200px;
+        }
+
+        .radar-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .radar-card {
+            background: var(--bg-card);
+            border-radius: 12px;
+            padding: 15px;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow-light);
+            text-align: center;
+            transition: all 0.3s;
+        }
+
+        .radar-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow);
+            border-color: var(--accent-gold);
+        }
+
+        .radar-title {
+            font-size: 1em;
+            color: var(--text-primary);
+            margin: 0 0 10px;
+            font-weight: 500;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin: 30px 0 20px;
+        }
+
+        .section-line {
+            flex: 1;
+            height: 1px;
+            background: linear-gradient(90deg, var(--border-color), transparent);
+        }
+
+        .section-title {
+            font-size: 1.3em;
+            color: var(--accent-gold);
+            font-weight: 500;
+            white-space: nowrap;
+        }
+
+        .axis text {
+            fill: var(--text-secondary);
+            font-size: 11px;
+        }
+
+        .axis line,
+        .axis path {
+            stroke: var(--border-color);
+        }
+
+        .grid-line {
+            stroke: var(--border-color);
+            stroke-dasharray: 3, 3;
+            opacity: 0.5;
+        }
+
+        .dynasty-bar {
+            cursor: pointer;
+            transition: all 0.3s;
+            stroke: rgba(0, 0, 0, 0.3);
+            stroke-width: 1px;
+        }
+
+        .dynasty-bar:hover {
+            filter: brightness(1.3);
+            stroke-width: 2px;
+        }
+
+        .dynasty-bar.highlighted {
+            filter: brightness(1.5) drop-shadow(0 0 8px currentColor);
+            stroke: #fff;
+            stroke-width: 2px;
+        }
+
+        .dynasty-bar.dimmed {
+            opacity: 0.2;
+        }
+
+        .event-dot {
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .timeline-label {
+            fill: var(--text-primary);
+            font-size: 11px;
+            font-weight: 500;
+            pointer-events: none;
+            text-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
+        }
+
+        .tooltip {
+            position: absolute;
+            background: linear-gradient(135deg, var(--bg-card), var(--bg-secondary));
+            color: var(--text-primary);
+            padding: 16px;
+            border: 1px solid var(--accent-gold);
+            border-radius: 10px;
+            pointer-events: none;
+            font-size: 13px;
+            z-index: 1000;
+            max-width: 320px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+
+        .tooltip-title {
+            font-size: 16px;
+            font-weight: bold;
+            color: var(--accent-gold);
+            margin-bottom: 8px;
+        }
+
+        .tooltip-period {
+            color: var(--text-secondary);
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .tooltip-stat {
+            display: flex;
+            justify-content: space-between;
+            margin: 4px 0;
+        }
+
+        .tooltip-stat-label {
+            color: var(--text-secondary);
+        }
+
+        .tooltip-stat-value {
+            color: var(--accent-gold);
+            font-weight: 500;
+        }
+
+        #modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.85);
+            z-index: 999;
+            backdrop-filter: blur(8px);
+        }
+
+        #detail-modal {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90%;
+            max-width: 1100px;
+            max-height: 90vh;
+            overflow-y: auto;
+            background: linear-gradient(135deg, var(--bg-card), var(--bg-secondary));
+            padding: 35px;
+            border-radius: 16px;
+            border: 2px solid var(--accent-gold);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+            z-index: 1000;
+        }
+
+        #detail-modal::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        #detail-modal::-webkit-scrollbar-track {
+            background: var(--bg-secondary);
+            border-radius: 4px;
+        }
+
+        #detail-modal::-webkit-scrollbar-thumb {
+            background: var(--accent-gold);
+            border-radius: 4px;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            cursor: pointer;
+            font-size: 32px;
+            color: var(--text-secondary);
+            line-height: 1;
+            transition: all 0.3s;
+        }
+
+        .modal-close:hover {
+            color: var(--accent-gold);
+            transform: rotate(90deg);
+        }
+
+        #modal-title {
+            font-size: 2.2em;
+            margin: 0 0 5px;
+            background: linear-gradient(90deg, var(--accent-gold), #f5d76e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        #modal-period {
+            text-align: center;
+            color: var(--accent-gold);
+            font-size: 1.1em;
+            margin: 0 0 20px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 12px;
+            margin: 20px 0;
+        }
+
+        .stat-item {
+            background: var(--bg-secondary);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            border: 1px solid var(--border-color);
+            transition: all 0.3s;
+        }
+
+        .stat-item:hover {
+            border-color: var(--accent-gold);
+            transform: translateY(-2px);
+        }
+
+        .stat-value {
+            font-size: 1.8em;
+            color: var(--accent-gold);
+            font-weight: bold;
+        }
+
+        .stat-label {
+            font-size: 0.85em;
+            color: var(--text-secondary);
+            margin-top: 5px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .info-box {
+            background: var(--bg-secondary);
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px solid var(--border-color);
+        }
+
+        .info-label {
+            color: var(--text-secondary);
+            font-size: 0.85em;
+            margin-bottom: 5px;
+        }
+
+        .info-value {
+            color: var(--text-primary);
+            font-size: 0.95em;
+        }
+
+        .analysis-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .analysis-box {
+            background: var(--bg-secondary);
+            padding: 18px;
+            border-radius: 10px;
+            border-left: 4px solid var(--accent-gold);
+        }
+
+        .analysis-box:nth-child(1) { border-left-color: var(--accent-red); }
+        .analysis-box:nth-child(2) { border-left-color: var(--accent-orange); }
+        .analysis-box:nth-child(3) { border-left-color: var(--accent-blue); }
+
+        .analysis-title {
+            margin-top: 0;
+            color: var(--accent-gold);
+            font-size: 1em;
+            margin-bottom: 10px;
+        }
+
+        .analysis-text {
+            color: var(--text-primary);
+            font-size: 0.95em;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        .transition-box {
+            margin-top: 20px;
+            background: var(--bg-secondary);
+            padding: 18px;
+            border-radius: 10px;
+            border: 1px dashed var(--accent-gold);
+        }
+
+        .transition-title {
+            margin-top: 0;
+            color: var(--text-primary);
+            font-size: 1em;
+            margin-bottom: 10px;
+        }
+
+        .events-list {
+            margin-top: 20px;
+        }
+
+        .events-title {
+            color: var(--accent-gold);
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+
+        .event-item {
+            background: var(--bg-secondary);
+            padding: 12px 15px;
+            margin-bottom: 8px;
+            border-radius: 8px;
+            border-left: 3px solid var(--accent-gold);
+            transition: all 0.3s;
+        }
+
+        .event-item:hover {
+            background: var(--bg-card-hover);
+            transform: translateX(5px);
+        }
+
+        .event-year {
+            color: var(--accent-gold);
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .tag {
+            display: inline-block;
+            background: var(--bg-card);
+            color: var(--text-primary);
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 11px;
+            margin-right: 8px;
+            font-weight: 500;
+        }
+
+        .tag.war { background: var(--accent-red); }
+        .tag.politic { background: var(--accent-orange); }
+        .tag.culture { background: var(--accent-purple); }
+        .tag.tech { background: var(--accent-blue); }
+        .tag.reform { background: var(--accent-green); }
+        .tag.economy { background: var(--accent-cyan); }
+        .tag.high { background: var(--accent-red); }
+        .tag.medium { background: var(--accent-orange); }
+
+        .quick-nav {
+            background: var(--bg-card);
+            border-radius: 12px;
+            padding: 15px 20px;
+            margin-bottom: 20px;
+            border: 1px solid var(--border-color);
+            overflow-x: auto;
+        }
+
+        .nav-periods {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .nav-period {
+            padding: 8px 16px;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            color: var(--text-primary);
+            cursor: pointer;
+            font-size: 13px;
+            transition: all 0.3s;
+            white-space: nowrap;
+        }
+
+        .nav-period:hover {
+            border-color: var(--accent-gold);
+            background: var(--bg-card-hover);
+        }
+
+        .nav-period.active {
+            background: var(--accent-gold);
+            border-color: var(--accent-gold);
+            color: #000;
+            font-weight: 500;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: var(--text-secondary);
+            font-size: 0.9em;
+            border-top: 1px solid var(--border-color);
+            margin-top: 30px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .animate-in {
+            animation: fadeIn 0.5s ease-out;
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 1.8em; }
+            .control-row { flex-direction: column; align-items: stretch; }
+            .search-box { min-width: 100%; }
+            .btn-group { justify-content: center; }
+            .charts-grid { grid-template-columns: 1fr; }
+            #timeline-view { height: 400px; }
+            #detail-modal { width: 95%; padding: 20px; }
+            .stats-grid { grid-template-columns: repeat(3, 1fr); }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>中华文明全景图谱</h1>
+        <p class="subtitle">文明即计算——一套在东亚大陆运行了五千年的生存算法</p>
+    </div>
+
+    <div class="container">
+        <div class="control-panel animate-in">
+            <div class="control-row">
+                <div class="search-box">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" id="search-input" placeholder="搜索文明名称、人物、事件...">
+                    <span class="search-clear" id="search-clear">×</span>
+                </div>
+                <div class="btn-group">
+                    <button class="btn icon-btn" id="btn-zoom-reset" title="重置视图">🔄</button>
+                    <button class="btn" id="btn-data-toggle">增强数据</button>
+                    <button class="btn" id="btn-expand-all">展开全部</button>
+                </div>
+            </div>
+            <div class="control-row">
+                <span style="color: var(--text-secondary); font-size: 13px;">快速筛选：</span>
+                <div class="filter-chips" id="filter-chips">
+                    <span class="chip active" data-filter="all">全部</span>
+                    <span class="chip" data-filter="prehistoric">史前文化</span>
+                    <span class="chip" data-filter="ancient">古代王朝</span>
+                    <span class="chip" data-filter="medieval">中古帝国</span>
+                    <span class="chip" data-filter="modern">近世明清</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="quick-nav animate-in">
+            <div class="nav-periods" id="nav-periods">
+                <span class="nav-period" data-year="-5000">史前时代</span>
+                <span class="nav-period" data-year="-2000">夏商周</span>
+                <span class="nav-period" data-year="-200">秦汉</span>
+                <span class="nav-period" data-year="600">隋唐</span>
+                <span class="nav-period" data-year="1000">宋元</span>
+                <span class="nav-period" data-year="1400">明清</span>
+            </div>
+        </div>
+
+        <div class="timeline-container animate-in">
+            <div class="timeline-header">
+                <div class="timeline-title">⏱️ 时间轴</div>
+                <div class="timeline-hint">💡 滚轮缩放 | 拖拽平移 | 点击查看详情</div>
+            </div>
+            <div id="timeline-view"></div>
+        </div>
+
+        <div class="section-header">
+            <div class="section-line"></div>
+            <div class="section-title">📊 基础数据图谱</div>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="charts-grid">
+            <div class="chart-card animate-in">
+                <h3 class="chart-title">🌡️ 气候冷暖周期</h3>
+                <div class="chart-container" id="temp-chart"></div>
+            </div>
+            <div class="chart-card animate-in">
+                <h3 class="chart-title">👥 人口波动曲线</h3>
+                <div class="chart-container" id="pop-chart"></div>
+            </div>
+            <div class="chart-card animate-in">
+                <h3 class="chart-title">🗺️ 疆域面积变化</h3>
+                <div class="chart-container" id="area-chart"></div>
+            </div>
+        </div>
+
+        <div class="section-header">
+            <div class="section-line"></div>
+            <div class="section-title">🎯 文明维度雷达图</div>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="radar-grid" id="radar-view">
+            <div class="radar-card animate-in" id="radar-early"></div>
+            <div class="radar-card animate-in" id="radar-imperial"></div>
+            <div class="radar-card animate-in" id="radar-late"></div>
+            <div class="radar-card animate-in" id="radar-compare"></div>
+        </div>
+
+        <div class="section-header">
+            <div class="section-line"></div>
+            <div class="section-title">📈 事件类型分析</div>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="charts-grid">
+            <div class="chart-card animate-in">
+                <h3 class="chart-title">⚔️ 战争频率分布</h3>
+                <div class="chart-container" id="war-chart"></div>
+            </div>
+            <div class="chart-card animate-in">
+                <h3 class="chart-title">📌 事件类型统计</h3>
+                <div class="chart-container" id="event-type-chart"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>中华文明全景图谱 · 终极优化版</p>
+        <p style="margin-top: 8px; font-size: 0.85em;">以史为鉴，可以知兴替</p>
+    </div>
+
+    <div id="modal-overlay"></div>
+    <div id="detail-modal">
+        <span class="modal-close" id="modal-close">&times;</span>
+        <h2 id="modal-title">王朝名称</h2>
+        <p id="modal-period"></p>
+
+        <div class="stats-grid" id="modal-stats"></div>
+
+        <div id="modal-radar"></div>
+
+        <div class="info-grid">
+            <div class="info-box">
+                <div class="info-label">关键人物</div>
+                <div class="info-value" id="modal-figures"></div>
+            </div>
+            <div class="info-box">
+                <div class="info-label">都城</div>
+                <div class="info-value" id="modal-capital"></div>
+            </div>
+            <div class="info-box">
+                <div class="info-label">文化科技</div>
+                <div class="info-value" id="modal-culture"></div>
+            </div>
+            <div class="info-box">
+                <div class="info-label">疆域特征</div>
+                <div class="info-value" id="modal-territory"></div>
+            </div>
+        </div>
+
+        <p style="color: var(--text-secondary); font-style: italic; font-size: 0.85em; margin: 10px 0 0;" id="modal-territory-desc"></p>
+
+        <h3 style="color: var(--accent-gold); margin: 25px 0 15px; font-size: 1.1em;">兴衰因果链解析</h3>
+        <div class="analysis-grid">
+            <div class="analysis-box">
+                <h4 class="analysis-title">🔥 导火索</h4>
+                <p class="analysis-text" id="modal-trigger"></p>
+            </div>
+            <div class="analysis-box">
+                <h4 class="analysis-title">⚙️ 结构性矛盾</h4>
+                <p class="analysis-text" id="modal-structural"></p>
+            </div>
+            <div class="analysis-box">
+                <h4 class="analysis-title">🌊 外部压力</h4>
+                <p class="analysis-text" id="modal-external"></p>
+            </div>
+        </div>
+
+        <div class="transition-box">
+            <h4 class="transition-title">🔄 政权更替</h4>
+            <p id="modal-transition"></p>
+        </div>
+
+        <div class="events-list">
+            <h4 class="events-title">📜 关键历史节点</h4>
+            <div id="modal-events"></div>
+        </div>
+    </div>
+
+    <div class="tooltip" id="tooltip"></div>
+
+    <script>
+        let currentData = null;
+        let filteredData = null;
+        let useEnhancedData = false;
+        let zoomReset = null;
+        let zoomBehavior = null;
+        let timelineSvg = null;
+        let currentX = null;
+        let currentG = null;
+        let currentGx = null;
+        let currentGrid = null;
+        let currentHeight = 0;
+        let currentMargin = null;
+        let searchTerm = '';
+        let activeFilter = 'all';
+
+        const typeNames = {
+            war: "战争",
+            politic: "政治",
+            culture: "文化",
+            tech: "技术",
+            reform: "改革",
+            economy: "经济"
+        };
+
+        const typeColors = {
+            war: "#c0392b",
+            politic: "#f39c12",
+            culture: "#8e44ad",
+            tech: "#2980b9",
+            reform: "#27ae60",
+            economy: "#16a085"
+        };
+
+        d3.json("dynasty_data.json").then(data => {
+            currentData = data;
+            filteredData = data;
+            initVisualization(data);
+            setupEventListeners();
+        }).catch(err => {
+            console.error("Error loading data:", err);
+            alert("请确保 dynasty_data.json 文件存在");
+        });
+
+        function setupEventListeners() {
+            const searchInput = document.getElementById('search-input');
+            const searchClear = document.getElementById('search-clear');
+
+            searchInput.addEventListener('input', (e) => {
+                searchTerm = e.target.value.toLowerCase();
+                searchClear.style.display = searchTerm ? 'block' : 'none';
+                filterData();
+            });
+
+            searchClear.addEventListener('click', () => {
+                searchInput.value = '';
+                searchTerm = '';
+                searchClear.style.display = 'none';
+                filterData();
+            });
+
+            document.querySelectorAll('.chip').forEach(chip => {
+                chip.addEventListener('click', () => {
+                    document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+                    chip.classList.add('active');
+                    activeFilter = chip.dataset.filter;
+                    filterData();
+                });
+            });
+
+            document.querySelectorAll('.nav-period').forEach(period => {
+                period.addEventListener('click', () => {
+                    document.querySelectorAll('.nav-period').forEach(p => p.classList.remove('active'));
+                    period.classList.add('active');
+                    navigateToYear(parseInt(period.dataset.year));
+                });
+            });
+
+            document.getElementById('btn-zoom-reset').addEventListener('click', () => {
+                if (zoomReset) zoomReset();
+            });
+
+            document.getElementById('btn-data-toggle').addEventListener('click', toggleDataVersion);
+        }
+
+        function filterData() {
+            if (!currentData) return;
+
+            filteredData = currentData.filter(d => {
+                const matchesSearch = !searchTerm || 
+                    d.name.toLowerCase().includes(searchTerm) ||
+                    (d.key_figures && d.key_figures.some(k => k.toLowerCase().includes(searchTerm))) ||
+                    (d.events && d.events.some(e => e.name.toLowerCase().includes(searchTerm)));
+
+                let matchesFilter = true;
+                if (activeFilter !== 'all') {
+                    const midYear = (d.start_year + d.end_year) / 2;
+                    switch (activeFilter) {
+                        case 'prehistoric':
+                            matchesFilter = d.start_year < -2000;
+                            break;
+                        case 'ancient':
+                            matchesFilter = d.start_year >= -2000 && d.start_year < -200;
+                            break;
+                        case 'medieval':
+                            matchesFilter = d.start_year >= -200 && d.start_year < 1000;
+                            break;
+                        case 'modern':
+                            matchesFilter = d.start_year >= 1000;
+                            break;
+                    }
+                }
+
+                return matchesSearch && matchesFilter;
+            });
+
+            updateTimeline();
+        }
+
+        function updateTimeline() {
+            if (!currentG) return;
+
+            currentG.selectAll('.dynasty-group')
+                .classed('dimmed', false)
+                .classed('highlighted', false);
+
+            if (searchTerm || activeFilter !== 'all') {
+                const filteredIds = new Set(filteredData.map(d => d.id));
+                currentG.selectAll('.dynasty-group')
+                    .classed('dimmed', d => !filteredIds.has(d.id))
+                    .classed('highlighted', d => filteredIds.has(d.id));
+            }
+        }
+
+        function navigateToYear(year) {
+            if (timelineSvg && zoomBehavior && currentX && currentData) {
+                const width = document.getElementById('timeline-view').clientWidth;
+                const margin = currentMargin;
+                
+                let targetScale = 1;
+                if (year < -2000) {
+                    targetScale = 2.5; 
+                } else if (year < 0) {
+                    targetScale = 2; 
+                } else if (year < 1000) {
+                    targetScale = 2.5; 
+                } else {
+                    targetScale = 3; 
+                }
+
+                const targetX = currentX(year);
+                const centerX = (margin.left + width - margin.right) / 2;
+                const translate = centerX - targetX * targetScale;
+
+                timelineSvg.transition().duration(1200).call(
+                    zoomBehavior.transform,
+                    d3.zoomIdentity.translate(translate, 0).scale(targetScale)
+                );
+            }
+        }
+
+        function toggleDataVersion() {
+            useEnhancedData = !useEnhancedData;
+            const btn = document.getElementById('btn-data-toggle');
+            btn.textContent = useEnhancedData ? "基础数据" : "增强数据";
+            btn.classList.toggle('active', useEnhancedData);
+
+            const file = useEnhancedData ? "dynasty_data_enhanced.json" : "dynasty_data.json";
+            d3.json(file).then(data => {
+                currentData = data;
+                filteredData = data;
+                zoomBehavior = null;
+                timelineSvg = null;
+                d3.select("#timeline-view svg").remove();
+                d3.selectAll("#temp-chart svg").remove();
+                d3.selectAll("#pop-chart svg").remove();
+                d3.selectAll("#area-chart svg").remove();
+                d3.selectAll("#radar-view svg").remove();
+                d3.selectAll("#war-chart svg").remove();
+                d3.selectAll("#event-type-chart svg").remove();
+                initVisualization(data);
+            });
+        }
+
+        function initVisualization(data) {
+            const width = document.getElementById('timeline-view').clientWidth;
+            const height = 500;
+            const margin = {top: 25, right: 30, bottom: 60, left: 70};
+            currentMargin = margin;
+            currentHeight = height;
+
+            const x = d3.scaleLinear()
+                .domain([-5200, 1950])
+                .range([margin.left, width - margin.right]);
+            currentX = x;
+
+            const y = d3.scaleBand()
+                .domain(d3.range(6))
+                .range([margin.top, height - margin.bottom])
+                .padding(0.25);
+
+            const svg = d3.select("#timeline-view")
+                .append("svg")
+                .attr("width", width)
+                .attr("height", height)
+                .style("cursor", "grab");
+
+            const g = svg.append("g");
+            currentG = g;
+
+            const xAxis = d3.axisBottom(x)
+                .tickFormat(d => d < 0 ? `BC ${Math.abs(d)}` : `AD ${d}`)
+                .ticks(12);
+
+            const gx = svg.append("g")
+                .attr("transform", `translate(0,${height - margin.bottom})`)
+                .attr("class", "axis")
+                .call(xAxis);
+            currentGx = gx;
+
+            const grid = svg.append("g")
+                .attr("class", "grid")
+                .attr("transform", `translate(0,${height - margin.bottom})`)
+                .call(d3.axisBottom(x).ticks(12).tickSize(-height + margin.top + margin.bottom).tickFormat(""))
+                .call(g => g.selectAll(".tick line").attr("class", "grid-line"));
+            currentGrid = grid;
+
+            const tooltip = d3.select("#tooltip");
+
+            const color = d3.scaleOrdinal()
+                .range(["#e74c3c", "#e67e22", "#f1c40f", "#2ecc71", "#3498db", "#9b59b6", "#1abc9c", "#e91e63", "#00bcd4"]);
+
+            zoomBehavior = d3.zoom()
+                .scaleExtent([0.8, 30])
+                .wheelDelta((event) => {
+                    return -event.deltaY * (event.deltaMode === 1 ? 0.05 : event.deltaMode ? 1 : 0.002);
+                })
+                .extent([[margin.left - 200, 0], [width - margin.right + 200, height]])
+                .translateExtent([[margin.left - 2000, 0], [width - margin.right + 2000, height]])
+                .on("zoom", zoomed);
+
+            timelineSvg = svg;
+            svg.call(zoomBehavior)
+                .on('mousedown', function() {
+                    svg.style('cursor', 'grabbing');
+                })
+                .on('mouseup mouseleave', function() {
+                    svg.style('cursor', 'grab');
+                });
+            zoomReset = () => svg.transition().duration(500).call(zoomBehavior.transform, d3.zoomIdentity);
+
+            function zoomed(event) {
+                const xz = event.transform.rescaleX(x);
+                const scale = event.transform.k;
+                const tickCount = Math.max(6, Math.min(20, Math.round(12 * scale)));
+                gx.call(xAxis.scale(xz).ticks(tickCount).tickFormat(d => d < 0 ? `BC ${Math.abs(d)}` : `AD ${d}`));
+                grid.call(d3.axisBottom(xz).ticks(tickCount).tickSize(-height + margin.top + margin.bottom).tickFormat(""))
+                    .selectAll(".tick line").attr("class", "grid-line");
+                g.selectAll(".dynasty-bar")
+                    .attr("x", d => xz(d.start_year))
+                    .attr("width", d => Math.max(3, xz(d.end_year) - xz(d.start_year)));
+                g.selectAll(".timeline-label")
+                    .attr("x", d => xz(d.start_year) + 6)
+                    .style("opacity", d => {
+                        const barWidth = xz(d.end_year) - xz(d.start_year);
+                        const labelWidth = d.name.length * 11 + 10;
+                        if (barWidth > labelWidth) {
+                            return 1;
+                        } else if (barWidth > 30) {
+                            return 0.6;
+                        } else {
+                            return 0;
+                        }
+                    });
+                g.selectAll(".event-dot")
+                    .attr("cx", d => xz(d.year));
+            }
+
+            const bars = g.selectAll(".dynasty-group")
+                .data(data)
+                .enter()
+                .append("g")
+                .attr("class", "dynasty-group");
+
+            bars.append("rect")
+                .attr("class", "dynasty-bar")
+                .attr("x", d => x(d.start_year))
+                .attr("y", (d, i) => y(i % 6))
+                .attr("width", d => x(d.end_year) - x(d.start_year))
+                .attr("height", y.bandwidth())
+                .attr("rx", 6)
+                .attr("fill", (d, i) => color(i))
+                .on("mouseover", function(event, d) {
+                    tooltip.style("opacity", 1);
+                    const statsHtml = d.stats ? `
+                        <div class="tooltip-stat"><span class="tooltip-stat-label">人口：</span><span class="tooltip-stat-value">${d.stats.population_million}百万</span></div>
+                        <div class="tooltip-stat"><span class="tooltip-stat-label">疆域：</span><span class="tooltip-stat-value">${d.stats.territory_sq_km}万km²</span></div>
+                        <div class="tooltip-stat"><span class="tooltip-stat-label">持续：</span><span class="tooltip-stat-value">${d.duration}年</span></div>
+                    ` : '';
+                    tooltip.html(`
+                        <div class="tooltip-title">${d.name}</div>
+                        <div class="tooltip-period">${d.period}</div>
+                        ${statsHtml}
+                    `)
+                        .style("left", (event.pageX + 20) + "px")
+                        .style("top", (event.pageY - 20) + "px");
+                })
+                .on("mousemove", function(event) {
+                    tooltip.style("left", (event.pageX + 20) + "px")
+                           .style("top", (event.pageY - 20) + "px");
+                })
+                .on("mouseout", () => tooltip.style("opacity", 0))
+                .on("click", (event, d) => showModal(d));
+
+            bars.append("text")
+                .attr("class", "timeline-label")
+                .attr("x", d => x(d.start_year) + 6)
+                .attr("y", (d, i) => y(i % 6) + y.bandwidth() / 2 + 4)
+                .text(d => d.name.split(" ")[0] || d.name);
+
+            bars.each(function(d, i) {
+                if (d.events) {
+                    const group = d3.select(this);
+                    const yPos = y(i % 6) + y.bandwidth() + 8;
+                    group.selectAll(".event-dot")
+                        .data(d.events)
+                        .enter()
+                        .append("circle")
+                        .attr("class", "event-dot")
+                        .attr("cx", e => x(e.year))
+                        .attr("cy", yPos)
+                        .attr("r", e => e.significance === 'high' ? 6 : 4)
+                        .style("fill", e => typeColors[e.type] || '#d4af37')
+                        .style("stroke", '#1a1a2e')
+                        .style("stroke-width", e => e.significance === 'high' ? 3 : 2)
+                        .on("mouseover", function(event, e) {
+                            d3.select(this)
+                                .attr("r", e.significance === 'high' ? 10 : 8)
+                                .style("stroke", "#fff");
+                            tooltip.style("opacity", 1);
+                            const yearLabel = e.year < 0 ? `BC ${Math.abs(e.year)}` : `AD ${e.year}`;
+                            const typeName = typeNames[e.type] || e.type;
+                            const significanceText = e.significance === 'high' ? '关键事件' : '重要事件';
+                            const significanceColor = e.significance === 'high' ? '#e74c3c' : '#f39c12';
+                            tooltip.html(`
+                                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                                    <div class="tooltip-title" style="margin-bottom: 0;">${yearLabel}</div>
+                                    <div style="display: flex; gap: 6px;">
+                                        <span class="tag ${e.type}" style="font-size: 11px; padding: 2px 8px;">${typeName}</span>
+                                        <span style="font-size: 11px; padding: 2px 8px; border-radius: 10px; background: ${significanceColor}; color: #fff;">${significanceText}</span>
+                                    </div>
+                                </div>
+                                <div style="padding-top: 8px; border-top: 1px solid var(--border-color); font-size: 14px; line-height: 1.5;">${e.name}</div>
+                                <div style="margin-top: 8px; padding-top: 8px; border-top: 1px solid var(--border-color); font-size: 12px; color: var(--text-secondary);">
+                                    所属时期：${d.name}
+                                </div>
+                            `)
+                                .style("left", (event.pageX + 20) + "px")
+                                .style("top", (event.pageY - 40) + "px");
+                        })
+                        .on("mousemove", function(event) {
+                            tooltip.style("left", (event.pageX + 20) + "px")
+                                   .style("top", (event.pageY - 40) + "px");
+                        })
+                        .on("mouseout", function(event, e) {
+                            d3.select(this)
+                                .attr("r", e.significance === 'high' ? 6 : 4)
+                                .style("stroke", "var(--bg-secondary)");
+                            tooltip.style("opacity", 0);
+                        });
+                }
+            });
+
+            renderLineChart(data, "#temp-chart", "temperature_anomaly", "气温距平 (°C)", "#4facfe");
+            renderAreaChart(data, "#pop-chart", "population_million", "人口 (百万)", "#ff9a9e");
+            renderBarChart(data, "#area-chart", "territory_sq_km", "疆域 (万km²)", "#2ecc71");
+
+            if (data[0].stats.tech_index !== undefined) {
+                renderRadarCharts(data);
+                renderWarChart(data);
+                renderEventTypeChart(data);
+            }
+        }
+
+        function renderLineChart(data, selector, key, label, colorHex) {
+            const width = document.querySelector(selector).clientWidth - 10;
+            const height = 220;
+            const margin = {top: 20, right: 15, bottom: 45, left: 55};
+
+            const svg = d3.select(selector).append("svg")
+                .attr("width", width).attr("height", height);
+
+            const x = d3.scaleLinear()
+                .domain([-5200, 1950])
+                .range([margin.left, width - margin.right]);
+
+            const yMin = d3.min(data, d => d.stats[key]) - 0.3;
+            const yMax = d3.max(data, d => d.stats[key]) + 0.3;
+            const y = d3.scaleLinear()
+                .domain([yMin, yMax])
+                .range([height - margin.bottom, margin.top]);
+
+            const gradient = svg.append("defs")
+                .append("linearGradient")
+                .attr("id", `gradient-${key}`)
+                .attr("x1", "0%")
+                .attr("y1", "0%")
+                .attr("x2", "0%")
+                .attr("y2", "100%");
+            gradient.append("stop").attr("offset", "0%").attr("stop-color", colorHex).attr("stop-opacity", 0.4);
+            gradient.append("stop").attr("offset", "100%").attr("stop-color", colorHex).attr("stop-opacity", 0);
+
+            const area = d3.area()
+                .x(d => x((d.start_year + d.end_year) / 2))
+                .y0(height - margin.bottom)
+                .y1(d => y(d.stats[key]))
+                .curve(d3.curveMonotoneX);
+
+            svg.append("path")
+                .datum(data)
+                .attr("fill", `url(#gradient-${key})`)
+                .attr("d", area);
+
+            svg.append("path")
+                .datum(data)
+                .attr("fill", "none")
+                .attr("stroke", colorHex)
+                .attr("stroke-width", 2.5)
+                .attr("d", d3.line()
+                    .x(d => x((d.start_year + d.end_year) / 2))
+                    .y(d => y(d.stats[key]))
+                    .curve(d3.curveMonotoneX)
+                );
+
+            const xAxis = d3.axisBottom(x)
+                .ticks(6)
+                .tickFormat(d => d < 0 ? `BC ${Math.abs(d)}` : `AD ${d}`);
+
+            svg.append("g")
+                .attr("transform", `translate(0,${height - margin.bottom})`)
+                .attr("class", "axis")
+                .call(xAxis);
+
+            svg.append("text")
+                .attr("x", width / 2)
+                .attr("y", height - 10)
+                .attr("text-anchor", "middle")
+                .style("fill", "var(--text-secondary)")
+                .style("font-size", "11px")
+                .text("年份");
+
+            svg.append("g")
+                .attr("transform", `translate(${margin.left},0)`)
+                .attr("class", "axis")
+                .call(d3.axisLeft(y).ticks(5));
+
+            svg.append("text")
+                .attr("transform", "rotate(-90)")
+                .attr("x", -height / 2)
+                .attr("y", 18)
+                .attr("text-anchor", "middle")
+                .style("fill", "var(--text-secondary)")
+                .style("font-size", "11px")
+                .text(label);
+        }
+
+        function renderAreaChart(data, selector, key, label, colorHex) {
+            const width = document.querySelector(selector).clientWidth - 10;
+            const height = 220;
+            const margin = {top: 20, right: 15, bottom: 45, left: 55};
+
+            const svg = d3.select(selector).append("svg")
+                .attr("width", width).attr("height", height);
+
+            const x = d3.scaleLinear()
+                .domain([-5200, 1950])
+                .range([margin.left, width - margin.right]);
+
+            const y = d3.scaleLinear()
+                .domain([0, d3.max(data, d => d.stats[key]) * 1.15])
+                .range([height - margin.bottom, margin.top]);
+
+            const gradient = svg.append("defs")
+                .append("linearGradient")
+                .attr("id", `gradient-area-${key}`)
+                .attr("x1", "0%")
+                .attr("y1", "0%")
+                .attr("x2", "0%")
+                .attr("y2", "100%");
+            gradient.append("stop").attr("offset", "0%").attr("stop-color", colorHex).attr("stop-opacity", 0.5);
+            gradient.append("stop").attr("offset", "100%").attr("stop-color", colorHex).attr("stop-opacity", 0.1);
+
+            svg.append("path")
+                .datum(data)
+                .attr("fill", `url(#gradient-area-${key})`)
+                .attr("stroke", colorHex)
+                .attr("stroke-width", 2)
+                .attr("d", d3.area()
+                    .x(d => x((d.start_year + d.end_year) / 2))
+                    .y0(height - margin.bottom)
+                    .y1(d => y(d.stats[key]))
+                    .curve(d3.curveMonotoneX)
+                );
+
+            const xAxis = d3.axisBottom(x)
+                .ticks(6)
+                .tickFormat(d => d < 0 ? `BC ${Math.abs(d)}` : `AD ${d}`);
+
+            svg.append("g")
+                .attr("transform", `translate(0,${height - margin.bottom})`)
+                .attr("class", "axis")
+                .call(xAxis);
+
+            svg.append("text")
+                .attr("x", width / 2)
+                .attr("y", height - 10)
+                .attr("text-anchor", "middle")
+                .style("fill", "var(--text-secondary)")
+                .style("font-size", "11px")
+                .text("年份");
+
+            svg.append("g")
+                .attr("transform", `translate(${margin.left},0)`)
+                .attr("class", "axis")
+                .call(d3.axisLeft(y).ticks(5));
+
+            svg.append("text")
+                .attr("transform", "rotate(-90)")
+                .attr("x", -height / 2)
+                .attr("y", 18)
+                .attr("text-anchor", "middle")
+                .style("fill", "var(--text-secondary)")
+                .style("font-size", "11px")
+                .text(label);
+        }
+
+        function renderBarChart(data, selector, key, label, colorHex) {
+            const width = document.querySelector(selector).clientWidth - 10;
+            const height = 220;
+            const margin = {top: 20, right: 15, bottom: 45, left: 55};
+
+            const svg = d3.select(selector).append("svg")
+                .attr("width", width).attr("height", height);
+
+            const x = d3.scaleLinear()
+                .domain([-5200, 1950])
+                .range([margin.left, width - margin.right]);
+
+            const y = d3.scaleLinear()
+                .domain([0, d3.max(data, d => d.stats[key]) * 1.15])
+                .range([height - margin.bottom, margin.top]);
+
+            const gradient = svg.append("defs")
+                .append("linearGradient")
+                .attr("id", `gradient-bar-${key}`)
+                .attr("x1", "0%")
+                .attr("y1", "0%")
+                .attr("x2", "0%")
+                .attr("y2", "100%");
+            gradient.append("stop").attr("offset", "0%").attr("stop-color", colorHex).attr("stop-opacity", 1);
+            gradient.append("stop").attr("offset", "100%").attr("stop-color", colorHex).attr("stop-opacity", 0.4);
+
+            svg.selectAll("rect")
+                .data(data)
+                .enter()
+                .append("rect")
+                .attr("x", d => x(d.start_year))
+                .attr("y", d => y(d.stats[key]))
+                .attr("width", d => Math.max(3, x(d.end_year) - x(d.start_year)))
+                .attr("height", d => height - margin.bottom - y(d.stats[key]))
+                .attr("fill", `url(#gradient-bar-${key})`)
+                .attr("rx", 2);
+
+            const xAxis = d3.axisBottom(x)
+                .ticks(6)
+                .tickFormat(d => d < 0 ? `BC ${Math.abs(d)}` : `AD ${d}`);
+
+            svg.append("g")
+                .attr("transform", `translate(0,${height - margin.bottom})`)
+                .attr("class", "axis")
+                .call(xAxis);
+
+            svg.append("text")
+                .attr("x", width / 2)
+                .attr("y", height - 10)
+                .attr("text-anchor", "middle")
+                .style("fill", "var(--text-secondary)")
+                .style("font-size", "11px")
+                .text("年份");
+
+            svg.append("g")
+                .attr("transform", `translate(${margin.left},0)`)
+                .attr("class", "axis")
+                .call(d3.axisLeft(y).ticks(5));
+
+            svg.append("text")
+                .attr("transform", "rotate(-90)")
+                .attr("x", -height / 2)
+                .attr("y", 18)
+                .attr("text-anchor", "middle")
+                .style("fill", "var(--text-secondary)")
+                .style("font-size", "11px")
+                .text(label);
+        }
+
+        function renderRadarCharts(data) {
+            const dimensions = ["tech_index", "economic_index", "institution_index", "cultural_index", "military_index"];
+            const labels = ["技术", "经济", "制度", "文化", "军事"];
+
+            function radar(svg, values, color, title) {
+                const width = 200, height = 220;
+                const radius = 72;
+                const centerX = width / 2;
+                const centerY = height / 2 + 12;
+                const angleSlice = (Math.PI * 2) / dimensions.length;
+
+                const rScale = d3.scaleLinear().domain([0, 100]).range([0, radius]);
+
+                const axisGrid = svg.append("g").attr("class", "axisWrapper");
+
+                axisGrid.selectAll(".levels")
+                    .data([20, 40, 60, 80, 100])
+                    .enter()
+                    .append("circle")
+                    .attr("cx", centerX)
+                    .attr("cy", centerY)
+                    .attr("r", d => rScale(d))
+                    .style("fill", "none")
+                    .style("stroke", "var(--border-color)")
+                    .style("stroke-dasharray", "3,3");
+
+                axisGrid.selectAll(".level-label")
+                    .data([20, 40, 60, 80, 100])
+                    .enter()
+                    .append("text")
+                    .attr("x", centerX + 4)
+                    .attr("y", d => centerY - rScale(d) - 3)
+                    .style("fill", "var(--text-secondary)")
+                    .style("font-size", "9px")
+                    .text(d => d);
+
+                const axis = axisGrid.selectAll(".axis")
+                    .data(dimensions)
+                    .enter()
+                    .append("g")
+                    .attr("class", "axis");
+
+                axis.append("line")
+                    .attr("x1", centerX)
+                    .attr("y1", centerY)
+                    .attr("x2", (d, i) => centerX + rScale(100) * Math.cos(angleSlice * i - Math.PI/2))
+                    .attr("y2", (d, i) => centerY + rScale(100) * Math.sin(angleSlice * i - Math.PI/2))
+                    .attr("stroke", "var(--border-color)");
+
+                axis.append("text")
+                    .attr("x", (d, i) => centerX + (rScale(100) + 18) * Math.cos(angleSlice * i - Math.PI/2))
+                    .attr("y", (d, i) => centerY + (rScale(100) + 18) * Math.sin(angleSlice * i - Math.PI/2))
+                    .attr("text-anchor", (d, i) => {
+                        const angle = angleSlice * i - Math.PI/2;
+                        return Math.abs(angle) < 0.1 || Math.abs(Math.PI - angle) < 0.1 ? "middle" : (angle > 0 ? "start" : "end");
+                    })
+                    .attr("dy", "0.35em")
+                    .style("fill", "var(--text-primary)")
+                    .style("font-size", "12px")
+                    .style("font-weight", "500")
+                    .text((d, i) => labels[i]);
+
+                const radarLine = d3.lineRadial()
+                    .radius(d => rScale(d))
+                    .angle((d, i) => i * angleSlice);
+
+                svg.append("path")
+                    .datum(values)
+                    .attr("d", radarLine)
+                    .attr("transform", `translate(${centerX},${centerY})`)
+                    .style("fill", color)
+                    .style("fill-opacity", 0.25)
+                    .style("stroke", color)
+                    .style("stroke-width", 2.5);
+
+                values.forEach((v, i) => {
+                    const x = centerX + rScale(v) * Math.cos(angleSlice * i - Math.PI/2);
+                    const y = centerY + rScale(v) * Math.sin(angleSlice * i - Math.PI/2);
+                    svg.append("circle")
+                        .attr("cx", x)
+                        .attr("cy", y)
+                        .attr("r", 5)
+                        .style("fill", color)
+                        .style("stroke", "var(--bg-card)")
+                        .style("stroke-width", 2);
+                });
+
+                if (title) {
+                    svg.append("text")
+                        .attr("x", centerX)
+                        .attr("y", 16)
+                        .attr("text-anchor", "middle")
+                        .style("fill", color)
+                        .style("font-size", "15px")
+                        .style("font-weight", "bold")
+                        .text(title);
+                }
+            }
+
+            const early = data.filter(d => d.start_year < -200);
+            const imperial = data.filter(d => d.start_year >= -200 && d.start_year < 1000);
+            const late = data.filter(d => d.start_year >= 1000);
+
+            function avgStats(arr) {
+                return dimensions.map(dim => d3.mean(arr, d => d.stats[dim] || 0));
+            }
+
+            d3.select("#radar-early").append("svg").attr("width", 200).attr("height", 220).call(svg => radar(svg, avgStats(early), "#e74c3c", "早期文明"));
+            d3.select("#radar-imperial").append("svg").attr("width", 200).attr("height", 220).call(svg => radar(svg, avgStats(imperial), "#f1c40f", "帝国时代"));
+            d3.select("#radar-late").append("svg").attr("width", 200).attr("height", 220).call(svg => radar(svg, avgStats(late), "#3498db", "近世文明"));
+
+            const compareSvg = d3.select("#radar-compare").append("svg").attr("width", 200).attr("height", 245);
+            
+            function radarNoTitle(svg, values, color) {
+                const width = 200, height = 245;
+                const radius = 72;
+                const centerX = width / 2;
+                const centerY = height / 2 + 18;
+                const angleSlice = (Math.PI * 2) / dimensions.length;
+
+                const rScale = d3.scaleLinear().domain([0, 100]).range([0, radius]);
+
+                const axisGrid = svg.append("g").attr("class", "axisWrapper");
+
+                axisGrid.selectAll(".levels")
+                    .data([20, 40, 60, 80, 100])
+                    .enter()
+                    .append("circle")
+                    .attr("cx", centerX)
+                    .attr("cy", centerY)
+                    .attr("r", d => rScale(d))
+                    .style("fill", "none")
+                    .style("stroke", "var(--border-color)")
+                    .style("stroke-dasharray", "3,3");
+
+                const axis = axisGrid.selectAll(".axis")
+                    .data(dimensions)
+                    .enter()
+                    .append("g")
+                    .attr("class", "axis");
+
+                axis.append("line")
+                    .attr("x1", centerX)
+                    .attr("y1", centerY)
+                    .attr("x2", (d, i) => centerX + rScale(100) * Math.cos(angleSlice * i - Math.PI/2))
+                    .attr("y2", (d, i) => centerY + rScale(100) * Math.sin(angleSlice * i - Math.PI/2))
+                    .attr("stroke", "var(--border-color)");
+
+                axis.append("text")
+                    .attr("x", (d, i) => centerX + (rScale(100) + 18) * Math.cos(angleSlice * i - Math.PI/2))
+                    .attr("y", (d, i) => centerY + (rScale(100) + 18) * Math.sin(angleSlice * i - Math.PI/2))
+                    .attr("text-anchor", (d, i) => {
+                        const angle = angleSlice * i - Math.PI/2;
+                        return Math.abs(angle) < 0.1 || Math.abs(Math.PI - angle) < 0.1 ? "middle" : (angle > 0 ? "start" : "end");
+                    })
+                    .attr("dy", "0.35em")
+                    .style("fill", "var(--text-primary)")
+                    .style("font-size", "11px")
+                    .style("font-weight", "500")
+                    .text((d, i) => labels[i]);
+
+                const radarLine = d3.lineRadial()
+                    .radius(d => rScale(d))
+                    .angle((d, i) => i * angleSlice);
+
+                svg.append("path")
+                    .datum(values)
+                    .attr("d", radarLine)
+                    .attr("transform", `translate(${centerX},${centerY})`)
+                    .style("fill", color)
+                    .style("fill-opacity", 0.15)
+                    .style("stroke", color)
+                    .style("stroke-width", 2);
+
+                values.forEach((v, i) => {
+                    const x = centerX + rScale(v) * Math.cos(angleSlice * i - Math.PI/2);
+                    const y = centerY + rScale(v) * Math.sin(angleSlice * i - Math.PI/2);
+                    svg.append("circle")
+                        .attr("cx", x)
+                        .attr("cy", y)
+                        .attr("r", 4)
+                        .style("fill", color)
+                        .style("stroke", "var(--bg-card)")
+                        .style("stroke-width", 1.5);
+                });
+
+                svg.append("text")
+                    .attr("x", centerX)
+                    .attr("y", 16)
+                    .attr("text-anchor", "middle")
+                    .style("fill", "var(--text-primary)")
+                    .style("font-size", "14px")
+                    .style("font-weight", "bold")
+                    .text("三代对比");
+            }
+
+            function radarLineOnly(svg, values, color) {
+                const width = 200, height = 245;
+                const radius = 72;
+                const centerX = width / 2;
+                const centerY = height / 2 + 18;
+                const angleSlice = (Math.PI * 2) / dimensions.length;
+
+                const rScale = d3.scaleLinear().domain([0, 100]).range([0, radius]);
+
+                const radarLine = d3.lineRadial()
+                    .radius(d => rScale(d))
+                    .angle((d, i) => i * angleSlice);
+
+                svg.append("path")
+                    .datum(values)
+                    .attr("d", radarLine)
+                    .attr("transform", `translate(${centerX},${centerY})`)
+                    .style("fill", color)
+                    .style("fill-opacity", 0.12)
+                    .style("stroke", color)
+                    .style("stroke-width", 2);
+
+                values.forEach((v, i) => {
+                    const x = centerX + rScale(v) * Math.cos(angleSlice * i - Math.PI/2);
+                    const y = centerY + rScale(v) * Math.sin(angleSlice * i - Math.PI/2);
+                    svg.append("circle")
+                        .attr("cx", x)
+                        .attr("cy", y)
+                        .attr("r", 3.5)
+                        .style("fill", color)
+                        .style("stroke", "var(--bg-card)")
+                        .style("stroke-width", 1.5);
+                });
+            }
+
+            compareSvg.call(svg => radarNoTitle(svg, avgStats(early), "#e74c3c"));
+            compareSvg.call(svg => radarLineOnly(svg, avgStats(imperial), "#f1c40f"));
+            compareSvg.call(svg => radarLineOnly(svg, avgStats(late), "#3498db"));
+
+            compareSvg.append("rect").attr("x", 15).attr("y", 215).attr("width", 12).attr("height", 12).attr("fill", "#e74c3c");
+            compareSvg.append("text").attr("x", 32).attr("y", 225).style("fill", "var(--text-primary)").style("font-size", "11px").text("早期");
+            compareSvg.append("rect").attr("x", 80).attr("y", 215).attr("width", 12).attr("height", 12).attr("fill", "#f1c40f");
+            compareSvg.append("text").attr("x", 97).attr("y", 225).style("fill", "var(--text-primary)").style("font-size", "11px").text("帝国");
+            compareSvg.append("rect").attr("x", 145).attr("y", 215).attr("width", 12).attr("height", 12).attr("fill", "#3498db");
+            compareSvg.append("text").attr("x", 162).attr("y", 225).style("fill", "var(--text-primary)").style("font-size", "11px").text("近世");
+        }
+
+        function renderWarChart(data) {
+            const width = document.querySelector("#war-chart").clientWidth - 10;
+            const height = 220;
+            const margin = {top: 20, right: 15, bottom: 55, left: 55};
+
+            const svg = d3.select("#war-chart").append("svg")
+                .attr("width", width).attr("height", height);
+
+            const warCount = data.map(d => ({
+                name: d.name.split(" ")[0],
+                year: (d.start_year + d.end_year) / 2,
+                count: d.events ? d.events.filter(e => e.type === "war").length : 0
+            }));
+
+            const x = d3.scaleLinear()
+                .domain([-5200, 1950])
+                .range([margin.left, width - margin.right]);
+
+            const y = d3.scaleLinear()
+                .domain([0, d3.max(warCount, d => d.count) + 1])
+                .range([height - margin.bottom, margin.top]);
+
+            svg.selectAll(".war-bar")
+                .data(warCount)
+                .enter()
+                .append("rect")
+                .attr("class", "war-bar")
+                .attr("x", (d, i) => margin.left + i * (width - margin.left - margin.right) / warCount.length)
+                .attr("y", d => y(d.count))
+                .attr("width", Math.max(3, (width - margin.left - margin.right) / warCount.length - 2))
+                .attr("height", d => height - margin.bottom - y(d.count))
+                .attr("fill", "#c0392b")
+                .attr("rx", 2);
+
+            const xAxis = d3.axisBottom(x)
+                .ticks(6)
+                .tickFormat(d => d < 0 ? `BC ${Math.abs(d)}` : `AD ${d}`);
+
+            svg.append("g")
+                .attr("transform", `translate(0,${height - margin.bottom})`)
+                .attr("class", "axis")
+                .call(xAxis);
+
+            svg.append("text")
+                .attr("x", width / 2)
+                .attr("y", height - 10)
+                .attr("text-anchor", "middle")
+                .style("fill", "var(--text-secondary)")
+                .style("font-size", "11px")
+                .text("年份");
+
+            svg.append("g")
+                .attr("transform", `translate(${margin.left},0)`)
+                .attr("class", "axis")
+                .call(d3.axisLeft(y).ticks(5));
+
+            svg.append("text")
+                .attr("transform", "rotate(-90)")
+                .attr("x", -height / 2)
+                .attr("y", 18)
+                .attr("text-anchor", "middle")
+                .style("fill", "var(--text-secondary)")
+                .style("font-size", "11px")
+                .text("战争数量");
+        }
+
+        function renderEventTypeChart(data) {
+            const width = document.querySelector("#event-type-chart").clientWidth - 10;
+            const height = 220;
+            const margin = {top: 20, right: 15, bottom: 55, left: 55};
+
+            const svg = d3.select("#event-type-chart").append("svg")
+                .attr("width", width).attr("height", height);
+
+            const typeCount = {};
+            data.forEach(d => {
+                if (d.events) {
+                    d.events.forEach(e => {
+                        typeCount[e.type] = (typeCount[e.type] || 0) + 1;
+                    });
+                }
+            });
+
+            const typeData = Object.entries(typeCount).map(([type, count]) => ({
+                type: type,
+                name: typeNames[type] || type,
+                count: count,
+                color: typeColors[type] || "#888"
+            })).sort((a, b) => b.count - a.count);
+
+            const x = d3.scaleBand()
+                .domain(typeData.map(d => d.name))
+                .range([margin.left, width - margin.right])
+                .padding(0.3);
+
+            const y = d3.scaleLinear()
+                .domain([0, d3.max(typeData, d => d.count) + 1])
+                .range([height - margin.bottom, margin.top]);
+
+            svg.selectAll(".type-bar")
+                .data(typeData)
+                .enter()
+                .append("rect")
+                .attr("class", "type-bar")
+                .attr("x", d => x(d.name))
+                .attr("y", d => y(d.count))
+                .attr("width", x.bandwidth())
+                .attr("height", d => height - margin.bottom - y(d.count))
+                .attr("fill", d => d.color)
+                .attr("rx", 4);
+
+            svg.selectAll(".type-label")
+                .data(typeData)
+                .enter()
+                .append("text")
+                .attr("x", d => x(d.name) + x.bandwidth() / 2)
+                .attr("y", d => y(d.count) - 5)
+                .attr("text-anchor", "middle")
+                .style("fill", "var(--text-primary)")
+                .style("font-size", "11px")
+                .style("font-weight", "500")
+                .text(d => d.count);
+
+            svg.append("g")
+                .attr("transform", `translate(0,${height - margin.bottom})`)
+                .attr("class", "axis")
+                .call(d3.axisBottom(x));
+
+            svg.append("g")
+                .attr("transform", `translate(${margin.left},0)`)
+                .attr("class", "axis")
+                .call(d3.axisLeft(y).ticks(5));
+
+            svg.append("text")
+                .attr("transform", "rotate(-90)")
+                .attr("x", -height / 2)
+                .attr("y", 18)
+                .attr("text-anchor", "middle")
+                .style("fill", "var(--text-secondary)")
+                .style("font-size", "11px")
+                .text("事件数量");
+        }
+
+        function showModal(d) {
+            document.getElementById('modal-overlay').style.display = 'block';
+            document.getElementById('detail-modal').style.display = 'block';
+            
+            document.getElementById('modal-title').textContent = d.name;
+            document.getElementById('modal-period').textContent = d.period;
+            
+            let statsHtml = '';
+            if (d.stats) {
+                statsHtml = `
+                    <div class="stat-item">
+                        <div class="stat-value">${d.stats.temperature_anomaly}°</div>
+                        <div class="stat-label">气温距平</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">${d.stats.population_million}M</div>
+                        <div class="stat-label">人口</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">${d.stats.territory_sq_km}万</div>
+                        <div class="stat-label">疆域(km²)</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">${d.duration}</div>
+                        <div class="stat-label">持续(年)</div>
+                    </div>
+                `;
+            }
+            document.getElementById('modal-stats').innerHTML = statsHtml;
+
+            document.getElementById('modal-figures').textContent = d.key_figures ? d.key_figures.join('、') : '待补充';
+            document.getElementById('modal-capital').textContent = d.capital || '待补充';
+            document.getElementById('modal-culture').textContent = d.culture_tech || '待补充';
+            document.getElementById('modal-territory').textContent = d.territory_feature || '待补充';
+            document.getElementById('modal-territory-desc').textContent = d.territory_description || '';
+
+            if (d.rise_fall) {
+                document.getElementById('modal-trigger').textContent = d.rise_fall.trigger || '待补充';
+                document.getElementById('modal-structural').textContent = d.rise_fall.structural || '待补充';
+                document.getElementById('modal-external').textContent = d.rise_fall.external || '待补充';
+                document.getElementById('modal-transition').textContent = d.rise_fall.transition || '待补充';
+            }
+
+            let eventsHtml = '';
+            if (d.events) {
+                d.events.forEach(e => {
+                    const yearLabel = e.year < 0 ? `BC ${Math.abs(e.year)}` : `AD ${e.year}`;
+                    eventsHtml += `
+                        <div class="event-item">
+                            <span class="event-year">${yearLabel}</span>
+                            <span class="tag ${e.type}">${typeNames[e.type] || e.type}</span>
+                            <span class="tag ${e.importance}">${e.importance === 'high' ? '关键' : '重要'}</span>
+                            ${e.name}
+                        </div>
+                    `;
+                });
+            }
+            document.getElementById('modal-events').innerHTML = eventsHtml || '<p style="color:var(--text-secondary);">暂无事件记录</p>';
+
+            document.getElementById('modal-radar').innerHTML = '';
+            if (d.stats && d.stats.tech_index !== undefined) {
+                renderSingleRadar(d);
+            }
+        }
+
+        function renderSingleRadar(d) {
+            const container = document.getElementById('modal-radar');
+            const width = 300, height = 280;
+            const dimensions = ["tech_index", "economic_index", "institution_index", "cultural_index", "military_index"];
+            const labels = ["技术", "经济", "制度", "文化", "军事"];
+            const values = dimensions.map(dim => d.stats[dim] || 0);
+            
+            const svg = d3.select(container).append("svg")
+                .attr("width", width).attr("height", height);
+            
+            const radius = 110;
+            const centerX = width / 2;
+            const centerY = height / 2 + 15;
+            const angleSlice = (Math.PI * 2) / dimensions.length;
+
+            const rScale = d3.scaleLinear().domain([0, 100]).range([0, radius]);
+            const axisGrid = svg.append("g");
+
+            axisGrid.selectAll(".levels")
+                .data([20, 40, 60, 80, 100])
+                .enter()
+                .append("circle")
+                .attr("cx", centerX)
+                .attr("cy", centerY)
+                .attr("r", d => rScale(d))
+                .style("fill", "none")
+                .style("stroke", "var(--border-color)")
+                .style("stroke-dasharray", "3,3");
+
+            axisGrid.selectAll(".level-label")
+                .data([20, 40, 60, 80, 100])
+                .enter()
+                .append("text")
+                .attr("x", centerX + 5)
+                .attr("y", d => centerY - rScale(d) - 4)
+                .style("fill", "var(--text-secondary)")
+                .style("font-size", "10px")
+                .text(d => d);
+
+            const axis = axisGrid.selectAll(".axis")
+                .data(dimensions)
+                .enter()
+                .append("g");
+
+            axis.append("line")
+                .attr("x1", centerX)
+                .attr("y1", centerY)
+                .attr("x2", (d, i) => centerX + rScale(100) * Math.cos(angleSlice * i - Math.PI/2))
+                .attr("y2", (d, i) => centerY + rScale(100) * Math.sin(angleSlice * i - Math.PI/2))
+                .attr("stroke", "var(--border-color)");
+
+            axis.append("text")
+                .attr("x", (d, i) => centerX + (rScale(100) + 25) * Math.cos(angleSlice * i - Math.PI/2))
+                .attr("y", (d, i) => centerY + (rScale(100) + 25) * Math.sin(angleSlice * i - Math.PI/2))
+                .attr("text-anchor", (d, i) => {
+                    const angle = angleSlice * i - Math.PI/2;
+                    return Math.abs(angle) < 0.1 || Math.abs(Math.PI - angle) < 0.1 ? "middle" : (angle > 0 ? "start" : "end");
+                })
+                .attr("dy", "0.35em")
+                .style("fill", "var(--text-primary)")
+                .style("font-size", "13px")
+                .style("font-weight", "500")
+                .text((d, i) => labels[i]);
+
+            const radarLine = d3.lineRadial()
+                .radius(d => rScale(d))
+                .angle((d, i) => i * angleSlice);
+
+            svg.append("path")
+                .datum(values)
+                .attr("d", radarLine)
+                .attr("transform", `translate(${centerX},${centerY})`)
+                .style("fill", "var(--accent-gold)")
+                .style("fill-opacity", 0.25)
+                .style("stroke", "var(--accent-gold)")
+                .style("stroke-width", 3);
+
+            values.forEach((v, i) => {
+                const x = centerX + rScale(v) * Math.cos(angleSlice * i - Math.PI/2);
+                const y = centerY + rScale(v) * Math.sin(angleSlice * i - Math.PI/2);
+                svg.append("circle")
+                    .attr("cx", x)
+                    .attr("cy", y)
+                    .attr("r", 6)
+                    .style("fill", "var(--accent-gold)")
+                    .style("stroke", "var(--bg-secondary)")
+                    .style("stroke-width", 2.5);
+                
+                svg.append("text")
+                    .attr("x", x + 12)
+                    .attr("y", y + 4)
+                    .style("fill", "var(--accent-gold)")
+                    .style("font-size", "11px")
+                    .style("font-weight", "bold")
+                    .text(v);
+            });
+        }
+
+        document.getElementById('modal-close').addEventListener('click', () => {
+            document.getElementById('modal-overlay').style.display = 'none';
+            document.getElementById('detail-modal').style.display = 'none';
+        });
+        document.getElementById('modal-overlay').addEventListener('click', () => {
+            document.getElementById('modal-overlay').style.display = 'none';
+            document.getElementById('detail-modal').style.display = 'none';
+        });
+    </script>
+</body>
+</html>

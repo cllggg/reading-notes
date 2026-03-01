@@ -1,0 +1,1355 @@
+[
+  {
+    "id": "yangshao",
+    "name": "仰韶 (Yangshao)",
+    "period": "BC 5000 - BC 3000",
+    "start_year": -5000,
+    "end_year": -3000,
+    "duration": 2000,
+    "capital": ["仰韶村 (Yangshao Village)"],
+    "key_figures": ["仰韶部落首领"],
+    "territory": "黄河中游，渭水、汾水、洛水流域",
+    "territory_desc": "中国新石器时代最重要的文化之一，以彩陶为显著特征，分布范围广泛。",
+    "fall_analysis": {
+      "trigger": "文化转型与龙山文化兴起",
+      "structural": "部落联盟松散，缺乏统一组织能力",
+      "external": "气候波动与周边文化的竞争"
+    },
+    "conquest_chain": {
+      "victor": "龙山文化",
+      "loser": "仰韶文化",
+      "battle": "文化融合",
+      "factor": "和平转型与技术传播"
+    },
+    "stats": {
+      "population_million": 0.3,
+      "temperature_anomaly": 0.8,
+      "war_frequency": 0.05,
+      "territory_sq_km": 0.8,
+      "tech_index": 45,
+      "economic_index": 40,
+      "institution_index": 35,
+      "cultural_index": 60,
+      "military_index": 20
+    },
+    "events": [
+      {"year": -5000, "name": "仰韶文化兴起", "type": "culture", "significance": "high"},
+      {"year": -4500, "name": "彩陶制作高峰期", "type": "culture", "significance": "medium"},
+      {"year": -3500, "name": "半坡类型繁荣", "type": "culture", "significance": "medium"},
+      {"year": -3000, "name": "仰韶文化转型为龙山文化", "type": "culture", "significance": "high"}
+    ],
+    "culture": ["彩陶", "粟作农业", "半地穴式房屋", "鱼纹图案"],
+    "tech_innovations": ["彩陶制作", "磨制石器", "粟作农业"],
+    "institution_innovations": ["母系氏族公社", "原始宗教"]
+  },
+  {
+    "id": "hemudu",
+    "name": "河姆渡 (Hemudu)",
+    "period": "BC 5000 - BC 3300",
+    "start_year": -5000,
+    "end_year": -3300,
+    "duration": 1700,
+    "capital": ["河姆渡 (Hemudu)"],
+    "key_figures": ["河姆渡部落首领"],
+    "territory": "长江下游，宁绍平原",
+    "territory_desc": "中国南方新石器时代重要文化，以稻作农业和干栏式建筑为特色。",
+    "fall_analysis": {
+      "trigger": "海平面上升与环境变化",
+      "structural": "对湿地环境的过度依赖",
+      "external": "良渚文化的崛起"
+    },
+    "conquest_chain": {
+      "victor": "良渚文化",
+      "loser": "河姆渡文化",
+      "battle": "文化传承",
+      "factor": "技术与文化的延续与发展"
+    },
+    "stats": {
+      "population_million": 0.2,
+      "temperature_anomaly": 0.7,
+      "war_frequency": 0.03,
+      "territory_sq_km": 0.2,
+      "tech_index": 50,
+      "economic_index": 45,
+      "institution_index": 30,
+      "cultural_index": 55,
+      "military_index": 15
+    },
+    "events": [
+      {"year": -5000, "name": "河姆渡文化兴起", "type": "culture", "significance": "high"},
+      {"year": -4500, "name": "稻作农业成熟", "type": "tech", "significance": "high"},
+      {"year": -4000, "name": "干栏式建筑普及", "type": "tech", "significance": "medium"},
+      {"year": -3300, "name": "河姆渡文化被良渚文化继承", "type": "culture", "significance": "high"}
+    ],
+    "culture": ["稻作农业", "干栏式建筑", "黑陶", "象牙雕刻"],
+    "tech_innovations": ["水稻栽培", "榫卯结构", "漆器制作"],
+    "institution_innovations": ["稻作农耕社会", "原始宗教信仰"]
+  },
+  {
+    "id": "dawenkou",
+    "name": "大汶口 (Dawenkou)",
+    "period": "BC 4300 - BC 2500",
+    "start_year": -4300,
+    "end_year": -2500,
+    "duration": 1800,
+    "capital": ["大汶口 (Dawenkou)"],
+    "key_figures": ["大汶口部落首领"],
+    "territory": "黄河下游，海岱地区",
+    "territory_desc": "海岱地区重要的新石器时代文化，是龙山文化的直接前身。",
+    "fall_analysis": {
+      "trigger": "社会分化加剧，向龙山文化过渡",
+      "structural": "贫富分化导致社会矛盾",
+      "external": "与周边文化的交流与融合"
+    },
+    "conquest_chain": {
+      "victor": "龙山文化",
+      "loser": "大汶口文化",
+      "battle": "社会演进",
+      "factor": "内部社会结构的质变"
+    },
+    "stats": {
+      "population_million": 0.4,
+      "temperature_anomaly": 0.6,
+      "war_frequency": 0.08,
+      "territory_sq_km": 0.4,
+      "tech_index": 50,
+      "economic_index": 45,
+      "institution_index": 40,
+      "cultural_index": 55,
+      "military_index": 25
+    },
+    "events": [
+      {"year": -4300, "name": "大汶口文化早期", "type": "culture", "significance": "high"},
+      {"year": -3500, "name": "社会分化开始出现", "type": "politic", "significance": "medium"},
+      {"year": -3000, "name": "大汶口文化晚期，贫富分化加剧", "type": "politic", "significance": "high"},
+      {"year": -2500, "name": "过渡为龙山文化", "type": "culture", "significance": "high"}
+    ],
+    "culture": ["白陶", "黑陶", "象牙雕刻", "拔牙习俗"],
+    "tech_innovations": ["快轮制陶", "酿酒技术", "玉器制作"],
+    "institution_innovations": ["父系氏族确立", "私有制萌芽"]
+  },
+  {
+    "id": "majiayao",
+    "name": "马家窑 (Majiayao)",
+    "period": "BC 3300 - BC 2050",
+    "start_year": -3300,
+    "end_year": -2050,
+    "duration": 1250,
+    "capital": ["马家窑 (Majiayao)"],
+    "key_figures": ["马家窑部落首领"],
+    "territory": "黄河上游，甘青地区",
+    "territory_desc": "仰韶文化向西发展的分支，以精美的彩陶著称。",
+    "fall_analysis": {
+      "trigger": "气候变冷与环境恶化",
+      "structural": "彩陶制作成本过高，难以维持",
+      "external": "齐家文化的兴起"
+    },
+    "conquest_chain": {
+      "victor": "齐家文化",
+      "loser": "马家窑文化",
+      "battle": "文化更替",
+      "factor": "实用主义对审美主义的胜利"
+    },
+    "stats": {
+      "population_million": 0.2,
+      "temperature_anomaly": 0.4,
+      "war_frequency": 0.1,
+      "territory_sq_km": 0.5,
+      "tech_index": 55,
+      "economic_index": 35,
+      "institution_index": 35,
+      "cultural_index": 75,
+      "military_index": 20
+    },
+    "events": [
+      {"year": -3300, "name": "马家窑文化兴起", "type": "culture", "significance": "high"},
+      {"year": -3000, "name": "马家窑类型彩陶鼎盛", "type": "culture", "significance": "high"},
+      {"year": -2600, "name": "半山类型彩陶", "type": "culture", "significance": "medium"},
+      {"year": -2300, "name": "马厂类型彩陶", "type": "culture", "significance": "medium"},
+      {"year": -2050, "name": "马家窑文化衰亡", "type": "culture", "significance": "high"}
+    ],
+    "culture": ["彩陶艺术", "螺旋纹", "蛙纹", "舞蹈纹"],
+    "tech_innovations": ["彩陶烧制", "农业灌溉", "纺织技术"],
+    "institution_innovations": ["原始巫术", "祖先崇拜"]
+  },
+  {
+    "id": "longshan",
+    "name": "龙山 (Longshan)",
+    "period": "BC 2500 - BC 2000",
+    "start_year": -2500,
+    "end_year": -2000,
+    "duration": 500,
+    "capital": ["城子崖 (Chengziya)"],
+    "key_figures": ["龙山部落联盟首领"],
+    "territory": "黄河中下游，海岱至中原",
+    "territory_desc": "新石器时代晚期，众多城址出现，标志着早期国家的萌芽。",
+    "fall_analysis": {
+      "trigger": "向青铜时代过渡",
+      "structural": "各文化区独立发展，缺乏统一整合",
+      "external": "气候变冷与社会动荡"
+    },
+    "conquest_chain": {
+      "victor": "夏王朝",
+      "loser": "龙山文化",
+      "battle": "文明诞生",
+      "factor": "从部落联盟到早期国家的跨越"
+    },
+    "stats": {
+      "population_million": 0.8,
+      "temperature_anomaly": 0.2,
+      "war_frequency": 0.3,
+      "territory_sq_km": 0.6,
+      "tech_index": 55,
+      "economic_index": 50,
+      "institution_index": 50,
+      "cultural_index": 60,
+      "military_index": 40
+    },
+    "events": [
+      {"year": -2500, "name": "龙山文化兴起", "type": "culture", "significance": "high"},
+      {"year": -2300, "name": "城子崖等城址建成", "type": "politic", "significance": "high"},
+      {"year": -2100, "name": "蛋壳黑陶制作高峰期", "type": "culture", "significance": "medium"},
+      {"year": -2000, "name": "龙山文化向青铜时代过渡", "type": "culture", "significance": "high"}
+    ],
+    "culture": ["黑陶", "蛋壳陶", "卜骨", "夯土城墙"],
+    "tech_innovations": ["快轮制陶", "夯筑技术", "占卜习俗"],
+    "institution_innovations": ["早期城市", "军事防御", "阶级分化"]
+  },
+  {
+    "id": "qujialing",
+    "name": "屈家岭 (Qujialing)",
+    "period": "BC 3300 - BC 2600",
+    "start_year": -3300,
+    "end_year": -2600,
+    "duration": 700,
+    "capital": ["屈家岭 (Qujialing)"],
+    "key_figures": ["屈家岭部落首领"],
+    "territory": "长江中游，江汉平原",
+    "territory_desc": "长江中游重要的新石器时代文化，以稻作农业和蛋壳彩陶为特色。",
+    "fall_analysis": {
+      "trigger": "石家河文化的兴起",
+      "structural": "文化中心转移",
+      "external": "与周边文化的融合"
+    },
+    "conquest_chain": {
+      "victor": "石家河文化",
+      "loser": "屈家岭文化",
+      "battle": "文化传承",
+      "factor": "技术与文化的延续"
+    },
+    "stats": {
+      "population_million": 0.3,
+      "temperature_anomaly": 0.6,
+      "war_frequency": 0.08,
+      "territory_sq_km": 0.3,
+      "tech_index": 50,
+      "economic_index": 45,
+      "institution_index": 35,
+      "cultural_index": 60,
+      "military_index": 20
+    },
+    "events": [
+      {"year": -3300, "name": "屈家岭文化兴起", "type": "culture", "significance": "high"},
+      {"year": -3000, "name": "稻作农业繁荣", "type": "tech", "significance": "medium"},
+      {"year": -2800, "name": "蛋壳彩陶制作", "type": "culture", "significance": "medium"},
+      {"year": -2600, "name": "过渡为石家河文化", "type": "culture", "significance": "high"}
+    ],
+    "culture": ["蛋壳彩陶", "稻作农业", "双腹耳器", "陶纺轮"],
+    "tech_innovations": ["水稻栽培", "快轮制陶", "纺织技术"],
+    "institution_innovations": ["稻作农耕社会", "原始宗教"]
+  },
+  {
+    "id": "shijiahe",
+    "name": "石家河 (Shijiahe)",
+    "period": "BC 2600 - BC 2000",
+    "start_year": -2600,
+    "end_year": -2000,
+    "duration": 600,
+    "capital": ["石家河 (Shijiahe)"],
+    "key_figures": ["石家河部落首领"],
+    "territory": "长江中游，江汉平原",
+    "territory_desc": "长江中游新石器时代晚期的重要文化，拥有大型城址和玉器制作工艺。",
+    "fall_analysis": {
+      "trigger": "中原文化南下",
+      "structural": "神权统治成本过高",
+      "external": "二里头文化的影响"
+    },
+    "conquest_chain": {
+      "victor": "中原文化",
+      "loser": "石家河文化",
+      "battle": "文化融合",
+      "factor": "中原文明的辐射力"
+    },
+    "stats": {
+      "population_million": 0.5,
+      "temperature_anomaly": 0.3,
+      "war_frequency": 0.2,
+      "territory_sq_km": 0.4,
+      "tech_index": 55,
+      "economic_index": 50,
+      "institution_index": 45,
+      "cultural_index": 65,
+      "military_index": 30
+    },
+    "events": [
+      {"year": -2600, "name": "石家河文化兴起", "type": "culture", "significance": "high"},
+      {"year": -2300, "name": "石家河城址建成", "type": "politic", "significance": "high"},
+      {"year": -2100, "name": "玉器制作高峰期", "type": "culture", "significance": "medium"},
+      {"year": -2000, "name": "石家河文化衰亡", "type": "culture", "significance": "high"}
+    ],
+    "culture": ["玉器", "陶塑人像", "蛋壳红陶", "瓮棺葬"],
+    "tech_innovations": ["玉器制作", "制陶技术", "筑城技术"],
+    "institution_innovations": ["早期城市", "神权统治", "祖先崇拜"]
+  },
+  {
+    "id": "wucheng",
+    "name": "吴城 (Wucheng)",
+    "period": "BC 1500 - BC 1000",
+    "start_year": -1500,
+    "end_year": -1000,
+    "duration": 500,
+    "capital": ["吴城 (Wucheng)"],
+    "key_figures": ["吴城方国首领"],
+    "territory": "长江中游，赣江流域",
+    "territory_desc": "商代南方重要的方国文化，拥有独特的青铜铸造技术和文字符号。",
+    "fall_analysis": {
+      "trigger": "周人灭商后的文化变迁",
+      "structural": "方国联盟松散",
+      "external": "周文化的南下"
+    },
+    "conquest_chain": {
+      "victor": "周文化",
+      "loser": "吴城文化",
+      "battle": "文化更替",
+      "factor": "政治格局的巨变"
+    },
+    "stats": {
+      "population_million": 0.3,
+      "temperature_anomaly": 0.1,
+      "war_frequency": 0.3,
+      "territory_sq_km": 0.2,
+      "tech_index": 60,
+      "economic_index": 45,
+      "institution_index": 50,
+      "cultural_index": 55,
+      "military_index": 35
+    },
+    "events": [
+      {"year": -1500, "name": "吴城文化兴起", "type": "culture", "significance": "high"},
+      {"year": -1300, "name": "青铜铸造业繁荣", "type": "tech", "significance": "high"},
+      {"year": -1100, "name": "吴城文字使用", "type": "culture", "significance": "medium"},
+      {"year": -1000, "name": "吴城文化衰亡", "type": "culture", "significance": "high"}
+    ],
+    "culture": ["青铜铸造", "原始瓷", "吴城文字", "云雷纹"],
+    "tech_innovations": ["青铜铸造", "原始瓷烧制", "文字符号"],
+    "institution_innovations": ["方国体制", "祭祀礼仪"]
+  },
+  {
+    "id": "loulan",
+    "name": "楼兰/西域 (Loulan/Western Regions)",
+    "period": "BC 200 - AD 400",
+    "start_year": -200,
+    "end_year": 400,
+    "duration": 600,
+    "capital": ["楼兰 (Loulan)", "鄯善 (Shanshan)"],
+    "key_figures": ["楼兰王", "鄯善王"],
+    "territory": "塔里木盆地东缘，罗布泊地区",
+    "territory_desc": "丝绸之路上的重要绿洲王国，是东西方文明交流的枢纽。",
+    "fall_analysis": {
+      "trigger": "丝绸之路变迁与环境恶化",
+      "structural": "绿洲经济脆弱，过度依赖贸易",
+      "external": "罗布泊干涸，丝路北移"
+    },
+    "conquest_chain": {
+      "victor": "自然环境",
+      "loser": "楼兰",
+      "battle": "沙漠化",
+      "factor": "绿洲文明的脆弱性"
+    },
+    "stats": {
+      "population_million": 0.1,
+      "temperature_anomaly": 0.0,
+      "war_frequency": 0.5,
+      "territory_sq_km": 0.1,
+      "tech_index": 45,
+      "economic_index": 65,
+      "institution_index": 40,
+      "cultural_index": 55,
+      "military_index": 30
+    },
+    "events": [
+      {"year": -200, "name": "楼兰王国建立", "type": "politic", "significance": "high"},
+      {"year": -108, "name": "汉使张骞通西域", "type": "culture", "significance": "high"},
+      {"year": -77, "name": "傅介子刺杀楼兰王，改名鄯善", "type": "politic", "significance": "high"},
+      {"year": 300, "name": "罗布泊开始干涸", "type": "tech", "significance": "medium"},
+      {"year": 400, "name": "楼兰废弃", "type": "politic", "significance": "high"}
+    ],
+    "culture": ["佉卢文", "丝绸贸易", "佛教艺术", "绿洲农业"],
+    "tech_innovations": ["灌溉技术", "纺织技术", "商贸体系"],
+    "institution_innovations": ["绿洲城邦", "双语制", "贸易中介"]
+  },
+  {
+    "id": "nanyue",
+    "name": "南越 (Nanyue)",
+    "period": "BC 204 - BC 111",
+    "start_year": -204,
+    "end_year": -111,
+    "duration": 93,
+    "capital": ["番禺 (Panyu)"],
+    "key_figures": ["赵佗", "赵昧"],
+    "territory": "岭南地区，两广及越南北部",
+    "territory_desc": "秦末汉初岭南地区的割据政权，是中原文化与岭南文化融合的重要时期。",
+    "fall_analysis": {
+      "trigger": "汉武帝灭南越",
+      "structural": "内部权力斗争，国力衰弱",
+      "external": "汉朝的军事压力"
+    },
+    "conquest_chain": {
+      "victor": "汉 (Han)",
+      "loser": "南越",
+      "battle": "汉平南越之战",
+      "factor": "大一统的历史趋势"
+    },
+    "stats": {
+      "population_million": 1.0,
+      "temperature_anomaly": 0.3,
+      "war_frequency": 0.4,
+      "territory_sq_km": 0.5,
+      "tech_index": 55,
+      "economic_index": 60,
+      "institution_index": 55,
+      "cultural_index": 60,
+      "military_index": 40
+    },
+    "events": [
+      {"year": -204, "name": "赵佗建立南越国", "type": "politic", "significance": "high"},
+      {"year": -196, "name": "陆贾出使南越，赵佗称臣", "type": "politic", "significance": "high"},
+      {"year": -137, "name": "赵佗去世，赵昧继位", "type": "politic", "significance": "medium"},
+      {"year": -112, "name": "吕嘉之乱", "type": "war", "significance": "high"},
+      {"year": -111, "name": "汉武帝灭南越", "type": "war", "significance": "high"}
+    ],
+    "culture": ["越汉融合", "造船技术", "海外贸易", "铜鼓"],
+    "tech_innovations": ["造船技术", "青铜器", "海外贸易"],
+    "institution_innovations": ["郡国并行", "越汉共治", "海外贸易体系"]
+  },
+  {
+    "id": "yelang",
+    "name": "夜郎 (Yelang)",
+    "period": "BC 300 - BC 27",
+    "start_year": -300,
+    "end_year": -27,
+    "duration": 273,
+    "capital": ["夜郎邑 (Yelang City)"],
+    "key_figures": ["夜郎王"],
+    "territory": "西南地区，贵州及周边",
+    "territory_desc": "西南夷中最大的方国，以\"夜郎自大\"的典故闻名。",
+    "fall_analysis": {
+      "trigger": "汉灭夜郎",
+      "structural": "方国联盟松散，缺乏统一指挥",
+      "external": "汉朝的扩张"
+    },
+    "conquest_chain": {
+      "victor": "汉 (Han)",
+      "loser": "夜郎",
+      "battle": "汉平西南夷",
+      "factor": "中原文明的扩张"
+    },
+    "stats": {
+      "population_million": 0.3,
+      "temperature_anomaly": 0.2,
+      "war_frequency": 0.3,
+      "territory_sq_km": 0.3,
+      "tech_index": 45,
+      "economic_index": 40,
+      "institution_index": 35,
+      "cultural_index": 50,
+      "military_index": 25
+    },
+    "events": [
+      {"year": -300, "name": "夜郎国兴起", "type": "culture", "significance": "high"},
+      {"year": -135, "name": "唐蒙出使夜郎", "type": "politic", "significance": "high"},
+      {"year": -111, "name": "夜郎归附汉朝", "type": "politic", "significance": "medium"},
+      {"year": -27, "name": "汉灭夜郎，设郡县", "type": "war", "significance": "high"}
+    ],
+    "culture": ["铜鼓文化", "干栏式建筑", "夜郎文化", "竹王传说"],
+    "tech_innovations": ["铜鼓铸造", "农业技术", "纺织技术"],
+    "institution_innovations": ["方国联盟", "部落首领制"]
+  },
+  {
+    "id": "liangzhu",
+    "name": "良渚 (Liangzhu)",
+    "period": "BC 3300 - BC 2300",
+    "start_year": -3300,
+    "end_year": -2300,
+    "duration": 1000,
+    "capital": ["莫角山 (Mojiaoshan)"],
+    "key_figures": ["良渚神王"],
+    "territory": "太湖流域，长江下游三角洲",
+    "territory_desc": "控制整个太湖流域，修建了世界上最早的大型水利系统。",
+    "fall_analysis": {
+      "trigger": "大洪水与环境崩溃",
+      "structural": "神权过度消耗社会资源，水利系统维护成本过高",
+      "external": "气候变冷导致洪灾频发"
+    },
+    "conquest_chain": {
+      "victor": "自然环境",
+      "loser": "良渚",
+      "battle": "大洪水",
+      "factor": "系统脆弱性在极端气候下暴露"
+    },
+    "stats": {
+      "population_million": 1.0,
+      "temperature_anomaly": 0.5,
+      "war_frequency": 0.1,
+      "territory_sq_km": 0.3,
+      "tech_index": 60,
+      "economic_index": 55,
+      "institution_index": 65,
+      "cultural_index": 70,
+      "military_index": 40
+    },
+    "events": [
+      {"year": -3300, "name": "良渚文化兴起", "type": "culture", "significance": "high"},
+      {"year": -3000, "name": "开始修建大型水利系统", "type": "tech", "significance": "high"},
+      {"year": -2800, "name": "莫角山宫殿区建成", "type": "politic", "significance": "high"},
+      {"year": -2500, "name": "反山大墓建成，玉琮王出土", "type": "culture", "significance": "medium"},
+      {"year": -2300, "name": "良渚文化衰亡", "type": "politic", "significance": "high"}
+    ],
+    "culture": ["玉琮", "水利系统", "稻作农业", "草裹泥"],
+    "tech_innovations": ["草裹泥筑坝", "水利工程", "玉器制作"],
+    "institution_innovations": ["神权统治", "标准化生产", "工程动员"]
+  },
+  {
+    "id": "hongshan",
+    "name": "红山 (Hongshan)",
+    "period": "BC 4000 - BC 3000",
+    "start_year": -4000,
+    "end_year": -3000,
+    "duration": 1000,
+    "capital": ["牛河梁 (Niuheliang) - 圣地"],
+    "key_figures": ["红山萨满"],
+    "territory": "辽西地区，西拉木伦河流域",
+    "territory_desc": "跨区域的精神共同体，没有大型都城，只有祭祀中心。",
+    "fall_analysis": {
+      "trigger": "气候变冷与环境恶化",
+      "structural": "去中心化系统缺乏统一指挥能力",
+      "external": "周边族群压力"
+    },
+    "conquest_chain": {
+      "victor": "环境变化",
+      "loser": "红山",
+      "battle": "气候变迁",
+      "factor": "去中心化系统的脆弱性"
+    },
+    "stats": {
+      "population_million": 0.5,
+      "temperature_anomaly": 0.3,
+      "war_frequency": 0.05,
+      "territory_sq_km": 0.5,
+      "tech_index": 55,
+      "economic_index": 40,
+      "institution_index": 45,
+      "cultural_index": 80,
+      "military_index": 25
+    },
+    "events": [
+      {"year": -4000, "name": "红山文化兴起", "type": "culture", "significance": "high"},
+      {"year": -3500, "name": "牛河梁女神庙建成", "type": "culture", "significance": "high"},
+      {"year": -3300, "name": "玉猪龙制作高峰期", "type": "culture", "significance": "medium"},
+      {"year": -3000, "name": "红山文化衰亡", "type": "politic", "significance": "high"}
+    ],
+    "culture": ["玉猪龙", "女神庙", "积石冢", "玉礼器"],
+    "tech_innovations": ["玉器制作", "线切割技术"],
+    "institution_innovations": ["去中心化共识", "高成本信号机制"]
+  },
+  {
+    "id": "taosi",
+    "name": "陶寺 (Taosi)",
+    "period": "BC 2300 - BC 1900",
+    "start_year": -2300,
+    "end_year": -1900,
+    "duration": 400,
+    "capital": ["陶寺 (Taosi)"],
+    "key_figures": ["陶寺王", "时间祭司"],
+    "territory": "晋南地区，汾河流域",
+    "territory_desc": "最早的观象台所在地，垄断了对时间的解释权。",
+    "fall_analysis": {
+      "trigger": "社会暴动与毁墓运动",
+      "structural": "信息垄断导致阶级矛盾激化",
+      "external": "周边族群压力"
+    },
+    "conquest_chain": {
+      "victor": "底层民众",
+      "loser": "陶寺精英",
+      "battle": "陶寺革命",
+      "factor": "时间垄断导致的阶级仇恨"
+    },
+    "stats": {
+      "population_million": 0.8,
+      "temperature_anomaly": -0.2,
+      "war_frequency": 0.3,
+      "territory_sq_km": 0.2,
+      "tech_index": 50,
+      "economic_index": 55,
+      "institution_index": 60,
+      "cultural_index": 65,
+      "military_index": 35
+    },
+    "events": [
+      {"year": -2300, "name": "陶寺文化兴起", "type": "culture", "significance": "high"},
+      {"year": -2100, "name": "观象台建成，垄断授时权", "type": "tech", "significance": "high"},
+      {"year": -2000, "name": "彩绘龙盘制作", "type": "culture", "significance": "medium"},
+      {"year": -1900, "name": "社会暴动，毁墓运动", "type": "war", "significance": "high"}
+    ],
+    "culture": ["观象台", "彩绘龙盘", "土鼓", "特磬"],
+    "tech_innovations": ["天文观测", "历法制定"],
+    "institution_innovations": ["时间垄断", "信息不对称统治"]
+  },
+  {
+    "id": "shimao",
+    "name": "石峁 (Shimao)",
+    "period": "BC 2300 - BC 1800",
+    "start_year": -2300,
+    "end_year": -1800,
+    "duration": 500,
+    "capital": ["石峁 (Shimao)"],
+    "key_figures": ["石峁首领"],
+    "territory": "陕北高原，秃尾河流域",
+    "territory_desc": "东亚史前最大的石砌城址，拥有复杂的军事防御设施。",
+    "fall_analysis": {
+      "trigger": "内部叛乱",
+      "structural": "极端暴力统治导致内部矛盾激化",
+      "external": "气候持续变冷"
+    },
+    "conquest_chain": {
+      "victor": "内部叛乱者",
+      "loser": "石峁精英",
+      "battle": "皇城台政变",
+      "factor": "零和博弈策略的反噬"
+    },
+    "stats": {
+      "population_million": 1.2,
+      "temperature_anomaly": -1.0,
+      "war_frequency": 1.5,
+      "territory_sq_km": 0.4,
+      "tech_index": 55,
+      "economic_index": 45,
+      "institution_index": 50,
+      "cultural_index": 40,
+      "military_index": 85
+    },
+    "events": [
+      {"year": -2300, "name": "石峁建城", "type": "politic", "significance": "high"},
+      {"year": -2100, "name": "皇城台扩建", "type": "politic", "significance": "high"},
+      {"year": -2000, "name": "马面、瓮城等防御设施建成", "type": "tech", "significance": "medium"},
+      {"year": -1900, "name": "头骨祭祀高峰期", "type": "culture", "significance": "medium"},
+      {"year": -1800, "name": "石峁衰亡", "type": "politic", "significance": "high"}
+    ],
+    "culture": ["石砌城墙", "头骨祭祀", "藏玉于墙"],
+    "tech_innovations": ["马面防御", "瓮城设计", "石砌建筑"],
+    "institution_innovations": ["恐怖平衡", "零和博弈策略"]
+  },
+  {
+    "id": "sanxingdui",
+    "name": "三星堆/古蜀 (Sanxingdui/Shu)",
+    "period": "BC 2800 - BC 316",
+    "start_year": -2800,
+    "end_year": -316,
+    "duration": 2484,
+    "capital": ["三星堆", "金沙"],
+    "key_figures": ["古蜀王", "蚕丛", "鱼凫", "杜宇", "开明"],
+    "territory": "四川盆地，成都平原",
+    "territory_desc": "在封闭的四川盆地中独立演化，与南亚有贸易联系。",
+    "fall_analysis": {
+      "trigger": "秦灭巴蜀",
+      "structural": "神权统治成本过高，军事技术落后",
+      "external": "秦国耕战体系的降维打击"
+    },
+    "conquest_chain": {
+      "victor": "秦 (Qin)",
+      "loser": "古蜀",
+      "battle": "司马错伐蜀",
+      "factor": "实用主义对浪漫主义的胜利"
+    },
+    "stats": {
+      "population_million": 2.0,
+      "temperature_anomaly": 0.2,
+      "war_frequency": 0.4,
+      "territory_sq_km": 0.6,
+      "tech_index": 70,
+      "economic_index": 60,
+      "institution_index": 55,
+      "cultural_index": 90,
+      "military_index": 45
+    },
+    "events": [
+      {"year": -2800, "name": "宝墩文化兴起", "type": "culture", "significance": "high"},
+      {"year": -1800, "name": "三星堆文化鼎盛", "type": "culture", "significance": "high"},
+      {"year": -1200, "name": "青铜神树、纵目面具制作", "type": "culture", "significance": "high"},
+      {"year": -1100, "name": "最后一场大祭，祭祀坑掩埋", "type": "culture", "significance": "high"},
+      {"year": -600, "name": "金沙时期，政治中心转移", "type": "politic", "significance": "medium"},
+      {"year": -316, "name": "秦灭巴蜀，古蜀亡", "type": "war", "significance": "high"}
+    ],
+    "culture": ["青铜神树", "纵目面具", "金面具", "象牙祭祀", "太阳神鸟"],
+    "tech_innovations": ["青铜铸造", "丝绸技术", "高温冶炼"],
+    "institution_innovations": ["神权视觉系统", "格式化仪式"]
+  },
+  {
+    "id": "xia",
+    "name": "夏 (Xia)",
+    "period": "BC 2070 - BC 1600",
+    "start_year": -2070,
+    "end_year": -1600,
+    "duration": 470,
+    "capital": ["阳城 (Yangcheng)", "二里头 (Erlitou)"],
+    "key_figures": ["大禹 (Yu the Great)", "启 (Qi)", "桀 (Jie)"],
+    "territory": "河南中西部、山西南部 (Henan/Shanxi)",
+    "territory_desc": "松散的方国联盟，核心控制区仅限于伊洛河流域。",
+    "fall_analysis": {
+      "trigger": "鸣条之战 (Battle of Mingtiao)",
+      "structural": "方国联盟松散，神权与王权未完全整合 (Loose Alliance)",
+      "external": "商部落在东方的崛起与青铜技术优势 (Rise of Shang)"
+    },
+    "conquest_chain": {
+      "victor": "商 (Shang)",
+      "loser": "夏 (Xia)",
+      "battle": "鸣条之战",
+      "factor": "商汤的'网开一面'政治联盟策略 vs 夏桀的孤立"
+    },
+    "stats": {
+      "population_million": 2.5,
+      "temperature_anomaly": -0.5,
+      "war_frequency": 0.2,
+      "territory_sq_km": 0.5,
+      "tech_index": 50,
+      "economic_index": 50,
+      "institution_index": 55,
+      "cultural_index": 55,
+      "military_index": 50
+    },
+    "events": [
+      {"year": -2070, "name": "大禹治水成功，建立夏朝", "type": "politic", "significance": "high"},
+      {"year": -1900, "name": "二里头文化兴起", "type": "culture", "significance": "high"},
+      {"year": -1600, "name": "鸣条之战，夏亡", "type": "war", "significance": "high"}
+    ],
+    "culture": ["青铜萌芽", "二里头宫殿"],
+    "tech_innovations": ["青铜铸造", "水利工程"],
+    "institution_innovations": ["家天下", "方国联盟"]
+  },
+  {
+    "id": "shang",
+    "name": "商 (Shang)",
+    "period": "BC 1600 - BC 1046",
+    "start_year": -1600,
+    "end_year": -1046,
+    "duration": 554,
+    "capital": ["亳 (Bo)", "殷 (Yin)"],
+    "key_figures": ["成汤 (Tang)", "武丁 (Wu Ding)", "纣王 (Zhou)"],
+    "territory": "黄河中下游，势力达长江流域",
+    "territory_desc": "以大邑商为中心，通过方国进行间接统治，影响力远达江西吴城。",
+    "fall_analysis": {
+      "trigger": "牧野之战 (Battle of Muye)",
+      "structural": "人祭导致的恐怖统治引发周边方国反感 (Terror Rule)",
+      "external": "周部落利用战车技术与羌人结盟 (Zhou-Qiang Alliance)"
+    },
+    "conquest_chain": {
+      "victor": "周 (Zhou)",
+      "loser": "商 (Shang)",
+      "battle": "牧野之战",
+      "factor": "周武王的闪电战与商军奴隶倒戈"
+    },
+    "stats": {
+      "population_million": 5.0,
+      "temperature_anomaly": 0.2,
+      "war_frequency": 0.5,
+      "territory_sq_km": 1.2,
+      "tech_index": 65,
+      "economic_index": 55,
+      "institution_index": 60,
+      "cultural_index": 70,
+      "military_index": 60
+    },
+    "events": [
+      {"year": -1600, "name": "商汤灭夏", "type": "war", "significance": "high"},
+      {"year": -1300, "name": "盘庚迁殷", "type": "politic", "significance": "high"},
+      {"year": -1250, "name": "武丁盛世", "type": "politic", "significance": "medium"},
+      {"year": -1046, "name": "牧野之战，商亡", "type": "war", "significance": "high"}
+    ],
+    "culture": ["甲骨文", "青铜巅峰", "人祭"],
+    "tech_innovations": ["甲骨文", "青铜铸造", "车马技术"],
+    "institution_innovations": ["神权政治", "甲骨文档案系统"]
+  },
+  {
+    "id": "chu",
+    "name": "楚 (Chu)",
+    "period": "BC 1042 - BC 223",
+    "start_year": -1042,
+    "end_year": -223,
+    "duration": 819,
+    "capital": ["丹阳", "郢都", "寿春"],
+    "key_figures": ["熊绎", "楚庄王", "屈原", "春申君"],
+    "territory": "长江流域，南至岭南，东抵大海",
+    "territory_desc": "南方的浪漫主义文明，不信周礼，只信鬼神，与中原文明迥异。",
+    "fall_analysis": {
+      "trigger": "秦灭楚之战",
+      "structural": "贵族政治腐朽，改革失败",
+      "external": "秦国的军事压力"
+    },
+    "conquest_chain": {
+      "victor": "秦 (Qin)",
+      "loser": "楚 (Chu)",
+      "battle": "蕲南之战",
+      "factor": "楚虽三户，亡秦必楚"
+    },
+    "stats": {
+      "population_million": 8.0,
+      "temperature_anomaly": 0.0,
+      "war_frequency": 1.5,
+      "territory_sq_km": 2.0,
+      "tech_index": 60,
+      "economic_index": 65,
+      "institution_index": 55,
+      "cultural_index": 85,
+      "military_index": 60
+    },
+    "events": [
+      {"year": -1042, "name": "熊绎受封，建立楚国", "type": "politic", "significance": "high"},
+      {"year": -606, "name": "楚庄王问鼎中原", "type": "politic", "significance": "high"},
+      {"year": -500, "name": "曾侯乙编钟制作", "type": "culture", "significance": "medium"},
+      {"year": -340, "name": "屈原诞生", "type": "culture", "significance": "medium"},
+      {"year": -278, "name": "郢都陷落，屈原投江", "type": "war", "significance": "high"},
+      {"year": -223, "name": "秦灭楚", "type": "war", "significance": "high"}
+    ],
+    "culture": ["楚辞", "曾侯乙编钟", "漆器", "巫山神话"],
+    "tech_innovations": ["一钟双音", "丝绸刺绣", "漆工艺"],
+    "institution_innovations": ["人神共治", "非共识浪漫主义"]
+  },
+  {
+    "id": "zhou_west",
+    "name": "西周 (Western Zhou)",
+    "period": "BC 1046 - BC 771",
+    "start_year": -1046,
+    "end_year": -771,
+    "duration": 275,
+    "capital": ["镐京 (Haojing)"],
+    "key_figures": ["周公旦 (Duke of Zhou)", "周穆王 (King Mu)", "周幽王 (King You)"],
+    "territory": "分封制覆盖黄河及汉水流域",
+    "territory_desc": "通过分封制将统治范围扩展至山东、河北及汉水流域。",
+    "fall_analysis": {
+      "trigger": "申侯联合犬戎攻破镐京 (Quanrong Invasion)",
+      "structural": "血缘纽带随代际衰减，王室领地经济崩溃 (Feudal Decay)",
+      "external": "西北戎狄族群的军事压力 (Nomadic Pressure)"
+    },
+    "conquest_chain": {
+      "victor": "犬戎/诸侯",
+      "loser": "西周",
+      "battle": "镐京之乱",
+      "factor": "王室丧失对周边诸侯的军事威慑力"
+    },
+    "stats": {
+      "population_million": 10.0,
+      "temperature_anomaly": -0.8,
+      "war_frequency": 0.3,
+      "territory_sq_km": 1.5,
+      "tech_index": 55,
+      "economic_index": 60,
+      "institution_index": 75,
+      "cultural_index": 70,
+      "military_index": 55
+    },
+    "events": [
+      {"year": -1046, "name": "武王伐纣，建立西周", "type": "war", "significance": "high"},
+      {"year": -1042, "name": "周公摄政，制礼作乐", "type": "culture", "significance": "high"},
+      {"year": -841, "name": "国人暴动，共和行政", "type": "politic", "significance": "medium"},
+      {"year": -771, "name": "犬戎攻破镐京，西周亡", "type": "war", "significance": "high"}
+    ],
+    "culture": ["礼乐制度", "宗法制", "金文"],
+    "tech_innovations": ["青铜铸造", "马车技术"],
+    "institution_innovations": ["分封制", "宗法制", "礼乐制度"]
+  },
+  {
+    "id": "chunqiu_zhanguo",
+    "name": "春秋战国 (Spring & Autumn / Warring States)",
+    "period": "BC 770 - BC 221",
+    "start_year": -770,
+    "end_year": -221,
+    "duration": 549,
+    "capital": ["洛邑 (Luoyi) - Nominal"],
+    "key_figures": ["齐桓公", "孔子", "商鞅", "秦始皇"],
+    "territory": "诸侯割据，范围扩大至辽东、巴蜀、岭南",
+    "territory_desc": "华夏文化圈大幅扩展，秦灭巴蜀，楚吞吴越，赵武灵王胡服骑射扩展北疆。",
+    "fall_analysis": {
+      "trigger": "秦灭六国之战 (Qin's Wars of Unification)",
+      "structural": "封建贵族制无法适应铁器时代的高强度战争 (System Failure)",
+      "external": "秦国全动员体制的降维打击 (Total War)"
+    },
+    "conquest_chain": {
+      "victor": "秦 (Qin)",
+      "loser": "六国 (Six States)",
+      "battle": "长平之战(关键)",
+      "factor": "秦国的耕战体系与军功爵制"
+    },
+    "stats": {
+      "population_million": 30.0,
+      "temperature_anomaly": 0.0,
+      "war_frequency": 2.5,
+      "territory_sq_km": 2.8,
+      "tech_index": 70,
+      "economic_index": 65,
+      "institution_index": 60,
+      "cultural_index": 90,
+      "military_index": 75
+    },
+    "events": [
+      {"year": -770, "name": "平王东迁，春秋开始", "type": "politic", "significance": "high"},
+      {"year": -685, "name": "齐桓公称霸", "type": "politic", "significance": "medium"},
+      {"year": -551, "name": "孔子诞生", "type": "culture", "significance": "high"},
+      {"year": -453, "name": "三家分晋，战国开始", "type": "politic", "significance": "high"},
+      {"year": -356, "name": "商鞅变法", "type": "reform", "significance": "high"},
+      {"year": -260, "name": "长平之战", "type": "war", "significance": "high"}
+    ],
+    "culture": ["百家争鸣", "铁器普及", "法家思想"],
+    "tech_innovations": ["铁器", "牛耕", "水利工程"],
+    "institution_innovations": ["郡县制", "军功爵制", "变法运动"]
+  },
+  {
+    "id": "qin",
+    "name": "秦 (Qin)",
+    "period": "BC 221 - BC 207",
+    "start_year": -221,
+    "end_year": -207,
+    "duration": 14,
+    "capital": ["咸阳 (Xianyang)"],
+    "key_figures": ["始皇帝 (First Emperor)", "李斯", "胡亥"],
+    "territory": "东至海，西至临洮，南至北向户，北据河为塞",
+    "territory_desc": "首次实现大一统，设郡县，筑长城，通直道，疆域囊括岭南。",
+    "fall_analysis": {
+      "trigger": "大泽乡起义 (Dazexiang Uprising)",
+      "structural": "过度动员导致民力枯竭，六国贵族复辟力量 (Over-mobilization)",
+      "external": "无（主要为内部崩溃）"
+    },
+    "conquest_chain": {
+      "victor": "汉 (Han)",
+      "loser": "秦 (Qin)",
+      "battle": "巨鹿之战/垓下之战",
+      "factor": "秦系统的刚性断裂与刘邦的统战策略"
+    },
+    "stats": {
+      "population_million": 20.0,
+      "temperature_anomaly": 0.5,
+      "war_frequency": 1.0,
+      "territory_sq_km": 3.4,
+      "tech_index": 70,
+      "economic_index": 60,
+      "institution_index": 80,
+      "cultural_index": 60,
+      "military_index": 80
+    },
+    "events": [
+      {"year": -221, "name": "秦始皇统一六国", "type": "politic", "significance": "high"},
+      {"year": -214, "name": "征服百越，修筑灵渠", "type": "war", "significance": "medium"},
+      {"year": -210, "name": "秦始皇驾崩", "type": "politic", "significance": "high"},
+      {"year": -209, "name": "陈胜吴广起义", "type": "war", "significance": "high"}
+    ],
+    "culture": ["书同文", "车同轨", "郡县制"],
+    "tech_innovations": ["驰道", "灵渠", "标准化"],
+    "institution_innovations": ["皇帝制", "郡县制", "中央集权"]
+  },
+  {
+    "id": "han_west",
+    "name": "西汉 (Western Han)",
+    "period": "BC 202 - AD 8",
+    "start_year": -202,
+    "end_year": 8,
+    "duration": 210,
+    "capital": ["长安 (Chang'an)"],
+    "key_figures": ["汉武帝 (Wu)", "霍去病", "王莽"],
+    "territory": "西域都护府，朝鲜四郡，百越九郡",
+    "territory_desc": "汉武帝时期大幅扩张，打通西域，设立西域都护府，实际控制塔里木盆地。",
+    "fall_analysis": {
+      "trigger": "王莽篡汉 (Usurpation of Wang Mang)",
+      "structural": "土地兼并与外戚干政 (Land Annexation)",
+      "external": "无"
+    },
+    "conquest_chain": {
+      "victor": "新 (Xin)",
+      "loser": "西汉",
+      "battle": "和平演变",
+      "factor": "儒家谶纬学说为王莽提供了合法性"
+    },
+    "stats": {
+      "population_million": 60.0,
+      "temperature_anomaly": 0.3,
+      "war_frequency": 0.8,
+      "territory_sq_km": 6.0,
+      "tech_index": 65,
+      "economic_index": 75,
+      "institution_index": 75,
+      "cultural_index": 80,
+      "military_index": 75
+    },
+    "events": [
+      {"year": -202, "name": "刘邦称帝，建立西汉", "type": "politic", "significance": "high"},
+      {"year": -138, "name": "张骞出使西域", "type": "culture", "significance": "high"},
+      {"year": -119, "name": "漠北之战，击溃匈奴", "type": "war", "significance": "high"},
+      {"year": -60, "name": "设立西域都护府", "type": "politic", "significance": "medium"},
+      {"year": 8, "name": "王莽篡汉", "type": "politic", "significance": "high"}
+    ],
+    "culture": ["丝绸之路", "独尊儒术", "史记"],
+    "tech_innovations": ["铁器普及", "造纸术萌芽", "丝绸技术"],
+    "institution_innovations": ["察举制", "刺史制", "独尊儒术"]
+  },
+  {
+    "id": "han_east",
+    "name": "东汉 (Eastern Han)",
+    "period": "AD 25 - AD 220",
+    "start_year": 25,
+    "end_year": 220,
+    "duration": 195,
+    "capital": ["洛阳 (Luoyang)"],
+    "key_figures": ["光武帝", "蔡伦", "曹操"],
+    "territory": "恢复西汉疆域，但对西域控制减弱",
+    "territory_desc": "光武中兴恢复版图，班超经营西域，但后期对边疆控制力减弱。",
+    "fall_analysis": {
+      "trigger": "黄巾起义 (Yellow Turban Rebellion)",
+      "structural": "豪强地主经济瓦解中央集权，宦官外戚轮流执政",
+      "external": "羌乱持续百年消耗帝国财政"
+    },
+    "conquest_chain": {
+      "victor": "魏/晋",
+      "loser": "东汉",
+      "battle": "赤壁之战(分裂)",
+      "factor": "州牧割据导致中央政权名存实亡"
+    },
+    "stats": {
+      "population_million": 50.0,
+      "temperature_anomaly": -0.2,
+      "war_frequency": 1.5,
+      "territory_sq_km": 5.8,
+      "tech_index": 70,
+      "economic_index": 70,
+      "institution_index": 65,
+      "cultural_index": 75,
+      "military_index": 70
+    },
+    "events": [
+      {"year": 25, "name": "光武中兴", "type": "politic", "significance": "high"},
+      {"year": 105, "name": "蔡伦改进造纸术", "type": "culture", "significance": "high"},
+      {"year": 184, "name": "黄巾起义", "type": "war", "significance": "high"},
+      {"year": 208, "name": "赤壁之战", "type": "war", "significance": "high"},
+      {"year": 220, "name": "曹丕代汉", "type": "politic", "significance": "high"}
+    ],
+    "culture": ["造纸术", "佛教传入", "地动仪"],
+    "tech_innovations": ["造纸术", "地动仪", "瓷器"],
+    "institution_innovations": ["州牧制", "豪强经济"]
+  },
+  {
+    "id": "three_kingdoms",
+    "name": "三国两晋南北朝 (Wei/Jin/Northern-Southern)",
+    "period": "AD 220 - AD 589",
+    "start_year": 220,
+    "end_year": 589,
+    "duration": 369,
+    "capital": ["洛阳", "建康", "大同"],
+    "key_figures": ["曹丕", "司马炎", "孝文帝", "王羲之"],
+    "territory": "分裂时期，北方游牧民族入主中原",
+    "territory_desc": "北方五胡十六国更替，南方东晋南朝偏安，疆域破碎。",
+    "fall_analysis": {
+      "trigger": "八王之乱与五胡乱华",
+      "structural": "门阀士族垄断政治资源，皇权衰落",
+      "external": "气候变冷导致北方游牧民族大规模南迁 (Climate Cooling)"
+    },
+    "conquest_chain": {
+      "victor": "隋 (Sui)",
+      "loser": "陈/北周",
+      "battle": "隋灭陈之战",
+      "factor": "北方胡汉融合完成，南方士族腐朽"
+    },
+    "stats": {
+      "population_million": 35.0,
+      "temperature_anomaly": -1.0,
+      "war_frequency": 3.0,
+      "territory_sq_km": 4.5,
+      "tech_index": 60,
+      "economic_index": 55,
+      "institution_index": 50,
+      "cultural_index": 85,
+      "military_index": 65
+    },
+    "events": [
+      {"year": 280, "name": "西晋统一", "type": "politic", "significance": "medium"},
+      {"year": 311, "name": "永嘉之乱", "type": "war", "significance": "high"},
+      {"year": 383, "name": "淝水之战", "type": "war", "significance": "high"},
+      {"year": 493, "name": "北魏孝文帝迁都洛阳", "type": "reform", "significance": "medium"},
+      {"year": 589, "name": "隋灭陈，统一全国", "type": "war", "significance": "high"}
+    ],
+    "culture": ["玄学", "书法", "石窟艺术"],
+    "tech_innovations": ["灌钢法", "瓷器", "农业技术"],
+    "institution_innovations": ["九品中正制", "均田制"]
+  },
+  {
+    "id": "sui",
+    "name": "隋 (Sui)",
+    "period": "AD 581 - AD 618",
+    "start_year": 581,
+    "end_year": 618,
+    "duration": 37,
+    "capital": ["大兴 (Daxing)", "洛阳"],
+    "key_figures": ["隋文帝", "隋炀帝"],
+    "territory": "重新统一，大运河贯通南北",
+    "territory_desc": "结束近400年分裂，疆域包括中原、江南及西域东部。",
+    "fall_analysis": {
+      "trigger": "高句丽战争失败与瓦岗军起义",
+      "structural": "大工程与战争导致国力透支 (Over-extension)",
+      "external": "突厥始毕可汗对北方起义军的支持"
+    },
+    "conquest_chain": {
+      "victor": "唐 (Tang)",
+      "loser": "隋",
+      "battle": "霍邑之战",
+      "factor": "李渊集团利用关陇贵族背景与农民军矛盾"
+    },
+    "stats": {
+      "population_million": 46.0,
+      "temperature_anomaly": -0.3,
+      "war_frequency": 1.2,
+      "territory_sq_km": 4.7,
+      "tech_index": 70,
+      "economic_index": 70,
+      "institution_index": 75,
+      "cultural_index": 65,
+      "military_index": 70
+    },
+    "events": [
+      {"year": 581, "name": "杨坚建立隋朝", "type": "politic", "significance": "high"},
+      {"year": 605, "name": "开凿大运河", "type": "economy", "significance": "high"},
+      {"year": 606, "name": "创立科举制", "type": "culture", "significance": "high"},
+      {"year": 612, "name": "三征高句丽", "type": "war", "significance": "medium"}
+    ],
+    "culture": ["科举制", "大运河", "三省六部"],
+    "tech_innovations": ["大运河", "赵州桥"],
+    "institution_innovations": ["科举制", "三省六部制"]
+  },
+  {
+    "id": "tang",
+    "name": "唐 (Tang)",
+    "period": "AD 618 - AD 907",
+    "start_year": 618,
+    "end_year": 907,
+    "duration": 289,
+    "capital": ["长安", "洛阳"],
+    "key_figures": ["李世民", "武则天", "李隆基"],
+    "territory": "极盛时辖境西至咸海，北逾贝加尔湖",
+    "territory_desc": "中国历史上版图极盛之一，羁縻州制度覆盖广泛，安史之乱后收缩。",
+    "fall_analysis": {
+      "trigger": "黄巢起义与朱温篡位",
+      "structural": "均田制瓦解导致府兵制失效，藩镇割据",
+      "external": "吐蕃与回纥对边疆的长期挤压"
+    },
+    "conquest_chain": {
+      "victor": "后梁 (Later Liang)",
+      "loser": "唐",
+      "battle": "白马之祸",
+      "factor": "中央禁军被藩镇彻底取代"
+    },
+    "stats": {
+      "population_million": 80.0,
+      "temperature_anomaly": 0.4,
+      "war_frequency": 1.8,
+      "territory_sq_km": 12.3,
+      "tech_index": 75,
+      "economic_index": 80,
+      "institution_index": 75,
+      "cultural_index": 90,
+      "military_index": 75
+    },
+    "events": [
+      {"year": 626, "name": "玄武门之变", "type": "politic", "significance": "high"},
+      {"year": 640, "name": "设立安西都护府", "type": "war", "significance": "medium"},
+      {"year": 690, "name": "武则天称帝", "type": "politic", "significance": "high"},
+      {"year": 755, "name": "安史之乱", "type": "war", "significance": "high"},
+      {"year": 878, "name": "黄巢起义", "type": "war", "significance": "high"}
+    ],
+    "culture": ["唐诗", "雕版印刷", "万国来朝"],
+    "tech_innovations": ["雕版印刷", "火药萌芽", "瓷器"],
+    "institution_innovations": ["科举制完善", "节度使制", "两税法"]
+  },
+  {
+    "id": "song",
+    "name": "宋 (Song)",
+    "period": "AD 960 - AD 1279",
+    "start_year": 960,
+    "end_year": 1279,
+    "duration": 319,
+    "capital": ["开封 (Kaifeng)", "临安 (Lin'an)"],
+    "key_figures": ["赵匡胤", "王安石", "岳飞"],
+    "territory": "失去幽云十六州，南宋偏安江南",
+    "territory_desc": "北宋失去燕云十六州，南宋退守秦岭淮河以南，版图最小的大一统王朝。",
+    "fall_analysis": {
+      "trigger": "崖山海战 (Battle of Yamen)",
+      "structural": "重文轻武导致军事积弱，冗官冗费财政危机",
+      "external": "蒙古铁骑的降维打击 (Mongol Conquest)"
+    },
+    "conquest_chain": {
+      "victor": "元 (Yuan)",
+      "loser": "宋",
+      "battle": "襄阳之战",
+      "factor": "蒙古的回回炮技术与水军建设"
+    },
+    "stats": {
+      "population_million": 110.0,
+      "temperature_anomaly": -0.5,
+      "war_frequency": 2.0,
+      "territory_sq_km": 2.8,
+      "tech_index": 85,
+      "economic_index": 85,
+      "institution_index": 70,
+      "cultural_index": 85,
+      "military_index": 55
+    },
+    "events": [
+      {"year": 960, "name": "陈桥兵变", "type": "politic", "significance": "high"},
+      {"year": 1004, "name": "澶渊之盟", "type": "politic", "significance": "high"},
+      {"year": 1069, "name": "王安石变法", "type": "reform", "significance": "high"},
+      {"year": 1127, "name": "靖康之变，北宋亡", "type": "war", "significance": "high"},
+      {"year": 1279, "name": "崖山海战，南宋亡", "type": "war", "significance": "high"}
+    ],
+    "culture": ["宋词", "理学", "活字印刷", "交子"],
+    "tech_innovations": ["活字印刷", "指南针", "火药应用"],
+    "institution_innovations": ["文官制", "纸币制度", "市舶司"]
+  },
+  {
+    "id": "yuan",
+    "name": "元 (Yuan)",
+    "period": "AD 1271 - AD 1368",
+    "start_year": 1271,
+    "end_year": 1368,
+    "duration": 97,
+    "capital": ["大都 (Dadu)"],
+    "key_figures": ["忽必烈", "耶律楚材"],
+    "territory": "中国历史上最大疆域，包括西伯利亚与西藏",
+    "territory_desc": "疆域空前辽阔，首次将西藏纳入行政版图，设立行省制度。",
+    "fall_analysis": {
+      "trigger": "红巾军起义与黄河大决口",
+      "structural": "四等人制导致民族矛盾激化，科举中断导致士大夫离心",
+      "external": "无（主要为内部崩溃）"
+    },
+    "conquest_chain": {
+      "victor": "明 (Ming)",
+      "loser": "元",
+      "battle": "徐达北伐",
+      "factor": "朱元璋'驱除胡虏'的民族主义动员"
+    },
+    "stats": {
+      "population_million": 85.0,
+      "temperature_anomaly": -0.2,
+      "war_frequency": 1.5,
+      "territory_sq_km": 13.7,
+      "tech_index": 70,
+      "economic_index": 65,
+      "institution_index": 60,
+      "cultural_index": 70,
+      "military_index": 85
+    },
+    "events": [
+      {"year": 1271, "name": "忽必烈定国号为元", "type": "politic", "significance": "high"},
+      {"year": 1279, "name": "统一中国", "type": "war", "significance": "high"},
+      {"year": 1292, "name": "马可波罗离开中国", "type": "culture", "significance": "medium"},
+      {"year": 1351, "name": "红巾军起义", "type": "war", "significance": "high"}
+    ],
+    "culture": ["元曲", "行省制", "青花瓷"],
+    "tech_innovations": ["回回炮", "海运"],
+    "institution_innovations": ["行省制", "四等人制", "怯薛制"]
+  },
+  {
+    "id": "ming",
+    "name": "明 (Ming)",
+    "period": "AD 1368 - AD 1644",
+    "start_year": 1368,
+    "end_year": 1644,
+    "duration": 276,
+    "capital": ["南京", "北京"],
+    "key_figures": ["朱元璋", "郑和", "崇祯"],
+    "territory": "继承元制，但失去了内亚控制权",
+    "territory_desc": "恢复汉地十八省，前期控制东北及越南，后期收缩至长城以内。",
+    "fall_analysis": {
+      "trigger": "李自成攻破北京与清军入关",
+      "structural": "白银流入骤减导致通货紧缩，驿站裁撤制造流民",
+      "external": "小冰期 (Little Ice Age) 导致北方饥荒，满洲崛起"
+    },
+    "conquest_chain": {
+      "victor": "清 (Qing)",
+      "loser": "明",
+      "battle": "山海关之战",
+      "factor": "吴三桂倒戈与满洲八旗的军事组织力"
+    },
+    "stats": {
+      "population_million": 150.0,
+      "temperature_anomaly": -1.5,
+      "war_frequency": 1.6,
+      "territory_sq_km": 6.5,
+      "tech_index": 75,
+      "economic_index": 75,
+      "institution_index": 70,
+      "cultural_index": 80,
+      "military_index": 65
+    },
+    "events": [
+      {"year": 1368, "name": "朱元璋建立明朝", "type": "politic", "significance": "high"},
+      {"year": 1405, "name": "郑和下西洋", "type": "culture", "significance": "high"},
+      {"year": 1449, "name": "土木堡之变", "type": "war", "significance": "high"},
+      {"year": 1581, "name": "一条鞭法", "type": "reform", "significance": "medium"},
+      {"year": 1644, "name": "甲申之变，明亡", "type": "war", "significance": "high"}
+    ],
+    "culture": ["小说", "阳明心学", "本草纲目"],
+    "tech_innovations": ["郑和宝船", "火器", "青花瓷"],
+    "institution_innovations": ["内阁制", "卫所制", "一条鞭法"]
+  },
+  {
+    "id": "qing",
+    "name": "清 (Qing)",
+    "period": "AD 1644 - AD 1912",
+    "start_year": 1644,
+    "end_year": 1912,
+    "duration": 268,
+    "capital": ["北京"],
+    "key_figures": ["康熙", "乾隆", "慈禧"],
+    "territory": "奠定现代中国版图，收复新疆、台湾",
+    "territory_desc": "奠定了现代中国版图基础，有效统治蒙古、新疆、西藏。",
+    "fall_analysis": {
+      "trigger": "辛亥革命 (Xinhai Revolution)",
+      "structural": "人口爆炸突破土地承载极限，满汉矛盾",
+      "external": "工业文明的冲击 (Western Imperialism)"
+    },
+    "conquest_chain": {
+      "victor": "民国 (Republic)",
+      "loser": "清",
+      "battle": "武昌起义",
+      "factor": "新军失控与立宪派的背离"
+    },
+    "stats": {
+      "population_million": 400.0,
+      "temperature_anomaly": 0.1,
+      "war_frequency": 1.1,
+      "territory_sq_km": 13.1,
+      "tech_index": 55,
+      "economic_index": 70,
+      "institution_index": 55,
+      "cultural_index": 60,
+      "military_index": 50
+    },
+    "events": [
+      {"year": 1644, "name": "清军入关", "type": "war", "significance": "high"},
+      {"year": 1662, "name": "收复台湾", "type": "war", "significance": "high"},
+      {"year": 1683, "name": "收复台湾", "type": "war", "significance": "high"},
+      {"year": 1689, "name": "尼布楚条约", "type": "politic", "significance": "medium"},
+      {"year": 1793, "name": "马戛尔尼访华", "type": "culture", "significance": "high"},
+      {"year": 1840, "name": "鸦片战争", "type": "war", "significance": "high"},
+      {"year": 1894, "name": "甲午战争", "type": "war", "significance": "high"},
+      {"year": 1911, "name": "武昌起义", "type": "war", "significance": "high"}
+    ],
+    "culture": ["京剧", "红楼梦", "考据学"],
+    "tech_innovations": ["洋务工业", "铁路", "电报"],
+    "institution_innovations": ["军机处", "摊丁入亩", "改土归流", "预备立宪"]
+  }
+]

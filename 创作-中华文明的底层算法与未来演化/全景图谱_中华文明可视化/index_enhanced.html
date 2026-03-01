@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中华文明全景图谱 - 增强版 (Enhanced Panorama)</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        :root {
+            --bg-color: #1a1a1a;
+            --text-color: #e0e0e0;
+            --accent-color: #d4af37;
+            --card-bg: #2d2d2d;
+            --timeline-height: 450px;
+        }
+
+        body {
+            font-family: "Microsoft YaHei", "Segoe UI", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3 { color: var(--accent-color); text-align: center; font-weight: 300; letter-spacing: 2px; }
+        h1 { font-size: 2em; margin-bottom: 10px; }
+        h3 { font-size: 0.95em; margin: 5px 0; }
+
+        #container { width: 100%; max-width: 1600px; margin: 0 auto; position: relative; }
+        #controls { text-align: center; margin-bottom: 15px; }
+
+        .btn {
+            background: #333; color: #fff; border: 1px solid #555;
+            padding: 8px 15px; cursor: pointer; margin: 0 5px;
+            border-radius: 4px; transition: all 0.3s;
+        }
+        .btn:hover { background: var(--accent-color); color: #000; }
+        .btn.active { background: var(--accent-color); color: #000; }
+
+        #timeline-view {
+            width: 100%; height: var(--timeline-height);
+            background: var(--card-bg); border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            overflow: hidden; position: relative; margin-bottom: 20px;
+            border: 1px solid #444;
+        }
+
+        .section-title {
+            color: var(--accent-color); font-size: 1.3em;
+            margin: 30px 0 15px 0; padding-bottom: 10px;
+            border-bottom: 1px solid #444;
+        }
+
+        #charts-view {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        #radar-view {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        #event-view {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .chart-card {
+            background: var(--card-bg); padding: 15px;
+            border-radius: 8px; border: 1px solid #333;
+        }
+        .chart-card h3 { margin-top: 0; }
+
+        .radar-card {
+            background: var(--card-bg); padding: 10px;
+            border-radius: 8px; border: 1px solid #333;
+            text-align: center;
+        }
+        .radar-card h4 { color: var(--accent-color); margin: 5px 0; font-size: 0.9em; }
+
+        #detail-modal {
+            display: none; position: fixed; top: 50%; left: 50%;
+            transform: translate(-50%, -50%); width: 80%; max-width: 1000px;
+            max-height: 90vh; overflow-y: auto;
+            background: #222; padding: 30px; border-radius: 12px;
+            border: 2px solid var(--accent-color);
+            box-shadow: 0 0 50px rgba(0,0,0,0.9); z-index: 1000;
+        }
+
+        #modal-overlay {
+            display: none; position: fixed; top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0,0,0,0.8); z-index: 999;
+            backdrop-filter: blur(5px);
+        }
+
+        .dynasty-bar {
+            cursor: pointer; transition: opacity 0.2s;
+            stroke: #000; stroke-width: 1px;
+        }
+        .dynasty-bar:hover {
+            opacity: 0.9; stroke: #fff; stroke-width: 2px;
+            filter: brightness(1.2);
+        }
+
+        .event-dot { fill: #fff; stroke: #000; cursor: help; }
+        .event-dot:hover { fill: var(--accent-color); r: 6; }
+
+        .axis text { fill: #888; font-size: 10px; }
+        .axis line, .axis path { stroke: #444; }
+        .grid-line { stroke: #333; stroke-dasharray: 2,2; }
+
+        .tooltip {
+            position: absolute; background: rgba(20, 20, 20, 0.95);
+            color: #fff; padding: 10px; border: 1px solid #555;
+            border-radius: 4px; pointer-events: none; font-size: 12px;
+            z-index: 20; max-width: 280px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+
+        .analysis-grid {
+            display: grid; grid-template-columns: 1fr 1fr 1fr;
+            gap: 15px; margin-top: 15px;
+        }
+
+        .analysis-box {
+            background: #2a2a2a; padding: 15px;
+            border-radius: 6px; border-left: 3px solid #555;
+        }
+        .analysis-box h4 {
+            margin-top: 0; color: var(--accent-color);
+            font-size: 0.9em; border-bottom: 1px solid #444;
+            padding-bottom: 8px;
+        }
+
+        .close-btn {
+            position: absolute; top: 15px; right: 20px;
+            cursor: pointer; font-size: 28px; color: #aaa;
+            line-height: 20px;
+        }
+        .close-btn:hover { color: #fff; }
+
+        .tag {
+            display: inline-block; background: #444; color: #ddd;
+            padding: 2px 8px; border-radius: 10px;
+            font-size: 11px; margin-right: 5px; margin-bottom: 5px;
+        }
+        .tag.high { background: #c0392b; }
+        .tag.medium { background: #d35400; }
+        .tag.reform { background: #27ae60; }
+        .tag.war { background: #c0392b; }
+        .tag.culture { background: #8e44ad; }
+        .tag.tech { background: #2980b9; }
+        .tag.politic { background: #f39c12; }
+        .tag.economy { background: #16a085; }
+
+        .timeline-label {
+            fill: #fff; font-size: 12px; font-weight: bold;
+            pointer-events: none; text-shadow: 0 0 3px #000;
+        }
+
+        .legend-item {
+            display: inline-flex; align-items: center;
+            margin-right: 15px; font-size: 11px;
+        }
+        .legend-color {
+            width: 12px; height: 12px; border-radius: 2px;
+            margin-right: 5px;
+        }
+
+        .stats-grid {
+            display: grid; grid-template-columns: repeat(5, 1fr);
+            gap: 10px; margin: 15px 0;
+        }
+        .stat-item {
+            background: #2a2a2a; padding: 10px;
+            border-radius: 6px; text-align: center;
+        }
+        .stat-value {
+            font-size: 1.5em; color: var(--accent-color);
+            font-weight: bold;
+        }
+        .stat-label { font-size: 0.8em; color: #888; }
+
+        #modal-radar { margin: 20px 0; }
+    </style>
+</head>
+<body>
+
+    <h1>中华文明全景图谱</h1>
+    <p style="text-align: center; color: #666; margin-top: 0;">文明即计算——一套在东亚大陆运行了五千年的生存算法</p>
+    
+    <div style="background: var(--card-bg); padding: 20px; border-radius: 8px; margin-bottom: 20px; border: 1px solid #444;">
+        <h2 style="color: var(--accent-color); margin-top: 0; font-size: 1.3em;">📖 使用说明</h2>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+            <div>
+                <h3 style="color: #aaa; font-size: 1em; margin-bottom: 10px;">📊 坐标轴说明</h3>
+                <p style="margin: 5px 0; font-size: 0.9em;"><strong>横坐标（X轴）：</strong>时间轴，从 BC 5200（公元前5200年）到 AD 1950（公元1950年）</p>
+                <p style="margin: 5px 0; font-size: 0.9em;"><strong>纵坐标（Y轴）：</strong>共5行，仅用于错开显示不同文明，无特殊含义</p>
+            </div>
+            <div>
+                <h3 style="color: #aaa; font-size: 1em; margin-bottom: 10px;">🎮 交互操作</h3>
+                <p style="margin: 5px 0; font-size: 0.9em;"><strong>鼠标滚轮：</strong>缩放时间轴，查看详细区间</p>
+                <p style="margin: 5px 0; font-size: 0.9em;"><strong>拖拽平移：</strong>左右拖动查看不同时期</p>
+                <p style="margin: 5px 0; font-size: 0.9em;"><strong>点击文明条：</strong>查看该文明的详细信息</p>
+                <p style="margin: 5px 0; font-size: 0.9em;"><strong>悬停事件点：</strong>查看历史事件详情</p>
+            </div>
+        </div>
+        <div style="margin-top: 15px; padding-top: 15px; border-top: 1px solid #444;">
+            <h3 style="color: #aaa; font-size: 1em; margin-bottom: 10px;">📌 图例说明</h3>
+            <div style="display: flex; flex-wrap: wrap; gap: 15px;">
+                <div class="legend-item"><span class="legend-color" style="background: linear-gradient(90deg, #e74c3c, #9b59b6);"></span> 文明时间条（长度=持续时间）</div>
+                <div class="legend-item"><span class="legend-color" style="background: #fff; border: 1px solid #000; border-radius: 50%;"></span> 历史事件点</div>
+                <div class="legend-item"><span class="legend-color" style="background: #4facfe;"></span> 气候冷暖周期</div>
+                <div class="legend-item"><span class="legend-color" style="background: #ff9a9e;"></span> 人口波动曲线</div>
+                <div class="legend-item"><span class="legend-color" style="background: #2ecc71;"></span> 疆域面积变化</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="controls">
+        <button class="btn" onclick="resetZoom()">重置视图</button>
+        <button class="btn" onclick="toggleDataVersion()" id="data-toggle">增强数据</button>
+        <span style="margin-left: 20px; color: #666; font-size: 0.85em;">
+            滚轮缩放 | 拖拽平移 | 点击王朝查看详情
+        </span>
+    </div>
+
+    <div id="container">
+        <div id="timeline-view"></div>
+
+        <h2 class="section-title">基础数据图谱</h2>
+        <div id="charts-view">
+            <div class="chart-card" id="temp-chart"><h3>气候冷暖周期</h3></div>
+            <div class="chart-card" id="pop-chart"><h3>人口波动曲线</h3></div>
+            <div class="chart-card" id="area-chart"><h3>疆域面积变化</h3></div>
+        </div>
+
+        <h2 class="section-title">文明维度雷达图</h2>
+        <div id="radar-view">
+            <div class="radar-card" id="radar-early"></div>
+            <div class="radar-card" id="radar-imperial"></div>
+            <div class="radar-card" id="radar-late"></div>
+            <div class="radar-card" id="radar-compare"></div>
+        </div>
+
+        <h2 class="section-title">事件类型分析</h2>
+        <div id="event-view">
+            <div class="chart-card" id="war-chart"><h3>战争频率分布</h3></div>
+            <div class="chart-card" id="event-type-chart"><h3>事件类型统计</h3></div>
+        </div>
+    </div>
+
+    <div id="modal-overlay"></div>
+    <div id="detail-modal">
+        <span class="close-btn">&times;</span>
+        <h2 id="modal-title" style="font-size: 2em; margin-bottom: 5px;">王朝名称</h2>
+        <p id="modal-period" style="text-align: center; color: var(--accent-color); font-size: 1.1em;"></p>
+
+        <div class="stats-grid" id="modal-stats"></div>
+
+        <div id="modal-radar"></div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin: 20px 0; background: #2a2a2a; padding: 15px; border-radius: 8px;">
+            <div>
+                <p><strong>关键人物：</strong><span id="modal-figures"></span></p>
+                <p><strong>都城：</strong><span id="modal-capital"></span></p>
+                <p><strong>文化科技：</strong><span id="modal-culture"></span></p>
+            </div>
+            <div>
+                <p><strong>疆域特征：</strong><span id="modal-territory"></span></p>
+                <p style="color: #aaa; font-style: italic; font-size: 0.85em;" id="modal-territory-desc"></p>
+            </div>
+        </div>
+
+        <h3>兴衰因果链解析</h3>
+        <div class="analysis-grid">
+            <div class="analysis-box" style="border-left-color: #ff6b6b;">
+                <h4>导火索</h4>
+                <p id="modal-trigger"></p>
+            </div>
+            <div class="analysis-box" style="border-left-color: #feca57;">
+                <h4>结构性矛盾</h4>
+                <p id="modal-structural"></p>
+            </div>
+            <div class="analysis-box" style="border-left-color: #48dbfb;">
+                <h4>外部压力</h4>
+                <p id="modal-external"></p>
+            </div>
+        </div>
+
+        <div style="margin-top: 15px; background: #1f1f1f; padding: 15px; border-radius: 6px; border: 1px dashed #555;">
+            <h4 style="color: #ddd; margin-top: 0;">政权更替</h4>
+            <p id="modal-transition"></p>
+        </div>
+
+        <div style="margin-top: 15px;">
+            <h4>关键历史节点</h4>
+            <ul id="modal-events" style="columns: 2; list-style-type: none; padding: 0;"></ul>
+        </div>
+    </div>
+
+    <script>
+        let currentData = null;
+        let useEnhancedData = false;
+        let zoomReset;
+
+        d3.json("dynasty_data.json").then(data => {
+            currentData = data;
+            initVisualization(data);
+        }).catch(err => {
+            console.error("Error loading data:", err);
+            alert("请确保 dynasty_data.json 文件存在");
+        });
+
+        function toggleDataVersion() {
+            useEnhancedData = !useEnhancedData;
+            const btn = document.getElementById("data-toggle");
+            btn.textContent = useEnhancedData ? "基础数据" : "增强数据";
+            btn.classList.toggle("active", useEnhancedData);
+
+            if (useEnhancedData) {
+                d3.json("dynasty_data_enhanced.json").then(data => {
+                    currentData = data;
+                    d3.select("#timeline-view svg").remove();
+                    d3.selectAll("#charts-view svg").remove();
+                    d3.selectAll("#radar-view svg").remove();
+                    d3.selectAll("#event-view svg").remove();
+                    initVisualization(data);
+                });
+            } else {
+                d3.json("dynasty_data.json").then(data => {
+                    currentData = data;
+                    d3.select("#timeline-view svg").remove();
+                    d3.selectAll("#charts-view svg").remove();
+                    d3.selectAll("#radar-view svg").remove();
+                    d3.selectAll("#event-view svg").remove();
+                    initVisualization(data);
+                });
+            }
+        }
+
+        function initVisualization(data) {
+            const width = document.getElementById("timeline-view").clientWidth;
+            const height = 450;
+            const margin = {top: 20, right: 30, bottom: 50, left: 60};
+
+            const x = d3.scaleLinear()
+                .domain([-5200, 1950])
+                .range([margin.left, width - margin.right]);
+
+            const y = d3.scaleBand()
+                .domain(d3.range(5))
+                .range([margin.top, height - margin.bottom])
+                .padding(0.3);
+
+            const svg = d3.select("#timeline-view")
+                .append("svg")
+                .attr("width", width)
+                .attr("height", height)
+                .style("cursor", "grab");
+
+            const g = svg.append("g");
+
+            const xAxis = d3.axisBottom(x)
+                .tickFormat(d => d < 0 ? `BC ${Math.abs(d)}` : `AD ${d}`)
+                .ticks(15);
+
+            const gx = svg.append("g")
+                .attr("transform", `translate(0,${height - margin.bottom})`)
+                .attr("class", "axis")
+                .call(xAxis);
+
+            const grid = svg.append("g")
+                .attr("class", "grid")
+                .attr("transform", `translate(0,${height - margin.bottom})`)
+                .call(d3.axisBottom(x).ticks(15).tickSize(-height + margin.top + margin.bottom).tickFormat(""))
+                .call(g => g.selectAll(".tick line").attr("class", "grid-line"));
+
+            const tooltip = d3.select("body").append("div")
+                .attr("class", "tooltip")
+                .style("opacity", 0);
+
+            const color = d3.scaleOrdinal()
+                .range(["#e74c3c", "#e67e22", "#f1c40f", "#2ecc71", "#3498db", "#9b59b6", "#1abc9c"]);
+
+            const zoom = d3.zoom()
+                .scaleExtent([1, 10])
+                .extent([[margin.left, 0], [width - margin.right, height]])
+                .translateExtent([[margin.left - 500, 0], [width - margin.right + 500, height]])
+                .on("zoom", zoomed);
+
+            svg.call(zoom);
+            zoomReset = () => svg.transition().duration(750).call(zoom.transform, d3.zoomIdentity);
+
+            function zoomed(event) {
+                const xz = event.transform.rescaleX(x);
+                gx.call(xAxis.scale(xz));
+                grid.call(d3.axisBottom(xz).ticks(15).tickSize(-height + margin.top + margin.bottom).tickFormat(""))
+                    .selectAll(".tick line").attr("class", "grid-line");
+                g.selectAll(".dynasty-bar")
+                    .attr("x", d => xz(d.start_year))
+                    .attr("width", d => Math.max(2, xz(d.end_year) - xz(d.start_year)));
+                g.selectAll(".timeline-label")
+                    .attr("x", d => xz(d.start_year) + 5)
+                    .style("opacity", d => (xz(d.end_year) - xz(d.start_year)) > 30 ? 1 : 0);
+                g.selectAll(".event-dot")
+                    .attr("cx", d => xz(d.year));
+            }
+
+            const bars = g.selectAll(".dynasty-group")
+                .data(data)
+                .enter()
+                .append("g")
+                .attr("class", "dynasty-group");
+
+            bars.append("rect")
+                .attr("class", "dynasty-bar")
+                .attr("x", d => x(d.start_year))
+                .attr("y", (d, i) => y(i % 5))
+                .attr("width", d => x(d.end_year) - x(d.start_year))
+                .attr("height", y.bandwidth())
+                .attr("rx", 4)
+                .attr("fill", (d, i) => color(i))
+                .on("mouseover", function(event, d) {
+                    tooltip.transition().duration(200).style("opacity", 1);
+                    tooltip.html(`<strong style="color:var(--accent-color)">${d.name}</strong><br>${d.period}<br>持续: ${d.duration} 年`)
+                        .style("left", (event.pageX + 15) + "px")
+                        .style("top", (event.pageY - 28) + "px");
+                })
+                .on("mouseout", () => tooltip.transition().duration(500).style("opacity", 0))
+                .on("click", (event, d) => showModal(d));
+
+            bars.append("text")
+                .attr("class", "timeline-label")
+                .attr("x", d => x(d.start_year) + 5)
+                .attr("y", (d, i) => y(i % 5) + y.bandwidth() / 2 + 4)
+                .text(d => d.name.split(" ")[0] || d.name);
+
+            bars.each(function(d, i) {
+                if (d.events) {
+                    const group = d3.select(this);
+                    const yPos = y(i % 5) + y.bandwidth();
+                    group.selectAll(".event-dot")
+                        .data(d.events)
+                        .enter()
+                        .append("circle")
+                        .attr("class", "event-dot")
+                        .attr("cx", e => x(e.year))
+                        .attr("cy", yPos)
+                        .attr("r", 3)
+                        .on("mouseover", function(event, e) {
+                            d3.select(this).attr("r", 6).attr("fill", "#d4af37");
+                            tooltip.transition().duration(200).style("opacity", 1);
+                            tooltip.html(`<strong>${e.year < 0 ? 'BC ' + Math.abs(e.year) : 'AD ' + e.year}</strong><br>${e.name}`)
+                                .style("left", (event.pageX + 10) + "px")
+                                .style("top", (event.pageY - 40) + "px");
+                        })
+                        .on("mouseout", function() {
+                            d3.select(this).attr("r", 3).attr("fill", "#fff");
+                            tooltip.transition().duration(500).style("opacity", 0);
+                        });
+                }
+            });
+
+            renderLineChart(data, "#temp-chart", "temperature_anomaly", "气温距平 (°C)", "#4facfe");
+            renderAreaChart(data, "#pop-chart", "population_million", "人口 (百万)", "#ff9a9e");
+            renderBarChart(data, "#area-chart", "territory_sq_km", "疆域 (万km²)", "#2ecc71");
+
+            if (data[0].stats.tech_index !== undefined) {
+                renderRadarCharts(data);
+                renderWarChart(data);
+                renderEventTypeChart(data);
+            }
+        }
+
+        function renderLineChart(data, selector, key, label, colorHex) {
+            const width = document.querySelector(selector).clientWidth - 30;
+            const height = 220;
+            const margin = {top: 25, right: 20, bottom: 45, left: 60};
+
+            const svg = d3.select(selector).append("svg")
+                .attr("width", width).attr("height", height);
+
+            const x = d3.scaleLinear()
+                .domain([-5200, 1950])
+                .range([margin.left, width - margin.right]);
+
+            const y = d3.scaleLinear()
+                .domain([d3.min(data, d => d.stats[key]) - 0.2, d3.max(data, d => d.stats[key]) + 0.2])
+                .range([height - margin.bottom, margin.top]);
+
+            svg.append("path")
+                .datum(data)
+                .attr("fill", "none")
+                .attr("stroke", colorHex)
+                .attr("stroke-width", 2)
+                .attr("d", d3.line()
+                    .x(d => x((d.start_year + d.end_year) / 2))
+                    .y(d => y(d.stats[key]))
+                    .curve(d3.curveMonotoneX)
+                );
+
+            const xAxis = d3.axisBottom(x)
+                .ticks(8)
+                .tickFormat(d => d < 0 ? `BC ${Math.abs(d)}` : `AD ${d}`);
+
+            svg.append("g")
+                .attr("transform", `translate(0,${height - margin.bottom})`)
+                .attr("class", "axis")
+                .call(xAxis);
+
+            svg.append("text")
+                .attr("x", width / 2)
+                .attr("y", height - 10)
+                .attr("text-anchor", "middle")
+                .style("fill", "#aaa")
+                .style("font-size", "12px")
+                .text("年份");
+
+            svg.append("g")
+                .attr("transform", `translate(${margin.left},0)`)
+                .attr("class", "axis")
+                .call(d3.axisLeft(y).ticks(6));
+
+            svg.append("text")
+                .attr("transform", "rotate(-90)")
+                .attr("x", -height / 2)
+                .attr("y", 20)
+                .attr("text-anchor", "middle")
+                .style("fill", "#aaa")
+                .style("font-size", "12px")
+                .text("气温距平 (°C)");
+        }
+
+        function renderAreaChart(data, selector, key, label, colorHex) {
+            const width = document.querySelector(selector).clientWidth - 30;
+            const height = 220;
+            const margin = {top: 25, right: 20, bottom: 45, left: 60};
+
+            const svg = d3.select(selector).append("svg")
+                .attr("width", width).attr("height", height);
+
+            const x = d3.scaleLinear()
+                .domain([-5200, 1950])
+                .range([margin.left, width - margin.right]);
+
+            const y = d3.scaleLinear()
+                .domain([0, d3.max(data, d => d.stats[key]) * 1.1])
+                .range([height - margin.bottom, margin.top]);
+
+            svg.append("path")
+                .datum(data)
+                .attr("fill", colorHex)
+                .attr("opacity", 0.3)
+                .attr("stroke", colorHex)
+                .attr("stroke-width", 1.5)
+                .attr("d", d3.area()
+                    .x(d => x((d.start_year + d.end_year) / 2))
+                    .y0(height - margin.bottom)
+                    .y1(d => y(d.stats[key]))
+                    .curve(d3.curveMonotoneX)
+                );
+
+            const xAxis = d3.axisBottom(x)
+                .ticks(8)
+                .tickFormat(d => d < 0 ? `BC ${Math.abs(d)}` : `AD ${d}`);
+
+            svg.append("g")
+                .attr("transform", `translate(0,${height - margin.bottom})`)
+                .attr("class", "axis")
+                .call(xAxis);
+
+            svg.append("text")
+                .attr("x", width / 2)
+                .attr("y", height - 10)
+                .attr("text-anchor", "middle")
+                .style("fill", "#aaa")
+                .style("font-size", "12px")
+                .text("年份");
+
+            svg.append("g")
+                .attr("transform", `translate(${margin.left},0)`)
+                .attr("class", "axis")
+                .call(d3.axisLeft(y).ticks(6));
+
+            svg.append("text")
+                .attr("transform", "rotate(-90)")
+                .attr("x", -height / 2)
+                .attr("y", 20)
+                .attr("text-anchor", "middle")
+                .style("fill", "#aaa")
+                .style("font-size", "12px")
+                .text("人口 (百万)");
+        }
+
+        function renderBarChart(data, selector, key, label, colorHex) {
+            const width = document.querySelector(selector).clientWidth - 30;
+            const height = 220;
+            const margin = {top: 25, right: 20, bottom: 45, left: 60};
+
+            const svg = d3.select(selector).append("svg")
+                .attr("width", width).attr("height", height);
+
+            const x = d3.scaleLinear()
+                .domain([-5200, 1950])
+                .range([margin.left, width - margin.right]);
+
+            const y = d3.scaleLinear()
+                .domain([0, d3.max(data, d => d.stats[key]) * 1.1])
+                .range([height - margin.bottom, margin.top]);
+
+            svg.selectAll("rect")
+                .data(data)
+                .enter()
+                .append("rect")
+                .attr("x", d => x(d.start_year))
+                .attr("y", d => y(d.stats[key]))
+                .attr("width", d => Math.max(2, x(d.end_year) - x(d.start_year)))
+                .attr("height", d => height - margin.bottom - y(d.stats[key]))
+                .attr("fill", colorHex)
+                .attr("opacity", 0.7);
+
+            const xAxis = d3.axisBottom(x)
+                .ticks(8)
+                .tickFormat(d => d < 0 ? `BC ${Math.abs(d)}` : `AD ${d}`);
+
+            svg.append("g")
+                .attr("transform", `translate(0,${height - margin.bottom})`)
+                .attr("class", "axis")
+                .call(xAxis);
+
+            svg.append("text")
+                .attr("x", width / 2)
+                .attr("y", height - 10)
+                .attr("text-anchor", "middle")
+                .style("fill", "#aaa")
+                .style("font-size", "12px")
+                .text("年份");
+
+            svg.append("g")
+                .attr("transform", `translate(${margin.left},0)`)
+                .attr("class", "axis")
+                .call(d3.axisLeft(y).ticks(6));
+
+            svg.append("text")
+                .attr("transform", "rotate(-90)")
+                .attr("x", -height / 2)
+                .attr("y", 20)
+                .attr("text-anchor", "middle")
+                .style("fill", "#aaa")
+                .style("font-size", "12px")
+                .text("疆域 (万km²)");
+        }
+
+        function renderRadarCharts(data) {
+            const dimensions = ["tech_index", "economic_index", "institution_index", "cultural_index", "military_index"];
+            const labels = ["技术", "经济", "制度", "文化", "军事"];
+
+            function radar(svg, values, color, title) {
+                const width = 200, height = 220;
+                const radius = 70;
+                const centerX = width / 2;
+                const centerY = height / 2 + 10;
+                const angleSlice = (Math.PI * 2) / dimensions.length;
+
+                const rScale = d3.scaleLinear().domain([0, 100]).range([0, radius]);
+
+                const axisGrid = svg.append("g").attr("class", "axisWrapper");
+
+                axisGrid.selectAll(".levels")
+                    .data([20, 40, 60, 80, 100])
+                    .enter()
+                    .append("circle")
+                    .attr("cx", centerX)
+                    .attr("cy", centerY)
+                    .attr("r", d => rScale(d))
+                    .style("fill", "none")
+                    .style("stroke", "#444")
+                    .style("stroke-dasharray", "2,2");
+
+                axisGrid.selectAll(".level-label")
+                    .data([20, 40, 60, 80, 100])
+                    .enter()
+                    .append("text")
+                    .attr("x", centerX + 3)
+                    .attr("y", d => centerY - rScale(d) - 2)
+                    .style("fill", "#666")
+                    .style("font-size", "10px")
+                    .text(d => d);
+
+                const axis = axisGrid.selectAll(".axis")
+                    .data(dimensions)
+                    .enter()
+                    .append("g")
+                    .attr("class", "axis");
+
+                axis.append("line")
+                    .attr("x1", centerX)
+                    .attr("y1", centerY)
+                    .attr("x2", (d, i) => centerX + rScale(100) * Math.cos(angleSlice * i - Math.PI/2))
+                    .attr("y2", (d, i) => centerY + rScale(100) * Math.sin(angleSlice * i - Math.PI/2))
+                    .attr("stroke", "#555");
+
+                axis.append("text")
+                    .attr("x", (d, i) => centerX + (rScale(100) + 15) * Math.cos(angleSlice * i - Math.PI/2))
+                    .attr("y", (d, i) => centerY + (rScale(100) + 15) * Math.sin(angleSlice * i - Math.PI/2))
+                    .attr("text-anchor", (d, i) => {
+                        const angle = angleSlice * i - Math.PI/2;
+                        return Math.abs(angle) < 0.1 || Math.abs(Math.PI - angle) < 0.1 ? "middle" : (angle > 0 ? "start" : "end");
+                    })
+                    .attr("dy", "0.35em")
+                    .style("fill", "#fff")
+                    .style("font-size", "12px")
+                    .style("font-weight", "bold")
+                    .text((d, i) => labels[i]);
+
+                const radarLine = d3.lineRadial()
+                    .radius(d => rScale(d))
+                    .angle((d, i) => i * angleSlice);
+
+                svg.append("path")
+                    .datum(values)
+                    .attr("d", radarLine)
+                    .attr("transform", `translate(${centerX},${centerY})`)
+                    .style("fill", color)
+                    .style("fill-opacity", 0.3)
+                    .style("stroke", color)
+                    .style("stroke-width", 2);
+
+                values.forEach((v, i) => {
+                    const x = centerX + rScale(v) * Math.cos(angleSlice * i - Math.PI/2);
+                    const y = centerY + rScale(v) * Math.sin(angleSlice * i - Math.PI/2);
+                    svg.append("circle")
+                        .attr("cx", x)
+                        .attr("cy", y)
+                        .attr("r", 4)
+                        .style("fill", color)
+                        .style("stroke", "#fff")
+                        .style("stroke-width", 1);
+                });
+
+                if (title) {
+                    svg.append("text")
+                        .attr("x", centerX)
+                        .attr("y", 15)
+                        .attr("text-anchor", "middle")
+                        .style("fill", color)
+                        .style("font-size", "14px")
+                        .style("font-weight", "bold")
+                        .text(title);
+                }
+            }
+
+            const early = data.filter(d => d.start_year < -200);
+            const imperial = data.filter(d => d.start_year >= -200 && d.start_year < 1000);
+            const late = data.filter(d => d.start_year >= 1000);
+
+            function avgStats(arr) {
+                return dimensions.map(dim => d3.mean(arr, d => d.stats[dim] || 0));
+            }
+
+            d3.select("#radar-early").append("svg").attr("width", 200).attr("height", 220).call(svg => radar(svg, avgStats(early), "#e74c3c", "早期文明"));
+            d3.select("#radar-imperial").append("svg").attr("width", 200).attr("height", 220).call(svg => radar(svg, avgStats(imperial), "#f1c40f", "帝国时代"));
+            d3.select("#radar-late").append("svg").attr("width", 200).attr("height", 220).call(svg => radar(svg, avgStats(late), "#3498db", "近世文明"));
+
+            const compareSvg = d3.select("#radar-compare").append("svg").attr("width", 200).attr("height", 240);
+            
+            function radarNoTitle(svg, values, color) {
+                const width = 200, height = 240;
+                const radius = 70;
+                const centerX = width / 2;
+                const centerY = height / 2 + 15;
+                const angleSlice = (Math.PI * 2) / dimensions.length;
+
+                const rScale = d3.scaleLinear().domain([0, 100]).range([0, radius]);
+
+                const axisGrid = svg.append("g").attr("class", "axisWrapper");
+
+                axisGrid.selectAll(".levels")
+                    .data([20, 40, 60, 80, 100])
+                    .enter()
+                    .append("circle")
+                    .attr("cx", centerX)
+                    .attr("cy", centerY)
+                    .attr("r", d => rScale(d))
+                    .style("fill", "none")
+                    .style("stroke", "#444")
+                    .style("stroke-dasharray", "2,2");
+
+                const axis = axisGrid.selectAll(".axis")
+                    .data(dimensions)
+                    .enter()
+                    .append("g")
+                    .attr("class", "axis");
+
+                axis.append("line")
+                    .attr("x1", centerX)
+                    .attr("y1", centerY)
+                    .attr("x2", (d, i) => centerX + rScale(100) * Math.cos(angleSlice * i - Math.PI/2))
+                    .attr("y2", (d, i) => centerY + rScale(100) * Math.sin(angleSlice * i - Math.PI/2))
+                    .attr("stroke", "#555");
+
+                axis.append("text")
+                    .attr("x", (d, i) => centerX + (rScale(100) + 15) * Math.cos(angleSlice * i - Math.PI/2))
+                    .attr("y", (d, i) => centerY + (rScale(100) + 15) * Math.sin(angleSlice * i - Math.PI/2))
+                    .attr("text-anchor", (d, i) => {
+                        const angle = angleSlice * i - Math.PI/2;
+                        return Math.abs(angle) < 0.1 || Math.abs(Math.PI - angle) < 0.1 ? "middle" : (angle > 0 ? "start" : "end");
+                    })
+                    .attr("dy", "0.35em")
+                    .style("fill", "#fff")
+                    .style("font-size", "12px")
+                    .style("font-weight", "bold")
+                    .text((d, i) => labels[i]);
+
+                const radarLine = d3.lineRadial()
+                    .radius(d => rScale(d))
+                    .angle((d, i) => i * angleSlice);
+
+                svg.append("path")
+                    .datum(values)
+                    .attr("d", radarLine)
+                    .attr("transform", `translate(${centerX},${centerY})`)
+                    .style("fill", color)
+                    .style("fill-opacity", 0.2)
+                    .style("stroke", color)
+                    .style("stroke-width", 2);
+
+                values.forEach((v, i) => {
+                    const x = centerX + rScale(v) * Math.cos(angleSlice * i - Math.PI/2);
+                    const y = centerY + rScale(v) * Math.sin(angleSlice * i - Math.PI/2);
+                    svg.append("circle")
+                        .attr("cx", x)
+                        .attr("cy", y)
+                        .attr("r", 3)
+                        .style("fill", color)
+                        .style("stroke", "#fff")
+                        .style("stroke-width", 1);
+                });
+            }
+
+            radarNoTitle(compareSvg, avgStats(early), "#e74c3c");
+            radarNoTitle(compareSvg, avgStats(imperial), "#f1c40f");
+            radarNoTitle(compareSvg, avgStats(late), "#3498db");
+
+            compareSvg.append("text")
+                .attr("x", 100)
+                .attr("y", 18)
+                .attr("text-anchor", "middle")
+                .style("fill", "#fff")
+                .style("font-size", "14px")
+                .style("font-weight", "bold")
+                .text("三时期对比");
+
+            const legendY = 230;
+            compareSvg.append("circle").attr("cx", 40).attr("cy", legendY).attr("r", 5).style("fill", "#e74c3c");
+            compareSvg.append("text").attr("x", 50).attr("y", legendY + 4).style("fill", "#fff").style("font-size", "11px").text("早期");
+            compareSvg.append("circle").attr("cx", 90).attr("cy", legendY).attr("r", 5).style("fill", "#f1c40f");
+            compareSvg.append("text").attr("x", 100).attr("y", legendY + 4).style("fill", "#fff").style("font-size", "11px").text("帝国");
+            compareSvg.append("circle").attr("cx", 140).attr("cy", legendY).attr("r", 5).style("fill", "#3498db");
+            compareSvg.append("text").attr("x", 150).attr("y", legendY + 4).style("fill", "#fff").style("font-size", "11px").text("近世");
+        }
+
+        function renderWarChart(data) {
+            const selector = "#war-chart";
+            const width = document.querySelector(selector).clientWidth - 30;
+            const height = 220;
+            const margin = {top: 25, right: 20, bottom: 45, left: 70};
+
+            const svg = d3.select(selector).append("svg")
+                .attr("width", width).attr("height", height);
+
+            const x = d3.scaleLinear()
+                .domain([-5200, 1950])
+                .range([margin.left, width - margin.right]);
+
+            const y = d3.scaleLinear()
+                .domain([0, d3.max(data, d => d.stats.war_frequency) * 1.1])
+                .range([height - margin.bottom, margin.top]);
+
+            svg.selectAll("rect")
+                .data(data)
+                .enter()
+                .append("rect")
+                .attr("x", d => x(d.start_year))
+                .attr("y", d => y(d.stats.war_frequency))
+                .attr("width", d => Math.max(2, x(d.end_year) - x(d.start_year)))
+                .attr("height", d => height - margin.bottom - y(d.stats.war_frequency))
+                .attr("fill", "#c0392b")
+                .attr("opacity", 0.7);
+
+            const xAxis = d3.axisBottom(x)
+                .ticks(8)
+                .tickFormat(d => d < 0 ? `BC ${Math.abs(d)}` : `AD ${d}`);
+
+            svg.append("g")
+                .attr("transform", `translate(0,${height - margin.bottom})`)
+                .attr("class", "axis")
+                .call(xAxis);
+
+            svg.append("text")
+                .attr("x", width / 2)
+                .attr("y", height - 10)
+                .attr("text-anchor", "middle")
+                .style("fill", "#aaa")
+                .style("font-size", "12px")
+                .text("年份");
+
+            svg.append("g")
+                .attr("transform", `translate(${margin.left},0)`)
+                .attr("class", "axis")
+                .call(d3.axisLeft(y).ticks(6));
+
+            svg.append("text")
+                .attr("transform", "rotate(-90)")
+                .attr("x", -height / 2)
+                .attr("y", 25)
+                .attr("text-anchor", "middle")
+                .style("fill", "#aaa")
+                .style("font-size", "12px")
+                .text("战争频率指数");
+        }
+
+        function renderEventTypeChart(data) {
+            const selector = "#event-type-chart";
+            const width = document.querySelector(selector).clientWidth - 30;
+            const height = 250;
+            const margin = {top: 25, right: 20, bottom: 25, left: 20};
+
+            const svg = d3.select(selector).append("svg")
+                .attr("width", width).attr("height", height);
+
+            const allEvents = data.flatMap(d => d.events || []);
+            const typeCounts = d3.rollup(allEvents, v => v.length, d => d.type);
+            const typeData = Array.from(typeCounts, ([type, count]) => ({type, count}))
+                .sort((a, b) => b.count - a.count);
+
+            const typeNames = {
+                war: "战争",
+                politic: "政治",
+                culture: "文化",
+                tech: "技术",
+                reform: "改革",
+                economy: "经济"
+            };
+
+            const colorMap = {
+                war: "#c0392b",
+                politic: "#f39c12",
+                culture: "#8e44ad",
+                tech: "#2980b9",
+                reform: "#27ae60",
+                economy: "#16a085"
+            };
+
+            const pie = d3.pie().value(d => d.count);
+            const arc = d3.arc().innerRadius(0).outerRadius(80);
+            const labelArc = d3.arc().innerRadius(90).outerRadius(90);
+            const pieData = pie(typeData);
+
+            svg.append("g")
+                .attr("transform", `translate(${width/3},${height/2})`)
+                .selectAll("path")
+                .data(pieData)
+                .enter()
+                .append("path")
+                .attr("d", arc)
+                .attr("fill", d => colorMap[d.data.type] || "#666")
+                .attr("stroke", "#222")
+                .attr("stroke-width", 2)
+                .style("cursor", "pointer")
+                .append("title")
+                .text(d => `${typeNames[d.data.type] || d.data.type}: ${d.data.count}次 (${((d.data.count / allEvents.length) * 100).toFixed(1)}%)`);
+
+            const legend = svg.append("g")
+                .attr("transform", `translate(${width/2 + 20}, 35)`);
+
+            typeData.slice(0, 6).forEach((d, i) => {
+                const g = legend.append("g").attr("transform", `translate(0, ${i * 28})`);
+                g.append("rect").attr("width", 16).attr("height", 16).attr("fill", colorMap[d.type] || "#666").attr("rx", 3);
+                g.append("text").attr("x", 24).attr("y", 12).text(`${typeNames[d.type] || d.type}: ${d.count}次`).style("font-size", "12px").style("fill", "#ddd");
+            });
+        }
+
+        function showModal(d) {
+            document.getElementById("modal-overlay").style.display = "block";
+            document.getElementById("detail-modal").style.display = "block";
+            document.getElementById("modal-title").textContent = d.name;
+            document.getElementById("modal-period").textContent = d.period;
+            document.getElementById("modal-figures").textContent = d.key_figures ? d.key_figures.join(", ") : "";
+            document.getElementById("modal-capital").textContent = d.capital ? d.capital.join(", ") : "";
+            document.getElementById("modal-culture").textContent = d.culture ? d.culture.join(", ") : "";
+            document.getElementById("modal-territory").textContent = d.territory || "";
+            document.getElementById("modal-territory-desc").textContent = d.territory_desc || "";
+            document.getElementById("modal-trigger").textContent = d.fall_analysis?.trigger || "";
+            document.getElementById("modal-structural").textContent = d.fall_analysis?.structural || "";
+            document.getElementById("modal-external").textContent = d.fall_analysis?.external || "";
+            document.getElementById("modal-transition").textContent = d.conquest_chain ?
+                `${d.conquest_chain.victor} 通过 ${d.conquest_chain.battle} 取代 ${d.conquest_chain.loser}。关键因素: ${d.conquest_chain.factor}` : "";
+
+            const eventsList = document.getElementById("modal-events");
+            eventsList.innerHTML = "";
+            if (d.events) {
+                d.events.forEach(e => {
+                    const li = document.createElement("li");
+                    li.style.marginBottom = "5px";
+                    const year = e.year < 0 ? `BC ${Math.abs(e.year)}` : `AD ${e.year}`;
+                    li.innerHTML = `<span class="tag ${e.type}">${e.type}</span><span class="tag ${e.significance}">${e.significance || ''}</span>${year}: ${e.name}`;
+                    eventsList.appendChild(li);
+                });
+            }
+
+            const statsDiv = document.getElementById("modal-stats");
+            statsDiv.innerHTML = "";
+            const stats = d.stats;
+            const statItems = [
+                {label: "人口", value: stats.population_million + "M"},
+                {label: "疆域", value: stats.territory_sq_km + "万km²"},
+                {label: "战争频率", value: stats.war_frequency},
+                {label: "气温距平", value: stats.temperature_anomaly + "°C"}
+            ];
+            if (stats.tech_index !== undefined) {
+                statItems.push({label: "技术指数", value: stats.tech_index});
+            }
+            statItems.forEach(s => {
+                const div = document.createElement("div");
+                div.className = "stat-item";
+                div.innerHTML = `<div class="stat-value">${s.value}</div><div class="stat-label">${s.label}</div>`;
+                statsDiv.appendChild(div);
+            });
+
+            if (stats.tech_index !== undefined) {
+                renderModalRadar(d);
+            }
+        }
+
+        function renderModalRadar(d) {
+            const container = document.getElementById("modal-radar");
+            container.innerHTML = "";
+            const svg = d3.select(container).append("svg")
+                .attr("width", 300).attr("height", 200);
+
+            const dimensions = ["tech_index", "economic_index", "institution_index", "cultural_index", "military_index"];
+            const labels = ["技术", "经济", "制度", "文化", "军事"];
+            const values = dimensions.map(dim => d.stats[dim] || 0);
+
+            const radius = 70;
+            const angleSlice = (Math.PI * 2) / dimensions.length;
+            const rScale = d3.scaleLinear().domain([0, 100]).range([0, radius]);
+
+            const g = svg.append("g")
+                .attr("transform", "translate(100, 100)");
+
+            g.selectAll(".levels")
+                .data([25, 50, 75, 100])
+                .enter()
+                .append("circle")
+                .attr("cx", 0).attr("cy", 0)
+                .attr("r", d => rScale(d))
+                .style("fill", "none").style("stroke", "#444").style("stroke-dasharray", "2,2");
+
+            dimensions.forEach((dim, i) => {
+                g.append("line")
+                    .attr("x1", 0).attr("y1", 0)
+                    .attr("x2", rScale(100) * Math.cos(angleSlice * i - Math.PI/2))
+                    .attr("y2", rScale(100) * Math.sin(angleSlice * i - Math.PI/2))
+                    .attr("stroke", "#555");
+                g.append("text")
+                    .attr("x", rScale(115) * Math.cos(angleSlice * i - Math.PI/2))
+                    .attr("y", rScale(115) * Math.sin(angleSlice * i - Math.PI/2))
+                    .text(labels[i])
+                    .style("fill", "#888").style("font-size", "11px")
+                    .attr("text-anchor", "middle");
+            });
+
+            const radarLine = d3.lineRadial()
+                .radius(v => rScale(v))
+                .angle((v, i) => i * angleSlice);
+
+            g.append("path")
+                .datum(values)
+                .attr("d", radarLine)
+                .style("fill", "#d4af37")
+                .style("fill-opacity", 0.3)
+                .style("stroke", "#d4af37")
+                .style("stroke-width", 2);
+        }
+
+        document.querySelector(".close-btn").onclick = () => {
+            document.getElementById("modal-overlay").style.display = "none";
+            document.getElementById("detail-modal").style.display = "none";
+        };
+        document.getElementById("modal-overlay").onclick = () => {
+            document.getElementById("modal-overlay").style.display = "none";
+            document.getElementById("detail-modal").style.display = "none";
+        };
+    </script>
+</body>
+</html>
