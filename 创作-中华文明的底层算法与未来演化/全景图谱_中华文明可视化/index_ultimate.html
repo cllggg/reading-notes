@@ -31,38 +31,41 @@
         }
 
         body {
-            font-family: "Microsoft YaHei", "PingFang SC", "Segoe UI", sans-serif;
+            font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;
             background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
             color: var(--text-primary);
             margin: 0;
             padding: 0;
             min-height: 100vh;
             overflow-x: hidden;
+            line-height: 1.6;
         }
 
         .header {
-            background: linear-gradient(180deg, rgba(212, 175, 55, 0.15) 0%, transparent 100%);
-            padding: 30px 20px 20px;
+            background: linear-gradient(180deg, rgba(212, 175, 55, 0.18) 0%, transparent 100%);
+            padding: 35px 20px 25px;
             text-align: center;
             border-bottom: 1px solid var(--border-color);
         }
 
         h1 {
-            font-size: 2.5em;
-            margin: 0 0 10px;
-            background: linear-gradient(90deg, var(--accent-gold), #f5d76e, var(--accent-gold));
+            font-size: 2.8em;
+            margin: 0 0 12px;
+            background: linear-gradient(90deg, var(--accent-gold), #f5d76e, #ffef9a, var(--accent-gold));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            letter-spacing: 4px;
-            font-weight: 300;
+            letter-spacing: 6px;
+            font-weight: 700;
+            text-shadow: 0 0 30px rgba(212, 175, 55, 0.3);
         }
 
         .subtitle {
             color: var(--text-secondary);
-            font-size: 1em;
+            font-size: 1.1em;
             margin: 0;
-            letter-spacing: 1px;
+            letter-spacing: 2px;
+            font-weight: 400;
         }
 
         .container {
@@ -146,30 +149,34 @@
         }
 
         .btn {
-            padding: 10px 20px;
+            padding: 12px 24px;
             background: var(--bg-secondary);
             border: 1px solid var(--border-color);
-            border-radius: 8px;
+            border-radius: 10px;
             color: var(--text-primary);
             cursor: pointer;
-            font-size: 14px;
-            transition: all 0.3s;
+            font-size: 15px;
+            font-weight: 500;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             display: flex;
             align-items: center;
-            gap: 6px;
+            gap: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
         }
 
         .btn:hover {
             background: var(--bg-card-hover);
             border-color: var(--accent-gold);
-            transform: translateY(-2px);
+            transform: translateY(-3px);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
         }
 
         .btn.active {
             background: linear-gradient(135deg, var(--accent-gold), #b8960c);
             border-color: var(--accent-gold);
             color: #000;
-            font-weight: 500;
+            font-weight: 600;
+            box-shadow: 0 4px 16px rgba(212, 175, 55, 0.3);
         }
 
         .btn.icon-btn {
@@ -224,19 +231,24 @@
         }
 
         .timeline-title {
-            font-size: 1.2em;
+            font-size: 1.35em;
             color: var(--accent-gold);
-            font-weight: 500;
+            font-weight: 600;
+            letter-spacing: 1px;
         }
 
         .timeline-hint {
             color: var(--text-secondary);
-            font-size: 12px;
+            font-size: 13px;
+            background: rgba(212, 175, 55, 0.1);
+            padding: 6px 12px;
+            border-radius: 6px;
+            border: 1px solid rgba(212, 175, 55, 0.2);
         }
 
         #timeline-view {
             width: 100%;
-            height: 500px;
+            height: 620px;
             background: var(--bg-secondary);
             border-radius: 8px;
             overflow: hidden;
@@ -252,26 +264,35 @@
 
         .chart-card {
             background: var(--bg-card);
-            border-radius: 12px;
-            padding: 20px;
+            border-radius: 14px;
+            padding: 24px;
             border: 1px solid var(--border-color);
             box-shadow: var(--shadow-light);
-            transition: all 0.3s;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .chart-card:hover {
-            transform: translateY(-4px);
+            transform: translateY(-5px);
             box-shadow: var(--shadow);
             border-color: var(--accent-gold);
         }
 
         .chart-title {
-            font-size: 1.1em;
+            font-size: 1.2em;
             color: var(--accent-gold);
             margin: 0 0 15px;
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 10px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .chart-desc {
+            font-size: 0.85em;
+            color: var(--text-secondary);
+            margin: -8px 0 15px 0;
+            line-height: 1.6;
         }
 
         .chart-container {
@@ -322,9 +343,10 @@
         }
 
         .section-title {
-            font-size: 1.3em;
+            font-size: 1.45em;
             color: var(--accent-gold);
-            font-weight: 500;
+            font-weight: 700;
+            letter-spacing: 1px;
             white-space: nowrap;
         }
 
@@ -558,6 +580,13 @@
             font-size: 0.95em;
         }
 
+        .rise-analysis {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
         .analysis-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -570,24 +599,55 @@
             padding: 18px;
             border-radius: 10px;
             border-left: 4px solid var(--accent-gold);
+            transition: all 0.3s;
+        }
+
+        .analysis-box:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
         }
 
         .analysis-box:nth-child(1) { border-left-color: var(--accent-red); }
         .analysis-box:nth-child(2) { border-left-color: var(--accent-orange); }
         .analysis-box:nth-child(3) { border-left-color: var(--accent-blue); }
 
+        .analysis-box.factor-war {
+            border-left-color: #c0392b;
+            background: linear-gradient(135deg, rgba(192, 57, 43, 0.15), var(--bg-secondary));
+        }
+        .analysis-box.factor-war .analysis-title { color: #e74c3c; }
+        
+        .analysis-box.factor-environment {
+            border-left-color: #16a085;
+            background: linear-gradient(135deg, rgba(22, 160, 133, 0.15), var(--bg-secondary));
+        }
+        .analysis-box.factor-environment .analysis-title { color: #1abc9c; }
+        
+        .analysis-box.factor-internal {
+            border-left-color: #f39c12;
+            background: linear-gradient(135deg, rgba(243, 156, 18, 0.15), var(--bg-secondary));
+        }
+        .analysis-box.factor-internal .analysis-title { color: #f1c40f; }
+        
+        .analysis-box.factor-external {
+            border-left-color: #2980b9;
+            background: linear-gradient(135deg, rgba(41, 128, 185, 0.15), var(--bg-secondary));
+        }
+        .analysis-box.factor-external .analysis-title { color: #3498db; }
+
         .analysis-title {
             margin-top: 0;
             color: var(--accent-gold);
             font-size: 1em;
             margin-bottom: 10px;
+            font-weight: 600;
         }
 
         .analysis-text {
             color: var(--text-primary);
             font-size: 0.95em;
             margin: 0;
-            line-height: 1.6;
+            line-height: 1.7;
         }
 
         .transition-box {
@@ -596,6 +656,14 @@
             padding: 18px;
             border-radius: 10px;
             border: 1px dashed var(--accent-gold);
+        }
+
+        .transition-box p {
+            color: var(--text-primary);
+            font-size: 0.95em;
+            margin: 0;
+            line-height: 1.8;
+            white-space: pre-line;
         }
 
         .transition-title {
@@ -771,9 +839,12 @@
         <div class="timeline-container animate-in">
             <div class="timeline-header">
                 <div class="timeline-title">⏱️ 时间轴</div>
-                <div class="timeline-hint">💡 滚轮缩放 | 拖拽平移 | 点击查看详情</div>
+                <div class="timeline-hint">💡 滚轮缩放 | 拖拽平移 | 点击文明条查看兴衰详解</div>
             </div>
             <div id="timeline-view"></div>
+            <div style="margin-top:15px; padding:12px; background: rgba(0,0,0,0.25); border-radius:8px; font-size:13px; color: var(--text-secondary); line-height:1.7;">
+                <strong style="color: var(--accent-gold);">📖 说明：</strong> 时间轴从<span style="color:#2ecc71;">史前时代</span>（BC 5000）到<span style="color:#e74c3c;">近代</span>（AD 1950），每条彩色条代表一个文明或王朝。每个文明下方的圆点标记关键历史事件，红色为高重要性。
+            </div>
         </div>
 
         <div class="section-header">
@@ -785,14 +856,17 @@
         <div class="charts-grid">
             <div class="chart-card animate-in">
                 <h3 class="chart-title">🌡️ 气候冷暖周期</h3>
+                <p class="chart-desc">气温距平反映了各文明时期的温度变化。温暖期往往促进农业发展与文明繁荣，寒冷期常伴随社会动荡与王朝更替。</p>
                 <div class="chart-container" id="temp-chart"></div>
             </div>
             <div class="chart-card animate-in">
                 <h3 class="chart-title">👥 人口波动曲线</h3>
+                <p class="chart-desc">人口数量是国力的重要指标。和平年代人口稳步增长，战争、灾荒则导致人口锐减，深刻影响历史走向。</p>
                 <div class="chart-container" id="pop-chart"></div>
             </div>
             <div class="chart-card animate-in">
                 <h3 class="chart-title">🗺️ 疆域面积变化</h3>
+                <p class="chart-desc">疆域大小体现了王朝的军事力量与统治范围。大一统王朝疆域辽阔，分裂时期则相对狭小。</p>
                 <div class="chart-container" id="area-chart"></div>
             </div>
         </div>
@@ -801,6 +875,9 @@
             <div class="section-line"></div>
             <div class="section-title">🎯 文明维度雷达图</div>
             <div class="section-line"></div>
+        </div>
+        <div style="text-align:center; margin-bottom:20px; color:var(--text-secondary); font-size:0.9em; line-height:1.7;">
+            <strong style="color:var(--accent-gold);">📐 说明：</strong> 从<strong style="color:#3498db;">技术</strong>、<strong style="color:#2ecc71;">经济</strong>、<strong style="color:#f1c40f;">制度</strong>、<strong style="color:#9b59b6;">文化</strong>、<strong style="color:#e74c3c;">军事</strong>五个维度综合评估文明发展水平
         </div>
 
         <div class="radar-grid" id="radar-view">
@@ -815,14 +892,19 @@
             <div class="section-title">📈 事件类型分析</div>
             <div class="section-line"></div>
         </div>
+        <div style="text-align:center; margin-bottom:20px; color:var(--text-secondary); font-size:0.9em; line-height:1.7;">
+            <strong style="color:var(--accent-gold);">📊 说明：</strong> 统计各时期的战争频率与事件类型，揭示历史发展的动力与规律
+        </div>
 
         <div class="charts-grid">
             <div class="chart-card animate-in">
                 <h3 class="chart-title">⚔️ 战争频率分布</h3>
+                <p class="chart-desc">战争频率反映了社会稳定性。频繁的战争往往预示着王朝的衰落与秩序的重构。</p>
                 <div class="chart-container" id="war-chart"></div>
             </div>
             <div class="chart-card animate-in">
                 <h3 class="chart-title">📌 事件类型统计</h3>
+                <p class="chart-desc">从政治、战争、科技、文化等维度统计历史事件，全面展现文明演进的多元动力。</p>
                 <div class="chart-container" id="event-type-chart"></div>
             </div>
         </div>
@@ -864,17 +946,33 @@
 
         <p style="color: var(--text-secondary); font-style: italic; font-size: 0.85em; margin: 10px 0 0;" id="modal-territory-desc"></p>
 
-        <h3 style="color: var(--accent-gold); margin: 25px 0 15px; font-size: 1.1em;">兴衰因果链解析</h3>
-        <div class="analysis-grid">
-            <div class="analysis-box">
+        <h3 style="color: var(--accent-green); margin: 25px 0 15px; font-size: 1.15em;">📈 兴起原因解析</h3>
+        <div class="rise-analysis" id="rise-analysis-container">
+            <div class="analysis-box" style="border-left: 4px solid var(--accent-green);">
+                <h4 class="analysis-title">🌱 天时地利</h4>
+                <p class="analysis-text" id="modal-rise-environment"></p>
+            </div>
+            <div class="analysis-box" style="border-left: 4px solid var(--accent-blue);">
+                <h4 class="analysis-title">🏛️ 制度创新</h4>
+                <p class="analysis-text" id="modal-rise-institution"></p>
+            </div>
+            <div class="analysis-box" style="border-left: 4px solid var(--accent-gold);">
+                <h4 class="analysis-title">⚔️ 军事与文化</h4>
+                <p class="analysis-text" id="modal-rise-military"></p>
+            </div>
+        </div>
+
+        <h3 style="color: var(--accent-red); margin: 30px 0 15px; font-size: 1.15em;">📉 衰落原因解析</h3>
+        <div class="analysis-grid" id="fall-analysis-container">
+            <div class="analysis-box" id="fall-trigger-box">
                 <h4 class="analysis-title">🔥 导火索</h4>
                 <p class="analysis-text" id="modal-trigger"></p>
             </div>
-            <div class="analysis-box">
+            <div class="analysis-box" id="fall-structural-box">
                 <h4 class="analysis-title">⚙️ 结构性矛盾</h4>
                 <p class="analysis-text" id="modal-structural"></p>
             </div>
-            <div class="analysis-box">
+            <div class="analysis-box" id="fall-external-box">
                 <h4 class="analysis-title">🌊 外部压力</h4>
                 <p class="analysis-text" id="modal-external"></p>
             </div>
@@ -976,6 +1074,18 @@
             });
 
             document.getElementById('btn-data-toggle').addEventListener('click', toggleDataVersion);
+
+            let allExpanded = false;
+            document.getElementById('btn-expand-all').addEventListener('click', () => {
+                allExpanded = !allExpanded;
+                const btn = document.getElementById('btn-expand-all');
+                btn.textContent = allExpanded ? "收起全部" : "展开全部";
+                btn.classList.toggle('active', allExpanded);
+                
+                if (allExpanded) {
+                    alert('💡 提示：点击时间轴上的文明条可查看详细信息！');
+                }
+            });
         }
 
         function filterData() {
@@ -1077,12 +1187,43 @@
             });
         }
 
+        function assignTracks(data) {
+            const tracks = [];
+            const dataWithTrack = data.map(d => ({...d, track: 0}));
+            
+            dataWithTrack.forEach(dynasty => {
+                let assigned = false;
+                for (let i = 0; i < tracks.length && !assigned; i++) {
+                    let canPlace = true;
+                    for (let existing of tracks[i]) {
+                        if (!(dynasty.end_year <= existing.start_year || dynasty.start_year >= existing.end_year)) {
+                            canPlace = false;
+                            break;
+                        }
+                    }
+                    if (canPlace) {
+                        dynasty.track = i;
+                        tracks[i].push(dynasty);
+                        assigned = true;
+                    }
+                }
+                if (!assigned) {
+                    dynasty.track = tracks.length;
+                    tracks.push([dynasty]);
+                }
+            });
+            
+            return { dataWithTrack, numTracks: Math.max(tracks.length, 8) };
+        }
+
         function initVisualization(data) {
             const width = document.getElementById('timeline-view').clientWidth;
-            const height = 500;
+            const height = 600;
             const margin = {top: 25, right: 30, bottom: 60, left: 70};
             currentMargin = margin;
             currentHeight = height;
+
+            const { dataWithTrack, numTracks } = assignTracks(data);
 
             const x = d3.scaleLinear()
                 .domain([-5200, 1950])
@@ -1090,9 +1231,9 @@
             currentX = x;
 
             const y = d3.scaleBand()
-                .domain(d3.range(6))
+                .domain(d3.range(numTracks))
                 .range([margin.top, height - margin.bottom])
-                .padding(0.25);
+                .padding(0.2);
 
             const svg = d3.select("#timeline-view")
                 .append("svg")
@@ -1123,7 +1264,7 @@
             const tooltip = d3.select("#tooltip");
 
             const color = d3.scaleOrdinal()
-                .range(["#e74c3c", "#e67e22", "#f1c40f", "#2ecc71", "#3498db", "#9b59b6", "#1abc9c", "#e91e63", "#00bcd4"]);
+                .range(["#e74c3c", "#e67e22", "#f1c40f", "#2ecc71", "#3498db", "#9b59b6", "#1abc9c", "#e91e63", "#00bcd4", "#34495e", "#16a085", "#27ae60", "#d35400", "#c0392b", "#8e44ad"]);
 
             zoomBehavior = d3.zoom()
                 .scaleExtent([0.8, 30])
@@ -1172,7 +1313,7 @@
             }
 
             const bars = g.selectAll(".dynasty-group")
-                .data(data)
+                .data(dataWithTrack)
                 .enter()
                 .append("g")
                 .attr("class", "dynasty-group");
@@ -1180,11 +1321,11 @@
             bars.append("rect")
                 .attr("class", "dynasty-bar")
                 .attr("x", d => x(d.start_year))
-                .attr("y", (d, i) => y(i % 6))
+                .attr("y", d => y(d.track))
                 .attr("width", d => x(d.end_year) - x(d.start_year))
                 .attr("height", y.bandwidth())
                 .attr("rx", 6)
-                .attr("fill", (d, i) => color(i))
+                .attr("fill", (d, i) => color(i % 12))
                 .on("mouseover", function(event, d) {
                     tooltip.style("opacity", 1);
                     const statsHtml = d.stats ? `
@@ -1210,13 +1351,13 @@
             bars.append("text")
                 .attr("class", "timeline-label")
                 .attr("x", d => x(d.start_year) + 6)
-                .attr("y", (d, i) => y(i % 6) + y.bandwidth() / 2 + 4)
+                .attr("y", d => y(d.track) + y.bandwidth() / 2 + 4)
                 .text(d => d.name.split(" ")[0] || d.name);
 
             bars.each(function(d, i) {
                 if (d.events) {
                     const group = d3.select(this);
-                    const yPos = y(i % 6) + y.bandwidth() + 8;
+                    const yPos = y(d.track) + y.bandwidth() + 8;
                     group.selectAll(".event-dot")
                         .data(d.events)
                         .enter()
@@ -1884,6 +2025,44 @@
                 .text("事件数量");
         }
 
+        function classifyFactor(text) {
+            if (!text) return 'unknown';
+            const t = text.toLowerCase();
+            if (t.includes('战争') || t.includes('战') || t.includes('兵') || t.includes('军事') || t.includes('入侵')) {
+                return 'war';
+            }
+            if (t.includes('气候') || t.includes('环境') || t.includes('灾') || t.includes('旱') || t.includes('冷') || t.includes('海平面') || t.includes('河')) {
+                return 'environment';
+            }
+            if (t.includes('矛盾') || t.includes('腐败') || t.includes('分化') || t.includes('内部') || t.includes('权力') || t.includes('制度') || t.includes('财政') || t.includes('土地') || t.includes('贫富')) {
+                return 'internal';
+            }
+            if (t.includes('外部') || t.includes('文化') || t.includes('周边') || t.includes('崛起') || t.includes('南下') || t.includes('竞争')) {
+                return 'external';
+            }
+            return 'unknown';
+        }
+
+        function generateRiseAnalysis(d) {
+            let envText = '气候温暖期，适宜农业发展。';
+            let instText = '制度创新，社会组织能力提升。';
+            let milText = '军事力量增强，文化繁荣发展。';
+            
+            if (d.stats && d.stats.temperature_anomaly > 0.5) {
+                envText = `气候温暖期（气温距平+${d.stats.temperature_anomaly}°C），适宜粟作或稻作农业发展，人口增长迅速。`;
+            }
+            
+            if (d.institution_innovations && d.institution_innovations.length > 0) {
+                instText = `通过${d.institution_innovations.join('、')}等制度创新，社会组织能力大幅提升，为文明崛起奠定基础。`;
+            }
+            
+            if (d.tech_innovations && d.tech_innovations.length > 0) {
+                milText = `掌握${d.tech_innovations.join('、')}等先进技术，同时文化繁荣，军事力量逐步增强。`;
+            }
+            
+            return { env: envText, inst: instText, mil: milText };
+        }
+
         function showModal(d) {
             document.getElementById('modal-overlay').style.display = 'block';
             document.getElementById('detail-modal').style.display = 'block';
@@ -1915,28 +2094,99 @@
             document.getElementById('modal-stats').innerHTML = statsHtml;
 
             document.getElementById('modal-figures').textContent = d.key_figures ? d.key_figures.join('、') : '待补充';
-            document.getElementById('modal-capital').textContent = d.capital || '待补充';
-            document.getElementById('modal-culture').textContent = d.culture_tech || '待补充';
-            document.getElementById('modal-territory').textContent = d.territory_feature || '待补充';
-            document.getElementById('modal-territory-desc').textContent = d.territory_description || '';
+            document.getElementById('modal-capital').textContent = d.capital ? (Array.isArray(d.capital) ? d.capital.join('、') : d.capital) : '待补充';
+            
+            const cultureList = [];
+            if (d.culture) cultureList.push(...(Array.isArray(d.culture) ? d.culture : [d.culture]));
+            if (d.tech_innovations) cultureList.push(...(Array.isArray(d.tech_innovations) ? d.tech_innovations : [d.tech_innovations]));
+            if (d.institution_innovations) cultureList.push(...(Array.isArray(d.institution_innovations) ? d.institution_innovations : [d.institution_innovations]));
+            document.getElementById('modal-culture').textContent = cultureList.length > 0 ? cultureList.join('、') : (d.culture_tech || '待补充');
+            
+            document.getElementById('modal-territory').textContent = d.territory || (d.territory_feature || '待补充');
+            document.getElementById('modal-territory-desc').textContent = d.territory_desc || (d.territory_description || '');
 
-            if (d.rise_fall) {
-                document.getElementById('modal-trigger').textContent = d.rise_fall.trigger || '待补充';
-                document.getElementById('modal-structural').textContent = d.rise_fall.structural || '待补充';
-                document.getElementById('modal-external').textContent = d.rise_fall.external || '待补充';
-                document.getElementById('modal-transition').textContent = d.rise_fall.transition || '待补充';
+            const riseAnalysis = generateRiseAnalysis(d);
+            document.getElementById('modal-rise-environment').textContent = riseAnalysis.env;
+            document.getElementById('modal-rise-institution').textContent = riseAnalysis.inst;
+            document.getElementById('modal-rise-military').textContent = riseAnalysis.mil;
+
+            const triggerBox = document.getElementById('fall-trigger-box');
+            const structuralBox = document.getElementById('fall-structural-box');
+            const externalBox = document.getElementById('fall-external-box');
+            
+            triggerBox.className = 'analysis-box';
+            structuralBox.className = 'analysis-box';
+            externalBox.className = 'analysis-box';
+
+            let transitionText = '';
+            if (d.fall_analysis) {
+                const triggerText = d.fall_analysis.trigger || '待补充';
+                const structuralText = d.fall_analysis.structural || '待补充';
+                const externalText = d.fall_analysis.external || '待补充';
+                
+                document.getElementById('modal-trigger').textContent = triggerText;
+                document.getElementById('modal-structural').textContent = structuralText;
+                document.getElementById('modal-external').textContent = externalText;
+
+                const triggerType = classifyFactor(triggerText);
+                const structuralType = classifyFactor(structuralText);
+                const externalType = classifyFactor(externalText);
+
+                if (triggerType === 'war') triggerBox.classList.add('factor-war');
+                else if (triggerType === 'environment') triggerBox.classList.add('factor-environment');
+                else if (triggerType === 'internal') triggerBox.classList.add('factor-internal');
+                else if (triggerType === 'external') triggerBox.classList.add('factor-external');
+
+                if (structuralType === 'war') structuralBox.classList.add('factor-war');
+                else if (structuralType === 'environment') structuralBox.classList.add('factor-environment');
+                else if (structuralType === 'internal') structuralBox.classList.add('factor-internal');
+                else if (structuralType === 'external') structuralBox.classList.add('factor-external');
+
+                if (externalType === 'war') externalBox.classList.add('factor-war');
+                else if (externalType === 'environment') externalBox.classList.add('factor-environment');
+                else if (externalType === 'internal') externalBox.classList.add('factor-internal');
+                else if (externalType === 'external') externalBox.classList.add('factor-external');
             }
+            
+            if (d.conquest_chain) {
+                transitionText = `胜利者：${d.conquest_chain.victor} ｜ 失败者：${d.conquest_chain.loser}`;
+                if (d.conquest_chain.battle) {
+                    transitionText += `\n关键战役：${d.conquest_chain.battle}`;
+                }
+                if (d.conquest_chain.factor) {
+                    transitionText += `\n胜负因素：${d.conquest_chain.factor}`;
+                }
+            } else if (d.fall_analysis && d.fall_analysis.transition) {
+                transitionText = d.fall_analysis.transition;
+            } else {
+                transitionText = '待补充';
+            }
+            document.getElementById('modal-transition').textContent = transitionText;
 
             let eventsHtml = '';
             if (d.events) {
-                d.events.forEach(e => {
+                const sortedEvents = [...d.events].sort((a, b) => a.year - b.year);
+                sortedEvents.forEach(e => {
                     const yearLabel = e.year < 0 ? `BC ${Math.abs(e.year)}` : `AD ${e.year}`;
+                    const significance = e.significance || e.importance || 'medium';
+                    const type = e.type || 'culture';
+                    const typeName = typeNames[type] || (type === 'politic' ? '政治' : type === 'war' ? '战争' : type === 'tech' ? '科技' : type === 'culture' ? '文化' : '其他');
+                    const sigName = significance === 'high' ? '关键' : '重要';
+                    
+                    let details = '';
+                    if (e.details) {
+                        details = `<div class="event-details" style="font-size:0.85em;color:var(--text-secondary);margin-top:5px;">${e.details}</div>`;
+                    }
+                    
                     eventsHtml += `
-                        <div class="event-item">
-                            <span class="event-year">${yearLabel}</span>
-                            <span class="tag ${e.type}">${typeNames[e.type] || e.type}</span>
-                            <span class="tag ${e.importance}">${e.importance === 'high' ? '关键' : '重要'}</span>
-                            ${e.name}
+                        <div class="event-item" style="border-left:3px solid ${significance === 'high' ? '#e74c3c' : '#f39c12'};padding-left:12px;margin-bottom:12px;">
+                            <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px;">
+                                <span class="event-year" style="font-weight:700;color:var(--accent-gold);">${yearLabel}</span>
+                                <span class="tag ${type}" style="font-size:0.75em;">${typeName}</span>
+                                <span class="tag ${significance}" style="font-size:0.75em;">${sigName}</span>
+                            </div>
+                            <div style="font-weight:600;color:var(--text-primary);">${e.name}</div>
+                            ${details}
                         </div>
                     `;
                 });
