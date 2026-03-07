@@ -6,8 +6,12 @@
     "start_year": -5000,
     "end_year": -3000,
     "duration": 2000,
-    "capital": ["仰韶村 (Yangshao Village)"],
-    "key_figures": ["仰韶部落首领"],
+    "capital": [
+      "仰韶村 (Yangshao Village)"
+    ],
+    "key_figures": [
+      "仰韶部落首领"
+    ],
     "territory": "黄河中游，渭水、汾水、洛水流域",
     "territory_desc": "中国新石器时代最重要的文化之一，以彩陶为显著特征，分布范围广泛。",
     "fall_analysis": {
@@ -33,14 +37,77 @@
       "military_index": 20
     },
     "events": [
-      {"year": -5000, "name": "仰韶文化兴起", "type": "culture", "significance": "high"},
-      {"year": -4500, "name": "彩陶制作高峰期", "type": "culture", "significance": "medium"},
-      {"year": -3500, "name": "半坡类型繁荣", "type": "culture", "significance": "medium"},
-      {"year": -3000, "name": "仰韶文化转型为龙山文化", "type": "culture", "significance": "high"}
+      {
+        "year": -5000,
+        "name": "仰韶文化兴起",
+        "type": "culture",
+        "significance": "high",
+        "description": "仰韶文化在黄河中游地区兴起，以彩陶为显著特征，是中国新石器时代最重要的文化之一。",
+        "key_points": [
+          "仰韶文化兴起",
+          "黄河中游",
+          "彩陶特征"
+        ],
+        "impact": "开启了中国新石器时代的彩陶文化，为中华文明奠定了基础",
+        "image": "images/yangshao_culture.jpg"
+      },
+      {
+        "year": -4500,
+        "name": "彩陶制作高峰期",
+        "type": "culture",
+        "significance": "medium",
+        "description": "仰韶文化进入彩陶制作高峰期，制作了大量精美的彩陶器物。",
+        "key_points": [
+          "彩陶制作",
+          "高峰期",
+          "精美器物"
+        ],
+        "impact": "展示了中国早期陶艺的高超水平，促进了手工业发展",
+        "image": "images/yangshao_pottery.jpg"
+      },
+      {
+        "year": -3500,
+        "name": "半坡类型繁荣",
+        "type": "culture",
+        "significance": "medium",
+        "description": "半坡类型仰韶文化繁荣，出现了半地穴式房屋和粟作农业。",
+        "key_points": [
+          "半坡类型",
+          "地穴房屋",
+          "粟作农业"
+        ],
+        "impact": "展示了早期人类的建筑技术和农业发展水平",
+        "image": "images/banpo_settlement.jpg"
+      },
+      {
+        "year": -3000,
+        "name": "仰韶文化转型为龙山文化",
+        "type": "culture",
+        "significance": "high",
+        "description": "仰韶文化逐渐转型为龙山文化，进入了新的发展阶段。",
+        "key_points": [
+          "文化转型",
+          "龙山文化",
+          "新发展"
+        ],
+        "impact": "标志着新石器时代的发展，为夏商周文明奠定了基础"
+      }
     ],
-    "culture": ["彩陶", "粟作农业", "半地穴式房屋", "鱼纹图案"],
-    "tech_innovations": ["彩陶制作", "磨制石器", "粟作农业"],
-    "institution_innovations": ["母系氏族公社", "原始宗教"]
+    "culture": [
+      "彩陶",
+      "粟作农业",
+      "半地穴式房屋",
+      "鱼纹图案"
+    ],
+    "tech_innovations": [
+      "彩陶制作",
+      "磨制石器",
+      "粟作农业"
+    ],
+    "institution_innovations": [
+      "母系氏族公社",
+      "原始宗教"
+    ]
   },
   {
     "id": "hemudu",
@@ -49,8 +116,12 @@
     "start_year": -5000,
     "end_year": -3300,
     "duration": 1700,
-    "capital": ["河姆渡 (Hemudu)"],
-    "key_figures": ["河姆渡部落首领"],
+    "capital": [
+      "河姆渡 (Hemudu)"
+    ],
+    "key_figures": [
+      "河姆渡部落首领"
+    ],
     "territory": "长江下游，宁绍平原",
     "territory_desc": "中国南方新石器时代重要文化，以稻作农业和干栏式建筑为特色。",
     "fall_analysis": {
@@ -76,14 +147,78 @@
       "military_index": 15
     },
     "events": [
-      {"year": -5000, "name": "河姆渡文化兴起", "type": "culture", "significance": "high"},
-      {"year": -4500, "name": "稻作农业成熟", "type": "tech", "significance": "high"},
-      {"year": -4000, "name": "干栏式建筑普及", "type": "tech", "significance": "medium"},
-      {"year": -3300, "name": "河姆渡文化被良渚文化继承", "type": "culture", "significance": "high"}
+      {
+        "year": -5000,
+        "name": "河姆渡文化兴起",
+        "type": "culture",
+        "significance": "high",
+        "description": "河姆渡文化在长江下游地区兴起，以稻作农业和干栏式建筑为特色，是中国南方新石器时代重要文化。",
+        "key_points": [
+          "河姆渡文化兴起",
+          "长江下游",
+          "稻作农业"
+        ],
+        "impact": "开启了中国南方新石器时代的稻作文化，为中华文明多元一体格局奠定了基础",
+        "image": "images/hemudu_culture.jpg"
+      },
+      {
+        "year": -4500,
+        "name": "稻作农业成熟",
+        "type": "tech",
+        "significance": "high",
+        "description": "河姆渡文化的稻作农业技术日趋成熟，水稻栽培技术得到广泛应用。",
+        "key_points": [
+          "稻作农业",
+          "技术成熟",
+          "水稻栽培"
+        ],
+        "impact": "稻作农业的成熟标志着中国南方农业文明的发展，为后世农业奠定了基础",
+        "image": "images/hemudu_rice.jpg"
+      },
+      {
+        "year": -4000,
+        "name": "干栏式建筑普及",
+        "type": "tech",
+        "significance": "medium",
+        "description": "干栏式建筑在河姆渡文化中普及，采用榫卯结构，适应南方潮湿环境。",
+        "key_points": [
+          "干栏式建筑",
+          "榫卯结构",
+          "适应环境"
+        ],
+        "impact": "干栏式建筑展示了早期人类的建筑智慧，为南方建筑风格奠定了基础",
+        "image": "images/hemudu_building.jpg"
+      },
+      {
+        "year": -3300,
+        "name": "河姆渡文化被良渚文化继承",
+        "type": "culture",
+        "significance": "high",
+        "description": "河姆渡文化逐渐被良渚文化继承和发展，文化传统得以延续。",
+        "key_points": [
+          "文化继承",
+          "良渚文化",
+          "传统延续"
+        ],
+        "impact": "文化传统的延续和发展，为中华文明的连续性提供了重要证据",
+        "image": "images/hemudu_to_liangzhu.jpg"
+      }
     ],
-    "culture": ["稻作农业", "干栏式建筑", "黑陶", "象牙雕刻"],
-    "tech_innovations": ["水稻栽培", "榫卯结构", "漆器制作"],
-    "institution_innovations": ["稻作农耕社会", "原始宗教信仰"]
+    "culture": [
+      "稻作农业",
+      "干栏式建筑",
+      "黑陶",
+      "象牙雕刻"
+    ],
+    "tech_innovations": [
+      "水稻栽培",
+      "榫卯结构",
+      "漆器制作"
+    ],
+    "institution_innovations": [
+      "稻作农耕社会",
+      "原始宗教信仰"
+    ]
   },
   {
     "id": "dawenkou",
@@ -92,8 +227,12 @@
     "start_year": -4300,
     "end_year": -2500,
     "duration": 1800,
-    "capital": ["大汶口 (Dawenkou)"],
-    "key_figures": ["大汶口部落首领"],
+    "capital": [
+      "大汶口 (Dawenkou)"
+    ],
+    "key_figures": [
+      "大汶口部落首领"
+    ],
     "territory": "黄河下游，海岱地区",
     "territory_desc": "海岱地区重要的新石器时代文化，是龙山文化的直接前身。",
     "fall_analysis": {
@@ -119,14 +258,74 @@
       "military_index": 25
     },
     "events": [
-      {"year": -4300, "name": "大汶口文化早期", "type": "culture", "significance": "high"},
-      {"year": -3500, "name": "社会分化开始出现", "type": "politic", "significance": "medium"},
-      {"year": -3000, "name": "大汶口文化晚期，贫富分化加剧", "type": "politic", "significance": "high"},
-      {"year": -2500, "name": "过渡为龙山文化", "type": "culture", "significance": "high"}
+      {
+        "year": -4300,
+        "name": "大汶口文化早期",
+        "type": "culture",
+        "significance": "high",
+        "description": "大汶口文化在黄河下游海岱地区兴起，是龙山文化的直接前身。",
+        "key_points": [
+          "大汶口文化早期",
+          "黄河下游",
+          "海岱地区"
+        ],
+        "impact": "为龙山文化的发展奠定了基础，是黄河下游新石器时代文化的重要组成部分"
+      },
+      {
+        "year": -3500,
+        "name": "社会分化开始出现",
+        "type": "politic",
+        "significance": "medium",
+        "description": "大汶口文化中期开始出现社会分化，私有制萌芽。",
+        "key_points": [
+          "社会分化",
+          "私有制萌芽",
+          "社会结构变化"
+        ],
+        "impact": "标志着社会结构的质变，为早期国家的形成奠定了基础"
+      },
+      {
+        "year": -3000,
+        "name": "大汶口文化晚期，贫富分化加剧",
+        "type": "politic",
+        "significance": "high",
+        "description": "大汶口文化晚期贫富分化加剧，社会矛盾突出。",
+        "key_points": [
+          "贫富分化",
+          "社会矛盾",
+          "社会结构质变"
+        ],
+        "impact": "社会分化的加剧为早期国家的形成创造了条件"
+      },
+      {
+        "year": -2500,
+        "name": "过渡为龙山文化",
+        "type": "culture",
+        "significance": "high",
+        "description": "大汶口文化逐渐过渡为龙山文化，进入了新的发展阶段。",
+        "key_points": [
+          "文化过渡",
+          "龙山文化",
+          "新发展"
+        ],
+        "impact": "标志着黄河下游地区新石器时代文化的发展，为夏商周文明奠定了基础"
+      }
     ],
-    "culture": ["白陶", "黑陶", "象牙雕刻", "拔牙习俗"],
-    "tech_innovations": ["快轮制陶", "酿酒技术", "玉器制作"],
-    "institution_innovations": ["父系氏族确立", "私有制萌芽"]
+    "culture": [
+      "白陶",
+      "黑陶",
+      "象牙雕刻",
+      "拔牙习俗"
+    ],
+    "tech_innovations": [
+      "快轮制陶",
+      "酿酒技术",
+      "玉器制作"
+    ],
+    "institution_innovations": [
+      "父系氏族确立",
+      "私有制萌芽"
+    ]
   },
   {
     "id": "majiayao",
@@ -135,8 +334,12 @@
     "start_year": -3300,
     "end_year": -2050,
     "duration": 1250,
-    "capital": ["马家窑 (Majiayao)"],
-    "key_figures": ["马家窑部落首领"],
+    "capital": [
+      "马家窑 (Majiayao)"
+    ],
+    "key_figures": [
+      "马家窑部落首领"
+    ],
     "territory": "黄河上游，甘青地区",
     "territory_desc": "仰韶文化向西发展的分支，以精美的彩陶著称。",
     "fall_analysis": {
@@ -162,15 +365,87 @@
       "military_index": 20
     },
     "events": [
-      {"year": -3300, "name": "马家窑文化兴起", "type": "culture", "significance": "high"},
-      {"year": -3000, "name": "马家窑类型彩陶鼎盛", "type": "culture", "significance": "high"},
-      {"year": -2600, "name": "半山类型彩陶", "type": "culture", "significance": "medium"},
-      {"year": -2300, "name": "马厂类型彩陶", "type": "culture", "significance": "medium"},
-      {"year": -2050, "name": "马家窑文化衰亡", "type": "culture", "significance": "high"}
+      {
+        "year": -3300,
+        "name": "马家窑文化兴起",
+        "type": "culture",
+        "significance": "high",
+        "description": "马家窑文化在黄河上游甘青地区兴起，是仰韶文化向西发展的分支，以精美的彩陶著称。",
+        "key_points": [
+          "马家窑文化兴起",
+          "黄河上游",
+          "甘青地区"
+        ],
+        "impact": "开创了中国西北地区彩陶文化的先河，为中华文明多元一体格局增添了重要一元"
+      },
+      {
+        "year": -3000,
+        "name": "马家窑类型彩陶鼎盛",
+        "type": "culture",
+        "significance": "high",
+        "description": "马家窑类型彩陶进入鼎盛期，制作了大量精美的彩陶器物。",
+        "key_points": [
+          "马家窑类型",
+          "彩陶鼎盛",
+          "精美器物"
+        ],
+        "impact": "展示了中国早期彩陶艺术的高超水平，为后世陶瓷艺术奠定了基础"
+      },
+      {
+        "year": -2600,
+        "name": "半山类型彩陶",
+        "type": "culture",
+        "significance": "medium",
+        "description": "半山类型彩陶出现，以红黑彩绘为特色，图案更加精美。",
+        "key_points": [
+          "半山类型",
+          "红黑彩绘",
+          "图案精美"
+        ],
+        "impact": "彩陶艺术进一步发展，图案设计更加复杂精美"
+      },
+      {
+        "year": -2300,
+        "name": "马厂类型彩陶",
+        "type": "culture",
+        "significance": "medium",
+        "description": "马厂类型彩陶出现，彩陶制作技术达到新的高度。",
+        "key_points": [
+          "马厂类型",
+          "技术高度",
+          "彩陶发展"
+        ],
+        "impact": "彩陶制作技术达到新高度，为齐家文化的发展奠定了基础"
+      },
+      {
+        "year": -2050,
+        "name": "马家窑文化衰亡",
+        "type": "culture",
+        "significance": "high",
+        "description": "马家窑文化逐渐衰亡，被齐家文化取代。",
+        "key_points": [
+          "文化衰亡",
+          "齐家文化",
+          "文化更替"
+        ],
+        "impact": "标志着甘青地区新石器时代文化的发展，为青铜时代的到来奠定了基础"
+      }
     ],
-    "culture": ["彩陶艺术", "螺旋纹", "蛙纹", "舞蹈纹"],
-    "tech_innovations": ["彩陶烧制", "农业灌溉", "纺织技术"],
-    "institution_innovations": ["原始巫术", "祖先崇拜"]
+    "culture": [
+      "彩陶艺术",
+      "螺旋纹",
+      "蛙纹",
+      "舞蹈纹"
+    ],
+    "tech_innovations": [
+      "彩陶烧制",
+      "农业灌溉",
+      "纺织技术"
+    ],
+    "institution_innovations": [
+      "原始巫术",
+      "祖先崇拜"
+    ]
   },
   {
     "id": "longshan",
@@ -179,8 +454,12 @@
     "start_year": -2500,
     "end_year": -2000,
     "duration": 500,
-    "capital": ["城子崖 (Chengziya)"],
-    "key_figures": ["龙山部落联盟首领"],
+    "capital": [
+      "城子崖 (Chengziya)"
+    ],
+    "key_figures": [
+      "龙山部落联盟首领"
+    ],
     "territory": "黄河中下游，海岱至中原",
     "territory_desc": "新石器时代晚期，众多城址出现，标志着早期国家的萌芽。",
     "fall_analysis": {
@@ -206,14 +485,75 @@
       "military_index": 40
     },
     "events": [
-      {"year": -2500, "name": "龙山文化兴起", "type": "culture", "significance": "high"},
-      {"year": -2300, "name": "城子崖等城址建成", "type": "politic", "significance": "high"},
-      {"year": -2100, "name": "蛋壳黑陶制作高峰期", "type": "culture", "significance": "medium"},
-      {"year": -2000, "name": "龙山文化向青铜时代过渡", "type": "culture", "significance": "high"}
+      {
+        "year": -2500,
+        "name": "龙山文化兴起",
+        "type": "culture",
+        "significance": "high",
+        "description": "龙山文化在黄河中下游地区兴起，以黑陶为显著特征，标志着新石器时代晚期的发展。",
+        "key_points": [
+          "龙山文化兴起",
+          "黄河中下游",
+          "黑陶特征"
+        ],
+        "impact": "标志着新石器时代晚期的发展，为夏商周文明奠定了基础"
+      },
+      {
+        "year": -2300,
+        "name": "城子崖等城址建成",
+        "type": "politic",
+        "significance": "high",
+        "description": "城子崖等城址建成，标志着早期城市的出现和早期国家的萌芽。",
+        "key_points": [
+          "城址建成",
+          "早期城市",
+          "国家萌芽"
+        ],
+        "impact": "早期城市的出现标志着社会结构的质变，为早期国家的形成奠定了基础"
+      },
+      {
+        "year": -2100,
+        "name": "蛋壳黑陶制作高峰期",
+        "type": "culture",
+        "significance": "medium",
+        "description": "蛋壳黑陶制作技术达到高峰期，制作了大量精美的黑陶器物。",
+        "key_points": [
+          "蛋壳黑陶",
+          "制作高峰",
+          "精美器物"
+        ],
+        "impact": "展示了中国早期陶艺的高超水平，为后世陶瓷艺术奠定了基础"
+      },
+      {
+        "year": -2000,
+        "name": "龙山文化向青铜时代过渡",
+        "type": "culture",
+        "significance": "high",
+        "description": "龙山文化逐渐向青铜时代过渡，开启了新的发展阶段。",
+        "key_points": [
+          "向青铜时代过渡",
+          "新发展",
+          "文明诞生"
+        ],
+        "impact": "标志着从新石器时代向青铜时代的跨越，为夏商周文明奠定了基础"
+      }
     ],
-    "culture": ["黑陶", "蛋壳陶", "卜骨", "夯土城墙"],
-    "tech_innovations": ["快轮制陶", "夯筑技术", "占卜习俗"],
-    "institution_innovations": ["早期城市", "军事防御", "阶级分化"]
+    "culture": [
+      "黑陶",
+      "蛋壳陶",
+      "卜骨",
+      "夯土城墙"
+    ],
+    "tech_innovations": [
+      "快轮制陶",
+      "夯筑技术",
+      "占卜习俗"
+    ],
+    "institution_innovations": [
+      "早期城市",
+      "军事防御",
+      "阶级分化"
+    ]
   },
   {
     "id": "qujialing",
@@ -222,8 +562,12 @@
     "start_year": -3300,
     "end_year": -2600,
     "duration": 700,
-    "capital": ["屈家岭 (Qujialing)"],
-    "key_figures": ["屈家岭部落首领"],
+    "capital": [
+      "屈家岭 (Qujialing)"
+    ],
+    "key_figures": [
+      "屈家岭部落首领"
+    ],
     "territory": "长江中游，江汉平原",
     "territory_desc": "长江中游重要的新石器时代文化，以稻作农业和蛋壳彩陶为特色。",
     "fall_analysis": {
@@ -249,14 +593,74 @@
       "military_index": 20
     },
     "events": [
-      {"year": -3300, "name": "屈家岭文化兴起", "type": "culture", "significance": "high"},
-      {"year": -3000, "name": "稻作农业繁荣", "type": "tech", "significance": "medium"},
-      {"year": -2800, "name": "蛋壳彩陶制作", "type": "culture", "significance": "medium"},
-      {"year": -2600, "name": "过渡为石家河文化", "type": "culture", "significance": "high"}
+      {
+        "year": -3300,
+        "name": "屈家岭文化兴起",
+        "type": "culture",
+        "significance": "high",
+        "description": "屈家岭文化在长江中游江汉平原地区兴起，以稻作农业和蛋壳彩陶为特色。",
+        "key_points": [
+          "屈家岭文化兴起",
+          "长江中游",
+          "江汉平原"
+        ],
+        "impact": "为长江中游地区新石器时代文化的发展奠定了基础"
+      },
+      {
+        "year": -3000,
+        "name": "稻作农业繁荣",
+        "type": "tech",
+        "significance": "medium",
+        "description": "屈家岭文化的稻作农业技术日趋成熟，水稻栽培技术得到广泛应用。",
+        "key_points": [
+          "稻作农业",
+          "技术成熟",
+          "水稻栽培"
+        ],
+        "impact": "稻作农业的繁荣标志着长江中游农业文明的发展"
+      },
+      {
+        "year": -2800,
+        "name": "蛋壳彩陶制作",
+        "type": "culture",
+        "significance": "medium",
+        "description": "屈家岭文化制作了大量精美的蛋壳彩陶器物，展示了高超的制陶技术。",
+        "key_points": [
+          "蛋壳彩陶",
+          "制陶技术",
+          "精美器物"
+        ],
+        "impact": "展示了中国早期陶艺的高超水平，为后世陶瓷艺术奠定了基础"
+      },
+      {
+        "year": -2600,
+        "name": "过渡为石家河文化",
+        "type": "culture",
+        "significance": "high",
+        "description": "屈家岭文化逐渐过渡为石家河文化，文化传统得以延续。",
+        "key_points": [
+          "文化过渡",
+          "石家河文化",
+          "传统延续"
+        ],
+        "impact": "文化传统的延续和发展，为中华文明的连续性提供了重要证据"
+      }
     ],
-    "culture": ["蛋壳彩陶", "稻作农业", "双腹耳器", "陶纺轮"],
-    "tech_innovations": ["水稻栽培", "快轮制陶", "纺织技术"],
-    "institution_innovations": ["稻作农耕社会", "原始宗教"]
+    "culture": [
+      "蛋壳彩陶",
+      "稻作农业",
+      "双腹耳器",
+      "陶纺轮"
+    ],
+    "tech_innovations": [
+      "水稻栽培",
+      "快轮制陶",
+      "纺织技术"
+    ],
+    "institution_innovations": [
+      "稻作农耕社会",
+      "原始宗教"
+    ]
   },
   {
     "id": "shijiahe",
@@ -265,8 +669,12 @@
     "start_year": -2600,
     "end_year": -2000,
     "duration": 600,
-    "capital": ["石家河 (Shijiahe)"],
-    "key_figures": ["石家河部落首领"],
+    "capital": [
+      "石家河 (Shijiahe)"
+    ],
+    "key_figures": [
+      "石家河部落首领"
+    ],
     "territory": "长江中游，江汉平原",
     "territory_desc": "长江中游新石器时代晚期的重要文化，拥有大型城址和玉器制作工艺。",
     "fall_analysis": {
@@ -292,14 +700,75 @@
       "military_index": 30
     },
     "events": [
-      {"year": -2600, "name": "石家河文化兴起", "type": "culture", "significance": "high"},
-      {"year": -2300, "name": "石家河城址建成", "type": "politic", "significance": "high"},
-      {"year": -2100, "name": "玉器制作高峰期", "type": "culture", "significance": "medium"},
-      {"year": -2000, "name": "石家河文化衰亡", "type": "culture", "significance": "high"}
+      {
+        "year": -2600,
+        "name": "石家河文化兴起",
+        "type": "culture",
+        "significance": "high",
+        "description": "石家河文化在长江中游江汉平原地区兴起，拥有大型城址和玉器制作工艺。",
+        "key_points": [
+          "石家河文化兴起",
+          "长江中游",
+          "大型城址"
+        ],
+        "impact": "为长江中游地区新石器时代晚期文化的发展奠定了基础"
+      },
+      {
+        "year": -2300,
+        "name": "石家河城址建成",
+        "type": "politic",
+        "significance": "high",
+        "description": "石家河大型城址建成，标志着长江中游地区早期城市的出现。",
+        "key_points": [
+          "城址建成",
+          "早期城市",
+          "长江中游"
+        ],
+        "impact": "早期城市的出现标志着社会结构的质变，为早期国家的形成奠定了基础"
+      },
+      {
+        "year": -2100,
+        "name": "玉器制作高峰期",
+        "type": "culture",
+        "significance": "medium",
+        "description": "石家河文化的玉器制作技术达到高峰期，制作了大量精美的玉器。",
+        "key_points": [
+          "玉器制作",
+          "高峰期",
+          "精美玉器"
+        ],
+        "impact": "展示了中国早期玉器制作的高超水平，为后世玉器艺术奠定了基础"
+      },
+      {
+        "year": -2000,
+        "name": "石家河文化衰亡",
+        "type": "culture",
+        "significance": "high",
+        "description": "石家河文化逐渐衰亡，受到中原文化的影响。",
+        "key_points": [
+          "文化衰亡",
+          "中原文化",
+          "文化融合"
+        ],
+        "impact": "标志着长江中游地区新石器时代文化的发展，为中华文明的多元一体格局增添了重要一元"
+      }
     ],
-    "culture": ["玉器", "陶塑人像", "蛋壳红陶", "瓮棺葬"],
-    "tech_innovations": ["玉器制作", "制陶技术", "筑城技术"],
-    "institution_innovations": ["早期城市", "神权统治", "祖先崇拜"]
+    "culture": [
+      "玉器",
+      "陶塑人像",
+      "蛋壳红陶",
+      "瓮棺葬"
+    ],
+    "tech_innovations": [
+      "玉器制作",
+      "制陶技术",
+      "筑城技术"
+    ],
+    "institution_innovations": [
+      "早期城市",
+      "神权统治",
+      "祖先崇拜"
+    ]
   },
   {
     "id": "wucheng",
@@ -308,8 +777,12 @@
     "start_year": -1500,
     "end_year": -1000,
     "duration": 500,
-    "capital": ["吴城 (Wucheng)"],
-    "key_figures": ["吴城方国首领"],
+    "capital": [
+      "吴城 (Wucheng)"
+    ],
+    "key_figures": [
+      "吴城方国首领"
+    ],
     "territory": "长江中游，赣江流域",
     "territory_desc": "商代南方重要的方国文化，拥有独特的青铜铸造技术和文字符号。",
     "fall_analysis": {
@@ -335,14 +808,74 @@
       "military_index": 35
     },
     "events": [
-      {"year": -1500, "name": "吴城文化兴起", "type": "culture", "significance": "high"},
-      {"year": -1300, "name": "青铜铸造业繁荣", "type": "tech", "significance": "high"},
-      {"year": -1100, "name": "吴城文字使用", "type": "culture", "significance": "medium"},
-      {"year": -1000, "name": "吴城文化衰亡", "type": "culture", "significance": "high"}
+      {
+        "year": -1500,
+        "name": "吴城文化兴起",
+        "type": "culture",
+        "significance": "high",
+        "description": "吴城文化在长江中游赣江流域兴起，是商代南方重要的方国文化。",
+        "key_points": [
+          "吴城文化兴起",
+          "长江中游",
+          "赣江流域"
+        ],
+        "impact": "为长江中游地区青铜时代文化的发展奠定了基础"
+      },
+      {
+        "year": -1300,
+        "name": "青铜铸造业繁荣",
+        "type": "tech",
+        "significance": "high",
+        "description": "吴城文化的青铜铸造业繁荣，制作了大量精美的青铜器物。",
+        "key_points": [
+          "青铜铸造",
+          "繁荣发展",
+          "精美器物"
+        ],
+        "impact": "展示了中国南方青铜铸造的高超水平，为青铜时代的发展奠定了基础"
+      },
+      {
+        "year": -1100,
+        "name": "吴城文字使用",
+        "type": "culture",
+        "significance": "medium",
+        "description": "吴城文化开始使用文字符号，是早期文字发展的重要证据。",
+        "key_points": [
+          "文字使用",
+          "早期文字",
+          "文化发展"
+        ],
+        "impact": "为中国早期文字的发展提供了重要证据，为汉字的起源研究提供了材料"
+      },
+      {
+        "year": -1000,
+        "name": "吴城文化衰亡",
+        "type": "culture",
+        "significance": "high",
+        "description": "吴城文化逐渐衰亡，受到周文化的影响。",
+        "key_points": [
+          "文化衰亡",
+          "周文化影响",
+          "文化更替"
+        ],
+        "impact": "标志着长江中游地区青铜时代文化的发展，为中华文明的多元一体格局增添了重要一元"
+      }
     ],
-    "culture": ["青铜铸造", "原始瓷", "吴城文字", "云雷纹"],
-    "tech_innovations": ["青铜铸造", "原始瓷烧制", "文字符号"],
-    "institution_innovations": ["方国体制", "祭祀礼仪"]
+    "culture": [
+      "青铜铸造",
+      "原始瓷",
+      "吴城文字",
+      "云雷纹"
+    ],
+    "tech_innovations": [
+      "青铜铸造",
+      "原始瓷烧制",
+      "文字符号"
+    ],
+    "institution_innovations": [
+      "方国体制",
+      "祭祀礼仪"
+    ]
   },
   {
     "id": "loulan",
@@ -351,8 +884,14 @@
     "start_year": -200,
     "end_year": 400,
     "duration": 600,
-    "capital": ["楼兰 (Loulan)", "鄯善 (Shanshan)"],
-    "key_figures": ["楼兰王", "鄯善王"],
+    "capital": [
+      "楼兰 (Loulan)",
+      "鄯善 (Shanshan)"
+    ],
+    "key_figures": [
+      "楼兰王",
+      "鄯善王"
+    ],
     "territory": "塔里木盆地东缘，罗布泊地区",
     "territory_desc": "丝绸之路上的重要绿洲王国，是东西方文明交流的枢纽。",
     "fall_analysis": {
@@ -378,15 +917,88 @@
       "military_index": 30
     },
     "events": [
-      {"year": -200, "name": "楼兰王国建立", "type": "politic", "significance": "high"},
-      {"year": -108, "name": "汉使张骞通西域", "type": "culture", "significance": "high"},
-      {"year": -77, "name": "傅介子刺杀楼兰王，改名鄯善", "type": "politic", "significance": "high"},
-      {"year": 300, "name": "罗布泊开始干涸", "type": "tech", "significance": "medium"},
-      {"year": 400, "name": "楼兰废弃", "type": "politic", "significance": "high"}
+      {
+        "year": -200,
+        "name": "楼兰王国建立",
+        "type": "politic",
+        "significance": "high",
+        "description": "楼兰王国在塔里木盆地东缘建立，成为丝绸之路上的重要绿洲王国。",
+        "key_points": [
+          "楼兰王国建立",
+          "塔里木盆地",
+          "绿洲王国"
+        ],
+        "impact": "为丝绸之路的繁荣奠定了基础，成为东西方文明交流的枢纽"
+      },
+      {
+        "year": -108,
+        "name": "汉使张骞通西域",
+        "type": "culture",
+        "significance": "high",
+        "description": "汉使张骞出使西域，开辟了丝绸之路，加强了中原与西域的联系。",
+        "key_points": [
+          "张骞通西域",
+          "丝绸之路",
+          "中西交流"
+        ],
+        "impact": "开辟了丝绸之路，促进了东西方文明的交流与发展"
+      },
+      {
+        "year": -77,
+        "name": "傅介子刺杀楼兰王，改名鄯善",
+        "type": "politic",
+        "significance": "high",
+        "description": "汉朝使者傅介子刺杀楼兰王，楼兰改名为鄯善，成为汉朝的附属国。",
+        "key_points": [
+          "傅介子刺杀",
+          "改名鄯善",
+          "汉朝附属"
+        ],
+        "impact": "加强了汉朝对西域的控制，促进了西域与中原的交流"
+      },
+      {
+        "year": 300,
+        "name": "罗布泊开始干涸",
+        "type": "tech",
+        "significance": "medium",
+        "description": "罗布泊开始干涸，楼兰的生态环境恶化。",
+        "key_points": [
+          "罗布泊干涸",
+          "环境恶化",
+          "生态危机"
+        ],
+        "impact": "生态环境的恶化最终导致楼兰的废弃"
+      },
+      {
+        "year": 400,
+        "name": "楼兰废弃",
+        "type": "politic",
+        "significance": "high",
+        "description": "楼兰因环境恶化而废弃，成为历史遗迹。",
+        "key_points": [
+          "楼兰废弃",
+          "环境恶化",
+          "历史遗迹"
+        ],
+        "impact": "绿洲文明的脆弱性得到体现，为人类与自然的关系提供了重要启示"
+      }
     ],
-    "culture": ["佉卢文", "丝绸贸易", "佛教艺术", "绿洲农业"],
-    "tech_innovations": ["灌溉技术", "纺织技术", "商贸体系"],
-    "institution_innovations": ["绿洲城邦", "双语制", "贸易中介"]
+    "culture": [
+      "佉卢文",
+      "丝绸贸易",
+      "佛教艺术",
+      "绿洲农业"
+    ],
+    "tech_innovations": [
+      "灌溉技术",
+      "纺织技术",
+      "商贸体系"
+    ],
+    "institution_innovations": [
+      "绿洲城邦",
+      "双语制",
+      "贸易中介"
+    ]
   },
   {
     "id": "nanyue",
@@ -395,8 +1007,13 @@
     "start_year": -204,
     "end_year": -111,
     "duration": 93,
-    "capital": ["番禺 (Panyu)"],
-    "key_figures": ["赵佗", "赵昧"],
+    "capital": [
+      "番禺 (Panyu)"
+    ],
+    "key_figures": [
+      "赵佗",
+      "赵昧"
+    ],
     "territory": "岭南地区，两广及越南北部",
     "territory_desc": "秦末汉初岭南地区的割据政权，是中原文化与岭南文化融合的重要时期。",
     "fall_analysis": {
@@ -422,15 +1039,88 @@
       "military_index": 40
     },
     "events": [
-      {"year": -204, "name": "赵佗建立南越国", "type": "politic", "significance": "high"},
-      {"year": -196, "name": "陆贾出使南越，赵佗称臣", "type": "politic", "significance": "high"},
-      {"year": -137, "name": "赵佗去世，赵昧继位", "type": "politic", "significance": "medium"},
-      {"year": -112, "name": "吕嘉之乱", "type": "war", "significance": "high"},
-      {"year": -111, "name": "汉武帝灭南越", "type": "war", "significance": "high"}
+      {
+        "year": -204,
+        "name": "赵佗建立南越国",
+        "type": "politic",
+        "significance": "high",
+        "description": "秦将赵佗在岭南地区建立南越国，定都番禺。",
+        "key_points": [
+          "赵佗建立南越",
+          "岭南地区",
+          "定都番禺"
+        ],
+        "impact": "促进了中原文化与岭南文化的融合，为岭南地区的发展奠定了基础"
+      },
+      {
+        "year": -196,
+        "name": "陆贾出使南越，赵佗称臣",
+        "type": "politic",
+        "significance": "high",
+        "description": "汉使陆贾出使南越，赵佗向汉朝称臣，南越成为汉朝的附属国。",
+        "key_points": [
+          "陆贾出使",
+          "赵佗称臣",
+          "汉朝附属"
+        ],
+        "impact": "加强了汉朝对岭南地区的控制，促进了岭南与中原的交流"
+      },
+      {
+        "year": -137,
+        "name": "赵佗去世，赵昧继位",
+        "type": "politic",
+        "significance": "medium",
+        "description": "南越国开国君主赵佗去世，其孙赵昧继位。",
+        "key_points": [
+          "赵佗去世",
+          "赵昧继位",
+          "权力交接"
+        ],
+        "impact": "南越国进入新的发展阶段，继续与汉朝保持友好关系"
+      },
+      {
+        "year": -112,
+        "name": "吕嘉之乱",
+        "type": "war",
+        "significance": "high",
+        "description": "南越国丞相吕嘉发动叛乱，杀死了南越王太后和王。",
+        "key_points": [
+          "吕嘉之乱",
+          "丞相叛乱",
+          "内乱"
+        ],
+        "impact": "南越国内部矛盾激化，为汉朝灭南越提供了机会"
+      },
+      {
+        "year": -111,
+        "name": "汉武帝灭南越",
+        "type": "war",
+        "significance": "high",
+        "description": "汉武帝派兵灭南越，南越国灭亡，岭南地区纳入汉朝版图。",
+        "key_points": [
+          "汉武帝灭南越",
+          "南越灭亡",
+          "纳入版图"
+        ],
+        "impact": "岭南地区正式纳入汉朝版图，促进了岭南与中原的统一"
+      }
     ],
-    "culture": ["越汉融合", "造船技术", "海外贸易", "铜鼓"],
-    "tech_innovations": ["造船技术", "青铜器", "海外贸易"],
-    "institution_innovations": ["郡国并行", "越汉共治", "海外贸易体系"]
+    "culture": [
+      "越汉融合",
+      "造船技术",
+      "海外贸易",
+      "铜鼓"
+    ],
+    "tech_innovations": [
+      "造船技术",
+      "青铜器",
+      "海外贸易"
+    ],
+    "institution_innovations": [
+      "郡国并行",
+      "越汉共治",
+      "海外贸易体系"
+    ]
   },
   {
     "id": "yelang",
@@ -439,8 +1129,12 @@
     "start_year": -300,
     "end_year": -27,
     "duration": 273,
-    "capital": ["夜郎邑 (Yelang City)"],
-    "key_figures": ["夜郎王"],
+    "capital": [
+      "夜郎邑 (Yelang City)"
+    ],
+    "key_figures": [
+      "夜郎王"
+    ],
     "territory": "西南地区，贵州及周边",
     "territory_desc": "西南夷中最大的方国，以\"夜郎自大\"的典故闻名。",
     "fall_analysis": {
@@ -466,14 +1160,74 @@
       "military_index": 25
     },
     "events": [
-      {"year": -300, "name": "夜郎国兴起", "type": "culture", "significance": "high"},
-      {"year": -135, "name": "唐蒙出使夜郎", "type": "politic", "significance": "high"},
-      {"year": -111, "name": "夜郎归附汉朝", "type": "politic", "significance": "medium"},
-      {"year": -27, "name": "汉灭夜郎，设郡县", "type": "war", "significance": "high"}
+      {
+        "year": -300,
+        "name": "夜郎国兴起",
+        "type": "culture",
+        "significance": "high",
+        "description": "夜郎国在西南地区兴起，成为西南夷中最大的方国。",
+        "key_points": [
+          "夜郎国兴起",
+          "西南地区",
+          "最大方国"
+        ],
+        "impact": "为西南地区的发展奠定了基础，成为西南夷的重要力量"
+      },
+      {
+        "year": -135,
+        "name": "唐蒙出使夜郎",
+        "type": "politic",
+        "significance": "high",
+        "description": "汉朝使者唐蒙出使夜郎，夜郎与汉朝建立联系。",
+        "key_points": [
+          "唐蒙出使",
+          "建立联系",
+          "汉朝夜郎"
+        ],
+        "impact": "加强了汉朝对西南地区的了解，为汉朝经营西南奠定了基础"
+      },
+      {
+        "year": -111,
+        "name": "夜郎归附汉朝",
+        "type": "politic",
+        "significance": "medium",
+        "description": "夜郎归附汉朝，成为汉朝的附属国。",
+        "key_points": [
+          "夜郎归附",
+          "汉朝附属",
+          "西南纳入"
+        ],
+        "impact": "促进了西南地区与中原的交流，为西南地区的统一奠定了基础"
+      },
+      {
+        "year": -27,
+        "name": "汉灭夜郎，设郡县",
+        "type": "war",
+        "significance": "high",
+        "description": "汉朝灭夜郎，设郡县管理，夜郎国灭亡。",
+        "key_points": [
+          "汉灭夜郎",
+          "设郡县",
+          "夜郎灭亡"
+        ],
+        "impact": "西南地区正式纳入汉朝版图，促进了西南与中原的统一"
+      }
     ],
-    "culture": ["铜鼓文化", "干栏式建筑", "夜郎文化", "竹王传说"],
-    "tech_innovations": ["铜鼓铸造", "农业技术", "纺织技术"],
-    "institution_innovations": ["方国联盟", "部落首领制"]
+    "culture": [
+      "铜鼓文化",
+      "干栏式建筑",
+      "夜郎文化",
+      "竹王传说"
+    ],
+    "tech_innovations": [
+      "铜鼓铸造",
+      "农业技术",
+      "纺织技术"
+    ],
+    "institution_innovations": [
+      "方国联盟",
+      "部落首领制"
+    ]
   },
   {
     "id": "liangzhu",
@@ -482,8 +1236,12 @@
     "start_year": -3300,
     "end_year": -2300,
     "duration": 1000,
-    "capital": ["莫角山 (Mojiaoshan)"],
-    "key_figures": ["良渚神王"],
+    "capital": [
+      "莫角山 (Mojiaoshan)"
+    ],
+    "key_figures": [
+      "良渚神王"
+    ],
     "territory": "太湖流域，长江下游三角洲",
     "territory_desc": "控制整个太湖流域，修建了世界上最早的大型水利系统。",
     "fall_analysis": {
@@ -509,15 +1267,92 @@
       "military_index": 40
     },
     "events": [
-      {"year": -3300, "name": "良渚文化兴起", "type": "culture", "significance": "high"},
-      {"year": -3000, "name": "开始修建大型水利系统", "type": "tech", "significance": "high"},
-      {"year": -2800, "name": "莫角山宫殿区建成", "type": "politic", "significance": "high"},
-      {"year": -2500, "name": "反山大墓建成，玉琮王出土", "type": "culture", "significance": "medium"},
-      {"year": -2300, "name": "良渚文化衰亡", "type": "politic", "significance": "high"}
+      {
+        "year": -3300,
+        "name": "良渚文化兴起",
+        "type": "culture",
+        "significance": "high",
+        "description": "良渚文化在太湖流域兴起，以玉器和大型水利工程为显著特征，是中国新石器时代晚期的重要文化。",
+        "key_points": [
+          "良渚文化兴起",
+          "太湖流域",
+          "玉器水利"
+        ],
+        "impact": "开创了中国早期文明的先河，为中华文明多元一体格局奠定了基础",
+        "image": "images/liangzhu_culture.jpg"
+      },
+      {
+        "year": -3000,
+        "name": "开始修建大型水利系统",
+        "type": "tech",
+        "significance": "high",
+        "description": "良渚文化开始修建世界上最早的大型水利系统，展示了高超的工程技术。",
+        "key_points": [
+          "水利系统",
+          "世界最早",
+          "工程技术"
+        ],
+        "impact": "展示了早期人类的高超工程技术，为后世水利建设提供了重要参考",
+        "image": "images/liangzhu_water_system.jpg"
+      },
+      {
+        "year": -2800,
+        "name": "莫角山宫殿区建成",
+        "type": "politic",
+        "significance": "high",
+        "description": "莫角山宫殿区建成，标志着良渚文化早期国家的形成。",
+        "key_points": [
+          "莫角山宫殿",
+          "早期国家",
+          "政治中心"
+        ],
+        "impact": "标志着早期国家的形成，为中华文明的国家起源提供了重要证据",
+        "image": "images/mojiaoshan_palace.jpg"
+      },
+      {
+        "year": -2500,
+        "name": "反山大墓建成，玉琮王出土",
+        "type": "culture",
+        "significance": "medium",
+        "description": "反山大墓建成，出土了精美的玉琮王等玉器，展示了良渚文化的玉器制作水平。",
+        "key_points": [
+          "反山大墓",
+          "玉琮王",
+          "玉器制作"
+        ],
+        "impact": "展示了中国早期玉器制作的高超水平，为后世玉器艺术奠定了基础"
+      },
+      {
+        "year": -2300,
+        "name": "良渚文化衰亡",
+        "type": "politic",
+        "significance": "high",
+        "description": "良渚文化因大洪水和环境恶化而衰亡。",
+        "key_points": [
+          "文化衰亡",
+          "大洪水",
+          "环境恶化"
+        ],
+        "impact": "早期文明的脆弱性得到体现，为人类与自然的关系提供了重要启示",
+        "image": "images/liangzhu_decline.jpg"
+      }
     ],
-    "culture": ["玉琮", "水利系统", "稻作农业", "草裹泥"],
-    "tech_innovations": ["草裹泥筑坝", "水利工程", "玉器制作"],
-    "institution_innovations": ["神权统治", "标准化生产", "工程动员"]
+    "culture": [
+      "玉琮",
+      "水利系统",
+      "稻作农业",
+      "草裹泥"
+    ],
+    "tech_innovations": [
+      "草裹泥筑坝",
+      "水利工程",
+      "玉器制作"
+    ],
+    "institution_innovations": [
+      "神权统治",
+      "标准化生产",
+      "工程动员"
+    ]
   },
   {
     "id": "hongshan",
@@ -526,8 +1361,12 @@
     "start_year": -4000,
     "end_year": -3000,
     "duration": 1000,
-    "capital": ["牛河梁 (Niuheliang) - 圣地"],
-    "key_figures": ["红山萨满"],
+    "capital": [
+      "牛河梁 (Niuheliang) - 圣地"
+    ],
+    "key_figures": [
+      "红山萨满"
+    ],
     "territory": "辽西地区，西拉木伦河流域",
     "territory_desc": "跨区域的精神共同体，没有大型都城，只有祭祀中心。",
     "fall_analysis": {
@@ -553,14 +1392,73 @@
       "military_index": 25
     },
     "events": [
-      {"year": -4000, "name": "红山文化兴起", "type": "culture", "significance": "high"},
-      {"year": -3500, "name": "牛河梁女神庙建成", "type": "culture", "significance": "high"},
-      {"year": -3300, "name": "玉猪龙制作高峰期", "type": "culture", "significance": "medium"},
-      {"year": -3000, "name": "红山文化衰亡", "type": "politic", "significance": "high"}
+      {
+        "year": -4000,
+        "name": "红山文化兴起",
+        "type": "culture",
+        "significance": "high",
+        "description": "红山文化在辽西地区兴起，以玉猪龙和女神庙为显著特征，是中国新石器时代晚期的重要文化。",
+        "key_points": [
+          "红山文化兴起",
+          "辽西地区",
+          "玉猪龙"
+        ],
+        "impact": "开创了中国北方新石器时代文化的先河，为中华文明多元一体格局奠定了基础"
+      },
+      {
+        "year": -3500,
+        "name": "牛河梁女神庙建成",
+        "type": "culture",
+        "significance": "high",
+        "description": "牛河梁女神庙建成，是红山文化的祭祀中心，展示了高超的雕塑艺术。",
+        "key_points": [
+          "牛河梁女神庙",
+          "祭祀中心",
+          "雕塑艺术"
+        ],
+        "impact": "展示了中国早期雕塑艺术的高超水平，为后世宗教艺术奠定了基础"
+      },
+      {
+        "year": -3300,
+        "name": "玉猪龙制作高峰期",
+        "type": "culture",
+        "significance": "medium",
+        "description": "红山文化的玉猪龙制作技术达到高峰期，制作了大量精美的玉猪龙。",
+        "key_points": [
+          "玉猪龙",
+          "制作高峰",
+          "精美玉器"
+        ],
+        "impact": "展示了中国早期玉器制作的高超水平，为后世玉器艺术奠定了基础"
+      },
+      {
+        "year": -3000,
+        "name": "红山文化衰亡",
+        "type": "politic",
+        "significance": "high",
+        "description": "红山文化因气候变冷和环境恶化而衰亡。",
+        "key_points": [
+          "文化衰亡",
+          "气候变冷",
+          "环境恶化"
+        ],
+        "impact": "早期文明的脆弱性得到体现，为人类与自然的关系提供了重要启示"
+      }
     ],
-    "culture": ["玉猪龙", "女神庙", "积石冢", "玉礼器"],
-    "tech_innovations": ["玉器制作", "线切割技术"],
-    "institution_innovations": ["去中心化共识", "高成本信号机制"]
+    "culture": [
+      "玉猪龙",
+      "女神庙",
+      "积石冢",
+      "玉礼器"
+    ],
+    "tech_innovations": [
+      "玉器制作",
+      "线切割技术"
+    ],
+    "institution_innovations": [
+      "去中心化共识",
+      "高成本信号机制"
+    ]
   },
   {
     "id": "taosi",
@@ -569,8 +1467,13 @@
     "start_year": -2300,
     "end_year": -1900,
     "duration": 400,
-    "capital": ["陶寺 (Taosi)"],
-    "key_figures": ["陶寺王", "时间祭司"],
+    "capital": [
+      "陶寺 (Taosi)"
+    ],
+    "key_figures": [
+      "陶寺王",
+      "时间祭司"
+    ],
     "territory": "晋南地区，汾河流域",
     "territory_desc": "最早的观象台所在地，垄断了对时间的解释权。",
     "fall_analysis": {
@@ -596,14 +1499,73 @@
       "military_index": 35
     },
     "events": [
-      {"year": -2300, "name": "陶寺文化兴起", "type": "culture", "significance": "high"},
-      {"year": -2100, "name": "观象台建成，垄断授时权", "type": "tech", "significance": "high"},
-      {"year": -2000, "name": "彩绘龙盘制作", "type": "culture", "significance": "medium"},
-      {"year": -1900, "name": "社会暴动，毁墓运动", "type": "war", "significance": "high"}
+      {
+        "year": -2300,
+        "name": "陶寺文化兴起",
+        "type": "culture",
+        "significance": "high",
+        "description": "陶寺文化在晋南地区兴起，以观象台和彩绘龙盘为显著特征，是中国新石器时代晚期的重要文化。",
+        "key_points": [
+          "陶寺文化兴起",
+          "晋南地区",
+          "观象台"
+        ],
+        "impact": "开创了中国早期天文观测的先河，为中华文明的天文历法奠定了基础"
+      },
+      {
+        "year": -2100,
+        "name": "观象台建成，垄断授时权",
+        "type": "tech",
+        "significance": "high",
+        "description": "陶寺文化建成观象台，垄断了对时间的解释权和授时权。",
+        "key_points": [
+          "观象台建成",
+          "垄断授时权",
+          "时间解释权"
+        ],
+        "impact": "展示了中国早期天文观测的高超水平，为后世历法制定提供了重要参考"
+      },
+      {
+        "year": -2000,
+        "name": "彩绘龙盘制作",
+        "type": "culture",
+        "significance": "medium",
+        "description": "陶寺文化制作了大量精美的彩绘龙盘，展示了高超的绘画艺术。",
+        "key_points": [
+          "彩绘龙盘",
+          "绘画艺术",
+          "精美器物"
+        ],
+        "impact": "展示了中国早期绘画艺术的高超水平，为后世艺术发展奠定了基础"
+      },
+      {
+        "year": -1900,
+        "name": "社会暴动，毁墓运动",
+        "type": "war",
+        "significance": "high",
+        "description": "陶寺文化发生社会暴动，底层民众发动毁墓运动，陶寺文化衰亡。",
+        "key_points": [
+          "社会暴动",
+          "毁墓运动",
+          "文化衰亡"
+        ],
+        "impact": "阶级矛盾的激化导致了文化的衰亡，为早期社会结构的研究提供了重要材料"
+      }
     ],
-    "culture": ["观象台", "彩绘龙盘", "土鼓", "特磬"],
-    "tech_innovations": ["天文观测", "历法制定"],
-    "institution_innovations": ["时间垄断", "信息不对称统治"]
+    "culture": [
+      "观象台",
+      "彩绘龙盘",
+      "土鼓",
+      "特磬"
+    ],
+    "tech_innovations": [
+      "天文观测",
+      "历法制定"
+    ],
+    "institution_innovations": [
+      "时间垄断",
+      "信息不对称统治"
+    ]
   },
   {
     "id": "shimao",
@@ -612,8 +1574,12 @@
     "start_year": -2300,
     "end_year": -1800,
     "duration": 500,
-    "capital": ["石峁 (Shimao)"],
-    "key_figures": ["石峁首领"],
+    "capital": [
+      "石峁 (Shimao)"
+    ],
+    "key_figures": [
+      "石峁首领"
+    ],
     "territory": "陕北高原，秃尾河流域",
     "territory_desc": "东亚史前最大的石砌城址，拥有复杂的军事防御设施。",
     "fall_analysis": {
@@ -639,15 +1605,86 @@
       "military_index": 85
     },
     "events": [
-      {"year": -2300, "name": "石峁建城", "type": "politic", "significance": "high"},
-      {"year": -2100, "name": "皇城台扩建", "type": "politic", "significance": "high"},
-      {"year": -2000, "name": "马面、瓮城等防御设施建成", "type": "tech", "significance": "medium"},
-      {"year": -1900, "name": "头骨祭祀高峰期", "type": "culture", "significance": "medium"},
-      {"year": -1800, "name": "石峁衰亡", "type": "politic", "significance": "high"}
+      {
+        "year": -2300,
+        "name": "石峁建城",
+        "type": "politic",
+        "significance": "high",
+        "description": "石峁在陕北高原建城，是东亚史前最大的石砌城址，拥有复杂的军事防御设施。",
+        "key_points": [
+          "石峁建城",
+          "陕北高原",
+          "石砌城址"
+        ],
+        "impact": "展示了中国早期城邦建设的高超水平，为后世城防建设提供了重要参考"
+      },
+      {
+        "year": -2100,
+        "name": "皇城台扩建",
+        "type": "politic",
+        "significance": "high",
+        "description": "石峁皇城台扩建，成为石峁文化的政治中心。",
+        "key_points": [
+          "皇城台扩建",
+          "政治中心",
+          "城邦发展"
+        ],
+        "impact": "标志着石峁文化的发展，为早期城邦的形成提供了重要证据"
+      },
+      {
+        "year": -2000,
+        "name": "马面、瓮城等防御设施建成",
+        "type": "tech",
+        "significance": "medium",
+        "description": "石峁建成马面、瓮城等防御设施，展示了高超的城防工程技术。",
+        "key_points": [
+          "马面瓮城",
+          "防御设施",
+          "城防工程"
+        ],
+        "impact": "展示了中国早期城防工程的高超水平，为后世军事防御提供了重要参考"
+      },
+      {
+        "year": -1900,
+        "name": "头骨祭祀高峰期",
+        "type": "culture",
+        "significance": "medium",
+        "description": "石峁文化进入头骨祭祀高峰期，展示了独特的祭祀文化。",
+        "key_points": [
+          "头骨祭祀",
+          "祭祀文化",
+          "独特文化"
+        ],
+        "impact": "展示了中国早期祭祀文化的独特性，为宗教史研究提供了重要材料"
+      },
+      {
+        "year": -1800,
+        "name": "石峁衰亡",
+        "type": "politic",
+        "significance": "high",
+        "description": "石峁因内部叛乱和气候变冷而衰亡。",
+        "key_points": [
+          "石峁衰亡",
+          "内部叛乱",
+          "气候变冷"
+        ],
+        "impact": "早期城邦的脆弱性得到体现，为早期社会结构的研究提供了重要材料"
+      }
     ],
-    "culture": ["石砌城墙", "头骨祭祀", "藏玉于墙"],
-    "tech_innovations": ["马面防御", "瓮城设计", "石砌建筑"],
-    "institution_innovations": ["恐怖平衡", "零和博弈策略"]
+    "culture": [
+      "石砌城墙",
+      "头骨祭祀",
+      "藏玉于墙"
+    ],
+    "tech_innovations": [
+      "马面防御",
+      "瓮城设计",
+      "石砌建筑"
+    ],
+    "institution_innovations": [
+      "恐怖平衡",
+      "零和博弈策略"
+    ]
   },
   {
     "id": "sanxingdui",
@@ -656,8 +1693,17 @@
     "start_year": -2800,
     "end_year": -316,
     "duration": 2484,
-    "capital": ["三星堆", "金沙"],
-    "key_figures": ["古蜀王", "蚕丛", "鱼凫", "杜宇", "开明"],
+    "capital": [
+      "三星堆",
+      "金沙"
+    ],
+    "key_figures": [
+      "古蜀王",
+      "蚕丛",
+      "鱼凫",
+      "杜宇",
+      "开明"
+    ],
     "territory": "四川盆地，成都平原",
     "territory_desc": "在封闭的四川盆地中独立演化，与南亚有贸易联系。",
     "fall_analysis": {
@@ -683,16 +1729,105 @@
       "military_index": 45
     },
     "events": [
-      {"year": -2800, "name": "宝墩文化兴起", "type": "culture", "significance": "high"},
-      {"year": -1800, "name": "三星堆文化鼎盛", "type": "culture", "significance": "high"},
-      {"year": -1200, "name": "青铜神树、纵目面具制作", "type": "culture", "significance": "high"},
-      {"year": -1100, "name": "最后一场大祭，祭祀坑掩埋", "type": "culture", "significance": "high"},
-      {"year": -600, "name": "金沙时期，政治中心转移", "type": "politic", "significance": "medium"},
-      {"year": -316, "name": "秦灭巴蜀，古蜀亡", "type": "war", "significance": "high"}
+      {
+        "year": -2800,
+        "name": "宝墩文化兴起",
+        "type": "culture",
+        "significance": "high",
+        "description": "宝墩文化在四川盆地兴起，是古蜀文明的重要组成部分。",
+        "key_points": [
+          "宝墩文化兴起",
+          "四川盆地",
+          "古蜀文明"
+        ],
+        "impact": "为古蜀文明的发展奠定了基础，为中华文明多元一体格局增添了重要一元",
+        "image": "images/baodun_culture.jpg"
+      },
+      {
+        "year": -1800,
+        "name": "三星堆文化鼎盛",
+        "type": "culture",
+        "significance": "high",
+        "description": "三星堆文化进入鼎盛期，制作了大量精美的青铜器物。",
+        "key_points": [
+          "三星堆鼎盛",
+          "青铜器物",
+          "精美制作"
+        ],
+        "impact": "展示了中国早期青铜铸造的高超水平，为后世青铜艺术奠定了基础"
+      },
+      {
+        "year": -1200,
+        "name": "青铜神树、纵目面具制作",
+        "type": "culture",
+        "significance": "high",
+        "description": "三星堆文化制作了青铜神树、纵目面具等精美器物，展示了独特的宗教文化。",
+        "key_points": [
+          "青铜神树",
+          "纵目面具",
+          "独特文化"
+        ],
+        "impact": "展示了中国早期青铜艺术的高超水平，为后世宗教艺术奠定了基础"
+      },
+      {
+        "year": -1100,
+        "name": "最后一场大祭，祭祀坑掩埋",
+        "type": "culture",
+        "significance": "high",
+        "description": "三星堆文化举行最后一场大祭，将祭祀坑掩埋。",
+        "key_points": [
+          "最后大祭",
+          "祭祀坑掩埋",
+          "文化终结"
+        ],
+        "impact": "标志着三星堆文化的衰落，为早期宗教仪式的研究提供了重要材料",
+        "image": "images/sanxingdui_pit.jpg"
+      },
+      {
+        "year": -600,
+        "name": "金沙时期，政治中心转移",
+        "type": "politic",
+        "significance": "medium",
+        "description": "三星堆文化进入金沙时期，政治中心转移到金沙。",
+        "key_points": [
+          "金沙时期",
+          "中心转移",
+          "文化延续"
+        ],
+        "impact": "古蜀文化得以延续，为古蜀文明的发展提供了重要证据",
+        "image": "images/jinsha_gold_mask.jpg"
+      },
+      {
+        "year": -316,
+        "name": "秦灭巴蜀，古蜀亡",
+        "type": "war",
+        "significance": "high",
+        "description": "秦国灭巴蜀，古蜀国灭亡，四川盆地纳入秦国版图。",
+        "key_points": [
+          "秦灭巴蜀",
+          "古蜀灭亡",
+          "纳入版图"
+        ],
+        "impact": "四川盆地正式纳入秦国版图，促进了巴蜀与中原的统一",
+        "image": "images/qin_conquer_shu.jpg"
+      }
     ],
-    "culture": ["青铜神树", "纵目面具", "金面具", "象牙祭祀", "太阳神鸟"],
-    "tech_innovations": ["青铜铸造", "丝绸技术", "高温冶炼"],
-    "institution_innovations": ["神权视觉系统", "格式化仪式"]
+    "culture": [
+      "青铜神树",
+      "纵目面具",
+      "金面具",
+      "象牙祭祀",
+      "太阳神鸟"
+    ],
+    "tech_innovations": [
+      "青铜铸造",
+      "丝绸技术",
+      "高温冶炼"
+    ],
+    "institution_innovations": [
+      "神权视觉系统",
+      "格式化仪式"
+    ]
   },
   {
     "id": "xia",
@@ -701,8 +1836,15 @@
     "start_year": -2070,
     "end_year": -1600,
     "duration": 470,
-    "capital": ["阳城 (Yangcheng)", "二里头 (Erlitou)"],
-    "key_figures": ["大禹 (Yu the Great)", "启 (Qi)", "桀 (Jie)"],
+    "capital": [
+      "阳城 (Yangcheng)",
+      "二里头 (Erlitou)"
+    ],
+    "key_figures": [
+      "大禹 (Yu the Great)",
+      "启 (Qi)",
+      "桀 (Jie)"
+    ],
     "territory": "河南中西部、山西南部 (Henan/Shanxi)",
     "territory_desc": "松散的方国联盟，核心控制区仅限于伊洛河流域。",
     "fall_analysis": {
@@ -728,13 +1870,60 @@
       "military_index": 50
     },
     "events": [
-      {"year": -2070, "name": "大禹治水成功，建立夏朝", "type": "politic", "significance": "high"},
-      {"year": -1900, "name": "二里头文化兴起", "type": "culture", "significance": "high"},
-      {"year": -1600, "name": "鸣条之战，夏亡", "type": "war", "significance": "high"}
+      {
+        "year": -2070,
+        "name": "大禹治水成功，建立夏朝",
+        "type": "politic",
+        "significance": "high",
+        "description": "大禹成功治理黄河水患，建立夏朝，开启了中国第一个王朝时代。",
+        "key_points": [
+          "大禹治水",
+          "建立夏朝",
+          "家天下"
+        ],
+        "impact": "中国历史上第一个王朝，开启了世袭制，奠定了早期国家形态"
+      },
+      {
+        "year": -1900,
+        "name": "二里头文化兴起",
+        "type": "culture",
+        "significance": "high",
+        "description": "二里头遗址发现大型宫殿建筑群，被认为是夏朝都城遗址。",
+        "key_points": [
+          "二里头遗址",
+          "宫殿建筑",
+          "夏都"
+        ],
+        "impact": "证实了夏朝的存在，展示了早期国家的建筑水平和政治组织能力",
+        "image": "images/erlitou_palace.jpg"
+      },
+      {
+        "year": -1600,
+        "name": "鸣条之战，夏亡",
+        "type": "war",
+        "significance": "high",
+        "description": "商汤在鸣条之战中击败夏桀，夏朝灭亡，商朝建立。",
+        "key_points": [
+          "鸣条之战",
+          "商汤灭夏",
+          "夏亡商兴"
+        ],
+        "impact": "结束了夏朝470年的统治，商朝建立，青铜文化进入鼎盛时期",
+        "image": "images/mingtiao_battle.jpg"
+      }
     ],
-    "culture": ["青铜萌芽", "二里头宫殿"],
-    "tech_innovations": ["青铜铸造", "水利工程"],
-    "institution_innovations": ["家天下", "方国联盟"]
+    "culture": [
+      "青铜萌芽",
+      "二里头宫殿"
+    ],
+    "tech_innovations": [
+      "青铜铸造",
+      "水利工程"
+    ],
+    "institution_innovations": [
+      "家天下",
+      "方国联盟"
+    ]
   },
   {
     "id": "shang",
@@ -743,8 +1932,15 @@
     "start_year": -1600,
     "end_year": -1046,
     "duration": 554,
-    "capital": ["亳 (Bo)", "殷 (Yin)"],
-    "key_figures": ["成汤 (Tang)", "武丁 (Wu Ding)", "纣王 (Zhou)"],
+    "capital": [
+      "亳 (Bo)",
+      "殷 (Yin)"
+    ],
+    "key_figures": [
+      "成汤 (Tang)",
+      "武丁 (Wu Ding)",
+      "纣王 (Zhou)"
+    ],
     "territory": "黄河中下游，势力达长江流域",
     "territory_desc": "以大邑商为中心，通过方国进行间接统治，影响力远达江西吴城。",
     "fall_analysis": {
@@ -770,14 +1966,76 @@
       "military_index": 60
     },
     "events": [
-      {"year": -1600, "name": "商汤灭夏", "type": "war", "significance": "high"},
-      {"year": -1300, "name": "盘庚迁殷", "type": "politic", "significance": "high"},
-      {"year": -1250, "name": "武丁盛世", "type": "politic", "significance": "medium"},
-      {"year": -1046, "name": "牧野之战，商亡", "type": "war", "significance": "high"}
+      {
+        "year": -1600,
+        "name": "商汤灭夏",
+        "type": "war",
+        "significance": "high",
+        "description": "商汤在鸣条之战中击败夏桀，建立商朝，开启青铜时代。",
+        "key_points": [
+          "商汤灭夏",
+          "鸣条之战",
+          "商朝建立"
+        ],
+        "impact": "结束了夏朝统治，商朝建立，青铜文化达到鼎盛",
+        "image": "images/shangtang_conquer_xia.jpg"
+      },
+      {
+        "year": -1300,
+        "name": "盘庚迁殷",
+        "type": "politic",
+        "significance": "high",
+        "description": "商王盘庚将都城迁至殷（今河南安阳），商朝进入鼎盛时期。",
+        "key_points": [
+          "盘庚迁殷",
+          "安阳",
+          "商朝鼎盛"
+        ],
+        "impact": "商朝进入鼎盛时期，殷墟成为商朝晚期都城，出土大量甲骨文",
+        "image": "images/pangeng_move_yin.jpg"
+      },
+      {
+        "year": -1250,
+        "name": "武丁盛世",
+        "type": "politic",
+        "significance": "medium",
+        "description": "商王武丁在位期间，商朝国力达到顶峰，对外征战频繁。",
+        "key_points": [
+          "武丁盛世",
+          "国力顶峰",
+          "对外征战"
+        ],
+        "impact": "商朝国力达到顶峰，甲骨文记载了大量历史事件"
+      },
+      {
+        "year": -1046,
+        "name": "牧野之战，商亡",
+        "type": "war",
+        "significance": "high",
+        "description": "周武王在牧野之战中击败商纣王，商朝灭亡，周朝建立。",
+        "key_points": [
+          "牧野之战",
+          "周武王",
+          "商亡周兴"
+        ],
+        "impact": "结束了商朝554年的统治，周朝建立，开启分封制时代",
+        "image": "images/muye_battle.jpg"
+      }
     ],
-    "culture": ["甲骨文", "青铜巅峰", "人祭"],
-    "tech_innovations": ["甲骨文", "青铜铸造", "车马技术"],
-    "institution_innovations": ["神权政治", "甲骨文档案系统"]
+    "culture": [
+      "甲骨文",
+      "青铜巅峰",
+      "人祭"
+    ],
+    "tech_innovations": [
+      "甲骨文",
+      "青铜铸造",
+      "车马技术"
+    ],
+    "institution_innovations": [
+      "神权政治",
+      "甲骨文档案系统"
+    ]
   },
   {
     "id": "chu",
@@ -786,8 +2044,17 @@
     "start_year": -1042,
     "end_year": -223,
     "duration": 819,
-    "capital": ["丹阳", "郢都", "寿春"],
-    "key_figures": ["熊绎", "楚庄王", "屈原", "春申君"],
+    "capital": [
+      "丹阳",
+      "郢都",
+      "寿春"
+    ],
+    "key_figures": [
+      "熊绎",
+      "楚庄王",
+      "屈原",
+      "春申君"
+    ],
     "territory": "长江流域，南至岭南，东抵大海",
     "territory_desc": "南方的浪漫主义文明，不信周礼，只信鬼神，与中原文明迥异。",
     "fall_analysis": {
@@ -813,16 +2080,58 @@
       "military_index": 60
     },
     "events": [
-      {"year": -1042, "name": "熊绎受封，建立楚国", "type": "politic", "significance": "high"},
-      {"year": -606, "name": "楚庄王问鼎中原", "type": "politic", "significance": "high"},
-      {"year": -500, "name": "曾侯乙编钟制作", "type": "culture", "significance": "medium"},
-      {"year": -340, "name": "屈原诞生", "type": "culture", "significance": "medium"},
-      {"year": -278, "name": "郢都陷落，屈原投江", "type": "war", "significance": "high"},
-      {"year": -223, "name": "秦灭楚", "type": "war", "significance": "high"}
+      {
+        "year": -1042,
+        "name": "熊绎受封，建立楚国",
+        "type": "politic",
+        "significance": "high"
+      },
+      {
+        "year": -606,
+        "name": "楚庄王问鼎中原",
+        "type": "politic",
+        "significance": "high"
+      },
+      {
+        "year": -500,
+        "name": "曾侯乙编钟制作",
+        "type": "culture",
+        "significance": "medium"
+      },
+      {
+        "year": -340,
+        "name": "屈原诞生",
+        "type": "culture",
+        "significance": "medium"
+      },
+      {
+        "year": -278,
+        "name": "郢都陷落，屈原投江",
+        "type": "war",
+        "significance": "high"
+      },
+      {
+        "year": -223,
+        "name": "秦灭楚",
+        "type": "war",
+        "significance": "high"
+      }
     ],
-    "culture": ["楚辞", "曾侯乙编钟", "漆器", "巫山神话"],
-    "tech_innovations": ["一钟双音", "丝绸刺绣", "漆工艺"],
-    "institution_innovations": ["人神共治", "非共识浪漫主义"]
+    "culture": [
+      "楚辞",
+      "曾侯乙编钟",
+      "漆器",
+      "巫山神话"
+    ],
+    "tech_innovations": [
+      "一钟双音",
+      "丝绸刺绣",
+      "漆工艺"
+    ],
+    "institution_innovations": [
+      "人神共治",
+      "非共识浪漫主义"
+    ]
   },
   {
     "id": "zhou_west",
@@ -831,8 +2140,14 @@
     "start_year": -1046,
     "end_year": -771,
     "duration": 275,
-    "capital": ["镐京 (Haojing)"],
-    "key_figures": ["周公旦 (Duke of Zhou)", "周穆王 (King Mu)", "周幽王 (King You)"],
+    "capital": [
+      "镐京 (Haojing)"
+    ],
+    "key_figures": [
+      "周公旦 (Duke of Zhou)",
+      "周穆王 (King Mu)",
+      "周幽王 (King You)"
+    ],
     "territory": "分封制覆盖黄河及汉水流域",
     "territory_desc": "通过分封制将统治范围扩展至山东、河北及汉水流域。",
     "fall_analysis": {
@@ -858,14 +2173,45 @@
       "military_index": 55
     },
     "events": [
-      {"year": -1046, "name": "武王伐纣，建立西周", "type": "war", "significance": "high"},
-      {"year": -1042, "name": "周公摄政，制礼作乐", "type": "culture", "significance": "high"},
-      {"year": -841, "name": "国人暴动，共和行政", "type": "politic", "significance": "medium"},
-      {"year": -771, "name": "犬戎攻破镐京，西周亡", "type": "war", "significance": "high"}
+      {
+        "year": -1046,
+        "name": "武王伐纣，建立西周",
+        "type": "war",
+        "significance": "high"
+      },
+      {
+        "year": -1042,
+        "name": "周公摄政，制礼作乐",
+        "type": "culture",
+        "significance": "high"
+      },
+      {
+        "year": -841,
+        "name": "国人暴动，共和行政",
+        "type": "politic",
+        "significance": "medium"
+      },
+      {
+        "year": -771,
+        "name": "犬戎攻破镐京，西周亡",
+        "type": "war",
+        "significance": "high"
+      }
     ],
-    "culture": ["礼乐制度", "宗法制", "金文"],
-    "tech_innovations": ["青铜铸造", "马车技术"],
-    "institution_innovations": ["分封制", "宗法制", "礼乐制度"]
+    "culture": [
+      "礼乐制度",
+      "宗法制",
+      "金文"
+    ],
+    "tech_innovations": [
+      "青铜铸造",
+      "马车技术"
+    ],
+    "institution_innovations": [
+      "分封制",
+      "宗法制",
+      "礼乐制度"
+    ]
   },
   {
     "id": "chunqiu_zhanguo",
@@ -874,8 +2220,26 @@
     "start_year": -770,
     "end_year": -221,
     "duration": 549,
-    "capital": ["洛邑 (Luoyi) - Nominal"],
-    "key_figures": ["齐桓公", "孔子", "商鞅", "秦始皇", "老子", "孟子", "墨子", "庄子", "韩非子", "孙子", "孙膑", "屈原", "廉颇", "蔺相如", "白起"],
+    "capital": [
+      "洛邑 (Luoyi) - Nominal"
+    ],
+    "key_figures": [
+      "齐桓公",
+      "孔子",
+      "商鞅",
+      "秦始皇",
+      "老子",
+      "孟子",
+      "墨子",
+      "庄子",
+      "韩非子",
+      "孙子",
+      "孙膑",
+      "屈原",
+      "廉颇",
+      "蔺相如",
+      "白起"
+    ],
     "territory": "诸侯割据，范围扩大至辽东、巴蜀、岭南",
     "territory_desc": "华夏文化圈大幅扩展，秦灭巴蜀，楚吞吴越，赵武灵王胡服骑射扩展北疆。",
     "fall_analysis": {
@@ -901,16 +2265,58 @@
       "military_index": 75
     },
     "events": [
-      {"year": -770, "name": "平王东迁，春秋开始", "type": "politic", "significance": "high"},
-      {"year": -685, "name": "齐桓公称霸", "type": "politic", "significance": "medium"},
-      {"year": -551, "name": "孔子诞生", "type": "culture", "significance": "high"},
-      {"year": -453, "name": "三家分晋，战国开始", "type": "politic", "significance": "high"},
-      {"year": -356, "name": "商鞅变法", "type": "reform", "significance": "high"},
-      {"year": -260, "name": "长平之战", "type": "war", "significance": "high"}
+      {
+        "year": -770,
+        "name": "平王东迁，春秋开始",
+        "type": "politic",
+        "significance": "high"
+      },
+      {
+        "year": -685,
+        "name": "齐桓公称霸",
+        "type": "politic",
+        "significance": "medium"
+      },
+      {
+        "year": -551,
+        "name": "孔子诞生",
+        "type": "culture",
+        "significance": "high"
+      },
+      {
+        "year": -453,
+        "name": "三家分晋，战国开始",
+        "type": "politic",
+        "significance": "high"
+      },
+      {
+        "year": -356,
+        "name": "商鞅变法",
+        "type": "reform",
+        "significance": "high"
+      },
+      {
+        "year": -260,
+        "name": "长平之战",
+        "type": "war",
+        "significance": "high"
+      }
     ],
-    "culture": ["百家争鸣", "铁器普及", "法家思想"],
-    "tech_innovations": ["铁器", "牛耕", "水利工程"],
-    "institution_innovations": ["郡县制", "军功爵制", "变法运动"]
+    "culture": [
+      "百家争鸣",
+      "铁器普及",
+      "法家思想"
+    ],
+    "tech_innovations": [
+      "铁器",
+      "牛耕",
+      "水利工程"
+    ],
+    "institution_innovations": [
+      "郡县制",
+      "军功爵制",
+      "变法运动"
+    ]
   },
   {
     "id": "qin",
@@ -919,8 +2325,14 @@
     "start_year": -221,
     "end_year": -207,
     "duration": 14,
-    "capital": ["咸阳 (Xianyang)"],
-    "key_figures": ["始皇帝 (First Emperor)", "李斯", "胡亥"],
+    "capital": [
+      "咸阳 (Xianyang)"
+    ],
+    "key_figures": [
+      "始皇帝 (First Emperor)",
+      "李斯",
+      "胡亥"
+    ],
     "territory": "东至海，西至临洮，南至北向户，北据河为塞",
     "territory_desc": "首次实现大一统，设郡县，筑长城，通直道，疆域囊括岭南。",
     "fall_analysis": {
@@ -946,14 +2358,78 @@
       "military_index": 80
     },
     "events": [
-      {"year": -221, "name": "秦始皇统一六国", "type": "politic", "significance": "high"},
-      {"year": -214, "name": "征服百越，修筑灵渠", "type": "war", "significance": "medium"},
-      {"year": -210, "name": "秦始皇驾崩", "type": "politic", "significance": "high"},
-      {"year": -209, "name": "陈胜吴广起义", "type": "war", "significance": "high"}
+      {
+        "year": -221,
+        "name": "秦始皇统一六国",
+        "type": "politic",
+        "significance": "high",
+        "description": "秦王嬴政统一六国，建立秦朝，自称始皇帝，实现中国历史上第一次大一统。",
+        "key_points": [
+          "统一六国",
+          "始皇帝",
+          "大一统"
+        ],
+        "impact": "中国历史上第一次大一统，奠定了中国版图基础，影响深远",
+        "image": "images/qin_unification.jpg"
+      },
+      {
+        "year": -214,
+        "name": "征服百越，修筑灵渠",
+        "type": "war",
+        "significance": "medium",
+        "description": "秦始皇征服百越地区，修筑灵渠沟通湘江和漓江，促进南北交流。",
+        "key_points": [
+          "征服百越",
+          "灵渠",
+          "南北交流"
+        ],
+        "impact": "拓展了秦朝疆域，灵渠成为重要的水利工程",
+        "image": "images/lingqu_canal.jpg"
+      },
+      {
+        "year": -210,
+        "name": "秦始皇驾崩",
+        "type": "politic",
+        "significance": "high",
+        "description": "秦始皇在第五次巡游途中病逝，沙丘之变后胡亥即位。",
+        "key_points": [
+          "秦始皇驾崩",
+          "沙丘之变",
+          "胡亥即位"
+        ],
+        "impact": "秦朝统治开始动摇，为后来的农民起义埋下伏笔",
+        "image": "images/qinshihuang_death.jpg"
+      },
+      {
+        "year": -209,
+        "name": "陈胜吴广起义",
+        "type": "war",
+        "significance": "high",
+        "description": "陈胜、吴广在大泽乡起义，揭开了秦末农民战争的序幕。",
+        "key_points": [
+          "大泽乡起义",
+          "陈胜吴广",
+          "农民战争"
+        ],
+        "impact": "中国历史上第一次大规模农民起义，加速了秦朝的灭亡",
+        "image": "images/dazexiang_uprising.jpg"
+      }
     ],
-    "culture": ["书同文", "车同轨", "郡县制"],
-    "tech_innovations": ["驰道", "灵渠", "标准化"],
-    "institution_innovations": ["皇帝制", "郡县制", "中央集权"]
+    "culture": [
+      "书同文",
+      "车同轨",
+      "郡县制"
+    ],
+    "tech_innovations": [
+      "驰道",
+      "灵渠",
+      "标准化"
+    ],
+    "institution_innovations": [
+      "皇帝制",
+      "郡县制",
+      "中央集权"
+    ]
   },
   {
     "id": "han_west",
@@ -962,8 +2438,20 @@
     "start_year": -202,
     "end_year": 8,
     "duration": 210,
-    "capital": ["长安 (Chang'an)"],
-    "key_figures": ["汉武帝 (Wu)", "霍去病", "王莽", "司马迁", "张骞", "苏武", "董仲舒", "东方朔", "李广"],
+    "capital": [
+      "长安 (Chang'an)"
+    ],
+    "key_figures": [
+      "汉武帝 (Wu)",
+      "霍去病",
+      "王莽",
+      "司马迁",
+      "张骞",
+      "苏武",
+      "董仲舒",
+      "东方朔",
+      "李广"
+    ],
     "territory": "西域都护府，朝鲜四郡，百越九郡",
     "territory_desc": "汉武帝时期大幅扩张，打通西域，设立西域都护府，实际控制塔里木盆地。",
     "fall_analysis": {
@@ -989,15 +2477,87 @@
       "military_index": 75
     },
     "events": [
-      {"year": -202, "name": "刘邦称帝，建立西汉", "type": "politic", "significance": "high"},
-      {"year": -138, "name": "张骞出使西域", "type": "culture", "significance": "high"},
-      {"year": -119, "name": "漠北之战，击溃匈奴", "type": "war", "significance": "high"},
-      {"year": -60, "name": "设立西域都护府", "type": "politic", "significance": "medium"},
-      {"year": 8, "name": "王莽篡汉", "type": "politic", "significance": "high"}
+      {
+        "year": -202,
+        "name": "刘邦称帝，建立西汉",
+        "type": "politic",
+        "significance": "high",
+        "description": "刘邦在垓下之战击败项羽后称帝，建立西汉，定都长安。",
+        "key_points": [
+          "刘邦称帝",
+          "垓下之战",
+          "西汉建立"
+        ],
+        "impact": "结束了楚汉战争，西汉建立，开启汉朝400年统治"
+      },
+      {
+        "year": -138,
+        "name": "张骞出使西域",
+        "type": "culture",
+        "significance": "high",
+        "description": "汉武帝派张骞出使西域，开辟了丝绸之路，促进了中西文化交流。",
+        "key_points": [
+          "张骞出使",
+          "丝绸之路",
+          "中西交流"
+        ],
+        "impact": "开辟了丝绸之路，促进了中西文化交流，影响深远"
+      },
+      {
+        "year": -119,
+        "name": "漠北之战，击溃匈奴",
+        "type": "war",
+        "significance": "high",
+        "description": "汉武帝派卫青、霍去病出击匈奴，在漠北之战中击溃匈奴主力。",
+        "key_points": [
+          "漠北之战",
+          "卫青霍去病",
+          "击溃匈奴"
+        ],
+        "impact": "解除了匈奴对汉朝的威胁，巩固了边疆安全"
+      },
+      {
+        "year": -60,
+        "name": "设立西域都护府",
+        "type": "politic",
+        "significance": "medium",
+        "description": "汉朝在西域设立都护府，正式将西域纳入版图。",
+        "key_points": [
+          "西域都护府",
+          "西域入版图",
+          "中央管辖"
+        ],
+        "impact": "西域正式纳入中国版图，中央政府开始管辖西域"
+      },
+      {
+        "year": 8,
+        "name": "王莽篡汉",
+        "type": "politic",
+        "significance": "high",
+        "description": "王莽篡位称帝，建立新朝，西汉灭亡。",
+        "key_points": [
+          "王莽篡汉",
+          "建立新朝",
+          "西汉灭亡"
+        ],
+        "impact": "西汉灭亡，新朝建立，但很快被推翻"
+      }
     ],
-    "culture": ["丝绸之路", "独尊儒术", "史记"],
-    "tech_innovations": ["铁器普及", "造纸术萌芽", "丝绸技术"],
-    "institution_innovations": ["察举制", "刺史制", "独尊儒术"]
+    "culture": [
+      "丝绸之路",
+      "独尊儒术",
+      "史记"
+    ],
+    "tech_innovations": [
+      "铁器普及",
+      "造纸术萌芽",
+      "丝绸技术"
+    ],
+    "institution_innovations": [
+      "察举制",
+      "刺史制",
+      "独尊儒术"
+    ]
   },
   {
     "id": "han_east",
@@ -1006,8 +2566,14 @@
     "start_year": 25,
     "end_year": 220,
     "duration": 195,
-    "capital": ["洛阳 (Luoyang)"],
-    "key_figures": ["光武帝", "蔡伦", "曹操"],
+    "capital": [
+      "洛阳 (Luoyang)"
+    ],
+    "key_figures": [
+      "光武帝",
+      "蔡伦",
+      "曹操"
+    ],
     "territory": "恢复西汉疆域，但对西域控制减弱",
     "territory_desc": "光武中兴恢复版图，班超经营西域，但后期对边疆控制力减弱。",
     "fall_analysis": {
@@ -1033,15 +2599,90 @@
       "military_index": 70
     },
     "events": [
-      {"year": 25, "name": "光武中兴", "type": "politic", "significance": "high"},
-      {"year": 105, "name": "蔡伦改进造纸术", "type": "culture", "significance": "high"},
-      {"year": 184, "name": "黄巾起义", "type": "war", "significance": "high"},
-      {"year": 208, "name": "赤壁之战", "type": "war", "significance": "high"},
-      {"year": 220, "name": "曹丕代汉", "type": "politic", "significance": "high"}
+      {
+        "year": 25,
+        "name": "光武中兴",
+        "type": "politic",
+        "significance": "high",
+        "description": "刘秀建立东汉，光武中兴，恢复汉朝统治。",
+        "key_points": [
+          "刘秀称帝",
+          "光武中兴",
+          "东汉建立"
+        ],
+        "impact": "东汉建立，光武中兴，恢复了汉朝的统治",
+        "image": "images/guangwu_zhongxing.jpg"
+      },
+      {
+        "year": 105,
+        "name": "蔡伦改进造纸术",
+        "type": "culture",
+        "significance": "high",
+        "description": "蔡伦改进造纸术，使纸张成为主要的书写材料。",
+        "key_points": [
+          "蔡伦造纸",
+          "书写材料",
+          "文明传播"
+        ],
+        "impact": "造纸术的改进促进了文化的传播和发展，对世界文明产生了深远影响",
+        "image": "images/cai_lun_paper.jpg"
+      },
+      {
+        "year": 184,
+        "name": "黄巾起义",
+        "type": "war",
+        "significance": "high",
+        "description": "张角领导黄巾起义，动摇了东汉统治。",
+        "key_points": [
+          "黄巾起义",
+          "张角",
+          "动摇统治"
+        ],
+        "impact": "动摇了东汉统治，加速了东汉的灭亡",
+        "image": "images/yellow_turban.jpg"
+      },
+      {
+        "year": 208,
+        "name": "赤壁之战",
+        "type": "war",
+        "significance": "high",
+        "description": "孙刘联军在赤壁之战中击败曹操，奠定三国鼎立格局。",
+        "key_points": [
+          "赤壁之战",
+          "孙刘联军",
+          "三国鼎立"
+        ],
+        "impact": "奠定了三国鼎立的格局，是中国历史上著名的以少胜多的战役",
+        "image": "images/red_cliff_battle.jpg"
+      },
+      {
+        "year": 220,
+        "name": "曹丕代汉",
+        "type": "politic",
+        "significance": "high",
+        "description": "曹丕逼迫汉献帝禅让，建立魏国，东汉灭亡。",
+        "key_points": [
+          "曹丕代汉",
+          "建立魏国",
+          "东汉灭亡"
+        ],
+        "impact": "东汉灭亡，三国时期开始"
+      }
     ],
-    "culture": ["造纸术", "佛教传入", "地动仪"],
-    "tech_innovations": ["造纸术", "地动仪", "瓷器"],
-    "institution_innovations": ["州牧制", "豪强经济"]
+    "culture": [
+      "造纸术",
+      "佛教传入",
+      "地动仪"
+    ],
+    "tech_innovations": [
+      "造纸术",
+      "地动仪",
+      "瓷器"
+    ],
+    "institution_innovations": [
+      "州牧制",
+      "豪强经济"
+    ]
   },
   {
     "id": "three_kingdoms",
@@ -1050,8 +2691,26 @@
     "start_year": 220,
     "end_year": 589,
     "duration": 369,
-    "capital": ["洛阳", "建康", "大同"],
-    "key_figures": ["曹丕", "司马炎", "孝文帝", "王羲之", "曹操", "刘备", "诸葛亮", "关羽", "张飞", "周瑜", "司马懿", "陶渊明", "谢灵运"],
+    "capital": [
+      "洛阳",
+      "建康",
+      "大同"
+    ],
+    "key_figures": [
+      "曹丕",
+      "司马炎",
+      "孝文帝",
+      "王羲之",
+      "曹操",
+      "刘备",
+      "诸葛亮",
+      "关羽",
+      "张飞",
+      "周瑜",
+      "司马懿",
+      "陶渊明",
+      "谢灵运"
+    ],
     "territory": "分裂时期，北方游牧民族入主中原",
     "territory_desc": "北方五胡十六国更替，南方东晋南朝偏安，疆域破碎。",
     "fall_analysis": {
@@ -1077,15 +2736,86 @@
       "military_index": 65
     },
     "events": [
-      {"year": 280, "name": "西晋统一", "type": "politic", "significance": "medium"},
-      {"year": 311, "name": "永嘉之乱", "type": "war", "significance": "high"},
-      {"year": 383, "name": "淝水之战", "type": "war", "significance": "high"},
-      {"year": 493, "name": "北魏孝文帝迁都洛阳", "type": "reform", "significance": "medium"},
-      {"year": 589, "name": "隋灭陈，统一全国", "type": "war", "significance": "high"}
+      {
+        "year": 280,
+        "name": "西晋统一",
+        "type": "politic",
+        "significance": "medium",
+        "description": "西晋灭吴，实现短暂统一，结束了三国鼎立局面。",
+        "key_points": [
+          "西晋灭吴",
+          "短暂统一",
+          "结束三国"
+        ],
+        "impact": "结束了三国鼎立局面，但统一时间很短"
+      },
+      {
+        "year": 311,
+        "name": "永嘉之乱",
+        "type": "war",
+        "significance": "high",
+        "description": "匈奴攻破洛阳，西晋灭亡，五胡乱华开始。",
+        "key_points": [
+          "永嘉之乱",
+          "西晋灭亡",
+          "五胡乱华"
+        ],
+        "impact": "西晋灭亡，北方进入五胡十六国时期，南方建立东晋"
+      },
+      {
+        "year": 383,
+        "name": "淝水之战",
+        "type": "war",
+        "significance": "high",
+        "description": "东晋在淝水之战中击败前秦，阻止了北方统一南方。",
+        "key_points": [
+          "淝水之战",
+          "东晋胜利",
+          "阻止统一"
+        ],
+        "impact": "阻止了前秦统一南方，延续了南北分治局面"
+      },
+      {
+        "year": 493,
+        "name": "北魏孝文帝迁都洛阳",
+        "type": "reform",
+        "significance": "medium",
+        "description": "北魏孝文帝迁都洛阳，推行汉化改革，促进民族融合。",
+        "key_points": [
+          "迁都洛阳",
+          "汉化改革",
+          "民族融合"
+        ],
+        "impact": "促进了北方民族的汉化，为隋唐统一奠定了基础"
+      },
+      {
+        "year": 589,
+        "name": "隋灭陈，统一全国",
+        "type": "war",
+        "significance": "high",
+        "description": "隋文帝灭陈，结束了近300年的分裂局面，实现全国统一。",
+        "key_points": [
+          "隋灭陈",
+          "全国统一",
+          "结束分裂"
+        ],
+        "impact": "结束了近300年的分裂局面，为唐朝的繁荣奠定了基础"
+      }
     ],
-    "culture": ["玄学", "书法", "石窟艺术"],
-    "tech_innovations": ["灌钢法", "瓷器", "农业技术"],
-    "institution_innovations": ["九品中正制", "均田制"]
+    "culture": [
+      "玄学",
+      "书法",
+      "石窟艺术"
+    ],
+    "tech_innovations": [
+      "灌钢法",
+      "瓷器",
+      "农业技术"
+    ],
+    "institution_innovations": [
+      "九品中正制",
+      "均田制"
+    ]
   },
   {
     "id": "sui",
@@ -1094,8 +2824,14 @@
     "start_year": 581,
     "end_year": 618,
     "duration": 37,
-    "capital": ["大兴 (Daxing)", "洛阳"],
-    "key_figures": ["隋文帝", "隋炀帝"],
+    "capital": [
+      "大兴 (Daxing)",
+      "洛阳"
+    ],
+    "key_figures": [
+      "隋文帝",
+      "隋炀帝"
+    ],
     "territory": "重新统一，大运河贯通南北",
     "territory_desc": "结束近400年分裂，疆域包括中原、江南及西域东部。",
     "fall_analysis": {
@@ -1121,14 +2857,72 @@
       "military_index": 70
     },
     "events": [
-      {"year": 581, "name": "杨坚建立隋朝", "type": "politic", "significance": "high"},
-      {"year": 605, "name": "开凿大运河", "type": "economy", "significance": "high"},
-      {"year": 606, "name": "创立科举制", "type": "culture", "significance": "high"},
-      {"year": 612, "name": "三征高句丽", "type": "war", "significance": "medium"}
+      {
+        "year": 581,
+        "name": "杨坚建立隋朝",
+        "type": "politic",
+        "significance": "high",
+        "description": "杨坚建立隋朝，结束了南北朝的分裂局面。",
+        "key_points": [
+          "杨坚称帝",
+          "建立隋朝",
+          "结束分裂"
+        ],
+        "impact": "结束了南北朝分裂局面，为唐朝的繁荣奠定了基础"
+      },
+      {
+        "year": 605,
+        "name": "开凿大运河",
+        "type": "economy",
+        "significance": "high",
+        "description": "隋炀帝下令开凿大运河，贯通南北，促进经济文化交流。",
+        "key_points": [
+          "开凿大运河",
+          "贯通南北",
+          "经济交流"
+        ],
+        "impact": "大运河成为南北交通大动脉，促进了经济文化交流"
+      },
+      {
+        "year": 606,
+        "name": "创立科举制",
+        "type": "culture",
+        "significance": "high",
+        "description": "隋炀帝创立科举制，通过考试选拔人才。",
+        "key_points": [
+          "创立科举",
+          "选拔人才",
+          "考试制度"
+        ],
+        "impact": "科举制的创立打破了世族垄断，为寒门子弟提供了上升通道"
+      },
+      {
+        "year": 612,
+        "name": "三征高句丽",
+        "type": "war",
+        "significance": "medium",
+        "description": "隋炀帝三次征讨高句丽，均以失败告终，消耗了大量国力。",
+        "key_points": [
+          "三征高句丽",
+          "征讨失败",
+          "国力消耗"
+        ],
+        "impact": "征讨失败消耗了大量国力，加速了隋朝的灭亡"
+      }
     ],
-    "culture": ["科举制", "大运河", "三省六部"],
-    "tech_innovations": ["大运河", "赵州桥"],
-    "institution_innovations": ["科举制", "三省六部制"]
+    "culture": [
+      "科举制",
+      "大运河",
+      "三省六部"
+    ],
+    "tech_innovations": [
+      "大运河",
+      "赵州桥"
+    ],
+    "institution_innovations": [
+      "科举制",
+      "三省六部制"
+    ]
   },
   {
     "id": "tang",
@@ -1137,8 +2931,27 @@
     "start_year": 618,
     "end_year": 907,
     "duration": 289,
-    "capital": ["长安", "洛阳"],
-    "key_figures": ["李世民", "武则天", "李隆基", "李白", "杜甫", "白居易", "杜牧", "李商隐", "王维", "孟浩然", "岑参", "王昌龄", "韩愈", "柳宗元", "颜真卿"],
+    "capital": [
+      "长安",
+      "洛阳"
+    ],
+    "key_figures": [
+      "李世民",
+      "武则天",
+      "李隆基",
+      "李白",
+      "杜甫",
+      "白居易",
+      "杜牧",
+      "李商隐",
+      "王维",
+      "孟浩然",
+      "岑参",
+      "王昌龄",
+      "韩愈",
+      "柳宗元",
+      "颜真卿"
+    ],
     "territory": "极盛时辖境西至咸海，北逾贝加尔湖",
     "territory_desc": "中国历史上版图极盛之一，羁縻州制度覆盖广泛，安史之乱后收缩。",
     "fall_analysis": {
@@ -1164,15 +2977,204 @@
       "military_index": 75
     },
     "events": [
-      {"year": 626, "name": "玄武门之变", "type": "politic", "significance": "high"},
-      {"year": 640, "name": "设立安西都护府", "type": "war", "significance": "medium"},
-      {"year": 690, "name": "武则天称帝", "type": "politic", "significance": "high"},
-      {"year": 755, "name": "安史之乱", "type": "war", "significance": "high"},
-      {"year": 878, "name": "黄巢起义", "type": "war", "significance": "high"}
+      {
+        "year": 626,
+        "name": "玄武门之变",
+        "type": "politic",
+        "significance": "high",
+        "description": "李世民在玄武门之变中杀死兄弟，逼迫父亲禅让，成为唐太宗。",
+        "key_points": [
+          "玄武门之变",
+          "李世民",
+          "唐太宗"
+        ],
+        "impact": "李世民即位，开启贞观之治，唐朝进入鼎盛时期",
+        "image": "images/xuanwumen_incident.jpg"
+      },
+      {
+        "year": 640,
+        "name": "设立安西都护府",
+        "type": "war",
+        "significance": "medium",
+        "description": "唐朝在西域设立安西都护府，加强对西域的控制。",
+        "key_points": [
+          "安西都护府",
+          "西域控制",
+          "丝绸之路"
+        ],
+        "impact": "加强了对西域的控制，保障了丝绸之路的畅通",
+        "image": "images/anxi_protectorate.jpg"
+      },
+      {
+        "year": 690,
+        "name": "武则天称帝",
+        "type": "politic",
+        "significance": "high",
+        "description": "武则天称帝，成为中国历史上唯一的女皇帝。",
+        "key_points": [
+          "武则天称帝",
+          "唯一女皇",
+          "武周"
+        ],
+        "impact": "中国历史上唯一的女皇帝，打破了男性对皇权的垄断"
+      },
+      {
+        "year": 755,
+        "name": "安史之乱",
+        "type": "war",
+        "significance": "high",
+        "description": "安禄山、史思明发动叛乱，唐朝由盛转衰。",
+        "key_points": [
+          "安禄山",
+          "史思明",
+          "唐朝衰落"
+        ],
+        "impact": "唐朝由盛转衰，藩镇割据局面形成"
+      },
+      {
+        "year": 878,
+        "name": "黄巢起义",
+        "type": "war",
+        "significance": "high",
+        "description": "黄巢领导农民起义，动摇了唐朝统治。",
+        "key_points": [
+          "黄巢起义",
+          "农民起义",
+          "动摇统治"
+        ],
+        "impact": "动摇了唐朝统治，加速了唐朝的灭亡"
+      }
     ],
-    "culture": ["唐诗", "雕版印刷", "万国来朝"],
-    "tech_innovations": ["雕版印刷", "火药萌芽", "瓷器"],
-    "institution_innovations": ["科举制完善", "节度使制", "两税法"]
+    "culture": [
+      "唐诗",
+      "雕版印刷",
+      "万国来朝"
+    ],
+    "tech_innovations": [
+      "雕版印刷",
+      "火药萌芽",
+      "瓷器"
+    ],
+    "institution_innovations": [
+      "科举制完善",
+      "节度使制",
+      "两税法"
+    ]
+  },
+  {
+    "id": "five_dynasties",
+    "name": "五代十国 (Five Dynasties)",
+    "period": "AD 907 - AD 960",
+    "start_year": 907,
+    "end_year": 960,
+    "duration": 53,
+    "capital": [
+      "开封",
+      "洛阳",
+      "太原",
+      "成都",
+      "江陵"
+    ],
+    "key_figures": [
+      "朱温",
+      "李存勖",
+      "石敬瑭",
+      "刘知远",
+      "郭威",
+      "柴荣",
+      "李昪",
+      "孟知祥",
+      "王建"
+    ],
+    "territory": "中原分裂，南方割据",
+    "territory_desc": "唐朝灭亡后，中原地区先后出现五个朝代，南方出现十个割据政权，是中国历史上大分裂时期。",
+    "fall_analysis": {
+      "trigger": "北宋统一",
+      "structural": "政权更迭频繁，缺乏长期稳定",
+      "external": "赵匡胤建立宋朝，逐步统一全国"
+    },
+    "conquest_chain": {
+      "victor": "宋 (Song)",
+      "loser": "五代十国",
+      "battle": "陈桥兵变",
+      "factor": "赵匡胤兵变建立宋朝，逐步统一"
+    },
+    "stats": {
+      "population_million": 50.0,
+      "temperature_anomaly": 0.3,
+      "war_frequency": 3.5,
+      "territory_sq_km": 4.5,
+      "tech_index": 70,
+      "economic_index": 65,
+      "institution_index": 55,
+      "cultural_index": 75,
+      "military_index": 60
+    },
+    "events": [
+      {
+        "year": 907,
+        "name": "朱温篡唐，建立后梁",
+        "type": "politic",
+        "significance": "high"
+      },
+      {
+        "year": 916,
+        "name": "耶律阿保机建立契丹国",
+        "type": "politic",
+        "significance": "high"
+      },
+      {
+        "year": 923,
+        "name": "李存勖建立后唐",
+        "type": "war",
+        "significance": "high"
+      },
+      {
+        "year": 936,
+        "name": "石敬瑭割让燕云十六州",
+        "type": "war",
+        "significance": "high"
+      },
+      {
+        "year": 937,
+        "name": "李昪建立南唐",
+        "type": "politic",
+        "significance": "medium"
+      },
+      {
+        "year": 947,
+        "name": "耶律德光南下灭后晋",
+        "type": "war",
+        "significance": "high"
+      },
+      {
+        "year": 954,
+        "name": "柴荣北伐",
+        "type": "war",
+        "significance": "medium"
+      },
+      {
+        "year": 960,
+        "name": "陈桥兵变，赵匡胤建立宋朝",
+        "type": "politic",
+        "significance": "high"
+      }
+    ],
+    "culture": [
+      "词的兴起",
+      "绘画艺术",
+      "佛教文化"
+    ],
+    "tech_innovations": [
+      "印刷术发展",
+      "火药应用",
+      "造船技术"
+    ],
+    "institution_innovations": [
+      "枢密院",
+      "三司使",
+      "节度使制"
+    ]
   },
   {
     "id": "song",
@@ -1181,8 +3183,24 @@
     "start_year": 960,
     "end_year": 1279,
     "duration": 319,
-    "capital": ["开封 (Kaifeng)", "临安 (Lin'an)"],
-    "key_figures": ["赵匡胤", "王安石", "岳飞", "苏轼", "李清照", "辛弃疾", "陆游", "范仲淹", "欧阳修", "司马光", "包拯", "文天祥"],
+    "capital": [
+      "开封 (Kaifeng)",
+      "临安 (Lin'an)"
+    ],
+    "key_figures": [
+      "赵匡胤",
+      "王安石",
+      "岳飞",
+      "苏轼",
+      "李清照",
+      "辛弃疾",
+      "陆游",
+      "范仲淹",
+      "欧阳修",
+      "司马光",
+      "包拯",
+      "文天祥"
+    ],
     "territory": "失去幽云十六州，南宋偏安江南",
     "territory_desc": "北宋失去燕云十六州，南宋退守秦岭淮河以南，版图最小的大一统王朝。",
     "fall_analysis": {
@@ -1208,15 +3226,91 @@
       "military_index": 55
     },
     "events": [
-      {"year": 960, "name": "陈桥兵变", "type": "politic", "significance": "high"},
-      {"year": 1004, "name": "澶渊之盟", "type": "politic", "significance": "high"},
-      {"year": 1069, "name": "王安石变法", "type": "reform", "significance": "high"},
-      {"year": 1127, "name": "靖康之变，北宋亡", "type": "war", "significance": "high"},
-      {"year": 1279, "name": "崖山海战，南宋亡", "type": "war", "significance": "high"}
+      {
+        "year": 960,
+        "name": "陈桥兵变",
+        "type": "politic",
+        "significance": "high",
+        "description": "赵匡胤在陈桥发动兵变，黄袍加身，建立宋朝。",
+        "key_points": [
+          "陈桥兵变",
+          "赵匡胤",
+          "建立宋朝"
+        ],
+        "impact": "结束了五代十国的分裂局面，宋朝建立"
+      },
+      {
+        "year": 1004,
+        "name": "澶渊之盟",
+        "type": "politic",
+        "significance": "high",
+        "description": "宋辽签订澶渊之盟，维持了百余年的和平。",
+        "key_points": [
+          "澶渊之盟",
+          "宋辽和约",
+          "百年和平"
+        ],
+        "impact": "宋辽维持了百余年的和平，促进了经济文化交流",
+        "image": "images/chanyuan_treaty.jpg"
+      },
+      {
+        "year": 1069,
+        "name": "王安石变法",
+        "type": "reform",
+        "significance": "high",
+        "description": "宋神宗任用王安石进行变法，试图富国强兵。",
+        "key_points": [
+          "王安石变法",
+          "富国强兵",
+          "改革措施"
+        ],
+        "impact": "试图解决宋朝的财政和军事问题，但最终失败"
+      },
+      {
+        "year": 1127,
+        "name": "靖康之变，北宋亡",
+        "type": "war",
+        "significance": "high",
+        "description": "金兵攻破开封，掳走徽钦二帝，北宋灭亡。",
+        "key_points": [
+          "靖康之变",
+          "金兵入侵",
+          "北宋灭亡"
+        ],
+        "impact": "北宋灭亡，南宋建立，宋朝统治重心南移",
+        "image": "images/jingkang_incident.jpg"
+      },
+      {
+        "year": 1279,
+        "name": "崖山海战，南宋亡",
+        "type": "war",
+        "significance": "high",
+        "description": "元军在崖山海战中击败宋军，南宋灭亡。",
+        "key_points": [
+          "崖山海战",
+          "南宋灭亡",
+          "元朝统一"
+        ],
+        "impact": "南宋灭亡，元朝统一全国，结束了宋朝319年的统治",
+        "image": "images/yamen_battle.jpg"
+      }
     ],
-    "culture": ["宋词", "理学", "活字印刷", "交子"],
-    "tech_innovations": ["活字印刷", "指南针", "火药应用"],
-    "institution_innovations": ["文官制", "纸币制度", "市舶司"]
+    "culture": [
+      "宋词",
+      "理学",
+      "活字印刷",
+      "交子"
+    ],
+    "tech_innovations": [
+      "活字印刷",
+      "指南针",
+      "火药应用"
+    ],
+    "institution_innovations": [
+      "文官制",
+      "纸币制度",
+      "市舶司"
+    ]
   },
   {
     "id": "yuan",
@@ -1225,8 +3319,13 @@
     "start_year": 1271,
     "end_year": 1368,
     "duration": 97,
-    "capital": ["大都 (Dadu)"],
-    "key_figures": ["忽必烈", "耶律楚材"],
+    "capital": [
+      "大都 (Dadu)"
+    ],
+    "key_figures": [
+      "忽必烈",
+      "耶律楚材"
+    ],
     "territory": "中国历史上最大疆域，包括西伯利亚与西藏",
     "territory_desc": "疆域空前辽阔，首次将西藏纳入行政版图，设立行省制度。",
     "fall_analysis": {
@@ -1252,14 +3351,73 @@
       "military_index": 85
     },
     "events": [
-      {"year": 1271, "name": "忽必烈定国号为元", "type": "politic", "significance": "high"},
-      {"year": 1279, "name": "统一中国", "type": "war", "significance": "high"},
-      {"year": 1292, "name": "马可波罗离开中国", "type": "culture", "significance": "medium"},
-      {"year": 1351, "name": "红巾军起义", "type": "war", "significance": "high"}
+      {
+        "year": 1271,
+        "name": "忽必烈定国号为元",
+        "type": "politic",
+        "significance": "high",
+        "description": "忽必烈定国号为元，建立元朝，定都大都。",
+        "key_points": [
+          "忽必烈",
+          "定国号元",
+          "建立元朝"
+        ],
+        "impact": "元朝建立，实现了对中国的统治"
+      },
+      {
+        "year": 1279,
+        "name": "统一中国",
+        "type": "war",
+        "significance": "high",
+        "description": "元朝灭南宋，统一中国，结束了长期的分裂局面。",
+        "key_points": [
+          "灭南宋",
+          "统一中国",
+          "结束分裂"
+        ],
+        "impact": "结束了长期的分裂局面，元朝统一全国"
+      },
+      {
+        "year": 1292,
+        "name": "马可波罗离开中国",
+        "type": "culture",
+        "significance": "medium",
+        "description": "意大利旅行家马可波罗在中国游历17年后返回欧洲。",
+        "key_points": [
+          "马可波罗",
+          "游历中国",
+          "中西交流"
+        ],
+        "impact": "促进了中西文化交流，向欧洲介绍了中国"
+      },
+      {
+        "year": 1351,
+        "name": "红巾军起义",
+        "type": "war",
+        "significance": "high",
+        "description": "刘福通领导红巾军起义，动摇了元朝统治。",
+        "key_points": [
+          "红巾军起义",
+          "刘福通",
+          "动摇统治"
+        ],
+        "impact": "动摇了元朝统治，加速了元朝的灭亡"
+      }
     ],
-    "culture": ["元曲", "行省制", "青花瓷"],
-    "tech_innovations": ["回回炮", "海运"],
-    "institution_innovations": ["行省制", "四等人制", "怯薛制"]
+    "culture": [
+      "元曲",
+      "行省制",
+      "青花瓷"
+    ],
+    "tech_innovations": [
+      "回回炮",
+      "海运"
+    ],
+    "institution_innovations": [
+      "行省制",
+      "四等人制",
+      "怯薛制"
+    ]
   },
   {
     "id": "ming",
@@ -1268,8 +3426,15 @@
     "start_year": 1368,
     "end_year": 1644,
     "duration": 276,
-    "capital": ["南京", "北京"],
-    "key_figures": ["朱元璋", "郑和", "崇祯"],
+    "capital": [
+      "南京",
+      "北京"
+    ],
+    "key_figures": [
+      "朱元璋",
+      "郑和",
+      "崇祯"
+    ],
     "territory": "继承元制，但失去了内亚控制权",
     "territory_desc": "恢复汉地十八省，前期控制东北及越南，后期收缩至长城以内。",
     "fall_analysis": {
@@ -1295,15 +3460,90 @@
       "military_index": 65
     },
     "events": [
-      {"year": 1368, "name": "朱元璋建立明朝", "type": "politic", "significance": "high"},
-      {"year": 1405, "name": "郑和下西洋", "type": "culture", "significance": "high"},
-      {"year": 1449, "name": "土木堡之变", "type": "war", "significance": "high"},
-      {"year": 1581, "name": "一条鞭法", "type": "reform", "significance": "medium"},
-      {"year": 1644, "name": "甲申之变，明亡", "type": "war", "significance": "high"}
+      {
+        "year": 1368,
+        "name": "朱元璋建立明朝",
+        "type": "politic",
+        "significance": "high",
+        "description": "朱元璋在南京称帝，建立明朝，年号洪武。",
+        "key_points": [
+          "朱元璋称帝",
+          "建立明朝",
+          "洪武"
+        ],
+        "impact": "结束了元朝统治，明朝建立，恢复了汉族统治"
+      },
+      {
+        "year": 1405,
+        "name": "郑和下西洋",
+        "type": "culture",
+        "significance": "high",
+        "description": "郑和率领庞大船队七次下西洋，访问了30多个国家。",
+        "key_points": [
+          "郑和下西洋",
+          "七次远航",
+          "访问多国"
+        ],
+        "impact": "展示了中国航海实力，促进了中外文化交流",
+        "image": "images/zheng_he_voyage.jpg"
+      },
+      {
+        "year": 1449,
+        "name": "土木堡之变",
+        "type": "war",
+        "significance": "high",
+        "description": "明英宗亲征瓦剌，在土木堡被俘，明朝由盛转衰。",
+        "key_points": [
+          "土木堡之变",
+          "明英宗被俘",
+          "由盛转衰"
+        ],
+        "impact": "明朝由盛转衰，军事实力受到重创",
+        "image": "images/tumu_fortress.jpg"
+      },
+      {
+        "year": 1581,
+        "name": "一条鞭法",
+        "type": "reform",
+        "significance": "medium",
+        "description": "张居正推行一条鞭法，简化税制，促进经济发展。",
+        "key_points": [
+          "一条鞭法",
+          "张居正",
+          "税制改革"
+        ],
+        "impact": "简化了税制，促进了经济发展，但改革未能持续"
+      },
+      {
+        "year": 1644,
+        "name": "甲申之变，明亡",
+        "type": "war",
+        "significance": "high",
+        "description": "李自成攻破北京，崇祯帝自缢，明朝灭亡。",
+        "key_points": [
+          "李自成攻北京",
+          "崇祯自缢",
+          "明朝灭亡"
+        ],
+        "impact": "明朝灭亡，结束了276年的统治，清朝建立",
+        "image": "images/jiashen_incident.jpg"
+      }
     ],
-    "culture": ["小说", "阳明心学", "本草纲目"],
-    "tech_innovations": ["郑和宝船", "火器", "青花瓷"],
-    "institution_innovations": ["内阁制", "卫所制", "一条鞭法"]
+    "culture": [
+      "小说",
+      "阳明心学",
+      "本草纲目"
+    ],
+    "tech_innovations": [
+      "郑和宝船",
+      "火器",
+      "青花瓷"
+    ],
+    "institution_innovations": [
+      "内阁制",
+      "卫所制",
+      "一条鞭法"
+    ]
   },
   {
     "id": "qing",
@@ -1312,8 +3552,14 @@
     "start_year": 1644,
     "end_year": 1912,
     "duration": 268,
-    "capital": ["北京"],
-    "key_figures": ["康熙", "乾隆", "慈禧"],
+    "capital": [
+      "北京"
+    ],
+    "key_figures": [
+      "康熙",
+      "乾隆",
+      "慈禧"
+    ],
     "territory": "奠定现代中国版图，收复新疆、台湾",
     "territory_desc": "奠定了现代中国版图基础，有效统治蒙古、新疆、西藏。",
     "fall_analysis": {
@@ -1339,17 +3585,870 @@
       "military_index": 50
     },
     "events": [
-      {"year": 1644, "name": "清军入关", "type": "war", "significance": "high"},
-      {"year": 1662, "name": "收复台湾", "type": "war", "significance": "high"},
-      {"year": 1683, "name": "收复台湾", "type": "war", "significance": "high"},
-      {"year": 1689, "name": "尼布楚条约", "type": "politic", "significance": "medium"},
-      {"year": 1793, "name": "马戛尔尼访华", "type": "culture", "significance": "high"},
-      {"year": 1840, "name": "鸦片战争", "type": "war", "significance": "high"},
-      {"year": 1894, "name": "甲午战争", "type": "war", "significance": "high"},
-      {"year": 1911, "name": "武昌起义", "type": "war", "significance": "high"}
+      {
+        "year": 1644,
+        "name": "清军入关",
+        "type": "war",
+        "significance": "high",
+        "description": "李自成攻占北京后，明将吴三桂引清军入关，清军击败李自成，建立清朝统治。",
+        "key_points": [
+          "吴三桂引清军入关",
+          "击败李自成",
+          "建立清朝统治"
+        ],
+        "impact": "结束了明朝统治，开启清朝268年统治，满汉融合，奠定现代中国版图基础"
+      },
+      {
+        "year": 1662,
+        "name": "收复台湾",
+        "type": "war",
+        "significance": "high",
+        "description": "郑成功从荷兰殖民者手中收复台湾，建立东宁王国。",
+        "key_points": [
+          "郑成功击败荷兰",
+          "收复台湾"
+        ],
+        "impact": "结束了荷兰38年殖民统治，台湾回归中国版图"
+      },
+      {
+        "year": 1683,
+        "name": "收复台湾",
+        "type": "war",
+        "significance": "high",
+        "description": "清军攻占台湾，郑氏政权投降，台湾正式纳入清朝版图。",
+        "key_points": [
+          "清军攻占台湾",
+          "郑氏政权投降"
+        ],
+        "impact": "台湾正式纳入清朝版图，巩固了东南沿海安全"
+      },
+      {
+        "year": 1689,
+        "name": "尼布楚条约",
+        "type": "politic",
+        "significance": "medium",
+        "description": "中俄签订第一个平等条约，确定中俄东段边界。",
+        "key_points": [
+          "中俄平等条约",
+          "确定东段边界"
+        ],
+        "impact": "中国历史上第一个平等条约，稳定了中俄边境关系"
+      },
+      {
+        "year": 1793,
+        "name": "马戛尔尼访华",
+        "type": "culture",
+        "significance": "high",
+        "description": "英国使团马戛尔尼访华，要求通商被拒，标志着中西方交流的失败。",
+        "key_points": [
+          "英国使团访华",
+          "通商要求被拒"
+        ],
+        "impact": "错失与西方交流的机会，加剧了后来的冲突"
+      },
+      {
+        "year": 1840,
+        "name": "鸦片战争",
+        "type": "war",
+        "significance": "high",
+        "description": "英国为打开中国市场，发动鸦片战争，清政府战败。",
+        "key_points": [
+          "英国发动战争",
+          "清政府战败"
+        ],
+        "impact": "开启中国百年屈辱史，中国开始沦为半殖民地半封建社会"
+      },
+      {
+        "year": 1842,
+        "name": "南京条约，割让香港",
+        "type": "war",
+        "significance": "high",
+        "description": "清政府与英国签订《南京条约》，割让香港岛，开放五口通商。",
+        "key_points": [
+          "割让香港岛",
+          "开放五口通商"
+        ],
+        "impact": "中国近代第一个不平等条约，香港岛被割让155年"
+      },
+      {
+        "year": 1860,
+        "name": "北京条约，割让九龙",
+        "type": "war",
+        "significance": "high",
+        "description": "第二次鸦片战争后，清政府与英法签订《北京条约》，割让九龙半岛。",
+        "key_points": [
+          "割让九龙半岛",
+          "赔偿巨款"
+        ],
+        "impact": "香港领土进一步丧失，加深了半殖民地化"
+      },
+      {
+        "year": 1887,
+        "name": "中葡条约，割让澳门",
+        "type": "politic",
+        "significance": "high",
+        "description": "清政府与葡萄牙签订《中葡和好通商条约》，澳门正式成为葡萄牙殖民地。",
+        "key_points": [
+          "澳门成为殖民地",
+          "永居管理"
+        ],
+        "impact": "澳门被葡萄牙占领112年，1999年回归"
+      },
+      {
+        "year": 1894,
+        "name": "甲午战争",
+        "type": "war",
+        "significance": "high",
+        "description": "中日甲午战争爆发，清政府战败，北洋水师全军覆没。",
+        "key_points": [
+          "中日战争",
+          "北洋水师覆没"
+        ],
+        "impact": "暴露了清朝的腐败无能，刺激了维新变法运动"
+      },
+      {
+        "year": 1895,
+        "name": "马关条约，割让台湾",
+        "type": "war",
+        "significance": "high",
+        "description": "清政府与日本签订《马关条约》，割让台湾及澎湖列岛，赔偿白银2亿两。",
+        "key_points": [
+          "割让台湾",
+          "赔偿2亿两"
+        ],
+        "impact": "台湾被日本占领50年，刺激了救亡图存运动"
+      },
+      {
+        "year": 1898,
+        "name": "展拓香港界址专条",
+        "type": "politic",
+        "significance": "medium",
+        "description": "英国强迫清政府签订《展拓香港界址专条》，租借新界99年。",
+        "key_points": [
+          "租借新界",
+          "99年租期"
+        ],
+        "impact": "香港领土进一步扩大，1997年租期届满回归"
+      },
+      {
+        "year": 1911,
+        "name": "武昌起义",
+        "type": "war",
+        "significance": "high",
+        "description": "武昌起义爆发，各省纷纷响应，清政府统治瓦解。",
+        "key_points": [
+          "武昌起义",
+          "各省响应"
+        ],
+        "impact": "结束了清朝统治，开启民国时期，结束了两千多年封建帝制"
+      }
     ],
-    "culture": ["京剧", "红楼梦", "考据学"],
-    "tech_innovations": ["洋务工业", "铁路", "电报"],
-    "institution_innovations": ["军机处", "摊丁入亩", "改土归流", "预备立宪"]
+    "culture": [
+      "京剧",
+      "红楼梦",
+      "考据学"
+    ],
+    "tech_innovations": [
+      "洋务工业",
+      "铁路",
+      "电报"
+    ],
+    "institution_innovations": [
+      "军机处",
+      "摊丁入亩",
+      "改土归流",
+      "预备立宪"
+    ]
+  },
+  {
+    "id": "roc",
+    "name": "中华民国 (ROC)",
+    "period": "AD 1912 - AD 1949",
+    "start_year": 1912,
+    "end_year": 1949,
+    "duration": 37,
+    "capital": [
+      "南京",
+      "武汉",
+      "重庆",
+      "北平"
+    ],
+    "key_figures": [
+      "孙中山",
+      "袁世凯",
+      "蒋介石",
+      "宋庆龄"
+    ],
+    "territory": "从清朝继承的领土，后期收缩至台湾",
+    "territory_desc": "中国历史上第一个共和制国家，结束了两千多年的封建帝制，经历了军阀混战、抗日战争和国共内战。",
+    "fall_analysis": {
+      "trigger": "国共内战",
+      "structural": "政治腐败、经济崩溃、失去民心",
+      "external": "日本侵华战争的影响"
+    },
+    "conquest_chain": {
+      "victor": "新中国 (PRC)",
+      "loser": "民国 (ROC)",
+      "battle": "渡江战役",
+      "factor": "人民解放军的军事胜利与民众支持"
+    },
+    "stats": {
+      "population_million": 450.0,
+      "temperature_anomaly": 0.2,
+      "war_frequency": 2.5,
+      "territory_sq_km": 11.4,
+      "tech_index": 60,
+      "economic_index": 45,
+      "institution_index": 50,
+      "cultural_index": 65,
+      "military_index": 55
+    },
+    "events": [
+      {
+        "year": 1912,
+        "name": "中华民国成立",
+        "type": "politic",
+        "significance": "high",
+        "description": "孙中山在南京就任临时大总统，中华民国正式成立，结束了两千多年的封建帝制。",
+        "key_points": [
+          "孙中山就任",
+          "结束帝制",
+          "建立共和"
+        ],
+        "impact": "中国历史上第一个共和制国家，开启了民主革命的新纪元",
+        "image": "images/roc_establishment.jpg"
+      },
+      {
+        "year": 1915,
+        "name": "新文化运动",
+        "type": "culture",
+        "significance": "high",
+        "description": "陈独秀创办《新青年》，提倡民主与科学，反对封建文化。",
+        "key_points": [
+          "《新青年》创刊",
+          "提倡民主科学",
+          "反对封建文化"
+        ],
+        "impact": "思想启蒙运动，为五四运动和中国共产党的成立奠定了思想基础",
+        "image": "images/new_culture_movement.jpg"
+      },
+      {
+        "year": 1919,
+        "name": "五四运动",
+        "type": "culture",
+        "significance": "high",
+        "description": "巴黎和会外交失败，北京学生发起爱国运动，工人阶级登上历史舞台。",
+        "key_points": [
+          "外交失败",
+          "学生运动",
+          "工人参与"
+        ],
+        "impact": "中国新民主主义革命的开端，促进了马克思主义在中国的传播",
+        "image": "images/may_fourth_movement.jpg"
+      },
+      {
+        "year": 1921,
+        "name": "中国共产党成立",
+        "type": "politic",
+        "significance": "high",
+        "description": "中国共产党第一次全国代表大会在上海召开，中国共产党成立。",
+        "key_points": [
+          "一大召开",
+          "成立中国共产党"
+        ],
+        "impact": "中国革命的面貌焕然一新，为中国革命指明了方向",
+        "image": "images/ccp_establishment.jpg"
+      },
+      {
+        "year": 1926,
+        "name": "北伐战争",
+        "type": "war",
+        "significance": "high",
+        "description": "国民革命军从广州出发，北伐军阀，统一中国。",
+        "key_points": [
+          "国民革命军",
+          "北伐军阀",
+          "统一中国"
+        ],
+        "impact": "基本推翻了北洋军阀的统治，为国民政府统治奠定了基础"
+      },
+      {
+        "year": 1931,
+        "name": "九一八事变",
+        "type": "war",
+        "significance": "high",
+        "description": "日本关东军炸毁南满铁路，炮轰北大营，占领东北三省。",
+        "key_points": [
+          "日本入侵",
+          "占领东北",
+          "局部抗战"
+        ],
+        "impact": "中国局部抗战的开始，日本侵华战争的开端",
+        "image": "images/september_eighteenth_incident.jpg"
+      },
+      {
+        "year": 1934,
+        "name": "长征",
+        "type": "war",
+        "significance": "high",
+        "description": "红军第五次反围剿失败，被迫进行战略转移，行程二万五千里。",
+        "key_points": [
+          "战略转移",
+          "二万五千里",
+          "保存革命力量"
+        ],
+        "impact": "保存了革命力量，确立了毛泽东的领导地位，为中国革命保留了火种",
+        "image": "images/long_march.jpg"
+      },
+      {
+        "year": 1937,
+        "name": "七七事变，全面抗战",
+        "type": "war",
+        "significance": "high",
+        "description": "日本制造卢沟桥事变，中国全面抗战爆发。",
+        "key_points": [
+          "卢沟桥事变",
+          "全面抗战",
+          "国共合作"
+        ],
+        "impact": "中国全民族抗战的开始，世界反法西斯战争的重要组成部分",
+        "image": "images/marco_polo_bridge.jpg"
+      },
+      {
+        "year": 1945,
+        "name": "抗日战争胜利，台湾回归",
+        "type": "war",
+        "significance": "high",
+        "description": "日本宣布无条件投降，中国抗战胜利，台湾回归中国。",
+        "key_points": [
+          "日本投降",
+          "抗战胜利",
+          "台湾回归"
+        ],
+        "impact": "中国近代以来第一次取得反侵略战争的完全胜利，台湾结束日本50年殖民统治",
+        "image": "images/anti_japanese_victory.jpg"
+      },
+      {
+        "year": 1949,
+        "name": "中华人民共和国成立",
+        "type": "politic",
+        "significance": "high",
+        "description": "中华人民共和国中央人民政府在北京成立，毛泽东当选为中央人民政府主席。",
+        "key_points": [
+          "新中国成立",
+          "毛泽东当选",
+          "人民当家作主"
+        ],
+        "impact": "中国人民从此站起来了，开启了中华民族伟大复兴的新征程",
+        "image": "images/prc_establishment.jpg"
+      }
+    ],
+    "culture": [
+      "新文化运动",
+      "白话文",
+      "现代文学",
+      "电影艺术"
+    ],
+    "tech_innovations": [
+      "现代工业",
+      "航空",
+      "无线电",
+      "铁路网"
+    ],
+    "institution_innovations": [
+      "共和制",
+      "三民主义",
+      "宪法",
+      "现代教育"
+    ]
+  },
+  {
+    "id": "prc",
+    "name": "新中国 (PRC)",
+    "period": "AD 1949 - Present",
+    "start_year": 1949,
+    "end_year": 2024,
+    "duration": 75,
+    "capital": [
+      "北京"
+    ],
+    "key_figures": [
+      "毛泽东",
+      "邓小平",
+      "习近平"
+    ],
+    "territory": "恢复统一，奠定现代中国疆域",
+    "territory_desc": "实现国家统一，建立社会主义制度，改革开放后经济快速发展，成为世界第二大经济体。",
+    "fall_analysis": {
+      "trigger": "持续发展",
+      "structural": "制度不断完善，适应时代发展",
+      "external": "全球化与科技进步"
+    },
+    "conquest_chain": {
+      "victor": "持续发展",
+      "loser": "无",
+      "battle": "无",
+      "factor": "和平发展道路"
+    },
+    "stats": {
+      "population_million": 1400.0,
+      "temperature_anomaly": 0.8,
+      "war_frequency": 0.1,
+      "territory_sq_km": 9.6,
+      "tech_index": 90,
+      "economic_index": 85,
+      "institution_index": 80,
+      "cultural_index": 75,
+      "military_index": 85
+    },
+    "events": [
+      {
+        "year": 1949,
+        "name": "中华人民共和国成立",
+        "type": "politic",
+        "significance": "high",
+        "description": "中华人民共和国中央人民政府在北京成立，毛泽东当选为中央人民政府主席。",
+        "key_points": [
+          "新中国成立",
+          "毛泽东当选",
+          "人民当家作主"
+        ],
+        "impact": "中国人民从此站起来了，开启了中华民族伟大复兴的新征程",
+        "image": "images/prc_establishment.jpg"
+      },
+      {
+        "year": 1950,
+        "name": "抗美援朝",
+        "type": "war",
+        "significance": "high",
+        "description": "中国人民志愿军赴朝作战，与朝鲜人民军并肩作战，抗击美国侵略。",
+        "key_points": [
+          "志愿军赴朝",
+          "保家卫国",
+          "维护和平"
+        ],
+        "impact": "打出了国威军威，提高了中国的国际地位，为国内建设赢得了和平环境",
+        "image": "images/korean_war.jpg"
+      },
+      {
+        "year": 1950,
+        "name": "美国第七舰队进入台湾海峡",
+        "type": "war",
+        "significance": "high",
+        "description": "朝鲜战争爆发后，美国第七舰队进入台湾海峡，阻止人民解放军解放台湾。",
+        "key_points": [
+          "第七舰队",
+          "台湾海峡",
+          "阻止解放"
+        ],
+        "impact": "造成台湾问题长期化，阻碍了中国的统一进程",
+        "image": "images/taiwan_strait.jpg"
+      },
+      {
+        "year": 1953,
+        "name": "第一个五年计划",
+        "type": "politic",
+        "significance": "high",
+        "description": "中国开始实施第一个五年计划，重点发展重工业，建立工业化基础。",
+        "key_points": [
+          "重工业优先",
+          "工业化基础",
+          "计划经济"
+        ],
+        "impact": "奠定了中国工业化基础，建立了独立的工业体系"
+      },
+      {
+        "year": 1954,
+        "name": "第一部宪法颁布",
+        "type": "politic",
+        "significance": "high",
+        "description": "第一届全国人民代表大会召开，颁布《中华人民共和国宪法》。",
+        "key_points": [
+          "人大召开",
+          "宪法颁布",
+          "法治建设"
+        ],
+        "impact": "确立了社会主义根本制度，为社会主义建设提供了法律保障"
+      },
+      {
+        "year": 1956,
+        "name": "双百方针提出",
+        "type": "culture",
+        "significance": "medium",
+        "description": "毛泽东提出百花齐放、百家争鸣的方针，促进科学文化发展。",
+        "key_points": [
+          "百花齐放",
+          "百家争鸣",
+          "文化繁荣"
+        ],
+        "impact": "促进了科学文化事业的繁荣发展",
+        "image": "images/hundred_flowers.jpg"
+      },
+      {
+        "year": 1964,
+        "name": "第一颗原子弹爆炸",
+        "type": "tech",
+        "significance": "high",
+        "description": "中国第一颗原子弹在新疆罗布泊爆炸成功，成为世界第五个核国家。",
+        "key_points": [
+          "核试验成功",
+          "打破核垄断",
+          "国防实力"
+        ],
+        "impact": "打破了超级大国的核垄断，提高了中国的国际地位和国防实力"
+      },
+      {
+        "year": 1970,
+        "name": "东方红一号卫星",
+        "type": "tech",
+        "significance": "high",
+        "description": "中国第一颗人造地球卫星东方红一号发射成功，进入太空。",
+        "key_points": [
+          "人造卫星",
+          "太空探索",
+          "科技突破"
+        ],
+        "impact": "中国成为世界第五个发射卫星的国家，开启了太空探索时代",
+        "image": "images/dongfanghong_satellite.jpg"
+      },
+      {
+        "year": 1971,
+        "name": "恢复联合国合法席位",
+        "type": "politic",
+        "significance": "high",
+        "description": "第26届联合国大会通过决议，恢复中华人民共和国在联合国的合法席位。",
+        "key_points": [
+          "联合国席位",
+          "国际地位",
+          "外交胜利"
+        ],
+        "impact": "中国在国际舞台上的地位大幅提升，为改革开放创造了有利条件",
+        "image": "images/un_seat.jpg"
+      },
+      {
+        "year": 1978,
+        "name": "改革开放",
+        "type": "reform",
+        "significance": "high",
+        "description": "十一届三中全会召开，决定把工作重点转移到经济建设上来，实行改革开放。",
+        "key_points": [
+          "十一届三中全会",
+          "经济建设",
+          "改革开放"
+        ],
+        "impact": "中国进入改革开放新时期，经济快速发展，综合国力显著提升",
+        "image": "images/reform_opening.jpg"
+      },
+      {
+        "year": 1979,
+        "name": "中美建交，美国承认一个中国原则",
+        "type": "politic",
+        "significance": "high",
+        "description": "中美正式建立外交关系，美国承认中华人民共和国是中国的唯一合法政府。",
+        "key_points": [
+          "中美建交",
+          "一个中国",
+          "外交突破"
+        ],
+        "impact": "中美关系正常化，为中国改革开放和现代化建设创造了良好的国际环境"
+      },
+      {
+        "year": 1978,
+        "name": "恢复高考",
+        "type": "culture",
+        "significance": "high",
+        "description": "恢复高考制度，全国统一招生考试，培养人才。",
+        "key_points": [
+          "恢复高考",
+          "人才培养",
+          "教育改革"
+        ],
+        "impact": "恢复了公平选拔人才的机制，为国家培养了大批人才",
+        "image": "images/gaokao_restored.jpg"
+      },
+      {
+        "year": 1992,
+        "name": "社会主义市场经济体制确立",
+        "type": "politic",
+        "significance": "high",
+        "description": "十四大明确提出建立社会主义市场经济体制的目标。",
+        "key_points": [
+          "市场经济",
+          "体制改革",
+          "经济转型"
+        ],
+        "impact": "确立了社会主义市场经济体制，推动了经济快速发展",
+        "image": "images/market_economy.jpg"
+      },
+      {
+        "year": 1992,
+        "name": "邓小平南巡讲话",
+        "type": "politic",
+        "significance": "high",
+        "description": "邓小平视察南方，发表重要讲话，推动改革开放深入发展。",
+        "key_points": [
+          "南巡讲话",
+          "改革开放",
+          "思想解放"
+        ],
+        "impact": "进一步解放了思想，推动了改革开放和经济发展"
+      },
+      {
+        "year": 1992,
+        "name": "九二共识",
+        "type": "politic",
+        "significance": "high",
+        "description": "海协会与海基会达成共识，坚持一个中国原则，谋求国家统一。",
+        "key_points": [
+          "一个中国",
+          "两岸共识",
+          "和平统一"
+        ],
+        "impact": "为两岸关系发展奠定了政治基础",
+        "image": "images/1992_consensus.jpg"
+      },
+      {
+        "year": 1997,
+        "name": "香港回归",
+        "type": "politic",
+        "significance": "high",
+        "description": "中国政府恢复对香港行使主权，设立香港特别行政区。",
+        "key_points": [
+          "恢复主权",
+          "一国两制",
+          "特别行政区"
+        ],
+        "impact": "结束了英国155年的殖民统治，实践了一国两制的伟大构想",
+        "image": "images/hongkong_handover.jpg"
+      },
+      {
+        "year": 1999,
+        "name": "澳门回归",
+        "type": "politic",
+        "significance": "high",
+        "description": "中国政府恢复对澳门行使主权，设立澳门特别行政区。",
+        "key_points": [
+          "恢复主权",
+          "一国两制",
+          "特别行政区"
+        ],
+        "impact": "结束了葡萄牙112年的殖民统治，一国两制取得成功"
+      },
+      {
+        "year": 2001,
+        "name": "加入WTO",
+        "type": "politic",
+        "significance": "high",
+        "description": "中国正式加入世界贸易组织，成为其第143个成员。",
+        "key_points": [
+          "加入WTO",
+          "对外开放",
+          "经济全球化"
+        ],
+        "impact": "中国全面融入世界经济体系，对外贸易快速增长"
+      },
+      {
+        "year": 2003,
+        "name": "神舟五号载人航天",
+        "type": "tech",
+        "significance": "high",
+        "description": "神舟五号载人飞船成功发射，杨利伟成为中国首位航天员。",
+        "key_points": [
+          "载人航天",
+          "杨利伟",
+          "航天强国"
+        ],
+        "impact": "中国成为世界第三个掌握载人航天技术的国家，航天事业取得重大突破"
+      },
+      {
+        "year": 2007,
+        "name": "嫦娥一号探月",
+        "type": "tech",
+        "significance": "high",
+        "description": "嫦娥一号卫星成功发射，开启中国探月工程。",
+        "key_points": [
+          "探月工程",
+          "嫦娥一号",
+          "深空探测"
+        ],
+        "impact": "中国迈入深空探测时代，航天技术达到世界先进水平",
+        "image": "images/change1.jpg"
+      },
+      {
+        "year": 2008,
+        "name": "北京奥运会",
+        "type": "culture",
+        "significance": "high",
+        "description": "北京成功举办第29届夏季奥林匹克运动会。",
+        "key_points": [
+          "奥运会",
+          "北京",
+          "体育盛会"
+        ],
+        "impact": "向世界展示了中国的综合国力和文化魅力，提升了国际形象",
+        "image": "images/beijing_olympics.jpg"
+      },
+      {
+        "year": 2010,
+        "name": "成为世界第二大经济体",
+        "type": "politic",
+        "significance": "high",
+        "description": "中国GDP超过日本，成为世界第二大经济体。",
+        "key_points": [
+          "GDP超越",
+          "第二大经济体",
+          "经济实力"
+        ],
+        "impact": "中国经济实力显著增强，国际影响力大幅提升",
+        "image": "images/second_largest_economy.jpg"
+      },
+      {
+        "year": 2012,
+        "name": "中国梦提出",
+        "type": "politic",
+        "significance": "high",
+        "description": "习近平提出实现中华民族伟大复兴的中国梦。",
+        "key_points": [
+          "中国梦",
+          "民族复兴",
+          "奋斗目标"
+        ],
+        "impact": "凝聚了全国人民的共识，为国家发展指明了方向"
+      },
+      {
+        "year": 2013,
+        "name": "一带一路倡议",
+        "type": "politic",
+        "significance": "high",
+        "description": "习近平提出共建丝绸之路经济带和21世纪海上丝绸之路的倡议。",
+        "key_points": [
+          "一带一路",
+          "国际合作",
+          "互联互通"
+        ],
+        "impact": "推动了中国与沿线国家的合作，促进了共同发展",
+        "image": "images/belt_road.jpg"
+      },
+      {
+        "year": 2019,
+        "name": "嫦娥四号月球背面软着陆",
+        "type": "tech",
+        "significance": "high",
+        "description": "嫦娥四号探测器成功在月球背面软着陆，实现人类首次。",
+        "key_points": [
+          "月球背面",
+          "软着陆",
+          "人类首次"
+        ],
+        "impact": "中国航天技术达到世界领先水平，为深空探测积累了宝贵经验",
+        "image": "images/change4.jpg"
+      },
+      {
+        "year": 2020,
+        "name": "北斗三号全球组网",
+        "type": "tech",
+        "significance": "high",
+        "description": "北斗三号全球卫星导航系统正式开通，服务全球。",
+        "key_points": [
+          "北斗系统",
+          "全球组网",
+          "卫星导航"
+        ],
+        "impact": "中国成为世界第三个拥有全球卫星导航系统的国家，摆脱了对GPS的依赖"
+      },
+      {
+        "year": 2020,
+        "name": "全面建成小康社会",
+        "type": "politic",
+        "significance": "high",
+        "description": "中国宣布全面建成小康社会，实现了第一个百年奋斗目标。",
+        "key_points": [
+          "小康社会",
+          "百年目标",
+          "脱贫攻坚"
+        ],
+        "impact": "历史性地解决了绝对贫困问题，为共同富裕奠定了基础"
+      },
+      {
+        "year": 2021,
+        "name": "天问一号火星探测",
+        "type": "tech",
+        "significance": "high",
+        "description": "天问一号探测器成功着陆火星，祝融号火星车开展探测任务。",
+        "key_points": [
+          "火星探测",
+          "祝融号",
+          "深空探测"
+        ],
+        "impact": "中国成为世界第二个成功着陆火星的国家，深空探测能力大幅提升",
+        "image": "images/tianwen1.jpg"
+      },
+      {
+        "year": 2022,
+        "name": "空间站建成",
+        "type": "tech",
+        "significance": "high",
+        "description": "中国空间站全面建成，进入长期有人驻留模式。",
+        "key_points": [
+          "空间站",
+          "长期驻留",
+          "航天强国"
+        ],
+        "impact": "中国成为世界第三个拥有独立空间站的国家，航天事业达到新高度",
+        "image": "images/space_station.jpg"
+      },
+      {
+        "year": 2022,
+        "name": "北京冬奥会",
+        "type": "culture",
+        "significance": "high",
+        "description": "北京成功举办第24届冬季奥林匹克运动会，成为双奥之城。",
+        "key_points": [
+          "冬奥会",
+          "双奥之城",
+          "冰雪运动"
+        ],
+        "impact": "向世界展示了中国的综合实力，推动了冰雪运动发展",
+        "image": "images/beijing_winter_olympics.jpg"
+      },
+      {
+        "year": 2023,
+        "name": "杭州亚运会",
+        "type": "culture",
+        "significance": "medium",
+        "description": "杭州成功举办第19届亚洲运动会。",
+        "key_points": [
+          "亚运会",
+          "杭州",
+          "体育盛会"
+        ],
+        "impact": "展示了中国的组织能力和文化魅力，促进了亚洲体育交流",
+        "image": "images/hangzhou_asian_games.jpg"
+      }
+    ],
+    "culture": [
+      "社会主义文化",
+      "网络文化",
+      "传统文化复兴",
+      "双百方针",
+      "文化自信"
+    ],
+    "tech_innovations": [
+      "两弹一星",
+      "高铁",
+      "5G",
+      "航天技术",
+      "人工智能",
+      "北斗导航",
+      "量子计算",
+      "新能源"
+    ],
+    "institution_innovations": [
+      "人民代表大会制度",
+      "社会主义市场经济",
+      "一国两制",
+      "五年计划",
+      "宪法制度"
+    ]
   }
 ]

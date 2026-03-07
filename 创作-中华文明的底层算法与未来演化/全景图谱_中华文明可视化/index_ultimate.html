@@ -852,10 +852,20 @@
             pointer-events: none;
             font-size: 13px;
             z-index: 1000;
-            max-width: 320px;
+            max-width: 450px;
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
             opacity: 0;
             transition: opacity 0.2s;
+        }
+
+        .tooltip img {
+            max-width: 400px;
+            max-height: 280px;
+            display: block;
+            margin: 12px 0;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
         }
 
         .tooltip-title {
@@ -1382,6 +1392,7 @@
                     <span class="chip" data-filter="golden">👑 盛世王朝</span>
                     <span class="chip" data-filter="pluralism">🌏 多元一体</span>
                     <span class="chip" data-filter="peak">📜 集权巅峰</span>
+                    <span class="chip" data-filter="modern">🚀 现代中国</span>
                 </div>
             </div>
             <div class="control-section">
@@ -1393,8 +1404,10 @@
                     <span class="nav-period" data-year="-100">🏛️ 秦汉</span>
                     <span class="nav-period" data-year="400">🏯 魏晋南北朝</span>
                     <span class="nav-period" data-year="700">👑 隋唐</span>
+                    <span class="nav-period" data-year="930">⚔️ 五代十国</span>
                     <span class="nav-period" data-year="1100">🌏 宋元</span>
                     <span class="nav-period" data-year="1600">📜 明清</span>
+                    <span class="nav-period" data-year="1930">🚀 民国至今</span>
                 </div>
             </div>
         </div>
@@ -1402,13 +1415,13 @@
         <div class="timeline-container animate-in">
             <div class="timeline-header">
                 <div class="timeline-title">⏱️ 时间轴</div>
-                <div class="timeline-hint">💡 滚轮缩放 | 拖拽平移 | 点击文明条查看兴衰详解</div>
+                <div class="timeline-hint">💡 滚轮/触控板缩放 | 拖拽平移 | 点击文明条查看兴衰详解</div>
             </div>
             <div id="timeline-view"></div>
             <div style="margin-top:15px; padding:12px; background: rgba(0,0,0,0.25); border-radius:8px; font-size:13px; color: var(--text-secondary); line-height:1.7;">
-                <strong style="color: var(--accent-gold);">📖 说明：</strong> 时间轴从<span style="color:#2ecc71;">史前时代</span>（BC 10000）到<span style="color:#e74c3c;">现代</span>（AD 1969），每条彩色条代表一个文明或王朝。<br>
+                <strong style="color: var(--accent-gold);">📖 说明：</strong> 时间轴从<span style="color:#2ecc71;">史前时代</span>（BC 10000）到<span style="color:#e74c3c;">现代</span>（AD 2024），每条彩色条代表一个文明或王朝。<br>
                 <strong style="color: var(--accent-gold);">🌍 西方历史进程：</strong> <span style="color:#3498db;">蓝色</span>标记西方历史和科技发展进程，包含重要历史事件和科技里程碑。<br>
-                <strong style="color: var(--accent-gold);">💡 交互：</strong> 滚轮缩放（需按住Ctrl键）、拖拽平移、点击文明条查看兴衰详解。
+                <strong style="color: var(--accent-gold);">💡 交互：</strong> 滚轮/触控板缩放、拖拽平移、点击文明条查看兴衰详解。
             </div>
         </div>
 
@@ -1466,9 +1479,14 @@
                             <span class="period-name">近世文明</span>
                             <span class="period-range">宋-清</span>
                         </button>
+                        <button class="period-btn" data-period="modern">
+                            <span class="period-color" style="background:#9b59b6"></span>
+                            <span class="period-name">现代中国</span>
+                            <span class="period-range">民国至今</span>
+                        </button>
                         <button class="period-btn active" data-period="all">
-                            <span class="period-color" style="background:linear-gradient(90deg,#e74c3c,#f1c40f,#3498db)"></span>
-                            <span class="period-name">三代对比</span>
+                            <span class="period-color" style="background:linear-gradient(90deg,#e74c3c,#f1c40f,#3498db,#9b59b6)"></span>
+                            <span class="period-name">四代对比</span>
                             <span class="period-range">综合</span>
                         </button>
                     </div>
@@ -1868,6 +1886,10 @@
                             // 集权巅峰：AD 1368 - 1912，明清
                             matchesFilter = midYear >= 1368 && midYear <= 1950;
                             break;
+                        case 'modern':
+                            // 现代中国：AD 1912 - 至今，民国至今
+                            matchesFilter = midYear >= 1912;
+                            break;
                     }
                 }
 
@@ -2043,7 +2065,7 @@
 
             // 调整到合理的时间范围
             const x = d3.scaleLinear()
-                .domain([-10000, 1970]) // 从1万年前到1970年
+                .domain([-10000, 2024])
                 .range([margin.left, width - margin.right]);
             currentX = x;
 
@@ -2261,12 +2283,23 @@
                 .range(["#e74c3c", "#e67e22", "#f1c40f", "#2ecc71", "#3498db", "#9b59b6", "#1abc9c", "#e91e63", "#00bcd4", "#34495e", "#16a085", "#27ae60", "#d35400", "#c0392b", "#8e44ad"]);
 
             zoomBehavior = d3.zoom()
-                .scaleExtent([0.1, 50]) // 扩展缩放范围，允许更宏观的视图
+                .scaleExtent([0.1, 50])
                 .wheelDelta((event) => {
-                    // 只有按住 Ctrl 键时才进行缩放
-                    if (!event.ctrlKey) {
-                        return 0; // 不进行缩放，让浏览器默认处理
+                    // Mac 触控板双指缩放检测
+                    if (event.ctrlKey && event.metaKey) {
+                        // Mac 触控板双指缩放
+                        return -event.deltaY * 0.01;
                     }
+                    
+                    // 检测是否是触控板（deltaMode === 0 且 deltaY 较小）
+                    const isTrackpad = event.deltaMode === 0 && Math.abs(event.deltaY) < 100;
+                    
+                    if (isTrackpad) {
+                        // 触控板直接缩放
+                        return -event.deltaY * 0.001;
+                    }
+                    
+                    // 鼠标滚轮直接缩放
                     return -event.deltaY * (event.deltaMode === 1 ? 0.05 : event.deltaMode ? 1 : 0.002);
                 })
                 .extent([[margin.left - 200, 0], [width - margin.right + 200, height]])
@@ -2291,13 +2324,13 @@
                 let tickValues;
                 if (scale < 0.5) {
                     // 全局视图
-                    tickValues = [-10000, -8000, -5000, -3000, -2000, -1000, 0, 500, 1000, 1500, 1900, 1970];
+                    tickValues = [-10000, -8000, -5000, -3000, -2000, -1000, 0, 500, 1000, 1500, 1900, 1970, 2024];
                 } else if (scale < 2) {
                     // 中期视图
-                    tickValues = [-5000, -4000, -3000, -2500, -2000, -1500, -1000, -500, 0, 500, 1000, 1500, 1900, 1970];
+                    tickValues = [-5000, -4000, -3000, -2500, -2000, -1500, -1000, -500, 0, 500, 1000, 1500, 1900, 1970, 2024];
                 } else {
                     // 详细视图
-                    tickValues = [-3000, -2800, -2500, -2200, -2000, -1800, -1500, -1200, -1000, -800, -500, -300, 0, 300, 500, 800, 1000, 1200, 1500, 1700, 1900, 1950, 1970];
+                    tickValues = [-3000, -2800, -2500, -2200, -2000, -1800, -1500, -1200, -1000, -800, -500, -300, 0, 300, 500, 800, 1000, 1200, 1500, 1700, 1900, 1950, 1970, 2000, 2024];
                 }
                 
                 gx.call(xAxis.scale(xz).tickValues(tickValues).tickFormat(d => {
@@ -2413,6 +2446,35 @@
                             const typeName = typeNames[e.type] || e.type;
                             const significanceText = e.significance === 'high' ? '关键事件' : '重要事件';
                             const significanceColor = e.significance === 'high' ? '#e74c3c' : '#f39c12';
+                            
+                            const imageHtml = e.image ? `
+                                <img src="${e.image}" alt="${e.name}" onerror="this.style.display='none'">
+                            ` : '';
+                            
+                            const descriptionHtml = e.description ? `
+                                <div style="margin-top: 8px; padding-top: 8px; border-top: 1px solid var(--border-color); font-size: 13px; line-height: 1.6; color: var(--text-primary);">
+                                    ${e.description}
+                                </div>
+                            ` : '';
+                            
+                            const keyPointsHtml = e.key_points && e.key_points.length > 0 ? `
+                                <div style="margin-top: 8px; padding-top: 8px; border-top: 1px solid var(--border-color);">
+                                    <div style="font-size: 12px; font-weight: 600; color: var(--text-secondary); margin-bottom: 6px;">核心要点：</div>
+                                    <div style="font-size: 12px; line-height: 1.5; color: var(--text-primary);">
+                                        ${e.key_points.map(point => `• ${point}`).join('<br>')}
+                                    </div>
+                                </div>
+                            ` : '';
+                            
+                            const impactHtml = e.impact ? `
+                                <div style="margin-top: 8px; padding-top: 8px; border-top: 1px solid var(--border-color);">
+                                    <div style="font-size: 12px; font-weight: 600; color: var(--text-secondary); margin-bottom: 6px;">深刻影响：</div>
+                                    <div style="font-size: 13px; line-height: 1.6; color: var(--text-primary); font-style: italic;">
+                                        ${e.impact}
+                                    </div>
+                                </div>
+                            ` : '';
+                            
                             tooltip.html(`
                                 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
                                     <div class="tooltip-title" style="margin-bottom: 0;">${yearLabel}</div>
@@ -2425,6 +2487,10 @@
                                 <div style="margin-top: 8px; padding-top: 8px; border-top: 1px solid var(--border-color); font-size: 12px; color: var(--text-secondary);">
                                     所属时期：${d.name}
                                 </div>
+                                ${imageHtml}
+                                ${descriptionHtml}
+                                ${keyPointsHtml}
+                                ${impactHtml}
                             `)
                                 .style("left", (event.pageX + 20) + "px")
                                 .style("top", (event.pageY - 40) + "px");
@@ -2791,7 +2857,8 @@
             const periods = {
                 early: { name: "早期文明", range: "史前-秦", data: data.filter(d => d.start_year < -200), color: "#e74c3c" },
                 imperial: { name: "帝国时代", range: "汉-唐", data: data.filter(d => d.start_year >= -200 && d.start_year < 1000), color: "#f1c40f" },
-                late: { name: "近世文明", range: "宋-清", data: data.filter(d => d.start_year >= 1000), color: "#3498db" }
+                late: { name: "近世文明", range: "宋-清", data: data.filter(d => d.start_year >= 1000 && d.start_year < 1912), color: "#3498db" },
+                modern: { name: "现代中国", range: "民国至今", data: data.filter(d => d.start_year >= 1912), color: "#9b59b6" }
             };
 
             function avgStats(arr) {
@@ -3180,8 +3247,11 @@
                 { name: "秦汉", start: -221, end: 220, color: "#e74c3c" },
                 { name: "三国两晋", start: 220, end: 589, color: "#f39c12" },
                 { name: "隋唐", start: 589, end: 907, color: "#27ae60" },
-                { name: "宋元", start: 907, end: 1368, color: "#1abc9c" },
-                { name: "明清", start: 1368, end: 1912, color: "#e91e63" }
+                { name: "五代十国", start: 907, end: 960, color: "#ff9800" },
+                { name: "宋元", start: 960, end: 1368, color: "#1abc9c" },
+                { name: "明清", start: 1368, end: 1912, color: "#e91e63" },
+                { name: "民国", start: 1912, end: 1949, color: "#607d8b" },
+                { name: "新中国", start: 1949, end: 2024, color: "#4caf50" }
             ];
 
             const periodData = timePeriods.map(period => {
@@ -3209,6 +3279,7 @@
                     politic: typeCount['politic'] || 0,
                     tech: typeCount['tech'] || 0,
                     culture: typeCount['culture'] || 0,
+                    reform: typeCount['reform'] || 0,
                     total: periodEvents.length
                 };
             });
@@ -3223,18 +3294,20 @@
                 .range([height - margin.bottom, margin.top]);
 
             // 绘制堆叠柱状图
-            const types = ['war', 'politic', 'tech', 'culture'];
+            const types = ['war', 'politic', 'tech', 'culture', 'reform'];
             const typeColors = {
                 war: '#e74c3c',
                 politic: '#3498db',
                 tech: '#f39c12',
-                culture: '#9b59b6'
+                culture: '#9b59b6',
+                reform: '#2ecc71'
             };
             const typeNames = {
                 war: '战争',
                 politic: '政治',
                 tech: '科技',
-                culture: '文化'
+                culture: '文化',
+                reform: '改革'
             };
 
             let yOffset = {};
