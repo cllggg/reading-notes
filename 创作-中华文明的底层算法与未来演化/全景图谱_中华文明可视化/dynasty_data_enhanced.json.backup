@@ -6,8 +6,6 @@
     "start_year": -5000,
     "end_year": -3000,
     "duration": 2000,
-    "evidence_type": "archaeological",
-    "academic_consensus": "mainstream",
     "capital": [
       "仰韶村 (Yangshao Village)"
     ],
@@ -118,8 +116,6 @@
     "start_year": -5000,
     "end_year": -3300,
     "duration": 1700,
-    "evidence_type": "archaeological",
-    "academic_consensus": "mainstream",
     "capital": [
       "河姆渡 (Hemudu)"
     ],
@@ -231,8 +227,6 @@
     "start_year": -4300,
     "end_year": -2500,
     "duration": 1800,
-    "evidence_type": "archaeological",
-    "academic_consensus": "mainstream",
     "capital": [
       "大汶口 (Dawenkou)"
     ],
@@ -340,8 +334,6 @@
     "start_year": -3300,
     "end_year": -2050,
     "duration": 1250,
-    "evidence_type": "archaeological",
-    "academic_consensus": "mainstream",
     "capital": [
       "马家窑 (Majiayao)"
     ],
@@ -462,8 +454,6 @@
     "start_year": -2500,
     "end_year": -2000,
     "duration": 500,
-    "evidence_type": "archaeological",
-    "academic_consensus": "mainstream",
     "capital": [
       "城子崖 (Chengziya)"
     ],
@@ -572,8 +562,6 @@
     "start_year": -3300,
     "end_year": -2600,
     "duration": 700,
-    "evidence_type": "archaeological",
-    "academic_consensus": "mainstream",
     "capital": [
       "屈家岭 (Qujialing)"
     ],
@@ -681,8 +669,6 @@
     "start_year": -2600,
     "end_year": -2000,
     "duration": 600,
-    "evidence_type": "archaeological",
-    "academic_consensus": "mainstream",
     "capital": [
       "石家河 (Shijiahe)"
     ],
@@ -791,8 +777,6 @@
     "start_year": -1500,
     "end_year": -1000,
     "duration": 500,
-    "evidence_type": "archaeological",
-    "academic_consensus": "mainstream",
     "capital": [
       "吴城 (Wucheng)"
     ],
@@ -900,8 +884,6 @@
     "start_year": -200,
     "end_year": 400,
     "duration": 600,
-    "evidence_type": "archaeological",
-    "academic_consensus": "mainstream",
     "capital": [
       "楼兰 (Loulan)",
       "鄯善 (Shanshan)"
@@ -1025,8 +1007,6 @@
     "start_year": -204,
     "end_year": -111,
     "duration": 93,
-    "evidence_type": "documentary",
-    "academic_consensus": "mainstream",
     "capital": [
       "番禺 (Panyu)"
     ],
@@ -1149,8 +1129,6 @@
     "start_year": -300,
     "end_year": -27,
     "duration": 273,
-    "evidence_type": "documentary",
-    "academic_consensus": "mainstream",
     "capital": [
       "夜郎邑 (Yelang City)"
     ],
@@ -1258,8 +1236,6 @@
     "start_year": -3300,
     "end_year": -2300,
     "duration": 1000,
-    "evidence_type": "archaeological",
-    "academic_consensus": "mainstream",
     "capital": [
       "莫角山 (Mojiaoshan)"
     ],
@@ -1385,8 +1361,6 @@
     "start_year": -4000,
     "end_year": -3000,
     "duration": 1000,
-    "evidence_type": "archaeological",
-    "academic_consensus": "mainstream",
     "capital": [
       "牛河梁 (Niuheliang) - 圣地"
     ],
@@ -1493,8 +1467,6 @@
     "start_year": -2300,
     "end_year": -1900,
     "duration": 400,
-    "evidence_type": "archaeological",
-    "academic_consensus": "mainstream",
     "capital": [
       "陶寺 (Taosi)"
     ],
@@ -1602,8 +1574,6 @@
     "start_year": -2300,
     "end_year": -1800,
     "duration": 500,
-    "evidence_type": "archaeological",
-    "academic_consensus": "mainstream",
     "capital": [
       "石峁 (Shimao)"
     ],
@@ -1723,8 +1693,6 @@
     "start_year": -2800,
     "end_year": -316,
     "duration": 2484,
-    "evidence_type": "combined",
-    "academic_consensus": "mainstream",
     "capital": [
       "三星堆",
       "金沙"
@@ -1864,23 +1832,10 @@
   {
     "id": "xia",
     "name": "夏 (Xia)",
-    "period": "BC 2070 - BC 1600（学术争议）",
+    "period": "BC 2070 - BC 1600",
     "start_year": -2070,
     "end_year": -1600,
     "duration": 470,
-    "evidence_type": "controversial",
-    "academic_consensus": "disputed",
-    "alternative_dates": [
-      {"source": "夏商周断代工程", "date": "BC 2070 - BC 1600"},
-      {"source": "传统文献记载", "date": "BC 2205 - BC 1766"}
-    ],
-    "archaeological_sites": [
-      {"name": "二里头遗址", "location": "河南偃师", "significance": "可能为夏都，学术界对其是否为夏都存在争议"}
-    ],
-    "academic_views": [
-      {"view": "信史地位确立", "supporters": "中国主流学者", "argument": "二里头遗址等考古发现支持夏朝存在"},
-      {"view": "证据不足", "supporters": "部分国际学者", "argument": "缺乏同时期文字证据，文献记载年代较晚"}
-    ],
     "capital": [
       "阳城 (Yangcheng)",
       "二里头 (Erlitou)"
@@ -1891,7 +1846,7 @@
       "桀 (Jie)"
     ],
     "territory": "河南中西部、山西南部 (Henan/Shanxi)",
-    "territory_desc": "松散的方国联盟，核心控制区仅限于伊洛河流域。注：夏朝的存在在学术界仍有争议，主要依据《竹书纪年》等文献记载，考古学界对夏商周断代工程结论仍有讨论。",
+    "territory_desc": "松散的方国联盟，核心控制区仅限于伊洛河流域。",
     "fall_analysis": {
       "trigger": "鸣条之战 (Battle of Mingtiao)",
       "structural": "方国联盟松散，神权与王权未完全整合 (Loose Alliance)",
@@ -1973,23 +1928,10 @@
   {
     "id": "shang",
     "name": "商 (Shang)",
-    "period": "BC 1600 - BC 1046（主流观点）",
+    "period": "BC 1600 - BC 1046",
     "start_year": -1600,
     "end_year": -1046,
     "duration": 554,
-    "evidence_type": "combined",
-    "academic_consensus": "mainstream",
-    "alternative_dates": [
-      {"source": "夏商周断代工程", "date": "BC 1600 - BC 1046"},
-      {"source": "传统文献记载", "date": "BC 1766 - BC 1122"}
-    ],
-    "archaeological_sites": [
-      {"name": "殷墟遗址", "location": "河南安阳", "significance": "商朝晚期都城，甲骨文出土地，2006年列入世界文化遗产"},
-      {"name": "郑州商城", "location": "河南郑州", "significance": "商朝早期都城遗址"}
-    ],
-    "academic_views": [
-      {"view": "信史地位确立", "supporters": "中外学者", "argument": "甲骨文+殷墟考古，信史地位无可争议"}
-    ],
     "capital": [
       "亳 (Bo)",
       "殷 (Yin)"
@@ -2000,7 +1942,7 @@
       "纣王 (Zhou)"
     ],
     "territory": "黄河中下游，势力达长江流域",
-    "territory_desc": "以大邑商为中心，通过方国进行间接统治，影响力远达江西吴城。注：商朝起始年代BC 1600为夏商周断代工程结论，传统文献记载为BC 1766，考古学界存在不同观点。",
+    "territory_desc": "以大邑商为中心，通过方国进行间接统治，影响力远达江西吴城。",
     "fall_analysis": {
       "trigger": "牧野之战 (Battle of Muye)",
       "structural": "人祭导致的恐怖统治引发周边方国反感 (Terror Rule)",
@@ -2102,8 +2044,6 @@
     "start_year": -1042,
     "end_year": -223,
     "duration": 819,
-    "evidence_type": "documentary",
-    "academic_consensus": "mainstream",
     "capital": [
       "丹阳",
       "郢都",
@@ -2196,24 +2136,10 @@
   {
     "id": "zhou_west",
     "name": "西周 (Western Zhou)",
-    "period": "BC 1046 - BC 771（主流观点）",
+    "period": "BC 1046 - BC 771",
     "start_year": -1046,
     "end_year": -771,
     "duration": 275,
-    "evidence_type": "combined",
-    "academic_consensus": "mainstream",
-    "alternative_dates": [
-      {"source": "夏商周断代工程", "date": "BC 1046 - BC 771"},
-      {"source": "传统文献记载", "date": "BC 1122 - BC 771"}
-    ],
-    "archaeological_sites": [
-      {"name": "丰镐遗址", "location": "陕西西安", "significance": "西周都城遗址，丰京和镐京"},
-      {"name": "周原遗址", "location": "陕西岐山", "significance": "周人发源地，出土大量青铜器和甲骨文"}
-    ],
-    "academic_views": [
-      {"view": "牧野之战BC 1046", "supporters": "夏商周断代工程", "argument": "根据文献记载和天文推算确定"},
-      {"view": "牧野之战BC 1122", "supporters": "传统文献", "argument": "《竹书纪年》等文献记载"}
-    ],
     "capital": [
       "镐京 (Haojing)"
     ],
@@ -2223,7 +2149,7 @@
       "周幽王 (King You)"
     ],
     "territory": "分封制覆盖黄河及汉水流域",
-    "territory_desc": "通过分封制将统治范围扩展至山东、河北及汉水流域。注：西周起始年代BC 1046为夏商周断代工程结论（牧野之战），传统文献记载为BC 1122，考古学界存在不同观点。",
+    "territory_desc": "通过分封制将统治范围扩展至山东、河北及汉水流域。",
     "fall_analysis": {
       "trigger": "申侯联合犬戎攻破镐京 (Quanrong Invasion)",
       "structural": "血缘纽带随代际衰减，王室领地经济崩溃 (Feudal Decay)",
@@ -2288,236 +2214,34 @@
     ]
   },
   {
-    "id": "chunqiu",
-    "name": "春秋 (Spring & Autumn)",
-    "period": "BC 770 - BC 476",
+    "id": "chunqiu_zhanguo",
+    "name": "春秋战国 (Spring & Autumn / Warring States)",
+    "period": "BC 770 - BC 221",
     "start_year": -770,
-    "end_year": -476,
-    "duration": 294,
-    "evidence_type": "documentary",
-    "academic_consensus": "mainstream",
+    "end_year": -221,
+    "duration": 549,
     "capital": [
       "洛邑 (Luoyi) - Nominal"
     ],
     "key_figures": [
       "齐桓公",
-      "晋文公",
-      "秦穆公",
-      "宋襄公",
-      "楚庄王",
-      "吴王阖闾",
-      "越王勾践",
       "孔子",
-      "老子",
-      "管仲",
-      "晏婴",
-      "伍子胥"
-    ],
-    "territory": "诸侯割据，周王室衰微",
-    "territory_desc": "周平王东迁后，周王室衰微，诸侯争霸。春秋时期是中华文明的重要转型期，铁器开始普及，井田制瓦解，百家争鸣兴起。注：春秋时期结束年代有BC 476和BC 403两种主要观点。",
-    "fall_analysis": {
-      "trigger": "三家分晋 (Partition of Jin)",
-      "structural": "诸侯争霸导致周王室权威进一步衰落",
-      "external": "周边民族的压力"
-    },
-    "conquest_chain": {
-      "victor": "战国七雄",
-      "loser": "春秋诸侯",
-      "battle": "三家分晋",
-      "factor": "晋国分裂标志着春秋结束，战国开始"
-    },
-    "stats": {
-      "population_million": 25.0,
-      "temperature_anomaly": 0.1,
-      "war_frequency": 1.5,
-      "territory_sq_km": 2.0,
-      "tech_index": 65,
-      "economic_index": 60,
-      "institution_index": 55,
-      "cultural_index": 85,
-      "military_index": 65
-    },
-    "events": [
-      {
-        "year": -770,
-        "name": "平王东迁，春秋开始",
-        "type": "politic",
-        "significance": "high",
-        "description": "周平王东迁洛邑，东周开始，春秋时期开始。",
-        "key_points": [
-          "平王东迁",
-          "东周开始",
-          "春秋开始"
-        ],
-        "impact": "周王室衰微，诸侯争霸局面形成"
-      },
-      {
-        "year": -685,
-        "name": "齐桓公称霸",
-        "type": "politic",
-        "significance": "medium",
-        "description": "齐桓公任用管仲改革，成为春秋首霸，提出'尊王攘夷'。",
-        "key_points": [
-          "齐桓公称霸",
-          "管仲改革",
-          "尊王攘夷"
-        ],
-        "impact": "开创了春秋霸主政治，确立了诸侯争霸模式"
-      },
-      {
-        "year": -656,
-        "name": "葵丘会盟",
-        "type": "politic",
-        "significance": "medium",
-        "description": "齐桓公在葵丘会盟诸侯，确立霸主地位。",
-        "key_points": [
-          "葵丘会盟",
-          "霸主地位",
-          "诸侯联盟"
-        ],
-        "impact": "齐桓公霸业达到顶峰，春秋霸主政治成熟"
-      },
-      {
-        "year": -632,
-        "name": "城濮之战",
-        "type": "war",
-        "significance": "high",
-        "description": "晋文公在城濮之战中击败楚军，确立霸主地位。",
-        "key_points": [
-          "城濮之战",
-          "晋文公",
-          "退避三舍"
-        ],
-        "impact": "晋国成为霸主，晋楚争霸格局形成"
-      },
-      {
-        "year": -597,
-        "name": "邲之战",
-        "type": "war",
-        "significance": "medium",
-        "description": "楚庄王在邲之战中击败晋军，楚庄王成为霸主。",
-        "key_points": [
-          "邲之战",
-          "楚庄王",
-          "问鼎中原"
-        ],
-        "impact": "楚国势力达到顶峰，问鼎中原"
-      },
-      {
-        "year": -551,
-        "name": "孔子诞生",
-        "type": "culture",
-        "significance": "high",
-        "description": "孔子诞生，开创儒家学派，对中华文明产生深远影响。",
-        "key_points": [
-          "孔子诞生",
-          "儒家学派",
-          "思想影响"
-        ],
-        "impact": "儒家思想成为中华文明的核心，影响至今"
-      },
-      {
-        "year": -506,
-        "name": "吴破楚入郢",
-        "type": "war",
-        "significance": "high",
-        "description": "吴王阖闾在孙武、伍子胥辅佐下攻破楚都郢。",
-        "key_points": [
-          "吴破楚",
-          "孙武伍子胥",
-          "入郢"
-        ],
-        "impact": "吴国崛起，楚国衰落，春秋格局大变"
-      },
-      {
-        "year": -494,
-        "name": "夫差败越",
-        "type": "war",
-        "significance": "medium",
-        "description": "吴王夫差击败越国，越王勾践卧薪尝胆。",
-        "key_points": [
-          "夫差败越",
-          "勾践",
-          "卧薪尝胆"
-        ],
-        "impact": "吴越争霸，为越国复仇埋下伏笔"
-      },
-      {
-        "year": -473,
-        "name": "越灭吴",
-        "type": "war",
-        "significance": "high",
-        "description": "越王勾践灭吴，成为春秋最后一位霸主。",
-        "key_points": [
-          "越灭吴",
-          "勾践",
-          "春秋霸主"
-        ],
-        "impact": "春秋霸主政治结束，向战国过渡"
-      },
-      {
-        "year": -476,
-        "name": "春秋结束",
-        "type": "politic",
-        "significance": "high",
-        "description": "春秋时期结束，进入战国时期。",
-        "key_points": [
-          "春秋结束",
-          "战国开始",
-          "历史分期"
-        ],
-        "impact": "春秋时期结束，战国时期开始，社会结构发生重大变化"
-      }
-    ],
-    "culture": [
-      "百家争鸣萌芽",
-      "铁器开始普及",
-      "井田制瓦解",
-      "礼乐崩坏"
-    ],
-    "tech_innovations": [
-      "铁器",
-      "牛耕",
-      "水利工程"
-    ],
-    "institution_innovations": [
-      "霸主政治",
-      "井田制瓦解",
-      "士阶层兴起"
-    ]
-  },
-  {
-    "id": "zhanguo",
-    "name": "战国 (Warring States)",
-    "period": "BC 475 - BC 221",
-    "start_year": -475,
-    "end_year": -221,
-    "duration": 254,
-    "evidence_type": "documentary",
-    "academic_consensus": "mainstream",
-    "capital": [
-      "各国都城 - Multiple"
-    ],
-    "key_figures": [
       "商鞅",
-      "秦孝公",
-      "秦昭襄王",
       "秦始皇",
-      "赵武灵王",
-      "廉颇",
-      "蔺相如",
-      "白起",
-      "李牧",
-      "屈原",
+      "老子",
       "孟子",
       "墨子",
       "庄子",
       "韩非子",
+      "孙子",
       "孙膑",
-      "田忌"
+      "屈原",
+      "廉颇",
+      "蔺相如",
+      "白起"
     ],
-    "territory": "战国七雄割据",
-    "territory_desc": "战国七雄（齐、楚、燕、韩、赵、魏、秦）割据，兼并战争频繁。战国时期是中华文明的重要发展期，铁器普及，百家争鸣达到顶峰，各国变法图强。注：战国起始年代有BC 475和BC 403两种主要观点。",
+    "territory": "诸侯割据，范围扩大至辽东、巴蜀、岭南",
+    "territory_desc": "华夏文化圈大幅扩展，秦灭巴蜀，楚吞吴越，赵武灵王胡服骑射扩展北疆。",
     "fall_analysis": {
       "trigger": "秦灭六国之战 (Qin's Wars of Unification)",
       "structural": "封建贵族制无法适应铁器时代的高强度战争 (System Failure)",
@@ -2530,204 +2254,68 @@
       "factor": "秦国的耕战体系与军功爵制"
     },
     "stats": {
-      "population_million": 35.0,
+      "population_million": 30.0,
       "temperature_anomaly": 0.0,
-      "war_frequency": 3.5,
-      "territory_sq_km": 3.2,
-      "tech_index": 75,
-      "economic_index": 70,
-      "institution_index": 65,
-      "cultural_index": 95,
-      "military_index": 85
+      "war_frequency": 2.5,
+      "territory_sq_km": 2.8,
+      "tech_index": 70,
+      "economic_index": 65,
+      "institution_index": 60,
+      "cultural_index": 90,
+      "military_index": 75
     },
     "events": [
       {
-        "year": -475,
-        "name": "战国开始",
+        "year": -770,
+        "name": "平王东迁，春秋开始",
         "type": "politic",
-        "significance": "high",
-        "description": "战国时期开始，七雄并立。",
-        "key_points": [
-          "战国开始",
-          "七雄并立",
-          "兼并战争"
-        ],
-        "impact": "战国时期开始，兼并战争加剧"
+        "significance": "high"
+      },
+      {
+        "year": -685,
+        "name": "齐桓公称霸",
+        "type": "politic",
+        "significance": "medium"
+      },
+      {
+        "year": -551,
+        "name": "孔子诞生",
+        "type": "culture",
+        "significance": "high"
       },
       {
         "year": -453,
-        "name": "三家分晋",
+        "name": "三家分晋，战国开始",
         "type": "politic",
-        "significance": "high",
-        "description": "晋国被韩、赵、魏三家瓜分，标志着战国正式开始。",
-        "key_points": [
-          "三家分晋",
-          "晋国分裂",
-          "战国开始"
-        ],
-        "impact": "晋国分裂，战国七雄格局形成"
-      },
-      {
-        "year": -403,
-        "name": "周威烈王承认三家分晋",
-        "type": "politic",
-        "significance": "medium",
-        "description": "周威烈王正式承认韩、赵、魏三家为诸侯。",
-        "key_points": [
-          "承认三家",
-          "诸侯地位",
-          "战国格局"
-        ],
-        "impact": "战国七雄格局正式确立"
+        "significance": "high"
       },
       {
         "year": -356,
         "name": "商鞅变法",
         "type": "reform",
-        "significance": "high",
-        "description": "商鞅在秦国推行变法，实行军功爵制、郡县制等。",
-        "key_points": [
-          "商鞅变法",
-          "军功爵制",
-          "郡县制"
-        ],
-        "impact": "秦国实力大增，为统一六国奠定基础"
-      },
-      {
-        "year": -307,
-        "name": "赵武灵王胡服骑射",
-        "type": "reform",
-        "significance": "medium",
-        "description": "赵武灵王推行胡服骑射，改革军事制度。",
-        "key_points": [
-          "胡服骑射",
-          "军事改革",
-          "赵武灵王"
-        ],
-        "impact": "赵国军事实力增强，成为抗秦主力"
+        "significance": "high"
       },
       {
         "year": -260,
         "name": "长平之战",
         "type": "war",
-        "significance": "high",
-        "description": "秦赵长平之战，白起坑杀赵军40万，赵国元气大伤。",
-        "key_points": [
-          "长平之战",
-          "白起",
-          "坑杀赵军"
-        ],
-        "impact": "赵国元气大伤，秦国统一六国的道路扫清障碍"
-      },
-      {
-        "year": -256,
-        "name": "秦灭西周",
-        "type": "war",
-        "significance": "medium",
-        "description": "秦国灭西周公国，周王室名存实亡。",
-        "key_points": [
-          "秦灭西周",
-          "周王室",
-          "名存实亡"
-        ],
-        "impact": "周王室彻底衰落，统一大势所趋"
-      },
-      {
-        "year": -249,
-        "name": "秦灭东周",
-        "type": "war",
-        "significance": "medium",
-        "description": "秦国灭东周公国，周朝彻底灭亡。",
-        "key_points": [
-          "秦灭东周",
-          "周朝灭亡",
-          "历史终结"
-        ],
-        "impact": "周朝彻底灭亡，为秦统一六国扫清障碍"
-      },
-      {
-        "year": -230,
-        "name": "秦灭韩",
-        "type": "war",
-        "significance": "medium",
-        "description": "秦国灭韩国，开始统一六国的战争。",
-        "key_points": [
-          "秦灭韩",
-          "统一战争",
-          "六国灭亡"
-        ],
-        "impact": "秦国开始统一六国，韩成为第一个被灭的国家"
-      },
-      {
-        "year": -225,
-        "name": "秦灭魏",
-        "type": "war",
-        "significance": "medium",
-        "description": "秦国灭魏国。",
-        "key_points": [
-          "秦灭魏",
-          "统一战争",
-          "六国灭亡"
-        ],
-        "impact": "魏国灭亡，秦国统一进程加快"
-      },
-      {
-        "year": -223,
-        "name": "秦灭楚",
-        "type": "war",
-        "significance": "high",
-        "description": "秦国灭楚国，楚国是六国中最大的国家。",
-        "key_points": [
-          "秦灭楚",
-          "统一战争",
-          "六国灭亡"
-        ],
-        "impact": "楚国灭亡，秦国统一六国的最大障碍被清除"
-      },
-      {
-        "year": -222,
-        "name": "秦灭燕、赵",
-        "type": "war",
-        "significance": "medium",
-        "description": "秦国灭燕国、赵国。",
-        "key_points": [
-          "秦灭燕赵",
-          "统一战争",
-          "六国灭亡"
-        ],
-        "impact": "燕赵灭亡，统一进程接近完成"
-      },
-      {
-        "year": -221,
-        "name": "秦灭齐，统一六国",
-        "type": "war",
-        "significance": "high",
-        "description": "秦国灭齐国，完成统一六国的大业。",
-        "key_points": [
-          "秦灭齐",
-          "统一六国",
-          "战国结束"
-        ],
-        "impact": "秦国完成统一六国，战国结束，秦朝建立"
+        "significance": "high"
       }
     ],
     "culture": [
       "百家争鸣",
       "铁器普及",
-      "法家思想",
-      "士阶层活跃"
+      "法家思想"
     ],
     "tech_innovations": [
       "铁器",
       "牛耕",
-      "水利工程",
-      "弩机"
+      "水利工程"
     ],
     "institution_innovations": [
       "郡县制",
       "军功爵制",
-      "变法运动",
-      "官僚制"
+      "变法运动"
     ]
   },
   {
@@ -2737,8 +2325,6 @@
     "start_year": -221,
     "end_year": -207,
     "duration": 14,
-    "evidence_type": "documentary",
-    "academic_consensus": "mainstream",
     "capital": [
       "咸阳 (Xianyang)"
     ],
@@ -2852,8 +2438,6 @@
     "start_year": -202,
     "end_year": 8,
     "duration": 210,
-    "evidence_type": "documentary",
-    "academic_consensus": "mainstream",
     "capital": [
       "长安 (Chang'an)"
     ],
@@ -2982,8 +2566,6 @@
     "start_year": 25,
     "end_year": 220,
     "duration": 195,
-    "evidence_type": "documentary",
-    "academic_consensus": "mainstream",
     "capital": [
       "洛阳 (Luoyang)"
     ],
@@ -3103,539 +2685,62 @@
     ]
   },
   {
-    "id": "xin",
-    "name": "新 (Xin)",
-    "period": "AD 9 - AD 23",
-    "start_year": 9,
-    "end_year": 23,
-    "duration": 14,
-    "evidence_type": "documentary",
-    "academic_consensus": "mainstream",
-    "capital": [
-      "长安 (Chang'an)"
-    ],
-    "key_figures": [
-      "王莽 (Wang Mang)"
-    ],
-    "territory": "继承西汉疆域，但控制力减弱",
-    "territory_desc": "王莽篡汉建立新朝，实行一系列改革，但改革失败导致社会动荡。注：新朝是西汉与东汉之间的过渡政权，王莽的改革虽然失败，但反映了当时社会问题的严重性。",
-    "fall_analysis": {
-      "trigger": "绿林赤眉起义 (Green Forest/Red Eyebrows Rebellion)",
-      "structural": "改革措施过于激进，脱离实际，引发社会各阶层不满",
-      "external": "自然灾害频发，加剧社会矛盾"
-    },
-    "conquest_chain": {
-      "victor": "东汉 (Eastern Han)",
-      "loser": "新 (Xin)",
-      "battle": "昆阳之战",
-      "factor": "刘秀的军事才能与民心向背"
-    },
-    "stats": {
-      "population_million": 55.0,
-      "temperature_anomaly": -0.1,
-      "war_frequency": 2.0,
-      "territory_sq_km": 5.5,
-      "tech_index": 65,
-      "economic_index": 60,
-      "institution_index": 70,
-      "cultural_index": 75,
-      "military_index": 65
-    },
-    "events": [
-      {
-        "year": 8,
-        "name": "王莽篡汉，建立新朝",
-        "type": "politic",
-        "significance": "high",
-        "description": "王莽逼迫孺子婴禅让，建立新朝，自称新皇帝。",
-        "key_points": [
-          "王莽篡汉",
-          "建立新朝",
-          "西汉灭亡"
-        ],
-        "impact": "西汉灭亡，新朝建立，王莽开始推行一系列改革"
-      },
-      {
-        "year": 9,
-        "name": "推行新政改革",
-        "type": "reform",
-        "significance": "high",
-        "description": "王莽推行一系列改革，包括土地改革、币制改革、官制改革等。",
-        "key_points": [
-          "土地改革",
-          "币制改革",
-          "官制改革"
-        ],
-        "impact": "改革措施虽然理想化，但脱离实际，导致社会动荡"
-      },
-      {
-        "year": 17,
-        "name": "绿林赤眉起义",
-        "type": "war",
-        "significance": "high",
-        "description": "绿林军和赤眉军起义，反对王莽统治。",
-        "key_points": [
-          "绿林起义",
-          "赤眉起义",
-          "反对王莽"
-        ],
-        "impact": "起义动摇了新朝统治，为东汉建立创造了条件"
-      },
-      {
-        "year": 23,
-        "name": "昆阳之战，新朝灭亡",
-        "type": "war",
-        "significance": "high",
-        "description": "刘秀在昆阳之战中击败王莽军队，新朝灭亡。",
-        "key_points": [
-          "昆阳之战",
-          "刘秀胜利",
-          "新朝灭亡"
-        ],
-        "impact": "新朝灭亡，为东汉建立奠定了基础"
-      }
-    ],
-    "culture": [
-      "儒家理想主义",
-      "复古改革"
-    ],
-    "tech_innovations": [
-      "青铜器",
-      "铁器"
-    ],
-    "institution_innovations": [
-      "王田制",
-      "五均六管",
-      "币制改革"
-    ]
-  },
-  {
-    "id": "wei",
-    "name": "魏 (Wei)",
-    "period": "AD 220 - AD 265",
+    "id": "three_kingdoms",
+    "name": "三国两晋南北朝 (Wei/Jin/Northern-Southern)",
+    "period": "AD 220 - AD 589",
     "start_year": 220,
-    "end_year": 265,
-    "duration": 45,
-    "evidence_type": "documentary",
-    "academic_consensus": "mainstream",
+    "end_year": 589,
+    "duration": 369,
     "capital": [
-      "洛阳 (Luoyang)"
+      "洛阳",
+      "建康",
+      "大同"
     ],
     "key_figures": [
-      "曹操",
       "曹丕",
-      "曹植",
-      "司马懿"
-    ],
-    "territory": "北方中原地区",
-    "territory_desc": "曹魏控制北方中原地区，与蜀、吴形成三国鼎立局面。注：魏国是三国中实力最强的国家，控制中原地区。",
-    "fall_analysis": {
-      "trigger": "司马炎代魏",
-      "structural": "曹氏皇权衰落，司马氏专权",
-      "external": "蜀吴的压力相对较小"
-    },
-    "conquest_chain": {
-      "victor": "西晋 (Western Jin)",
-      "loser": "魏 (Wei)",
-      "battle": "司马炎代魏",
-      "factor": "司马懿家族长期专权，曹魏名存实亡"
-    },
-    "stats": {
-      "population_million": 15.0,
-      "temperature_anomaly": -0.5,
-      "war_frequency": 2.5,
-      "territory_sq_km": 2.5,
-      "tech_index": 65,
-      "economic_index": 60,
-      "institution_index": 60,
-      "cultural_index": 75,
-      "military_index": 75
-    },
-    "events": [
-      {
-        "year": 220,
-        "name": "曹丕代汉，建立魏国",
-        "type": "politic",
-        "significance": "high",
-        "description": "曹丕逼迫汉献帝禅让，建立魏国，东汉灭亡。",
-        "key_points": [
-          "曹丕代汉",
-          "建立魏国",
-          "东汉灭亡"
-        ],
-        "impact": "东汉灭亡，三国时期开始"
-      },
-      {
-        "year": 226,
-        "name": "曹叡即位",
-        "type": "politic",
-        "significance": "medium",
-        "description": "曹叡即位，魏国进入相对稳定时期。",
-        "key_points": [
-          "曹叡即位",
-          "魏国稳定",
-          "三国鼎立"
-        ],
-        "impact": "魏国政治相对稳定，三国鼎立格局稳固"
-      },
-      {
-        "year": 249,
-        "name": "司马懿发动高平陵之变",
-        "type": "politic",
-        "significance": "high",
-        "description": "司马懿发动政变，诛杀曹爽，夺取魏国大权。",
-        "key_points": [
-          "高平陵之变",
-          "司马懿夺权",
-          "曹氏衰落"
-        ],
-        "impact": "司马懿夺取魏国大权，为司马氏代魏奠定基础"
-      },
-      {
-        "year": 265,
-        "name": "司马炎代魏，建立西晋",
-        "type": "politic",
-        "significance": "high",
-        "description": "司马炎逼迫魏元帝禅让，建立西晋。",
-        "key_points": [
-          "司马炎代魏",
-          "建立西晋",
-          "魏国灭亡"
-        ],
-        "impact": "魏国灭亡，西晋建立"
-      }
-    ],
-    "culture": [
-      "建安文学",
-      "玄学",
-      "佛教传播"
-    ],
-    "tech_innovations": [
-      "马镫",
-      "水排",
-      "瓷器"
-    ],
-    "institution_innovations": [
-      "九品中正制",
-      "屯田制",
-      "士族政治"
-    ]
-  },
-  {
-    "id": "shu",
-    "name": "蜀 (Shu)",
-    "period": "AD 221 - AD 263",
-    "start_year": 221,
-    "end_year": 263,
-    "duration": 42,
-    "evidence_type": "documentary",
-    "academic_consensus": "mainstream",
-    "capital": [
-      "成都 (Chengdu)"
-    ],
-    "key_figures": [
+      "司马炎",
+      "孝文帝",
+      "王羲之",
+      "曹操",
       "刘备",
       "诸葛亮",
       "关羽",
       "张飞",
-      "赵云",
-      "姜维"
+      "周瑜",
+      "司马懿",
+      "陶渊明",
+      "谢灵运"
     ],
-    "territory": "西南地区，巴蜀汉中",
-    "territory_desc": "蜀汉控制西南地区，以成都为都城，实行诸葛亮治理。注：蜀汉是三国中实力最弱但最坚韧的国家。",
+    "territory": "分裂时期，北方游牧民族入主中原",
+    "territory_desc": "北方五胡十六国更替，南方东晋南朝偏安，疆域破碎。",
     "fall_analysis": {
-      "trigger": "魏灭蜀",
-      "structural": "人才凋零，后期姜维连年征战消耗国力",
-      "external": "魏国的军事压力"
+      "trigger": "八王之乱与五胡乱华",
+      "structural": "门阀士族垄断政治资源，皇权衰落",
+      "external": "气候变冷导致北方游牧民族大规模南迁 (Climate Cooling)"
     },
     "conquest_chain": {
-      "victor": "魏 (Wei)",
-      "loser": "蜀 (Shu)",
-      "battle": "魏灭蜀之战",
-      "factor": "邓艾偷渡阴平，刘禅投降"
+      "victor": "隋 (Sui)",
+      "loser": "陈/北周",
+      "battle": "隋灭陈之战",
+      "factor": "北方胡汉融合完成，南方士族腐朽"
     },
     "stats": {
-      "population_million": 8.0,
-      "temperature_anomaly": -0.3,
-      "war_frequency": 2.0,
-      "territory_sq_km": 1.0,
+      "population_million": 35.0,
+      "temperature_anomaly": -1.0,
+      "war_frequency": 3.0,
+      "territory_sq_km": 4.5,
       "tech_index": 60,
       "economic_index": 55,
-      "institution_index": 55,
-      "cultural_index": 80,
+      "institution_index": 50,
+      "cultural_index": 85,
       "military_index": 65
     },
     "events": [
       {
-        "year": 221,
-        "name": "刘备称帝，建立蜀汉",
-        "type": "politic",
-        "significance": "high",
-        "description": "刘备在成都称帝，建立蜀汉政权。",
-        "key_points": [
-          "刘备称帝",
-          "建立蜀汉",
-          "三国鼎立"
-        ],
-        "impact": "蜀汉建立，三国鼎立格局形成"
-      },
-      {
-        "year": 223,
-        "name": "诸葛亮南征",
-        "type": "war",
-        "significance": "medium",
-        "description": "诸葛亮南征平定南中，稳定蜀汉后方。",
-        "key_points": [
-          "诸葛亮南征",
-          "平定南中",
-          "稳定后方"
-        ],
-        "impact": "南中平定，蜀汉后方稳定"
-      },
-      {
-        "year": 228,
-        "name": "诸葛亮北伐",
-        "type": "war",
-        "significance": "high",
-        "description": "诸葛亮开始北伐曹魏，试图恢复汉室。",
-        "key_points": [
-          "诸葛亮北伐",
-          "恢复汉室",
-          "出师表"
-        ],
-        "impact": "诸葛亮北伐，展示蜀汉的坚韧精神"
-      },
-      {
-        "year": 234,
-        "name": "诸葛亮逝世",
-        "type": "politic",
-        "significance": "high",
-        "description": "诸葛亮在五丈原病逝，蜀汉失去核心领导人。",
-        "key_points": [
-          "诸葛亮逝世",
-          "五丈原",
-          "蜀汉衰落"
-        ],
-        "impact": "诸葛亮逝世，蜀汉开始衰落"
-      },
-      {
-        "year": 263,
-        "name": "魏灭蜀",
-        "type": "war",
-        "significance": "high",
-        "description": "魏将邓艾偷渡阴平，刘禅投降，蜀汉灭亡。",
-        "key_points": [
-          "魏灭蜀",
-          "邓艾偷渡",
-          "刘禅投降"
-        ],
-        "impact": "蜀汉灭亡，三国鼎立格局被打破"
-      }
-    ],
-    "culture": [
-      "蜀汉文化",
-      "诸葛亮文化",
-      "巴蜀文化"
-    ],
-    "tech_innovations": [
-      "木牛流马",
-      "连弩",
-      "蜀锦"
-    ],
-    "institution_innovations": [
-      "丞相制",
-      "郡县制",
-      "法治思想"
-    ]
-  },
-  {
-    "id": "wu",
-    "name": "吴 (Wu)",
-    "period": "AD 222 - AD 280",
-    "start_year": 222,
-    "end_year": 280,
-    "duration": 58,
-    "evidence_type": "documentary",
-    "academic_consensus": "mainstream",
-    "capital": [
-      "建业 (Jianye)",
-      "武昌 (Wuchang)"
-    ],
-    "key_figures": [
-      "孙权",
-      "周瑜",
-      "陆逊",
-      "鲁肃",
-      "吕蒙"
-    ],
-    "territory": "东南地区，江东六郡",
-    "territory_desc": "东吴控制东南地区，以建业为都城，拥有强大水军。注：东吴是三国中最后灭亡的国家。",
-    "fall_analysis": {
-      "trigger": "晋灭吴",
-      "structural": "孙氏皇权衰落，内部争斗激烈",
-      "external": "晋国的军事压力"
-    },
-    "conquest_chain": {
-      "victor": "西晋 (Western Jin)",
-      "loser": "吴 (Wu)",
-      "battle": "晋灭吴之战",
-      "factor": "王濬水军顺江而下，孙皓投降"
-    },
-    "stats": {
-      "population_million": 12.0,
-      "temperature_anomaly": -0.2,
-      "war_frequency": 1.8,
-      "territory_sq_km": 1.8,
-      "tech_index": 62,
-      "economic_index": 58,
-      "institution_index": 52,
-      "cultural_index": 78,
-      "military_index": 70
-    },
-    "events": [
-      {
-        "year": 208,
-        "name": "赤壁之战",
-        "type": "war",
-        "significance": "high",
-        "description": "孙刘联军在赤壁之战中击败曹操，奠定三国鼎立格局。",
-        "key_points": [
-          "赤壁之战",
-          "孙刘联军",
-          "三国鼎立"
-        ],
-        "impact": "奠定了三国鼎立的格局，是中国历史上著名的以少胜多的战役",
-        "image": "images/red_cliff_battle.jpg"
-      },
-      {
-        "year": 222,
-        "name": "孙权称帝，建立吴国",
-        "type": "politic",
-        "significance": "high",
-        "description": "孙权在建业称帝，建立吴国。",
-        "key_points": [
-          "孙权称帝",
-          "建立吴国",
-          "三国鼎立"
-        ],
-        "impact": "吴国建立，三国鼎立格局正式形成"
-      },
-      {
-        "year": 229,
-        "name": "孙权派卫温到达夷洲",
-        "type": "culture",
-        "significance": "medium",
-        "description": "孙权派卫温到达夷洲（台湾），是大陆与台湾早期接触的记录。",
-        "key_points": [
-          "卫温到达夷洲",
-          "台湾早期接触",
-          "海上探索"
-        ],
-        "impact": "大陆与台湾早期接触的重要记录"
-      },
-      {
-        "year": 252,
-        "name": "孙权逝世",
-        "type": "politic",
-        "significance": "medium",
-        "description": "孙权逝世，东吴开始衰落。",
-        "key_points": [
-          "孙权逝世",
-          "东吴衰落",
-          "内部争斗"
-        ],
-        "impact": "孙权逝世，东吴开始衰落"
-      },
-      {
         "year": 280,
-        "name": "晋灭吴，三国结束",
-        "type": "war",
-        "significance": "high",
-        "description": "晋将王濬率水军顺江而下，孙皓投降，吴国灭亡。",
-        "key_points": [
-          "晋灭吴",
-          "王濬水军",
-          "三国结束"
-        ],
-        "impact": "吴国灭亡，三国时期结束，西晋实现统一"
-      }
-    ],
-    "culture": [
-      "江东文化",
-      "水军文化",
-      "海上贸易"
-    ],
-    "tech_innovations": [
-      "造船技术",
-      "水战战术",
-      "青瓷"
-    ],
-    "institution_innovations": [
-      "世袭制",
-      "郡县制",
-      "士族政治"
-    ]
-  },
-  {
-    "id": "jin_west",
-    "name": "西晋 (Western Jin)",
-    "period": "AD 265 - AD 316",
-    "start_year": 265,
-    "end_year": 316,
-    "duration": 51,
-    "evidence_type": "documentary",
-    "academic_consensus": "mainstream",
-    "capital": [
-      "洛阳 (Luoyang)"
-    ],
-    "key_figures": [
-      "司马炎",
-      "司马炎",
-      "司马睿"
-    ],
-    "territory": "统一三国，控制中原",
-    "territory_desc": "西晋统一三国，控制中原地区，但统治时间很短。注：西晋统一时间很短，很快陷入八王之乱。",
-    "fall_analysis": {
-      "trigger": "永嘉之乱",
-      "structural": "八王之乱导致中央集权瓦解",
-      "external": "匈奴等五胡的入侵"
-    },
-    "conquest_chain": {
-      "victor": "匈奴/东晋",
-      "loser": "西晋",
-      "battle": "永嘉之乱",
-      "factor": "八王之乱削弱中央，匈奴趁机入侵"
-    },
-    "stats": {
-      "population_million": 20.0,
-      "temperature_anomaly": -0.8,
-      "war_frequency": 3.0,
-      "territory_sq_km": 3.0,
-      "tech_index": 63,
-      "economic_index": 58,
-      "institution_index": 55,
-      "cultural_index": 72,
-      "military_index": 60
-    },
-    "events": [
-      {
-        "year": 265,
-        "name": "司马炎代魏，建立西晋",
+        "name": "西晋统一",
         "type": "politic",
-        "significance": "high",
-        "description": "司马炎逼迫魏元帝禅让，建立西晋。",
-        "key_points": [
-          "司马炎代魏",
-          "建立西晋",
-          "统一三国"
-        ],
-        "impact": "西晋建立，为统一三国奠定基础"
-      },
-      {
-        "year": 280,
-        "name": "西晋灭吴，统一三国",
-        "type": "war",
-        "significance": "high",
+        "significance": "medium",
         "description": "西晋灭吴，实现短暂统一，结束了三国鼎立局面。",
         "key_points": [
           "西晋灭吴",
@@ -3645,21 +2750,8 @@
         "impact": "结束了三国鼎立局面，但统一时间很短"
       },
       {
-        "year": 291,
-        "name": "八王之乱开始",
-        "type": "war",
-        "significance": "high",
-        "description": "晋惠帝时期，八王争夺中央政权，引发大规模内乱。",
-        "key_points": [
-          "八王之乱",
-          "中央内乱",
-          "权力争夺"
-        ],
-        "impact": "八王之乱削弱了西晋中央集权，为五胡乱华创造条件"
-      },
-      {
         "year": 311,
-        "name": "永嘉之乱，西晋灭亡",
+        "name": "永嘉之乱",
         "type": "war",
         "significance": "high",
         "description": "匈奴攻破洛阳，西晋灭亡，五胡乱华开始。",
@@ -3669,79 +2761,6 @@
           "五胡乱华"
         ],
         "impact": "西晋灭亡，北方进入五胡十六国时期，南方建立东晋"
-      }
-    ],
-    "culture": [
-      "玄学",
-      "佛教传播",
-      "士族文化"
-    ],
-    "tech_innovations": [
-      "瓷器",
-      "造纸术",
-      "农业技术"
-    ],
-    "institution_innovations": [
-      "九品中正制",
-      "士族政治",
-      "分封制"
-    ]
-  },
-  {
-    "id": "jin_east",
-    "name": "东晋 (Eastern Jin)",
-    "period": "AD 317 - AD 420",
-    "start_year": 317,
-    "end_year": 420,
-    "duration": 103,
-    "evidence_type": "documentary",
-    "academic_consensus": "mainstream",
-    "capital": [
-      "建康 (Jiankang)"
-    ],
-    "key_figures": [
-      "司马睿",
-      "王导",
-      "谢安",
-      "陶渊明"
-    ],
-    "territory": "南方地区，偏安江南",
-    "territory_desc": "东晋偏安江南，控制南方地区，与北方十六国对峙。注：东晋是南朝的开端，士族政治发达。",
-    "fall_analysis": {
-      "trigger": "刘裕代晋",
-      "structural": "士族政治腐败，皇权衰落",
-      "external": "北方十六国的压力相对较小"
-    },
-    "conquest_chain": {
-      "victor": "刘宋",
-      "loser": "东晋",
-      "battle": "刘裕代晋",
-      "factor": "刘裕掌握军权，逼迫晋恭帝禅让"
-    },
-    "stats": {
-      "population_million": 18.0,
-      "temperature_anomaly": -0.6,
-      "war_frequency": 2.0,
-      "territory_sq_km": 2.2,
-      "tech_index": 60,
-      "economic_index": 52,
-      "institution_index": 48,
-      "cultural_index": 76,
-      "military_index": 55
-    },
-    "events": [
-      {
-        "year": 317,
-        "name": "司马睿建立东晋",
-        "type": "politic",
-        "significance": "high",
-        "description": "司马睿在建康建立东晋，偏安江南。",
-        "key_points": [
-          "司马睿建立东晋",
-          "偏安江南",
-          "南北对峙"
-        ],
-        "impact": "东晋建立，南北对峙局面形成"
       },
       {
         "year": 383,
@@ -3757,294 +2776,10 @@
         "impact": "阻止了前秦统一南方，延续了南北分治局面"
       },
       {
-        "year": 404,
-        "name": "孙恩卢循起义",
-        "type": "war",
-        "significance": "medium",
-        "description": "孙恩、卢循领导农民起义，动摇了东晋统治。",
-        "key_points": [
-          "孙恩卢循起义",
-          "农民起义",
-          "动摇统治"
-        ],
-        "impact": "农民起义动摇了东晋统治，加速了东晋的灭亡"
-      },
-      {
-        "year": 420,
-        "name": "刘裕代晋，建立刘宋",
-        "type": "politic",
-        "significance": "high",
-        "description": "刘裕逼迫晋恭帝禅让，建立刘宋，东晋灭亡。",
-        "key_points": [
-          "刘裕代晋",
-          "建立刘宋",
-          "东晋灭亡"
-        ],
-        "impact": "东晋灭亡，南朝开始"
-      }
-    ],
-    "culture": [
-      "玄学",
-      "山水诗",
-      "佛教艺术"
-    ],
-    "tech_innovations": [
-      "青瓷",
-      "造纸术",
-      "农业技术"
-    ],
-    "institution_innovations": [
-      "士族政治",
-      "九品中正制",
-      "门阀制度"
-    ]
-  },
-  {
-    "id": "sixteen_kingdoms",
-    "name": "十六国 (Sixteen Kingdoms)",
-    "period": "AD 304 - AD 439",
-    "start_year": 304,
-    "end_year": 439,
-    "duration": 135,
-    "evidence_type": "documentary",
-    "academic_consensus": "mainstream",
-    "capital": [
-      "多都城 - Multiple"
-    ],
-    "key_figures": [
-      "刘渊",
-      "石勒",
-      "苻坚",
-      "慕容垂",
-      "拓跋珪"
-    ],
-    "territory": "北方地区，五胡十六国",
-    "territory_desc": "北方五胡（匈奴、鲜卑、羯、氐、羌）建立十六国，与东晋对峙。注：十六国是北方游牧民族入主中原的重要时期，民族融合加速。",
-    "fall_analysis": {
-      "trigger": "北魏统一北方",
-      "structural": "各国政权更替频繁，缺乏统一整合",
-      "external": "北魏的军事征服"
-    },
-    "conquest_chain": {
-      "victor": "北魏 (Northern Wei)",
-      "loser": "十六国",
-      "battle": "北魏统一北方",
-      "factor": "拓跋珪建立北魏，逐步统一北方"
-    },
-    "stats": {
-      "population_million": 12.0,
-      "temperature_anomaly": -0.9,
-      "war_frequency": 4.0,
-      "territory_sq_km": 2.8,
-      "tech_index": 55,
-      "economic_index": 45,
-      "institution_index": 42,
-      "cultural_index": 65,
-      "military_index": 70
-    },
-    "events": [
-      {
-        "year": 304,
-        "name": "刘渊建立汉赵",
-        "type": "politic",
-        "significance": "high",
-        "description": "刘渊建立汉赵政权，五胡乱华开始。",
-        "key_points": [
-          "刘渊建立汉赵",
-          "五胡乱华",
-          "北方分裂"
-        ],
-        "impact": "五胡乱华开始，北方进入十六国时期"
-      },
-      {
-        "year": 319,
-        "name": "石勒建立后赵",
-        "type": "politic",
-        "significance": "medium",
-        "description": "石勒建立后赵政权，十六国之一。",
-        "key_points": [
-          "石勒建立后赵",
-          "十六国之一",
-          "北方政权"
-        ],
-        "impact": "后赵建立，北方政权更替"
-      },
-      {
-        "year": 351,
-        "name": "苻健建立前秦",
-        "type": "politic",
-        "significance": "medium",
-        "description": "苻健建立前秦政权，十六国之一。",
-        "key_points": [
-          "苻健建立前秦",
-          "十六国之一",
-          "氐族政权"
-        ],
-        "impact": "前秦建立，北方政权更替"
-      },
-      {
-        "year": 383,
-        "name": "淝水之战，前秦失败",
-        "type": "war",
-        "significance": "high",
-        "description": "前秦在淝水之战中惨败给东晋，统一南方的计划失败。",
-        "key_points": [
-          "淝水之战",
-          "前秦失败",
-          "南北对峙"
-        ],
-        "impact": "前秦失败，南北对峙局面延续"
-      },
-      {
-        "year": 398,
-        "name": "拓跋珪建立北魏",
-        "type": "politic",
-        "significance": "high",
-        "description": "拓跋珪建立北魏政权，开始统一北方。",
-        "key_points": [
-          "拓跋珪建立北魏",
-          "统一北方",
-          "鲜卑政权"
-        ],
-        "impact": "北魏建立，开始统一北方"
-      },
-      {
-        "year": 439,
-        "name": "北魏统一北方",
-        "type": "war",
-        "significance": "high",
-        "description": "北魏统一北方，结束十六国时期。",
-        "key_points": [
-          "北魏统一北方",
-          "结束十六国",
-          "南北朝开始"
-        ],
-        "impact": "北魏统一北方，结束十六国时期，进入南北朝时期"
-      }
-    ],
-    "culture": [
-      "胡汉融合",
-      "佛教传播",
-      "民族迁徙"
-    ],
-    "tech_innovations": [
-      "马镫",
-      "冶铁技术",
-      "农业技术"
-    ],
-    "institution_innovations": [
-      "胡汉分治",
-      "部落联盟",
-      "军事征服"
-    ]
-  },
-  {
-    "id": "northern_southern_dynasties",
-    "name": "南北朝 (Northern-Southern Dynasties)",
-    "period": "AD 420 - AD 589",
-    "start_year": 420,
-    "end_year": 589,
-    "duration": 169,
-    "evidence_type": "documentary",
-    "academic_consensus": "mainstream",
-    "capital": [
-      "建康 (Jiankang)",
-      "洛阳 (Luoyang)",
-      "长安 (Chang'an)",
-      "大同 (Datong)",
-      "邺城 (Yecheng)"
-    ],
-    "key_figures": [
-      "刘裕",
-      "萧道成",
-      "陈霸先",
-      "拓跋焘",
-      "孝文帝",
-      "高欢",
-      "宇文泰"
-    ],
-    "territory": "南北对峙，南朝四代，北朝五朝",
-    "territory_desc": "南朝（宋、齐、梁、陈）与北朝（北魏、东魏、西魏、北齐、北周）对峙。注：南北朝是民族融合的重要时期，为隋唐统一奠定基础。",
-    "fall_analysis": {
-      "trigger": "隋灭陈，统一全国",
-      "structural": "南北长期分裂，社会结构发生变化",
-      "external": "隋朝的军事征服"
-    },
-    "conquest_chain": {
-      "victor": "隋 (Sui)",
-      "loser": "陈/北周",
-      "battle": "隋灭陈之战",
-      "factor": "北方胡汉融合完成，南方士族腐朽"
-    },
-    "stats": {
-      "population_million": 30.0,
-      "temperature_anomaly": -0.7,
-      "war_frequency": 2.5,
-      "territory_sq_km": 4.0,
-      "tech_index": 62,
-      "economic_index": 50,
-      "institution_index": 48,
-      "cultural_index": 80,
-      "military_index": 60
-    },
-    "events": [
-      {
-        "year": 420,
-        "name": "刘裕代晋，建立刘宋",
-        "type": "politic",
-        "significance": "high",
-        "description": "刘裕逼迫晋恭帝禅让，建立刘宋，南朝开始。",
-        "key_points": [
-          "刘裕代晋",
-          "建立刘宋",
-          "南朝开始"
-        ],
-        "impact": "东晋灭亡，南朝开始"
-      },
-      {
-        "year": 479,
-        "name": "萧道成代宋，建立南齐",
-        "type": "politic",
-        "significance": "medium",
-        "description": "萧道成逼迫宋顺帝禅让，建立南齐。",
-        "key_points": [
-          "萧道成代宋",
-          "建立南齐",
-          "南朝更替"
-        ],
-        "impact": "刘宋灭亡，南齐建立"
-      },
-      {
-        "year": 502,
-        "name": "萧衍代齐，建立南梁",
-        "type": "politic",
-        "significance": "medium",
-        "description": "萧衍逼迫齐和帝禅让，建立南梁。",
-        "key_points": [
-          "萧衍代齐",
-          "建立南梁",
-          "南朝更替"
-        ],
-        "impact": "南齐灭亡，南梁建立"
-      },
-      {
-        "year": 557,
-        "name": "陈霸先代梁，建立南陈",
-        "type": "politic",
-        "significance": "medium",
-        "description": "陈霸先逼迫梁敬帝禅让，建立南陈。",
-        "key_points": [
-          "陈霸先代梁",
-          "建立南陈",
-          "南朝更替"
-        ],
-        "impact": "南梁灭亡，南陈建立"
-      },
-      {
         "year": 493,
         "name": "北魏孝文帝迁都洛阳",
         "type": "reform",
-        "significance": "high",
+        "significance": "medium",
         "description": "北魏孝文帝迁都洛阳，推行汉化改革，促进民族融合。",
         "key_points": [
           "迁都洛阳",
@@ -4052,58 +2787,6 @@
           "民族融合"
         ],
         "impact": "促进了北方民族的汉化，为隋唐统一奠定了基础"
-      },
-      {
-        "year": 534,
-        "name": "北魏分裂为东魏西魏",
-        "type": "politic",
-        "significance": "medium",
-        "description": "北魏分裂为东魏和西魏，北朝进入分裂时期。",
-        "key_points": [
-          "北魏分裂",
-          "东魏西魏",
-          "北朝分裂"
-        ],
-        "impact": "北魏分裂，北朝进入分裂时期"
-      },
-      {
-        "year": 550,
-        "name": "高洋代东魏，建立北齐",
-        "type": "politic",
-        "significance": "medium",
-        "description": "高洋逼迫东魏孝静帝禅让，建立北齐。",
-        "key_points": [
-          "高洋代东魏",
-          "建立北齐",
-          "北朝更替"
-        ],
-        "impact": "东魏灭亡，北齐建立"
-      },
-      {
-        "year": 557,
-        "name": "宇文护代西魏，建立北周",
-        "type": "politic",
-        "significance": "medium",
-        "description": "宇文护逼迫西魏恭帝禅让，建立北周。",
-        "key_points": [
-          "宇文护代西魏",
-          "建立北周",
-          "北朝更替"
-        ],
-        "impact": "西魏灭亡，北周建立"
-      },
-      {
-        "year": 577,
-        "name": "北周灭北齐，统一北方",
-        "type": "war",
-        "significance": "high",
-        "description": "北周灭北齐，统一北方。",
-        "key_points": [
-          "北周灭北齐",
-          "统一北方",
-          "北朝统一"
-        ],
-        "impact": "北周统一北方，为隋朝统一全国奠定基础"
       },
       {
         "year": 589,
@@ -4121,9 +2804,8 @@
     ],
     "culture": [
       "玄学",
-      "佛教艺术",
-      "石窟艺术",
-      "民族融合"
+      "书法",
+      "石窟艺术"
     ],
     "tech_innovations": [
       "灌钢法",
@@ -4132,8 +2814,7 @@
     ],
     "institution_innovations": [
       "九品中正制",
-      "均田制",
-      "府兵制"
+      "均田制"
     ]
   },
   {
@@ -4143,8 +2824,6 @@
     "start_year": 581,
     "end_year": 618,
     "duration": 37,
-    "evidence_type": "documentary",
-    "academic_consensus": "mainstream",
     "capital": [
       "大兴 (Daxing)",
       "洛阳"
@@ -4252,8 +2931,6 @@
     "start_year": 618,
     "end_year": 907,
     "duration": 289,
-    "evidence_type": "documentary",
-    "academic_consensus": "mainstream",
     "capital": [
       "长安",
       "洛阳"
@@ -4385,840 +3062,118 @@
     ]
   },
   {
-    "id": "later_liang",
-    "name": "后梁 (Later Liang)",
-    "period": "AD 907 - AD 923",
+    "id": "five_dynasties",
+    "name": "五代十国 (Five Dynasties)",
+    "period": "AD 907 - AD 960",
     "start_year": 907,
-    "end_year": 923,
-    "duration": 16,
-    "evidence_type": "documentary",
-    "academic_consensus": "mainstream",
+    "end_year": 960,
+    "duration": 53,
     "capital": [
-      "开封 (Kaifeng)",
-      "洛阳 (Luoyang)"
+      "开封",
+      "洛阳",
+      "太原",
+      "成都",
+      "江陵"
     ],
     "key_figures": [
       "朱温",
-      "朱友珪",
-      "朱友贞"
+      "李存勖",
+      "石敬瑭",
+      "刘知远",
+      "郭威",
+      "柴荣",
+      "李昪",
+      "孟知祥",
+      "王建"
     ],
-    "territory": "中原地区，黄河流域",
-    "territory_desc": "后梁控制中原地区，以开封为都城，是五代第一个朝代。注：后梁是朱温篡唐建立的朝代，统治时间较短。",
+    "territory": "中原分裂，南方割据",
+    "territory_desc": "唐朝灭亡后，中原地区先后出现五个朝代，南方出现十个割据政权，是中国历史上大分裂时期。",
     "fall_analysis": {
-      "trigger": "李存勖灭后梁",
-      "structural": "朱温死后皇权衰落，内部争斗激烈",
-      "external": "晋国（后唐前身）的军事压力"
+      "trigger": "北宋统一",
+      "structural": "政权更迭频繁，缺乏长期稳定",
+      "external": "赵匡胤建立宋朝，逐步统一全国"
     },
     "conquest_chain": {
-      "victor": "后唐 (Later Tang)",
-      "loser": "后梁 (Later Liang)",
-      "battle": "李存勖灭后梁之战",
-      "factor": "李存勖军事强大，朱友贞无能"
+      "victor": "宋 (Song)",
+      "loser": "五代十国",
+      "battle": "陈桥兵变",
+      "factor": "赵匡胤兵变建立宋朝，逐步统一"
     },
     "stats": {
-      "population_million": 15.0,
-      "temperature_anomaly": 0.2,
-      "war_frequency": 3.0,
-      "territory_sq_km": 1.5,
-      "tech_index": 68,
-      "economic_index": 62,
-      "institution_index": 52,
-      "cultural_index": 70,
-      "military_index": 58
+      "population_million": 50.0,
+      "temperature_anomaly": 0.3,
+      "war_frequency": 3.5,
+      "territory_sq_km": 4.5,
+      "tech_index": 70,
+      "economic_index": 65,
+      "institution_index": 55,
+      "cultural_index": 75,
+      "military_index": 60
     },
     "events": [
       {
         "year": 907,
         "name": "朱温篡唐，建立后梁",
         "type": "politic",
-        "significance": "high",
-        "description": "朱温逼迫唐哀帝禅让，建立后梁，唐朝灭亡。",
-        "key_points": [
-          "朱温篡唐",
-          "建立后梁",
-          "唐朝灭亡"
-        ],
-        "impact": "唐朝灭亡，五代十国时期开始"
+        "significance": "high"
       },
       {
-        "year": 912,
-        "name": "朱友珪弑父篡位",
+        "year": 916,
+        "name": "耶律阿保机建立契丹国",
         "type": "politic",
-        "significance": "medium",
-        "description": "朱友珪弑杀朱温，篡夺皇位，引发内乱。",
-        "key_points": [
-          "朱友珪弑父",
-          "篡夺皇位",
-          "后梁内乱"
-        ],
-        "impact": "后梁内乱，国力衰弱"
+        "significance": "high"
       },
-      {
-        "year": 913,
-        "name": "朱友贞即位",
-        "type": "politic",
-        "significance": "medium",
-        "description": "朱友贞推翻朱友珪，即位为帝。",
-        "key_points": [
-          "朱友贞即位",
-          "推翻朱友珪",
-          "后梁稳定"
-        ],
-        "impact": "后梁暂时稳定，但国力已经衰弱"
-      },
-      {
-        "year": 923,
-        "name": "李存勖灭后梁",
-        "type": "war",
-        "significance": "high",
-        "description": "李存勖攻破开封，朱友贞自杀，后梁灭亡。",
-        "key_points": [
-          "李存勖灭后梁",
-          "攻破开封",
-          "后梁灭亡"
-        ],
-        "impact": "后梁灭亡，后唐建立"
-      }
-    ],
-    "culture": [
-      "晚唐文化",
-      "佛教文化",
-      "中原文化"
-    ],
-    "tech_innovations": [
-      "农业技术",
-      "手工业",
-      "建筑技术"
-    ],
-    "institution_innovations": [
-      "节度使制",
-      "藩镇割据",
-      "军事政治"
-    ]
-  },
-  {
-    "id": "later_tang",
-    "name": "后唐 (Later Tang)",
-    "period": "AD 923 - AD 936",
-    "start_year": 923,
-    "end_year": 936,
-    "duration": 13,
-    "evidence_type": "documentary",
-    "academic_consensus": "mainstream",
-    "capital": [
-      "洛阳 (Luoyang)"
-    ],
-    "key_figures": [
-      "李存勖",
-      "李嗣源",
-      "李从珂"
-    ],
-    "territory": "中原地区，控制黄河流域",
-    "territory_desc": "后唐控制中原地区，以洛阳为都城，是五代中较为强盛的朝代。注：后唐自称继承唐朝正统。",
-    "fall_analysis": {
-      "trigger": "石敬瑭勾结契丹",
-      "structural": "李存勖后期昏庸，内部争斗激烈",
-      "external": "契丹的军事支持"
-    },
-    "conquest_chain": {
-      "victor": "后晋 (Later Jin)",
-      "loser": "后唐 (Later Tang)",
-      "battle": "石敬瑭灭后唐之战",
-      "factor": "石敬瑭勾结契丹，李从珂自焚"
-    },
-    "stats": {
-      "population_million": 18.0,
-      "temperature_anomaly": 0.25,
-      "war_frequency": 2.8,
-      "territory_sq_km": 2.0,
-      "tech_index": 70,
-      "economic_index": 65,
-      "institution_index": 55,
-      "cultural_index": 72,
-      "military_index": 65
-    },
-    "events": [
       {
         "year": 923,
         "name": "李存勖建立后唐",
-        "type": "politic",
-        "significance": "high",
-        "description": "李存勖在洛阳称帝，建立后唐。",
-        "key_points": [
-          "李存勖称帝",
-          "建立后唐",
-          "灭后梁"
-        ],
-        "impact": "后唐建立，灭后梁，统一中原"
-      },
-      {
-        "year": 925,
-        "name": "后唐灭前蜀",
         "type": "war",
-        "significance": "medium",
-        "description": "后唐灭前蜀，扩大疆域。",
-        "key_points": [
-          "后唐灭前蜀",
-          "扩大疆域",
-          "统一西南"
-        ],
-        "impact": "后唐扩大疆域，控制西南地区"
-      },
-      {
-        "year": 926,
-        "name": "李嗣源即位",
-        "type": "politic",
-        "significance": "medium",
-        "description": "李嗣源即位，后唐进入相对稳定时期。",
-        "key_points": [
-          "李嗣源即位",
-          "后唐稳定",
-          "政治清明"
-        ],
-        "impact": "后唐政治相对稳定，国力有所恢复"
+        "significance": "high"
       },
       {
         "year": 936,
-        "name": "石敬瑭灭后唐",
+        "name": "石敬瑭割让燕云十六州",
         "type": "war",
-        "significance": "high",
-        "description": "石敬瑭勾结契丹，攻破洛阳，李从珂自焚，后唐灭亡。",
-        "key_points": [
-          "石敬瑭灭后唐",
-          "勾结契丹",
-          "后唐灭亡"
-        ],
-        "impact": "后唐灭亡，后晋建立"
-      }
-    ],
-    "culture": [
-      "唐文化传承",
-      "佛教文化",
-      "中原文化"
-    ],
-    "tech_innovations": [
-      "农业技术",
-      "手工业",
-      "建筑技术"
-    ],
-    "institution_innovations": [
-      "节度使制",
-      "藩镇割据",
-      "军事政治"
-    ]
-  },
-  {
-    "id": "later_jin",
-    "name": "后晋 (Later Jin)",
-    "period": "AD 936 - AD 947",
-    "start_year": 936,
-    "end_year": 947,
-    "duration": 11,
-    "evidence_type": "documentary",
-    "academic_consensus": "mainstream",
-    "capital": [
-      "开封 (Kaifeng)"
-    ],
-    "key_figures": [
-      "石敬瑭",
-      "石重贵"
-    ],
-    "territory": "中原地区，控制黄河流域",
-    "territory_desc": "后晋控制中原地区，以开封为都城，但受契丹控制。注：后晋是石敬瑭勾结契丹建立的朝代，割让燕云十六州。",
-    "fall_analysis": {
-      "trigger": "契丹灭后晋",
-      "structural": "石敬瑭割让燕云十六州，国力衰弱",
-      "external": "契丹的军事征服"
-    },
-    "conquest_chain": {
-      "victor": "契丹/后汉",
-      "loser": "后晋 (Later Jin)",
-      "battle": "契丹灭后晋之战",
-      "factor": "石重贵反抗契丹，耶律德光南下"
-    },
-    "stats": {
-      "population_million": 16.0,
-      "temperature_anomaly": 0.3,
-      "war_frequency": 3.2,
-      "territory_sq_km": 1.8,
-      "tech_index": 69,
-      "economic_index": 60,
-      "institution_index": 50,
-      "cultural_index": 68,
-      "military_index": 55
-    },
-    "events": [
-      {
-        "year": 936,
-        "name": "石敬瑭建立后晋",
-        "type": "politic",
-        "significance": "high",
-        "description": "石敬瑭勾结契丹，建立后晋。",
-        "key_points": [
-          "石敬瑭建立后晋",
-          "勾结契丹",
-          "割让燕云十六州"
-        ],
-        "impact": "后晋建立，割让燕云十六州，中原失去北方屏障"
-      },
-      {
-        "year": 942,
-        "name": "石重贵即位",
-        "type": "politic",
-        "significance": "medium",
-        "description": "石重贵即位，开始反抗契丹。",
-        "key_points": [
-          "石重贵即位",
-          "反抗契丹",
-          "民族矛盾"
-        ],
-        "impact": "后晋开始反抗契丹，引发契丹南下"
-      },
-      {
-        "year": 947,
-        "name": "契丹灭后晋",
-        "type": "war",
-        "significance": "high",
-        "description": "耶律德光南下灭后晋，建立辽国。",
-        "key_points": [
-          "契丹灭后晋",
-          "耶律德光南下",
-          "建立辽国"
-        ],
-        "impact": "后晋灭亡，契丹短暂控制中原"
-      }
-    ],
-    "culture": [
-      "唐文化传承",
-      "佛教文化",
-      "中原文化"
-    ],
-    "tech_innovations": [
-      "农业技术",
-      "手工业",
-      "建筑技术"
-    ],
-    "institution_innovations": [
-      "节度使制",
-      "藩镇割据",
-      "军事政治"
-    ]
-  },
-  {
-    "id": "later_han",
-    "name": "后汉 (Later Han)",
-    "period": "AD 947 - AD 950",
-    "start_year": 947,
-    "end_year": 950,
-    "duration": 3,
-    "evidence_type": "documentary",
-    "academic_consensus": "mainstream",
-    "capital": [
-      "开封 (Kaifeng)"
-    ],
-    "key_figures": [
-      "刘知远",
-      "刘承祐"
-    ],
-    "territory": "中原地区，控制黄河流域",
-    "territory_desc": "后汉控制中原地区，以开封为都城，是五代中统治时间最短的朝代。注：后汉是刘知远在契丹撤退后建立的朝代。",
-    "fall_analysis": {
-      "trigger": "郭威灭后汉",
-      "structural": "刘承祐猜忌功臣，引发叛乱",
-      "external": "郭威的军事政变"
-    },
-    "conquest_chain": {
-      "victor": "后周 (Later Zhou)",
-      "loser": "后汉 (Later Han)",
-      "battle": "郭威灭后汉之战",
-      "factor": "刘承祐猜忌郭威，郭威发动政变"
-    },
-    "stats": {
-      "population_million": 15.0,
-      "temperature_anomaly": 0.32,
-      "war_frequency": 3.5,
-      "territory_sq_km": 1.6,
-      "tech_index": 68,
-      "economic_index": 58,
-      "institution_index": 48,
-      "cultural_index": 65,
-      "military_index": 52
-    },
-    "events": [
-      {
-        "year": 947,
-        "name": "刘知远建立后汉",
-        "type": "politic",
-        "significance": "high",
-        "description": "刘知远在契丹撤退后建立后汉。",
-        "key_points": [
-          "刘知远建立后汉",
-          "契丹撤退",
-          "恢复中原"
-        ],
-        "impact": "后汉建立，恢复中原统治"
-      },
-      {
-        "year": 948,
-        "name": "刘承祐即位",
-        "type": "politic",
-        "significance": "medium",
-        "description": "刘承祐即位，开始猜忌功臣。",
-        "key_points": [
-          "刘承祐即位",
-          "猜忌功臣",
-          "政治危机"
-        ],
-        "impact": "后汉政治危机，国力衰弱"
-      },
-      {
-        "year": 950,
-        "name": "郭威灭后汉",
-        "type": "war",
-        "significance": "high",
-        "description": "郭威发动政变，灭后汉，建立后周。",
-        "key_points": [
-          "郭威灭后汉",
-          "发动政变",
-          "建立后周"
-        ],
-        "impact": "后汉灭亡，后周建立"
-      }
-    ],
-    "culture": [
-      "唐文化传承",
-      "佛教文化",
-      "中原文化"
-    ],
-    "tech_innovations": [
-      "农业技术",
-      "手工业",
-      "建筑技术"
-    ],
-    "institution_innovations": [
-      "节度使制",
-      "藩镇割据",
-      "军事政治"
-    ]
-  },
-  {
-    "id": "later_zhou",
-    "name": "后周 (Later Zhou)",
-    "period": "AD 951 - AD 960",
-    "start_year": 951,
-    "end_year": 960,
-    "duration": 9,
-    "evidence_type": "documentary",
-    "academic_consensus": "mainstream",
-    "capital": [
-      "开封 (Kaifeng)"
-    ],
-    "key_figures": [
-      "郭威",
-      "柴荣",
-      "柴宗训"
-    ],
-    "territory": "中原地区，控制黄河流域",
-    "territory_desc": "后周控制中原地区，以开封为都城，是五代中最后一个朝代。注：后周是五代中最为强盛的朝代，为宋朝统一奠定基础。",
-    "fall_analysis": {
-      "trigger": "陈桥兵变",
-      "structural": "柴宗训年幼，赵匡胤掌握军权",
-      "external": "赵匡胤的军事政变"
-    },
-    "conquest_chain": {
-      "victor": "北宋 (Northern Song)",
-      "loser": "后周 (Later Zhou)",
-      "battle": "陈桥兵变",
-      "factor": "赵匡胤掌握军权，发动政变"
-    },
-    "stats": {
-      "population_million": 20.0,
-      "temperature_anomaly": 0.35,
-      "war_frequency": 2.5,
-      "territory_sq_km": 2.2,
-      "tech_index": 72,
-      "economic_index": 68,
-      "institution_index": 58,
-      "cultural_index": 75,
-      "military_index": 70
-    },
-    "events": [
-      {
-        "year": 951,
-        "name": "郭威建立后周",
-        "type": "politic",
-        "significance": "high",
-        "description": "郭威建立后周，开始改革。",
-        "key_points": [
-          "郭威建立后周",
-          "开始改革",
-          "整顿吏治"
-        ],
-        "impact": "后周建立，开始改革，国力增强"
-      },
-      {
-        "year": 954,
-        "name": "柴荣即位",
-        "type": "politic",
-        "significance": "high",
-        "description": "柴荣即位，后周进入强盛时期。",
-        "key_points": [
-          "柴荣即位",
-          "后周强盛",
-          "军事扩张"
-        ],
-        "impact": "后周进入强盛时期，开始军事扩张"
-      },
-      {
-        "year": 954,
-        "name": "柴荣北伐",
-        "type": "war",
-        "significance": "medium",
-        "description": "柴荣北伐契丹，收复部分失地。",
-        "key_points": [
-          "柴荣北伐",
-          "收复失地",
-          "对抗契丹"
-        ],
-        "impact": "后周收复部分失地，增强国力"
-      },
-      {
-        "year": 956,
-        "name": "柴荣南征",
-        "type": "war",
-        "significance": "medium",
-        "description": "柴荣南征南唐，扩大疆域。",
-        "key_points": [
-          "柴荣南征",
-          "扩大疆域",
-          "统一南方"
-        ],
-        "impact": "后周扩大疆域，为统一南方奠定基础"
-      },
-      {
-        "year": 959,
-        "name": "柴荣逝世",
-        "type": "politic",
-        "significance": "medium",
-        "description": "柴荣逝世，柴宗训即位。",
-        "key_points": [
-          "柴荣逝世",
-          "柴宗训即位",
-          "后周衰落"
-        ],
-        "impact": "柴荣逝世，后周开始衰落"
-      },
-      {
-        "year": 960,
-        "name": "陈桥兵变，赵匡胤建立宋朝",
-        "type": "politic",
-        "significance": "high",
-        "description": "赵匡胤在陈桥发动兵变，建立宋朝，后周灭亡。",
-        "key_points": [
-          "陈桥兵变",
-          "赵匡胤建立宋朝",
-          "后周灭亡"
-        ],
-        "impact": "后周灭亡，宋朝建立，五代结束"
-      }
-    ],
-    "culture": [
-      "唐文化传承",
-      "佛教文化",
-      "中原文化"
-    ],
-    "tech_innovations": [
-      "农业技术",
-      "手工业",
-      "建筑技术"
-    ],
-    "institution_innovations": [
-      "节度使制",
-      "藩镇割据",
-      "军事政治"
-    ]
-  },
-  {
-    "id": "ten_kingdoms",
-    "name": "十国 (Ten Kingdoms)",
-    "period": "AD 902 - AD 979",
-    "start_year": 902,
-    "end_year": 979,
-    "duration": 77,
-    "evidence_type": "documentary",
-    "academic_consensus": "mainstream",
-    "capital": [
-      "扬州 (Yangzhou)",
-      "金陵 (Jinling)",
-      "杭州 (Hangzhou)",
-      "成都 (Chengdu)",
-      "广州 (Guangzhou)",
-      "福州 (Fuzhou)",
-      "江陵 (Jingling)",
-      "太原 (Taiyuan)"
-    ],
-    "key_figures": [
-      "杨行密",
-      "李昪",
-      "钱镠",
-      "马殷",
-      "王审知",
-      "刘岩",
-      "王建",
-      "孟知祥",
-      "高季兴",
-      "刘崇"
-    ],
-    "territory": "南方地区，十个割据政权",
-    "territory_desc": "南方地区出现十个割据政权，与五代对峙。注：十国是南方地区的割据政权，相对稳定，经济文化发展。",
-    "fall_analysis": {
-      "trigger": "北宋统一",
-      "structural": "各国政权相对稳定，但缺乏统一整合",
-      "external": "北宋的军事征服"
-    },
-    "conquest_chain": {
-      "victor": "北宋 (Northern Song)",
-      "loser": "十国",
-      "battle": "北宋统一十国",
-      "factor": "赵匡胤、赵光义逐步统一南方"
-    },
-    "stats": {
-      "population_million": 35.0,
-      "temperature_anomaly": 0.4,
-      "war_frequency": 2.0,
-      "territory_sq_km": 3.0,
-      "tech_index": 71,
-      "economic_index": 70,
-      "institution_index": 52,
-      "cultural_index": 78,
-      "military_index": 55
-    },
-    "events": [
-      {
-        "year": 902,
-        "name": "杨行密建立吴国",
-        "type": "politic",
-        "significance": "medium",
-        "description": "杨行密建立吴国，十国之一。",
-        "key_points": [
-          "杨行密建立吴国",
-          "十国之一",
-          "南方政权"
-        ],
-        "impact": "吴国建立，南方政权开始形成"
-      },
-      {
-        "year": 907,
-        "name": "钱镠建立吴越国",
-        "type": "politic",
-        "significance": "medium",
-        "description": "钱镠建立吴越国，十国之一。",
-        "key_points": [
-          "钱镠建立吴越国",
-          "十国之一",
-          "南方政权"
-        ],
-        "impact": "吴越国建立，南方政权开始形成"
-      },
-      {
-        "year": 907,
-        "name": "马殷建立楚国",
-        "type": "politic",
-        "significance": "medium",
-        "description": "马殷建立楚国，十国之一。",
-        "key_points": [
-          "马殷建立楚国",
-          "十国之一",
-          "南方政权"
-        ],
-        "impact": "楚国建立，南方政权开始形成"
-      },
-      {
-        "year": 907,
-        "name": "王建建立前蜀",
-        "type": "politic",
-        "significance": "medium",
-        "description": "王建建立前蜀，十国之一。",
-        "key_points": [
-          "王建建立前蜀",
-          "十国之一",
-          "南方政权"
-        ],
-        "impact": "前蜀建立，南方政权开始形成"
-      },
-      {
-        "year": 909,
-        "name": "王审知建立闽国",
-        "type": "politic",
-        "significance": "medium",
-        "description": "王审知建立闽国，十国之一。",
-        "key_points": [
-          "王审知建立闽国",
-          "十国之一",
-          "南方政权"
-        ],
-        "impact": "闽国建立，南方政权开始形成"
-      },
-      {
-        "year": 917,
-        "name": "刘岩建立南汉",
-        "type": "politic",
-        "significance": "medium",
-        "description": "刘岩建立南汉，十国之一。",
-        "key_points": [
-          "刘岩建立南汉",
-          "十国之一",
-          "南方政权"
-        ],
-        "impact": "南汉建立，南方政权开始形成"
-      },
-      {
-        "year": 924,
-        "name": "高季兴建立荆南",
-        "type": "politic",
-        "significance": "medium",
-        "description": "高季兴建立荆南，十国之一。",
-        "key_points": [
-          "高季兴建立荆南",
-          "十国之一",
-          "南方政权"
-        ],
-        "impact": "荆南建立，南方政权开始形成"
-      },
-      {
-        "year": 934,
-        "name": "孟知祥建立后蜀",
-        "type": "politic",
-        "significance": "medium",
-        "description": "孟知祥建立后蜀，十国之一。",
-        "key_points": [
-          "孟知祥建立后蜀",
-          "十国之一",
-          "南方政权"
-        ],
-        "impact": "后蜀建立，南方政权开始形成"
+        "significance": "high"
       },
       {
         "year": 937,
         "name": "李昪建立南唐",
         "type": "politic",
-        "significance": "high",
-        "description": "李昪建立南唐，十国中最强盛的政权。",
-        "key_points": [
-          "李昪建立南唐",
-          "十国最强",
-          "南方政权"
-        ],
-        "impact": "南唐建立，成为十国中最强盛的政权"
+        "significance": "medium"
       },
       {
-        "year": 951,
-        "name": "刘崇建立北汉",
+        "year": 947,
+        "name": "耶律德光南下灭后晋",
+        "type": "war",
+        "significance": "high"
+      },
+      {
+        "year": 954,
+        "name": "柴荣北伐",
+        "type": "war",
+        "significance": "medium"
+      },
+      {
+        "year": 960,
+        "name": "陈桥兵变，赵匡胤建立宋朝",
         "type": "politic",
-        "significance": "medium",
-        "description": "刘崇建立北汉，十国之一。",
-        "key_points": [
-          "刘崇建立北汉",
-          "十国之一",
-          "北方政权"
-        ],
-        "impact": "北汉建立，十国全部形成"
-      },
-      {
-        "year": 963,
-        "name": "北宋灭荆南",
-        "type": "war",
-        "significance": "medium",
-        "description": "北宋灭荆南，开始统一南方。",
-        "key_points": [
-          "北宋灭荆南",
-          "统一南方",
-          "十国灭亡"
-        ],
-        "impact": "北宋开始统一南方，十国开始灭亡"
-      },
-      {
-        "year": 965,
-        "name": "北宋灭后蜀",
-        "type": "war",
-        "significance": "medium",
-        "description": "北宋灭后蜀，统一西南。",
-        "key_points": [
-          "北宋灭后蜀",
-          "统一西南",
-          "十国灭亡"
-        ],
-        "impact": "北宋统一西南，十国继续灭亡"
-      },
-      {
-        "year": 971,
-        "name": "北宋灭南汉",
-        "type": "war",
-        "significance": "medium",
-        "description": "北宋灭南汉，统一岭南。",
-        "key_points": [
-          "北宋灭南汉",
-          "统一岭南",
-          "十国灭亡"
-        ],
-        "impact": "北宋统一岭南，十国继续灭亡"
-      },
-      {
-        "year": 975,
-        "name": "北宋灭南唐",
-        "type": "war",
-        "significance": "high",
-        "description": "北宋灭南唐，统一江南。",
-        "key_points": [
-          "北宋灭南唐",
-          "统一江南",
-          "十国灭亡"
-        ],
-        "impact": "北宋统一江南，十国基本灭亡"
-      },
-      {
-        "year": 978,
-        "name": "北宋灭吴越",
-        "type": "war",
-        "significance": "medium",
-        "description": "北宋灭吴越，统一东南。",
-        "key_points": [
-          "北宋灭吴越",
-          "统一东南",
-          "十国灭亡"
-        ],
-        "impact": "北宋统一东南，十国即将全部灭亡"
-      },
-      {
-        "year": 979,
-        "name": "北宋灭北汉",
-        "type": "war",
-        "significance": "high",
-        "description": "北宋灭北汉，十国全部灭亡，五代十国结束。",
-        "key_points": [
-          "北宋灭北汉",
-          "十国灭亡",
-          "五代十国结束"
-        ],
-        "impact": "十国全部灭亡，五代十国时期结束"
+        "significance": "high"
       }
     ],
     "culture": [
-      "唐文化传承",
-      "佛教文化",
-      "南方文化",
-      "地域文化"
+      "词的兴起",
+      "绘画艺术",
+      "佛教文化"
     ],
     "tech_innovations": [
-      "农业技术",
-      "手工业",
-      "造船技术",
-      "纺织技术"
+      "印刷术发展",
+      "火药应用",
+      "造船技术"
     ],
     "institution_innovations": [
-      "节度使制",
-      "藩镇割据",
-      "地方自治"
+      "枢密院",
+      "三司使",
+      "节度使制"
     ]
   },
   {
@@ -5228,8 +3183,6 @@
     "start_year": 960,
     "end_year": 1279,
     "duration": 319,
-    "evidence_type": "documentary",
-    "academic_consensus": "mainstream",
     "capital": [
       "开封 (Kaifeng)",
       "临安 (Lin'an)"
@@ -5366,8 +3319,6 @@
     "start_year": 1271,
     "end_year": 1368,
     "duration": 97,
-    "evidence_type": "documentary",
-    "academic_consensus": "mainstream",
     "capital": [
       "大都 (Dadu)"
     ],
@@ -5475,8 +3426,6 @@
     "start_year": 1368,
     "end_year": 1644,
     "duration": 276,
-    "evidence_type": "documentary",
-    "academic_consensus": "mainstream",
     "capital": [
       "南京",
       "北京"
@@ -5603,8 +3552,6 @@
     "start_year": 1644,
     "end_year": 1912,
     "duration": 268,
-    "evidence_type": "documentary",
-    "academic_consensus": "mainstream",
     "capital": [
       "北京"
     ],
@@ -5820,8 +3767,6 @@
     "start_year": 1912,
     "end_year": 1949,
     "duration": 37,
-    "evidence_type": "documentary",
-    "academic_consensus": "mainstream",
     "capital": [
       "南京",
       "武汉",
@@ -6024,8 +3969,6 @@
     "start_year": 1949,
     "end_year": 2024,
     "duration": 75,
-    "evidence_type": "documentary",
-    "academic_consensus": "mainstream",
     "capital": [
       "北京"
     ],

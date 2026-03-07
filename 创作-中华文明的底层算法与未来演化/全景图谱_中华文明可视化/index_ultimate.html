@@ -18,16 +18,20 @@
             --text-primary: #e8e8e8;
             --text-secondary: #a0a0a0;
             --accent-gold: #d4af37;
-            --accent-red: #e74c3c;
-            --accent-orange: #f39c12;
+            --accent-red: #c0392b;
+            --accent-orange: #d68910;
             --accent-yellow: #f1c40f;
-            --accent-green: #2ecc71;
-            --accent-blue: #3498db;
-            --accent-purple: #9b59b6;
-            --accent-cyan: #1abc9c;
+            --accent-green: #27ae60;
+            --accent-blue: #2980b9;
+            --accent-purple: #8e44ad;
+            --accent-cyan: #16a085;
             --border-color: #2a2a4a;
             --shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
             --shadow-light: 0 4px 16px rgba(0, 0, 0, 0.2);
+            --chinese-red: #c0392b;
+            --chinese-gold: #d4af37;
+            --chinese-jade: #16a085;
+            --chinese-ink: #2c3e50;
         }
 
         body {
@@ -42,10 +46,10 @@
         }
 
         .header {
-            background: linear-gradient(180deg, rgba(212, 175, 55, 0.2) 0%, rgba(26, 26, 46, 0.5) 60%, transparent 100%);
-            padding: 50px 20px 35px;
+            background: linear-gradient(180deg, rgba(192, 57, 43, 0.15) 0%, rgba(212, 175, 55, 0.1) 30%, rgba(26, 26, 46, 0.5) 70%, transparent 100%);
+            padding: 60px 20px 40px;
             text-align: center;
-            border-bottom: 1px solid var(--border-color);
+            border-bottom: 2px solid var(--chinese-gold);
             position: relative;
             overflow: hidden;
         }
@@ -56,8 +60,8 @@
             top: 0;
             left: 0;
             right: 0;
-            height: 3px;
-            background: linear-gradient(90deg, transparent, var(--accent-gold), #ffef9a, var(--accent-gold), transparent);
+            height: 4px;
+            background: linear-gradient(90deg, transparent, var(--chinese-red), var(--chinese-gold), var(--chinese-red), transparent);
         }
 
         .header::after {
@@ -66,9 +70,21 @@
             bottom: 0;
             left: 50%;
             transform: translateX(-50%);
-            width: 200px;
-            height: 1px;
-            background: linear-gradient(90deg, transparent, var(--accent-gold), transparent);
+            width: 300px;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--chinese-gold), transparent);
+        }
+
+        .header-pattern {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                radial-gradient(circle at 20% 30%, rgba(212, 175, 55, 0.03) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(192, 57, 43, 0.03) 0%, transparent 50%);
+            pointer-events: none;
         }
 
         h1 {
@@ -170,7 +186,7 @@
             width: 100%;
             padding: 10px 36px 10px 32px;
             background: var(--bg-secondary);
-            border: 1px solid var(--border-color);
+            border: 2px solid var(--chinese-gold);
             border-radius: 20px;
             color: var(--text-primary);
             font-size: 13px;
@@ -179,8 +195,8 @@
 
         .search-box input:focus {
             outline: none;
-            border-color: var(--accent-gold);
-            box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.15);
+            border-color: var(--chinese-gold);
+            box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.2);
         }
 
         .search-icon {
@@ -216,7 +232,7 @@
         .btn {
             padding: 12px 24px;
             background: var(--bg-secondary);
-            border: 1px solid var(--border-color);
+            border: 2px solid var(--chinese-gold);
             border-radius: 10px;
             color: var(--text-primary);
             cursor: pointer;
@@ -231,17 +247,17 @@
 
         .btn:hover {
             background: var(--bg-card-hover);
-            border-color: var(--accent-gold);
+            border-color: var(--chinese-gold);
             transform: translateY(-3px);
-            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 4px 16px rgba(212, 175, 55, 0.3);
         }
 
         .btn.active {
-            background: linear-gradient(135deg, var(--accent-gold), #b8960c);
-            border-color: var(--accent-gold);
-            color: #000;
+            background: linear-gradient(135deg, var(--chinese-red), var(--chinese-gold));
+            border-color: var(--chinese-gold);
+            color: #fff;
             font-weight: 600;
-            box-shadow: 0 4px 16px rgba(212, 175, 55, 0.3);
+            box-shadow: 0 4px 16px rgba(192, 57, 43, 0.4);
         }
 
         .btn.icon-btn {
@@ -258,7 +274,7 @@
         .chip {
             padding: 5px 12px;
             background: rgba(26, 26, 46, 0.6);
-            border: 1px solid rgba(212, 175, 55, 0.2);
+            border: 2px solid rgba(212, 175, 55, 0.3);
             border-radius: 16px;
             color: var(--text-secondary);
             cursor: pointer;
@@ -269,18 +285,19 @@
         }
 
         .chip:hover {
-            border-color: var(--accent-gold);
+            border-color: var(--chinese-gold);
             color: var(--text-primary);
-            background: rgba(212, 175, 55, 0.1);
+            background: rgba(212, 175, 55, 0.15);
             transform: translateY(-1px);
+            box-shadow: 0 2px 8px rgba(212, 175, 55, 0.2);
         }
 
         .chip.active {
-            background: linear-gradient(135deg, var(--accent-gold), #b8960c);
-            border-color: var(--accent-gold);
-            color: #000;
+            background: linear-gradient(135deg, var(--chinese-red), var(--chinese-gold));
+            border-color: var(--chinese-gold);
+            color: #fff;
             font-weight: 600;
-            box-shadow: 0 2px 8px rgba(212, 175, 55, 0.3);
+            box-shadow: 0 2px 8px rgba(192, 57, 43, 0.4);
         }
 
         .timeline-container {
@@ -288,10 +305,25 @@
             border-radius: 12px;
             padding: 20px;
             margin-bottom: 20px;
-            border: 1px solid var(--border-color);
+            border: 2px solid var(--chinese-gold);
             box-shadow: var(--shadow);
             position: relative;
             overflow: hidden;
+        }
+
+        .timeline-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                linear-gradient(90deg, transparent 49%, rgba(212, 175, 55, 0.03) 50%, transparent 51%),
+                linear-gradient(0deg, transparent 49%, rgba(212, 175, 55, 0.03) 50%, transparent 51%);
+            background-size: 40px 40px;
+            pointer-events: none;
+            opacity: 0.5;
         }
 
         .timeline-header {
@@ -367,15 +399,31 @@
             background: var(--bg-card);
             border-radius: 14px;
             padding: 24px;
-            border: 1px solid var(--border-color);
+            border: 2px solid var(--chinese-gold);
             box-shadow: var(--shadow-light);
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .chart-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--chinese-red), var(--chinese-gold), var(--chinese-red));
         }
 
         .chart-card:hover {
             transform: translateY(-5px);
             box-shadow: var(--shadow);
-            border-color: var(--accent-gold);
+            border-color: var(--chinese-gold);
+        }
+
+        .chart-card:hover::before {
+            height: 4px;
         }
 
         .chart-title {
@@ -444,13 +492,25 @@
             background: var(--bg-card);
             border-radius: 16px;
             padding: 20px;
-            border: 1px solid var(--border-color);
+            border: 2px solid var(--chinese-gold);
             box-shadow: var(--shadow-light);
             min-height: 450px;
             display: flex;
             justify-content: center;
             align-items: center;
             overflow: hidden;
+            position: relative;
+        }
+
+        .radar-main::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at center, rgba(212, 175, 55, 0.05) 0%, transparent 70%);
+            pointer-events: none;
         }
 
         .radar-sidebar {
@@ -847,15 +907,21 @@
             background: linear-gradient(135deg, var(--bg-card), var(--bg-secondary));
             color: var(--text-primary);
             padding: 16px;
-            border: 1px solid var(--accent-gold);
-            border-radius: 10px;
+            border: 2px solid var(--chinese-gold);
+            border-radius: 12px;
             pointer-events: none;
             font-size: 13px;
             z-index: 1000;
             max-width: 450px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.8), 0 0 20px rgba(212, 175, 55, 0.3);
             opacity: 0;
-            transition: opacity 0.2s;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            transform: translateY(10px);
+        }
+
+        .tooltip.visible {
+            opacity: 1;
+            transform: translateY(0);
         }
 
         .tooltip img {
@@ -864,15 +930,16 @@
             display: block;
             margin: 12px 0;
             border-radius: 8px;
-            border: 1px solid var(--border-color);
-            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+            border: 2px solid var(--chinese-gold);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
         }
 
         .tooltip-title {
             font-size: 16px;
             font-weight: bold;
-            color: var(--accent-gold);
+            color: var(--chinese-gold);
             margin-bottom: 8px;
+            text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
         }
 
         .tooltip-period {
@@ -922,9 +989,19 @@
             background: linear-gradient(135deg, var(--bg-card), var(--bg-secondary));
             padding: 35px;
             border-radius: 16px;
-            border: 2px solid var(--accent-gold);
+            border: 3px solid var(--chinese-gold);
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
             z-index: 1000;
+        }
+
+        #detail-modal::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--chinese-red), var(--chinese-gold), var(--chinese-red));
         }
 
         #detail-modal::-webkit-scrollbar {
@@ -1193,7 +1270,7 @@
         .nav-period {
             padding: 8px 14px;
             background: rgba(26, 26, 46, 0.6);
-            border: 1px solid rgba(212, 175, 55, 0.2);
+            border: 2px solid rgba(212, 175, 55, 0.3);
             border-radius: 20px;
             color: var(--text-secondary);
             cursor: pointer;
@@ -1204,25 +1281,41 @@
         }
 
         .nav-period:hover {
-            border-color: var(--accent-gold);
+            border-color: var(--chinese-gold);
             color: var(--text-primary);
-            background: rgba(212, 175, 55, 0.1);
+            background: rgba(212, 175, 55, 0.15);
             transform: translateY(-1px);
+            box-shadow: 0 2px 8px rgba(212, 175, 55, 0.2);
         }
 
         .nav-period.active {
-            background: linear-gradient(135deg, var(--accent-gold), #b8960c);
-            border-color: var(--accent-gold);
-            color: #000;
+            background: linear-gradient(135deg, var(--chinese-red), var(--chinese-gold));
+            border-color: var(--chinese-gold);
+            color: #fff;
             font-weight: 600;
-            box-shadow: 0 2px 8px rgba(212, 175, 55, 0.3);
+            box-shadow: 0 2px 8px rgba(192, 57, 43, 0.4);
         }
 
         .footer {
             background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
-            border-top: 2px solid var(--accent-gold);
+            border-top: 3px solid var(--chinese-gold);
             padding: 40px 20px 20px;
             margin-top: 40px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(212, 175, 55, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 90% 80%, rgba(192, 57, 43, 0.05) 0%, transparent 50%);
+            pointer-events: none;
         }
 
         .footer-content {
@@ -1256,18 +1349,66 @@
 
         .footer-stat {
             background: var(--bg-primary);
-            color: var(--accent-gold);
+            color: var(--chinese-gold);
             padding: 6px 12px;
             border-radius: 20px;
             font-size: 0.85em;
-            border: 1px solid var(--border-color);
+            border: 2px solid var(--chinese-gold);
             transition: all 0.3s ease;
+            cursor: pointer;
         }
 
         .footer-stat:hover {
-            background: var(--accent-gold);
+            background: var(--chinese-gold);
             color: var(--bg-primary);
             transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(212, 175, 55, 0.4);
+        }
+
+        .keyboard-hint {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: var(--bg-card);
+            border: 2px solid var(--chinese-gold);
+            border-radius: 12px;
+            padding: 15px 20px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+            z-index: 100;
+            font-size: 12px;
+            color: var(--text-secondary);
+            opacity: 0.9;
+            transition: opacity 0.3s ease;
+        }
+
+        .keyboard-hint:hover {
+            opacity: 1;
+        }
+
+        .keyboard-hint-title {
+            color: var(--chinese-gold);
+            font-weight: 600;
+            margin-bottom: 10px;
+            font-size: 13px;
+        }
+
+        .keyboard-hint-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin: 5px 0;
+        }
+
+        .keyboard-key {
+            background: var(--bg-primary);
+            border: 1px solid var(--chinese-gold);
+            border-radius: 4px;
+            padding: 2px 6px;
+            font-family: monospace;
+            font-size: 11px;
+            color: var(--chinese-gold);
+            min-width: 20px;
+            text-align: center;
         }
 
         .footer-bottom {
@@ -1357,6 +1498,7 @@
 </head>
 <body>
     <div class="header">
+        <div class="header-pattern"></div>
         <h1>华夏文明史诗</h1>
         <p class="subtitle">五千年兴衰荣辱 · 九万里山河岁月</p>
     </div>
@@ -1589,9 +1731,9 @@
             <div class="footer-section">
                 <h4>📊 数据维度</h4>
                 <div class="footer-stats">
-                    <span class="footer-stat">31个历史时期</span>
+                    <span class="footer-stat">47个历史时期</span>
                     <span class="footer-stat">9大评估指标</span>
-                    <span class="footer-stat">4类事件类型</span>
+                    <span class="footer-stat">6类事件类型</span>
                 </div>
             </div>
             <div class="footer-section">
@@ -1600,6 +1742,7 @@
                     🔍 搜索文明、人物、事件<br>
                     🖱️ 滚轮缩放时间轴<br>
                     👆 点击文明条查看详情<br>
+                    ⌨️ 键盘快捷键支持<br>
                     📱 支持响应式布局
                 </p>
             </div>
@@ -1607,6 +1750,28 @@
         <div class="footer-bottom">
             <p>以史为鉴，可以知兴替</p>
             <p style="margin-top: 5px; font-size: 0.8em; opacity: 0.7;">© 2026 中华文明全景图谱 · 终极优化版</p>
+        </div>
+    </div>
+
+    <div class="keyboard-hint" id="keyboard-hint">
+        <div class="keyboard-hint-title">⌨️ 键盘快捷键</div>
+        <div class="keyboard-hint-item">
+            <span class="keyboard-key">←</span>
+            <span class="keyboard-key">→</span>
+            <span>左右平移</span>
+        </div>
+        <div class="keyboard-hint-item">
+            <span class="keyboard-key">↑</span>
+            <span class="keyboard-key">↓</span>
+            <span>缩放视图</span>
+        </div>
+        <div class="keyboard-hint-item">
+            <span class="keyboard-key">R</span>
+            <span>重置视图</span>
+        </div>
+        <div class="keyboard-hint-item">
+            <span class="keyboard-key">Esc</span>
+            <span>关闭弹窗</span>
         </div>
     </div>
 
@@ -3779,6 +3944,74 @@
         document.getElementById('modal-overlay').addEventListener('click', () => {
             document.getElementById('modal-overlay').style.display = 'none';
             document.getElementById('detail-modal').style.display = 'none';
+        });
+
+        // 键盘快捷键支持
+        document.addEventListener('keydown', function(event) {
+            // ESC键关闭弹窗
+            if (event.key === 'Escape') {
+                const modal = document.getElementById('detail-modal');
+                const overlay = document.getElementById('modal-overlay');
+                if (modal.style.display === 'block') {
+                    modal.style.display = 'none';
+                    overlay.style.display = 'none';
+                }
+            }
+
+            // R键重置视图
+            if (event.key === 'r' || event.key === 'R') {
+                if (zoomReset) {
+                    zoomReset();
+                }
+            }
+
+            // 方向键平移和缩放
+            if (timelineSvg && zoomBehavior) {
+                const transform = d3.zoomTransform(timelineSvg.node());
+                const step = 100;
+                const zoomStep = 0.1;
+
+                switch(event.key) {
+                    case 'ArrowLeft':
+                        event.preventDefault();
+                        timelineSvg.transition().duration(200).call(
+                            zoomBehavior.translateBy,
+                            step,
+                            0
+                        );
+                        break;
+                    case 'ArrowRight':
+                        event.preventDefault();
+                        timelineSvg.transition().duration(200).call(
+                            zoomBehavior.translateBy,
+                            -step,
+                            0
+                        );
+                        break;
+                    case 'ArrowUp':
+                        event.preventDefault();
+                        timelineSvg.transition().duration(200).call(
+                            zoomBehavior.scaleBy,
+                            1 + zoomStep
+                        );
+                        break;
+                    case 'ArrowDown':
+                        event.preventDefault();
+                        timelineSvg.transition().duration(200).call(
+                            zoomBehavior.scaleBy,
+                            1 - zoomStep
+                        );
+                        break;
+                }
+            }
+        });
+
+        // 隐藏键盘提示（可选：点击后隐藏）
+        document.getElementById('keyboard-hint').addEventListener('click', function() {
+            this.style.opacity = '0';
+            setTimeout(() => {
+                this.style.display = 'none';
+            }, 300);
         });
     </script>
 </body>
