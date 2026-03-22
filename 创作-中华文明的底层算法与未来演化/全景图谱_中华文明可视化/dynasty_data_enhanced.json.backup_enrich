@@ -1871,33 +1871,15 @@
     "evidence_type": "controversial",
     "academic_consensus": "disputed",
     "alternative_dates": [
-      {
-        "source": "夏商周断代工程",
-        "date": "BC 2070 - BC 1600"
-      },
-      {
-        "source": "传统文献记载",
-        "date": "BC 2205 - BC 1766"
-      }
+      {"source": "夏商周断代工程", "date": "BC 2070 - BC 1600"},
+      {"source": "传统文献记载", "date": "BC 2205 - BC 1766"}
     ],
     "archaeological_sites": [
-      {
-        "name": "二里头遗址",
-        "location": "河南偃师",
-        "significance": "可能为夏都，学术界对其是否为夏都存在争议"
-      }
+      {"name": "二里头遗址", "location": "河南偃师", "significance": "可能为夏都，学术界对其是否为夏都存在争议"}
     ],
     "academic_views": [
-      {
-        "view": "信史地位确立",
-        "supporters": "中国主流学者",
-        "argument": "二里头遗址等考古发现支持夏朝存在"
-      },
-      {
-        "view": "证据不足",
-        "supporters": "部分国际学者",
-        "argument": "缺乏同时期文字证据，文献记载年代较晚"
-      }
+      {"view": "信史地位确立", "supporters": "中国主流学者", "argument": "二里头遗址等考古发现支持夏朝存在"},
+      {"view": "证据不足", "supporters": "部分国际学者", "argument": "缺乏同时期文字证据，文献记载年代较晚"}
     ],
     "capital": [
       "阳城 (Yangcheng)",
@@ -1926,10 +1908,10 @@
       "temperature_anomaly": -0.5,
       "war_frequency": 0.2,
       "territory_sq_km": 0.5,
-      "tech_index": 55,
-      "economic_index": 55,
-      "institution_index": 60,
-      "cultural_index": 60,
+      "tech_index": 50,
+      "economic_index": 50,
+      "institution_index": 55,
+      "cultural_index": 55,
       "military_index": 50
     },
     "events": [
@@ -1947,19 +1929,6 @@
         "impact": "中国历史上第一个王朝，开启了世袭制，奠定了早期国家形态"
       },
       {
-        "year": -2070,
-        "name": "禹传启，家天下",
-        "type": "politics",
-        "significance": "high",
-        "description": "禹死后，其子启继位，打破了传统的禅让制，确立了世袭制，标志着中国历史上第一个奴隶制国家夏朝的建立。",
-        "key_points": [
-          "世袭制",
-          "家天下",
-          "夏朝建立"
-        ],
-        "impact": "中国历史从部落联盟阶段进入了国家阶段。"
-      },
-      {
         "year": -1900,
         "name": "二里头文化兴起",
         "type": "culture",
@@ -1974,18 +1943,6 @@
         "image": "images/erlitou_palace.jpg"
       },
       {
-        "year": -1900,
-        "name": "太康失国与少康中兴",
-        "type": "politics",
-        "significance": "medium",
-        "description": "夏王太康沉迷游猎被后羿夺权，后经几代努力，少康重新夺回王位，史称少康中兴。",
-        "key_points": [
-          "太康失国",
-          "少康中兴"
-        ],
-        "impact": "巩固了夏朝的统治，确立了早期国家的稳定性。"
-      },
-      {
         "year": -1600,
         "name": "鸣条之战，夏亡",
         "type": "war",
@@ -1998,18 +1955,6 @@
         ],
         "impact": "结束了夏朝470年的统治，商朝建立，青铜文化进入鼎盛时期",
         "image": "images/mingtiao_battle.jpg"
-      },
-      {
-        "year": -1600,
-        "name": "桀的暴政与鸣条之战",
-        "type": "military",
-        "significance": "high",
-        "description": "夏朝末代君主桀暴政连连，商汤在鸣条之战中击败夏军，夏朝灭亡。",
-        "key_points": [
-          "夏桀暴政",
-          "鸣条之战"
-        ],
-        "impact": "导致夏朝灭亡，商朝建立。"
       }
     ],
     "culture": [
@@ -2035,33 +1980,15 @@
     "evidence_type": "combined",
     "academic_consensus": "mainstream",
     "alternative_dates": [
-      {
-        "source": "夏商周断代工程",
-        "date": "BC 1600 - BC 1046"
-      },
-      {
-        "source": "传统文献记载",
-        "date": "BC 1766 - BC 1122"
-      }
+      {"source": "夏商周断代工程", "date": "BC 1600 - BC 1046"},
+      {"source": "传统文献记载", "date": "BC 1766 - BC 1122"}
     ],
     "archaeological_sites": [
-      {
-        "name": "殷墟遗址",
-        "location": "河南安阳",
-        "significance": "商朝晚期都城，甲骨文出土地，2006年列入世界文化遗产"
-      },
-      {
-        "name": "郑州商城",
-        "location": "河南郑州",
-        "significance": "商朝早期都城遗址"
-      }
+      {"name": "殷墟遗址", "location": "河南安阳", "significance": "商朝晚期都城，甲骨文出土地，2006年列入世界文化遗产"},
+      {"name": "郑州商城", "location": "河南郑州", "significance": "商朝早期都城遗址"}
     ],
     "academic_views": [
-      {
-        "view": "信史地位确立",
-        "supporters": "中外学者",
-        "argument": "甲骨文+殷墟考古，信史地位无可争议"
-      }
+      {"view": "信史地位确立", "supporters": "中外学者", "argument": "甲骨文+殷墟考古，信史地位无可争议"}
     ],
     "capital": [
       "亳 (Bo)",
@@ -2090,10 +2017,10 @@
       "temperature_anomaly": 0.2,
       "war_frequency": 0.5,
       "territory_sq_km": 1.2,
-      "tech_index": 70,
-      "economic_index": 60,
-      "institution_index": 65,
-      "cultural_index": 75,
+      "tech_index": 65,
+      "economic_index": 55,
+      "institution_index": 60,
+      "cultural_index": 70,
       "military_index": 60
     },
     "events": [
@@ -2110,18 +2037,6 @@
         ],
         "impact": "结束了夏朝统治，商朝建立，青铜文化达到鼎盛",
         "image": "images/shangtang_conquer_xia.jpg"
-      },
-      {
-        "year": -1600,
-        "name": "商汤灭夏与商朝建立",
-        "type": "politics",
-        "significance": "high",
-        "description": "商汤在鸣条之战中击败夏桀，建立商朝，定都于亳。",
-        "key_points": [
-          "商汤",
-          "建立商朝"
-        ],
-        "impact": "开启了中国历史上的第二个王朝，奴隶制社会进一步发展。"
       },
       {
         "year": -1300,
@@ -2151,19 +2066,6 @@
         "impact": "商朝国力达到顶峰，甲骨文记载了大量历史事件"
       },
       {
-        "year": -1250,
-        "name": "武丁中兴",
-        "type": "politics",
-        "significance": "high",
-        "description": "商王武丁在位期间，任用傅说为相，大力发展生产，频繁对外用兵，使得商朝达到鼎盛。",
-        "key_points": [
-          "武丁",
-          "傅说",
-          "鼎盛时期"
-        ],
-        "impact": "商朝疆域达到最大，青铜文明极盛。"
-      },
-      {
         "year": -1046,
         "name": "牧野之战，商亡",
         "type": "war",
@@ -2176,19 +2078,6 @@
         ],
         "impact": "结束了商朝554年的统治，周朝建立，开启分封制时代",
         "image": "images/muye_battle.jpg"
-      },
-      {
-        "year": -1046,
-        "name": "牧野之战与商朝灭亡",
-        "type": "military",
-        "significance": "high",
-        "description": "周武王率领诸侯联军在牧野击败商纣王，商朝灭亡。",
-        "key_points": [
-          "牧野之战",
-          "商纣王",
-          "周武王"
-        ],
-        "impact": "商朝灭亡，西周建立，开启了中国历史的新纪元。"
       }
     ],
     "culture": [
@@ -2314,38 +2203,16 @@
     "evidence_type": "combined",
     "academic_consensus": "mainstream",
     "alternative_dates": [
-      {
-        "source": "夏商周断代工程",
-        "date": "BC 1046 - BC 771"
-      },
-      {
-        "source": "传统文献记载",
-        "date": "BC 1122 - BC 771"
-      }
+      {"source": "夏商周断代工程", "date": "BC 1046 - BC 771"},
+      {"source": "传统文献记载", "date": "BC 1122 - BC 771"}
     ],
     "archaeological_sites": [
-      {
-        "name": "丰镐遗址",
-        "location": "陕西西安",
-        "significance": "西周都城遗址，丰京和镐京"
-      },
-      {
-        "name": "周原遗址",
-        "location": "陕西岐山",
-        "significance": "周人发源地，出土大量青铜器和甲骨文"
-      }
+      {"name": "丰镐遗址", "location": "陕西西安", "significance": "西周都城遗址，丰京和镐京"},
+      {"name": "周原遗址", "location": "陕西岐山", "significance": "周人发源地，出土大量青铜器和甲骨文"}
     ],
     "academic_views": [
-      {
-        "view": "牧野之战BC 1046",
-        "supporters": "夏商周断代工程",
-        "argument": "根据文献记载和天文推算确定"
-      },
-      {
-        "view": "牧野之战BC 1122",
-        "supporters": "传统文献",
-        "argument": "《竹书纪年》等文献记载"
-      }
+      {"view": "牧野之战BC 1046", "supporters": "夏商周断代工程", "argument": "根据文献记载和天文推算确定"},
+      {"view": "牧野之战BC 1122", "supporters": "传统文献", "argument": "《竹书纪年》等文献记载"}
     ],
     "capital": [
       "镐京 (Haojing)"
@@ -2373,10 +2240,10 @@
       "temperature_anomaly": -0.8,
       "war_frequency": 0.3,
       "territory_sq_km": 1.5,
-      "tech_index": 60,
-      "economic_index": 65,
-      "institution_index": 80,
-      "cultural_index": 75,
+      "tech_index": 55,
+      "economic_index": 60,
+      "institution_index": 75,
+      "cultural_index": 70,
       "military_index": 55
     },
     "events": [
@@ -2385,32 +2252,6 @@
         "name": "武王伐纣，建立西周",
         "type": "war",
         "significance": "high"
-      },
-      {
-        "year": -1046,
-        "name": "武王伐纣与西周建立",
-        "type": "politics",
-        "significance": "high",
-        "description": "周武王灭商后建立周朝，定都镐京。",
-        "key_points": [
-          "西周建立",
-          "镐京"
-        ],
-        "impact": "确立了周朝的统治，开始推行分封制和宗法制。"
-      },
-      {
-        "year": -1043,
-        "name": "周公吐哺与制礼作乐",
-        "type": "culture",
-        "significance": "high",
-        "description": "周公旦辅佐周成王，平定三监之乱，制定礼乐制度，完善了分封制和宗法制。",
-        "key_points": [
-          "周公",
-          "制礼作乐",
-          "宗法制",
-          "分封制"
-        ],
-        "impact": "奠定了中国古代社会的礼制基础和政治格局。"
       },
       {
         "year": -1042,
@@ -2425,36 +2266,10 @@
         "significance": "medium"
       },
       {
-        "year": -841,
-        "name": "国人暴动与共和行政",
-        "type": "politics",
-        "significance": "high",
-        "description": "周厉王暴政引发镐京平民武装反抗，厉王出逃，由周定公和召穆公共同执政，史称共和行政。",
-        "key_points": [
-          "国人暴动",
-          "共和行政",
-          "确切纪年"
-        ],
-        "impact": "中国历史开始有确切纪年，西周王权开始衰落。"
-      },
-      {
         "year": -771,
         "name": "犬戎攻破镐京，西周亡",
         "type": "war",
         "significance": "high"
-      },
-      {
-        "year": -771,
-        "name": "犬戎攻镐与西周灭亡",
-        "type": "military",
-        "significance": "high",
-        "description": "周幽王烽火戏诸侯，申侯联合犬戎攻破镐京，幽王被杀，西周灭亡。",
-        "key_points": [
-          "犬戎",
-          "镐京陷落",
-          "西周灭亡"
-        ],
-        "impact": "导致西周覆灭，周平王东迁洛邑，中国进入春秋时期。"
       }
     ],
     "culture": [
@@ -2516,10 +2331,10 @@
       "temperature_anomaly": 0.1,
       "war_frequency": 1.5,
       "territory_sq_km": 2.0,
-      "tech_index": 70,
-      "economic_index": 65,
-      "institution_index": 60,
-      "cultural_index": 90,
+      "tech_index": 65,
+      "economic_index": 60,
+      "institution_index": 55,
+      "cultural_index": 85,
       "military_index": 65
     },
     "events": [
@@ -2537,18 +2352,6 @@
         "impact": "周王室衰微，诸侯争霸局面形成"
       },
       {
-        "year": -770,
-        "name": "平王东迁",
-        "type": "politics",
-        "significance": "high",
-        "description": "周平王将都城从镐京迁至洛邑，东周开始。",
-        "key_points": [
-          "平王东迁",
-          "东周建立"
-        ],
-        "impact": "周天子权威大减，诸侯争霸的春秋时代拉开序幕。"
-      },
-      {
         "year": -685,
         "name": "齐桓公称霸",
         "type": "politic",
@@ -2560,19 +2363,6 @@
           "尊王攘夷"
         ],
         "impact": "开创了春秋霸主政治，确立了诸侯争霸模式"
-      },
-      {
-        "year": -681,
-        "name": "齐桓公称霸（尊王攘夷）",
-        "type": "politics",
-        "significance": "high",
-        "description": "齐桓公在管仲辅佐下进行改革，提出“尊王攘夷”口号，成为春秋五霸之首。",
-        "key_points": [
-          "齐桓公",
-          "管仲",
-          "尊王攘夷"
-        ],
-        "impact": "开启了诸侯争霸的先河，客观上促进了华夏族的认同。"
       },
       {
         "year": -656,
@@ -2601,32 +2391,6 @@
         "impact": "晋国成为霸主，晋楚争霸格局形成"
       },
       {
-        "year": -632,
-        "name": "城濮之战与晋文公称霸",
-        "type": "military",
-        "significance": "high",
-        "description": "晋楚在城濮交战，晋军退避三舍后大败楚军，晋文公确立霸主地位。",
-        "key_points": [
-          "城濮之战",
-          "退避三舍",
-          "晋文公"
-        ],
-        "impact": "晋国确立了长期的霸主地位，遏制了楚国北上。"
-      },
-      {
-        "year": -600,
-        "name": "铁器牛耕的出现与推广",
-        "type": "economy",
-        "significance": "high",
-        "description": "春秋晚期，铁制农具和牛耕开始出现并逐渐推广。",
-        "key_points": [
-          "铁器",
-          "牛耕",
-          "农业革命"
-        ],
-        "impact": "极大地提高了农业生产力，促进了井田制的瓦解和封建土地私有制的产生。"
-      },
-      {
         "year": -597,
         "name": "邲之战",
         "type": "war",
@@ -2653,19 +2417,6 @@
         "impact": "儒家思想成为中华文明的核心，影响至今"
       },
       {
-        "year": -536,
-        "name": "郑国铸刑书",
-        "type": "politics",
-        "significance": "high",
-        "description": "郑国子产将刑法铸在鼎上公布，这是中国历史上第一次公布成文法。",
-        "key_points": [
-          "铸刑书",
-          "成文法",
-          "子产"
-        ],
-        "impact": "打破了贵族对法律的垄断，推动了法治思想的发展。"
-      },
-      {
         "year": -506,
         "name": "吴破楚入郢",
         "type": "war",
@@ -2677,19 +2428,6 @@
           "入郢"
         ],
         "impact": "吴国崛起，楚国衰落，春秋格局大变"
-      },
-      {
-        "year": -506,
-        "name": "柏举之战与吴国崛起",
-        "type": "military",
-        "significance": "medium",
-        "description": "吴王阖闾在孙武和伍子胥的辅佐下大败楚军，攻入楚都郢。",
-        "key_points": [
-          "吴国",
-          "孙武",
-          "柏举之战"
-        ],
-        "impact": "标志着南方吴越国家的崛起，春秋争霸的重心开始南移。"
       },
       {
         "year": -494,
@@ -2705,16 +2443,17 @@
         "impact": "吴越争霸，为越国复仇埋下伏笔"
       },
       {
-        "year": -479,
-        "name": "孔子逝世",
-        "type": "culture",
+        "year": -473,
+        "name": "越灭吴",
+        "type": "war",
         "significance": "high",
-        "description": "儒家学派创始人孔子逝世，其思想后被整理为《论语》。",
+        "description": "越王勾践灭吴，成为春秋最后一位霸主。",
         "key_points": [
-          "孔子",
-          "儒家"
+          "越灭吴",
+          "勾践",
+          "春秋霸主"
         ],
-        "impact": "儒家思想深刻影响了此后中国两千多年的政治与文化。"
+        "impact": "春秋霸主政治结束，向战国过渡"
       },
       {
         "year": -476,
@@ -2728,19 +2467,6 @@
           "历史分期"
         ],
         "impact": "春秋时期结束，战国时期开始，社会结构发生重大变化"
-      },
-      {
-        "year": -473,
-        "name": "越灭吴",
-        "type": "war",
-        "significance": "high",
-        "description": "越王勾践灭吴，成为春秋最后一位霸主。",
-        "key_points": [
-          "越灭吴",
-          "勾践",
-          "春秋霸主"
-        ],
-        "impact": "春秋霸主政治结束，向战国过渡"
       }
     ],
     "culture": [
@@ -2808,10 +2534,10 @@
       "temperature_anomaly": 0.0,
       "war_frequency": 3.5,
       "territory_sq_km": 3.2,
-      "tech_index": 80,
-      "economic_index": 75,
-      "institution_index": 70,
-      "cultural_index": 100,
+      "tech_index": 75,
+      "economic_index": 70,
+      "institution_index": 65,
+      "cultural_index": 95,
       "military_index": 85
     },
     "events": [
@@ -2879,32 +2605,6 @@
           "赵武灵王"
         ],
         "impact": "赵国军事实力增强，成为抗秦主力"
-      },
-      {
-        "year": -300,
-        "name": "都江堰的修建",
-        "type": "tech",
-        "significance": "high",
-        "description": "秦国蜀郡太守李冰父子主持修建都江堰水利工程。",
-        "key_points": [
-          "都江堰",
-          "李冰",
-          "水利工程"
-        ],
-        "impact": "使成都平原成为“天府之国”，为秦国统一提供了坚实的物质基础。"
-      },
-      {
-        "year": -300,
-        "name": "百家争鸣鼎盛时期",
-        "type": "culture",
-        "significance": "high",
-        "description": "战国时期，儒、墨、道、法等诸子百家学说空前繁荣，形成中国历史上第一次思想解放运动。",
-        "key_points": [
-          "百家争鸣",
-          "诸子百家",
-          "思想解放"
-        ],
-        "impact": "奠定了中国传统文化的基本精神，对后世产生了极其深远的影响。"
       },
       {
         "year": -260,
@@ -3065,10 +2765,10 @@
       "temperature_anomaly": 0.5,
       "war_frequency": 1.0,
       "territory_sq_km": 3.4,
-      "tech_index": 75,
-      "economic_index": 65,
-      "institution_index": 85,
-      "cultural_index": 65,
+      "tech_index": 70,
+      "economic_index": 60,
+      "institution_index": 80,
+      "cultural_index": 60,
       "military_index": 80
     },
     "events": [
@@ -3087,19 +2787,6 @@
         "image": "images/qin_unification.jpg"
       },
       {
-        "year": -221,
-        "name": "废分封，行郡县，书同文，车同轨，统一度量衡",
-        "type": "politics",
-        "significance": "high",
-        "description": "秦始皇推行一系列巩固统一的措施：在全国推行郡县制，统一文字（小篆）、货币（半两钱）和度量衡。",
-        "key_points": [
-          "郡县制",
-          "书同文",
-          "统一度量衡"
-        ],
-        "impact": "对中国以后两千多年的政治制度、文化认同和经济发展产生了决定性影响。"
-      },
-      {
         "year": -214,
         "name": "征服百越，修筑灵渠",
         "type": "war",
@@ -3112,31 +2799,6 @@
         ],
         "impact": "拓展了秦朝疆域，灵渠成为重要的水利工程",
         "image": "images/lingqu_canal.jpg"
-      },
-      {
-        "year": -214,
-        "name": "北击匈奴与修筑长城",
-        "type": "military",
-        "significance": "medium",
-        "description": "派蒙恬北击匈奴，收复河套地区，并连接燕、赵、秦长城，修筑万里长城。",
-        "key_points": [
-          "蒙恬",
-          "修长城",
-          "抗击匈奴"
-        ],
-        "impact": "巩固了北部边疆，长城成为中华民族的象征。"
-      },
-      {
-        "year": -214,
-        "name": "南征百越与开凿灵渠",
-        "type": "military",
-        "significance": "medium",
-        "description": "秦军平定百越地区，设立桂林、南海、象郡；开凿灵渠连接长江与珠江水系。",
-        "key_points": [
-          "平定百越",
-          "开凿灵渠"
-        ],
-        "impact": "将岭南地区正式纳入中国版图，促进了南北经济文化交流。"
       },
       {
         "year": -210,
@@ -3165,19 +2827,6 @@
         ],
         "impact": "中国历史上第一次大规模农民起义，加速了秦朝的灭亡",
         "image": "images/dazexiang_uprising.jpg"
-      },
-      {
-        "year": -209,
-        "name": "陈胜吴广起义（大泽乡起义）",
-        "type": "politics",
-        "significance": "high",
-        "description": "因秦朝暴政，陈胜、吴广在大泽乡发动起义，是中国历史上第一次大规模的农民起义。",
-        "key_points": [
-          "陈胜吴广起义",
-          "大泽乡",
-          "反抗暴政"
-        ],
-        "impact": "沉重打击了秦朝的统治，揭开了秦末农民战争的序幕。"
       }
     ],
     "culture": [
@@ -3237,10 +2886,10 @@
       "temperature_anomaly": 0.3,
       "war_frequency": 0.8,
       "territory_sq_km": 6.0,
-      "tech_index": 70,
-      "economic_index": 80,
-      "institution_index": 80,
-      "cultural_index": 85,
+      "tech_index": 65,
+      "economic_index": 75,
+      "institution_index": 75,
+      "cultural_index": 80,
       "military_index": 75
     },
     "events": [
@@ -3258,31 +2907,6 @@
         "impact": "结束了楚汉战争，西汉建立，开启汉朝400年统治"
       },
       {
-        "year": -202,
-        "name": "楚汉战争结束与西汉建立",
-        "type": "politics",
-        "significance": "high",
-        "description": "刘邦在垓下之战中击败项羽，建立汉朝，定都长安。",
-        "key_points": [
-          "刘邦",
-          "建立汉朝",
-          "楚汉战争"
-        ],
-        "impact": "确立了汉朝的统治，开始了汉民族的发展壮大。"
-      },
-      {
-        "year": -167,
-        "name": "文景之治",
-        "type": "economy",
-        "significance": "high",
-        "description": "汉文帝、汉景帝采取“与民休息”、“轻徭薄赋”政策，社会经济得到恢复和发展。",
-        "key_points": [
-          "文景之治",
-          "休养生息"
-        ],
-        "impact": "为汉武帝时期的强盛奠定了雄厚的物质基础。"
-      },
-      {
         "year": -138,
         "name": "张骞出使西域",
         "type": "culture",
@@ -3296,19 +2920,6 @@
         "impact": "开辟了丝绸之路，促进了中西文化交流，影响深远"
       },
       {
-        "year": -134,
-        "name": "罢黜百家，表章六经",
-        "type": "culture",
-        "significance": "high",
-        "description": "汉武帝接受董仲舒的建议，确立儒家思想的正统地位。",
-        "key_points": [
-          "罢黜百家",
-          "儒家正统",
-          "董仲舒"
-        ],
-        "impact": "儒家思想成为中国封建社会的正统思想，影响深远。"
-      },
-      {
         "year": -119,
         "name": "漠北之战，击溃匈奴",
         "type": "war",
@@ -3320,31 +2931,6 @@
           "击溃匈奴"
         ],
         "impact": "解除了匈奴对汉朝的威胁，巩固了边疆安全"
-      },
-      {
-        "year": -119,
-        "name": "漠北之战",
-        "type": "military",
-        "significance": "high",
-        "description": "卫青、霍去病率军深入漠北，大败匈奴主力，解决汉朝北疆威胁。",
-        "key_points": [
-          "卫青",
-          "霍去病",
-          "抗击匈奴"
-        ],
-        "impact": "彻底解除了匈奴对汉朝的威胁，保障了北方丝绸之路的畅通。"
-      },
-      {
-        "year": -104,
-        "name": "太初历的颁布",
-        "type": "tech",
-        "significance": "medium",
-        "description": "汉武帝下令制定《太初历》，是中国古代第一部比较完整的汉族历法。",
-        "key_points": [
-          "太初历",
-          "天文历法"
-        ],
-        "impact": "确立了以正月为岁首的历法制度，对农业生产有重要指导意义。"
       },
       {
         "year": -60,
@@ -3371,18 +2957,6 @@
           "西汉灭亡"
         ],
         "impact": "西汉灭亡，新朝建立，但很快被推翻"
-      },
-      {
-        "year": 9,
-        "name": "王莽代汉与新朝建立",
-        "type": "politics",
-        "significance": "high",
-        "description": "外戚王莽废黜孺子婴，自立为帝，改国号为“新”，西汉灭亡。",
-        "key_points": [
-          "王莽篡汉",
-          "新朝"
-        ],
-        "impact": "西汉结束，引发了短暂的新朝统治和随后的绿林赤眉起义。"
       }
     ],
     "culture": [
@@ -3436,10 +3010,10 @@
       "temperature_anomaly": -0.2,
       "war_frequency": 1.5,
       "territory_sq_km": 5.8,
-      "tech_index": 75,
-      "economic_index": 75,
-      "institution_index": 70,
-      "cultural_index": 80,
+      "tech_index": 70,
+      "economic_index": 70,
+      "institution_index": 65,
+      "cultural_index": 75,
       "military_index": 70
     },
     "events": [
@@ -3458,18 +3032,6 @@
         "image": "images/guangwu_zhongxing.jpg"
       },
       {
-        "year": 25,
-        "name": "刘秀称帝与东汉建立",
-        "type": "politics",
-        "significance": "high",
-        "description": "刘秀在鄗城称帝，后定都洛阳，史称东汉。",
-        "key_points": [
-          "光武帝",
-          "建立东汉"
-        ],
-        "impact": "恢复了汉朝的统治，开启了光武中兴。"
-      },
-      {
         "year": 105,
         "name": "蔡伦改进造纸术",
         "type": "culture",
@@ -3482,19 +3044,6 @@
         ],
         "impact": "造纸术的改进促进了文化的传播和发展，对世界文明产生了深远影响",
         "image": "images/cai_lun_paper.jpg"
-      },
-      {
-        "year": 132,
-        "name": "张衡发明地动仪",
-        "type": "tech",
-        "significance": "high",
-        "description": "张衡发明了候风地动仪，是世界上第一架测定地震方向的仪器。",
-        "key_points": [
-          "张衡",
-          "地动仪",
-          "科技成就"
-        ],
-        "impact": "展示了东汉时期卓越的科学技术水平。"
       },
       {
         "year": 184,
@@ -4622,10 +4171,10 @@
       "temperature_anomaly": -0.3,
       "war_frequency": 1.2,
       "territory_sq_km": 4.7,
-      "tech_index": 75,
-      "economic_index": 75,
-      "institution_index": 80,
-      "cultural_index": 70,
+      "tech_index": 70,
+      "economic_index": 70,
+      "institution_index": 75,
+      "cultural_index": 65,
       "military_index": 70
     },
     "events": [
@@ -4643,30 +4192,6 @@
         "impact": "结束了南北朝分裂局面，为唐朝的繁荣奠定了基础"
       },
       {
-        "year": 581,
-        "name": "隋朝建立",
-        "type": "politics",
-        "significance": "high",
-        "description": "杨坚废周静帝，建立隋朝，是为隋文帝。",
-        "key_points": [
-          "隋文帝杨坚",
-          "建立隋朝"
-        ],
-        "impact": "结束了长期的分裂局面，为再次大一统奠定了基础。"
-      },
-      {
-        "year": 589,
-        "name": "隋灭陈与全国统一",
-        "type": "military",
-        "significance": "high",
-        "description": "隋军南下灭陈朝，结束了自西晋末年以来近三百年的分裂割据局面。",
-        "key_points": [
-          "隋灭陈",
-          "大一统"
-        ],
-        "impact": "中国历史再次进入大一统时期，促进了南北经济文化交流。"
-      },
-      {
         "year": 605,
         "name": "开凿大运河",
         "type": "economy",
@@ -4678,19 +4203,6 @@
           "经济交流"
         ],
         "impact": "大运河成为南北交通大动脉，促进了经济文化交流"
-      },
-      {
-        "year": 605,
-        "name": "科举制的创立",
-        "type": "politics",
-        "significance": "high",
-        "description": "隋炀帝始建进士科，标志着科举制的正式确立。",
-        "key_points": [
-          "科举制",
-          "进士科",
-          "人才选拔"
-        ],
-        "impact": "打破了门阀士族垄断政治的局面，扩大了统治基础，影响了中国一千多年的选官制度。"
       },
       {
         "year": 606,
@@ -4781,25 +4293,13 @@
       "temperature_anomaly": 0.4,
       "war_frequency": 1.8,
       "territory_sq_km": 12.3,
-      "tech_index": 80,
-      "economic_index": 85,
-      "institution_index": 80,
-      "cultural_index": 95,
+      "tech_index": 75,
+      "economic_index": 80,
+      "institution_index": 75,
+      "cultural_index": 90,
       "military_index": 75
     },
     "events": [
-      {
-        "year": 618,
-        "name": "唐朝建立",
-        "type": "politics",
-        "significance": "high",
-        "description": "李渊在长安称帝，建立唐朝。",
-        "key_points": [
-          "李渊",
-          "建立唐朝"
-        ],
-        "impact": "开启了中国历史上最强盛的王朝之一。"
-      },
       {
         "year": 626,
         "name": "玄武门之变",
@@ -4813,19 +4313,6 @@
         ],
         "impact": "李世民即位，开启贞观之治，唐朝进入鼎盛时期",
         "image": "images/xuanwumen_incident.jpg"
-      },
-      {
-        "year": 626,
-        "name": "玄武门之变与贞观之治开始",
-        "type": "politics",
-        "significance": "high",
-        "description": "李世民发动玄武门之变夺取政权，随后登基为帝，开创“贞观之治”。",
-        "key_points": [
-          "李世民",
-          "玄武门之变",
-          "贞观之治"
-        ],
-        "impact": "政治清明，经济复苏，国力强盛，奠定了大唐盛世的基础。"
       },
       {
         "year": 640,
@@ -4842,19 +4329,6 @@
         "image": "images/anxi_protectorate.jpg"
       },
       {
-        "year": 641,
-        "name": "文成公主入藏",
-        "type": "diplomacy",
-        "significance": "medium",
-        "description": "唐太宗将文成公主嫁给吐蕃赞普松赞干布。",
-        "key_points": [
-          "文成公主",
-          "吐蕃",
-          "民族和睦"
-        ],
-        "impact": "促进了汉藏两族的友好关系和文化交流。"
-      },
-      {
         "year": 690,
         "name": "武则天称帝",
         "type": "politic",
@@ -4866,32 +4340,6 @@
           "武周"
         ],
         "impact": "中国历史上唯一的女皇帝，打破了男性对皇权的垄断"
-      },
-      {
-        "year": 713,
-        "name": "开元盛世",
-        "type": "politics",
-        "significance": "high",
-        "description": "唐玄宗前期励精图治，唐朝达到极盛时期，史称“开元盛世”。",
-        "key_points": [
-          "唐玄宗",
-          "开元盛世",
-          "大唐极盛"
-        ],
-        "impact": "中国封建社会达到了前所未有的繁荣高度。"
-      },
-      {
-        "year": 725,
-        "name": "僧一行测定子午线",
-        "type": "tech",
-        "significance": "medium",
-        "description": "唐代天文学家僧一行发起了全国性的天文大地测量，首次测定了子午线的长度。",
-        "key_points": [
-          "僧一行",
-          "天文学",
-          "子午线"
-        ],
-        "impact": "标志着中国古代天文学的重大进步。"
       },
       {
         "year": 755,
@@ -4907,32 +4355,6 @@
         "impact": "唐朝由盛转衰，藩镇割据局面形成"
       },
       {
-        "year": 755,
-        "name": "安史之乱爆发",
-        "type": "military",
-        "significance": "high",
-        "description": "安禄山、史思明发动叛乱，唐朝由盛转衰。",
-        "key_points": [
-          "安史之乱",
-          "由盛转衰",
-          "藩镇割据"
-        ],
-        "impact": "严重破坏了北方经济，导致藩镇割据局面的形成，唐朝国力大损。"
-      },
-      {
-        "year": 780,
-        "name": "两税法的实行",
-        "type": "economy",
-        "significance": "high",
-        "description": "宰相杨炎建议推行两税法，改变了以人丁为主的赋税制度，改为按资产和土地征税。",
-        "key_points": [
-          "两税法",
-          "税制改革",
-          "杨炎"
-        ],
-        "impact": "减轻了农民负担，扩大了税源，是中国赋税制度的重大变革。"
-      },
-      {
         "year": 878,
         "name": "黄巢起义",
         "type": "war",
@@ -4944,19 +4366,6 @@
           "动摇统治"
         ],
         "impact": "动摇了唐朝统治，加速了唐朝的灭亡"
-      },
-      {
-        "year": 878,
-        "name": "黄巢起义爆发",
-        "type": "military",
-        "significance": "high",
-        "description": "黄巢领导的农民起义爆发，席卷大半个中国。",
-        "key_points": [
-          "黄巢起义",
-          "农民战争",
-          "打击唐朝"
-        ],
-        "impact": "沉重打击了唐朝的统治和门阀士族势力，加速了唐朝的灭亡。"
       }
     ],
     "culture": [
@@ -5857,10 +5266,10 @@
       "temperature_anomaly": -0.5,
       "war_frequency": 2.0,
       "territory_sq_km": 2.8,
-      "tech_index": 90,
-      "economic_index": 90,
-      "institution_index": 75,
-      "cultural_index": 90,
+      "tech_index": 85,
+      "economic_index": 85,
+      "institution_index": 70,
+      "cultural_index": 85,
       "military_index": 55
     },
     "events": [
@@ -5878,19 +5287,6 @@
         "impact": "结束了五代十国的分裂局面，宋朝建立"
       },
       {
-        "year": 960,
-        "name": "陈桥兵变与北宋建立",
-        "type": "politics",
-        "significance": "high",
-        "description": "赵匡胤在陈桥驿发动兵变，建立宋朝，定都开封。",
-        "key_points": [
-          "赵匡胤",
-          "陈桥兵变",
-          "北宋建立"
-        ],
-        "impact": "结束了五代十国的分裂局面（除部分地区外），确立了重文轻武的国策。"
-      },
-      {
         "year": 1004,
         "name": "澶渊之盟",
         "type": "politic",
@@ -5903,19 +5299,6 @@
         ],
         "impact": "宋辽维持了百余年的和平，促进了经济文化交流",
         "image": "images/chanyuan_treaty.jpg"
-      },
-      {
-        "year": 1040,
-        "name": "毕昇发明活字印刷术",
-        "type": "tech",
-        "significance": "high",
-        "description": "北宋平民毕昇发明了泥活字印刷术。",
-        "key_points": [
-          "毕昇",
-          "活字印刷",
-          "四大发明"
-        ],
-        "impact": "极大地提高了印刷效率，推动了世界文化的传播。"
       },
       {
         "year": 1069,
@@ -5931,19 +5314,6 @@
         "impact": "试图解决宋朝的财政和军事问题，但最终失败"
       },
       {
-        "year": 1084,
-        "name": "《资治通鉴》成书",
-        "type": "culture",
-        "significance": "medium",
-        "description": "司马光主编的编年体通史《资治通鉴》完成。",
-        "key_points": [
-          "资治通鉴",
-          "司马光",
-          "史学巨著"
-        ],
-        "impact": "是中国史学史上的一座丰碑，为后世统治者提供了历史借鉴。"
-      },
-      {
         "year": 1127,
         "name": "靖康之变，北宋亡",
         "type": "war",
@@ -5956,58 +5326,6 @@
         ],
         "impact": "北宋灭亡，南宋建立，宋朝统治重心南移",
         "image": "images/jingkang_incident.jpg"
-      },
-      {
-        "year": 1127,
-        "name": "靖康之变与南宋建立",
-        "type": "military",
-        "significance": "high",
-        "description": "金兵攻破开封，俘虏宋徽宗、宋钦宗，北宋灭亡。同年赵构在应天府称帝，建立南宋。",
-        "key_points": [
-          "靖康之难",
-          "北宋灭亡",
-          "南宋建立"
-        ],
-        "impact": "中国政治中心南移，形成了宋金对峙的局面。"
-      },
-      {
-        "year": 1140,
-        "name": "郾城大捷",
-        "type": "military",
-        "significance": "medium",
-        "description": "岳飞率领岳家军在郾城大败金兀术的拐子马和铁浮图。",
-        "key_points": [
-          "岳飞",
-          "郾城大捷",
-          "抗金"
-        ],
-        "impact": "是南宋抗金的重大胜利，极大地鼓舞了抗金士气。"
-      },
-      {
-        "year": 1200,
-        "name": "指南针广泛用于航海",
-        "type": "tech",
-        "significance": "high",
-        "description": "宋代航海业发达，指南针（罗盘）被广泛应用于航海。",
-        "key_points": [
-          "指南针",
-          "航海",
-          "四大发明"
-        ],
-        "impact": "促进了海外贸易的繁荣，也为后来世界地理大发现提供了技术条件。"
-      },
-      {
-        "year": 1200,
-        "name": "交子与纸币的广泛流通",
-        "type": "economy",
-        "significance": "high",
-        "description": "北宋时期四川地区出现的“交子”是世界上最早的纸币，南宋时期纸币“会子”进一步广泛使用。",
-        "key_points": [
-          "交子",
-          "会子",
-          "纸币"
-        ],
-        "impact": "标志着商业经济的高度发达，极大便利了商品流通。"
       },
       {
         "year": 1279,
@@ -6075,10 +5393,10 @@
       "temperature_anomaly": -0.2,
       "war_frequency": 1.5,
       "territory_sq_km": 13.7,
-      "tech_index": 75,
-      "economic_index": 70,
-      "institution_index": 65,
-      "cultural_index": 75,
+      "tech_index": 70,
+      "economic_index": 65,
+      "institution_index": 60,
+      "cultural_index": 70,
       "military_index": 85
     },
     "events": [
@@ -6096,32 +5414,6 @@
         "impact": "元朝建立，实现了对中国的统治"
       },
       {
-        "year": 1271,
-        "name": "忽必烈建元",
-        "type": "politics",
-        "significance": "high",
-        "description": "忽必烈改国号为大元，建立元朝，次年定都大都（今北京）。",
-        "key_points": [
-          "忽必烈",
-          "建立元朝",
-          "大都"
-        ],
-        "impact": "确立了蒙古族在中原的统治，中国再次实现大一统。"
-      },
-      {
-        "year": 1276,
-        "name": "元灭南宋",
-        "type": "military",
-        "significance": "high",
-        "description": "元军攻占临安，俘虏宋恭帝，南宋实际灭亡（残余势力于1279年崖山海战后覆灭）。",
-        "key_points": [
-          "元灭宋",
-          "崖山海战",
-          "全国统一"
-        ],
-        "impact": "结束了唐末以来几百年的分裂割据局面，建立了空前庞大的帝国。"
-      },
-      {
         "year": 1279,
         "name": "统一中国",
         "type": "war",
@@ -6133,44 +5425,6 @@
           "结束分裂"
         ],
         "impact": "结束了长期的分裂局面，元朝统一全国"
-      },
-      {
-        "year": 1281,
-        "name": "郭守敬编制《授时历》",
-        "type": "tech",
-        "significance": "high",
-        "description": "元代天文学家郭守敬等人编制的《授时历》颁布实行，其精度与现行公历相当。",
-        "key_points": [
-          "郭守敬",
-          "授时历",
-          "天文学"
-        ],
-        "impact": "代表了中国古代历法体系的最高水平。"
-      },
-      {
-        "year": 1289,
-        "name": "马可·波罗来华",
-        "type": "diplomacy",
-        "significance": "medium",
-        "description": "威尼斯商人马可·波罗到达元大都，受到忽必烈接见并在中国游历多年。",
-        "key_points": [
-          "马可·波罗",
-          "东西方交流"
-        ],
-        "impact": "其游记激发了欧洲人对东方的向往，促进了中西文化交流。"
-      },
-      {
-        "year": 1290,
-        "name": "行省制度的确立",
-        "type": "politics",
-        "significance": "high",
-        "description": "元朝在地方实行行中书省（行省）制度，加强中央集权。",
-        "key_points": [
-          "行省制度",
-          "地方行政",
-          "中央集权"
-        ],
-        "impact": "是中国古代地方行政制度的重大变革，影响至今。"
       },
       {
         "year": 1292,
@@ -6197,19 +5451,6 @@
           "动摇统治"
         ],
         "impact": "动摇了元朝统治，加速了元朝的灭亡"
-      },
-      {
-        "year": 1351,
-        "name": "红巾军起义爆发",
-        "type": "military",
-        "significance": "high",
-        "description": "韩山童、刘福通领导的红巾军起义爆发，反抗元朝残暴统治。",
-        "key_points": [
-          "红巾军起义",
-          "农民战争",
-          "反元"
-        ],
-        "impact": "动摇了元朝的统治基础，促成了元朝的灭亡。"
       }
     ],
     "culture": [
@@ -6263,10 +5504,10 @@
       "temperature_anomaly": -1.5,
       "war_frequency": 1.6,
       "territory_sq_km": 6.5,
-      "tech_index": 80,
-      "economic_index": 80,
-      "institution_index": 75,
-      "cultural_index": 85,
+      "tech_index": 75,
+      "economic_index": 75,
+      "institution_index": 70,
+      "cultural_index": 80,
       "military_index": 65
     },
     "events": [
@@ -6284,32 +5525,6 @@
         "impact": "结束了元朝统治，明朝建立，恢复了汉族统治"
       },
       {
-        "year": 1368,
-        "name": "明朝建立与元朝灭亡",
-        "type": "politics",
-        "significance": "high",
-        "description": "朱元璋在应天府称帝，建立明朝。同年明军攻占大都，元朝灭亡。",
-        "key_points": [
-          "朱元璋",
-          "建立明朝",
-          "驱逐胡虏"
-        ],
-        "impact": "恢复了汉族在中原的统治，建立了高度集权的封建王朝。"
-      },
-      {
-        "year": 1380,
-        "name": "废丞相，设三司",
-        "type": "politics",
-        "significance": "high",
-        "description": "朱元璋借胡惟庸案废除丞相制度，六部直接对皇帝负责，并设立锦衣卫等特务机构。",
-        "key_points": [
-          "废丞相",
-          "皇权强化",
-          "特务统治"
-        ],
-        "impact": "中国古代君主专制制度达到了空前的高度。"
-      },
-      {
         "year": 1405,
         "name": "郑和下西洋",
         "type": "culture",
@@ -6322,19 +5537,6 @@
         ],
         "impact": "展示了中国航海实力，促进了中外文化交流",
         "image": "images/zheng_he_voyage.jpg"
-      },
-      {
-        "year": 1421,
-        "name": "迁都北京",
-        "type": "politics",
-        "significance": "high",
-        "description": "明成祖朱棣将都城从南京迁至北京，并修筑紫禁城。",
-        "key_points": [
-          "迁都北京",
-          "紫禁城",
-          "天子守国门"
-        ],
-        "impact": "巩固了北方边防，北京成为中国此后数百年的政治中心。"
       },
       {
         "year": 1449,
@@ -6364,45 +5566,6 @@
         "impact": "简化了税制，促进了经济发展，但改革未能持续"
       },
       {
-        "year": 1581,
-        "name": "张居正推行“一条鞭法”",
-        "type": "economy",
-        "significance": "high",
-        "description": "内阁首辅张居正推行赋役改革，将田赋、徭役杂税合并，折成银两征收。",
-        "key_points": [
-          "一条鞭法",
-          "张居正改革",
-          "赋税货币化"
-        ],
-        "impact": "简化了税制，增加了政府收入，促进了商品经济和资本主义萌芽的发展。"
-      },
-      {
-        "year": 1590,
-        "name": "李时珍完成《本草纲目》",
-        "type": "tech",
-        "significance": "high",
-        "description": "李时珍历时近三十年编成医药学巨著《本草纲目》。",
-        "key_points": [
-          "李时珍",
-          "本草纲目",
-          "医药学巨著"
-        ],
-        "impact": "总结了中国16世纪以前的药物学成就，被誉为“东方医药巨典”。"
-      },
-      {
-        "year": 1637,
-        "name": "宋应星出版《天工开物》",
-        "type": "tech",
-        "significance": "high",
-        "description": "宋应星的《天工开物》出版，总结了明代农业和手工业生产技术。",
-        "key_points": [
-          "天工开物",
-          "宋应星",
-          "百科全书"
-        ],
-        "impact": "被誉为“中国17世纪的工艺百科全书”，反映了明朝科技的发展水平。"
-      },
-      {
         "year": 1644,
         "name": "甲申之变，明亡",
         "type": "war",
@@ -6415,19 +5578,6 @@
         ],
         "impact": "明朝灭亡，结束了276年的统治，清朝建立",
         "image": "images/jiashen_incident.jpg"
-      },
-      {
-        "year": 1644,
-        "name": "李自成攻克北京与明朝灭亡",
-        "type": "military",
-        "significance": "high",
-        "description": "李自成率领大顺军攻克北京，崇祯帝煤山自缢，明朝灭亡。",
-        "key_points": [
-          "李自成",
-          "崇祯帝自缢",
-          "明朝灭亡"
-        ],
-        "impact": "宣告了明朝的终结，随后清兵入关，中国进入清朝统治时期。"
       }
     ],
     "culture": [
@@ -6481,10 +5631,10 @@
       "temperature_anomaly": 0.1,
       "war_frequency": 1.1,
       "territory_sq_km": 13.1,
-      "tech_index": 60,
-      "economic_index": 75,
-      "institution_index": 60,
-      "cultural_index": 65,
+      "tech_index": 55,
+      "economic_index": 70,
+      "institution_index": 55,
+      "cultural_index": 60,
       "military_index": 50
     },
     "events": [
@@ -6514,19 +5664,6 @@
         "impact": "结束了荷兰38年殖民统治，台湾回归中国版图"
       },
       {
-        "year": 1662,
-        "name": "郑成功收复台湾",
-        "type": "military",
-        "significance": "high",
-        "description": "郑成功率军驱逐荷兰殖民者，收复台湾。",
-        "key_points": [
-          "郑成功",
-          "收复台湾",
-          "抗击侵略"
-        ],
-        "impact": "维护了国家领土主权完整，促进了台湾的开发。"
-      },
-      {
         "year": 1683,
         "name": "收复台湾",
         "type": "war",
@@ -6551,32 +5688,6 @@
         "impact": "中国历史上第一个平等条约，稳定了中俄边境关系"
       },
       {
-        "year": 1689,
-        "name": "《尼布楚条约》签订",
-        "type": "diplomacy",
-        "significance": "medium",
-        "description": "中俄双方签订《尼布楚条约》，划定中俄东段边界。",
-        "key_points": [
-          "尼布楚条约",
-          "康熙帝",
-          "中俄边界"
-        ],
-        "impact": "从法律上肯定了黑龙江和乌苏里江流域包括库页岛在内的广大地区都是中国领土。"
-      },
-      {
-        "year": 1729,
-        "name": "设立军机处",
-        "type": "politics",
-        "significance": "high",
-        "description": "雍正帝设立军机处，军国大事由皇帝直接裁决。",
-        "key_points": [
-          "军机处",
-          "雍正帝",
-          "皇权顶峰"
-        ],
-        "impact": "标志着中国古代君主专制制度达到了顶峰。"
-      },
-      {
         "year": 1793,
         "name": "马戛尔尼访华",
         "type": "culture",
@@ -6587,19 +5698,6 @@
           "通商要求被拒"
         ],
         "impact": "错失与西方交流的机会，加剧了后来的冲突"
-      },
-      {
-        "year": 1793,
-        "name": "马戛尔尼使团访华",
-        "type": "diplomacy",
-        "significance": "medium",
-        "description": "英国马戛尔尼使团访华，要求通商被乾隆帝拒绝。",
-        "key_points": [
-          "马戛尔尼",
-          "闭关锁国",
-          "乾隆帝"
-        ],
-        "impact": "反映了清朝闭关锁国政策，错失了与西方工业文明接轨的机会。"
       },
       {
         "year": 1840,
@@ -6614,19 +5712,6 @@
         "impact": "开启中国百年屈辱史，中国开始沦为半殖民地半封建社会"
       },
       {
-        "year": 1840,
-        "name": "第一次鸦片战争爆发",
-        "type": "military",
-        "significance": "high",
-        "description": "英国发动侵华战争，清政府战败，签订《南京条约》。",
-        "key_points": [
-          "鸦片战争",
-          "南京条约",
-          "近代史开端"
-        ],
-        "impact": "中国开始沦为半殖民地半封建社会，是中国近代史的开端。"
-      },
-      {
         "year": 1842,
         "name": "南京条约，割让香港",
         "type": "war",
@@ -6639,19 +5724,6 @@
         "impact": "中国近代第一个不平等条约，香港岛被割让155年"
       },
       {
-        "year": 1851,
-        "name": "太平天国运动爆发",
-        "type": "politics",
-        "significance": "high",
-        "description": "洪秀全在广西金田村发动起义，建立太平天国，沉重打击了清朝统治。",
-        "key_points": [
-          "太平天国",
-          "洪秀全",
-          "农民起义"
-        ],
-        "impact": "是中国历史上规模最大的一次农民战争，加速了清朝的衰亡。"
-      },
-      {
         "year": 1860,
         "name": "北京条约，割让九龙",
         "type": "war",
@@ -6662,19 +5734,6 @@
           "赔偿巨款"
         ],
         "impact": "香港领土进一步丧失，加深了半殖民地化"
-      },
-      {
-        "year": 1860,
-        "name": "洋务运动开始",
-        "type": "economy",
-        "significance": "high",
-        "description": "以奕䜣、曾国藩、李鸿章等为代表的洋务派掀起“师夷长技以自强”的洋务运动。",
-        "key_points": [
-          "洋务运动",
-          "自强求富",
-          "近代化起步"
-        ],
-        "impact": "引进了西方先进技术，创办了近代军事和民用工业，是中国近代化的开端。"
       },
       {
         "year": 1887,
@@ -6701,19 +5760,6 @@
         "impact": "暴露了清朝的腐败无能，刺激了维新变法运动"
       },
       {
-        "year": 1894,
-        "name": "甲午中日战争",
-        "type": "military",
-        "significance": "high",
-        "description": "清朝在甲午战争中惨败于日本，北洋水师全军覆没，签订《马关条约》。",
-        "key_points": [
-          "甲午战争",
-          "马关条约",
-          "民族危机"
-        ],
-        "impact": "大大加深了中国半殖民地化程度，宣告了洋务运动的破产。"
-      },
-      {
         "year": 1895,
         "name": "马关条约，割让台湾",
         "type": "war",
@@ -6738,32 +5784,6 @@
         "impact": "香港领土进一步扩大，1997年租期届满回归"
       },
       {
-        "year": 1898,
-        "name": "戊戌变法",
-        "type": "politics",
-        "significance": "high",
-        "description": "康有为、梁启超等人在光绪帝支持下进行资产阶级改良运动，史称“百日维新”，最终被慈禧太后镇压。",
-        "key_points": [
-          "戊戌变法",
-          "资产阶级改良",
-          "百日维新"
-        ],
-        "impact": "是一次思想启蒙运动，促进了资产阶级思想的传播。"
-      },
-      {
-        "year": 1905,
-        "name": "废除科举制",
-        "type": "culture",
-        "significance": "high",
-        "description": "清政府下令停止科举考试，推行新式学堂。",
-        "key_points": [
-          "废除科举",
-          "新式教育",
-          "清末新政"
-        ],
-        "impact": "结束了实行一千三百多年的科举制度，推动了近代教育的发展。"
-      },
-      {
         "year": 1911,
         "name": "武昌起义",
         "type": "war",
@@ -6774,19 +5794,6 @@
           "各省响应"
         ],
         "impact": "结束了清朝统治，开启民国时期，结束了两千多年封建帝制"
-      },
-      {
-        "year": 1911,
-        "name": "辛亥革命与清朝灭亡",
-        "type": "politics",
-        "significance": "high",
-        "description": "武昌起义爆发，各省纷纷响应宣布独立。次年宣统帝退位，清朝灭亡。",
-        "key_points": [
-          "辛亥革命",
-          "武昌起义",
-          "帝制终结"
-        ],
-        "impact": "推翻了清朝统治，结束了中国两千多年的封建君主专制制度。"
       }
     ],
     "culture": [
@@ -6845,10 +5852,10 @@
       "temperature_anomaly": 0.2,
       "war_frequency": 2.5,
       "territory_sq_km": 11.4,
-      "tech_index": 65,
-      "economic_index": 50,
-      "institution_index": 55,
-      "cultural_index": 70,
+      "tech_index": 60,
+      "economic_index": 45,
+      "institution_index": 50,
+      "cultural_index": 65,
       "military_index": 55
     },
     "events": [
@@ -6867,19 +5874,6 @@
         "image": "images/roc_establishment.jpg"
       },
       {
-        "year": 1912,
-        "name": "中华民国临时政府成立",
-        "type": "politics",
-        "significance": "high",
-        "description": "孙中山在南京就任临时大总统，宣告中华民国成立，颁布《中华民国临时约法》。",
-        "key_points": [
-          "中华民国",
-          "孙中山",
-          "临时约法"
-        ],
-        "impact": "建立了亚洲第一个资产阶级民主共和国，民主共和观念深入人心。"
-      },
-      {
         "year": 1915,
         "name": "新文化运动",
         "type": "culture",
@@ -6892,19 +5886,6 @@
         ],
         "impact": "思想启蒙运动，为五四运动和中国共产党的成立奠定了思想基础",
         "image": "images/new_culture_movement.jpg"
-      },
-      {
-        "year": 1915,
-        "name": "新文化运动兴起",
-        "type": "culture",
-        "significance": "high",
-        "description": "陈独秀创办《青年杂志》（后改名《新青年》），高举“民主”与“科学”大旗，发起新文化运动。",
-        "key_points": [
-          "新文化运动",
-          "民主与科学",
-          "陈独秀"
-        ],
-        "impact": "极大地解放了人们的思想，为马克思主义的传播创造了条件。"
       },
       {
         "year": 1919,
@@ -6934,19 +5915,6 @@
         "image": "images/ccp_establishment.jpg"
       },
       {
-        "year": 1924,
-        "name": "国共第一次合作与国民大革命",
-        "type": "politics",
-        "significance": "high",
-        "description": "国民党一大召开，标志着第一次国共合作正式形成，开展了轰轰烈烈的国民大革命及北伐战争。",
-        "key_points": [
-          "国共合作",
-          "北伐战争",
-          "打倒列强"
-        ],
-        "impact": "基本推翻了北洋军阀的统治，沉重打击了帝国主义势力。"
-      },
-      {
         "year": 1926,
         "name": "北伐战争",
         "type": "war",
@@ -6958,19 +5926,6 @@
           "统一中国"
         ],
         "impact": "基本推翻了北洋军阀的统治，为国民政府统治奠定了基础"
-      },
-      {
-        "year": 1927,
-        "name": "南昌起义与秋收起义",
-        "type": "military",
-        "significance": "high",
-        "description": "大革命失败后，中共发动南昌起义、秋收起义，开始武装反抗国民党反动派，并开辟井冈山革命根据地。",
-        "key_points": [
-          "南昌起义",
-          "井冈山",
-          "武装斗争"
-        ],
-        "impact": "打响了武装反抗国民党反动派的第一枪，开辟了农村包围城市的革命道路。"
       },
       {
         "year": 1931,
@@ -7001,19 +5956,6 @@
         "image": "images/long_march.jpg"
       },
       {
-        "year": 1935,
-        "name": "遵义会议",
-        "type": "politics",
-        "significance": "high",
-        "description": "长征途中在遵义召开中共中央政治局扩大会议，确立了以毛泽东为核心的党中央的正确领导。",
-        "key_points": [
-          "遵义会议",
-          "生死攸关",
-          "毛泽东核心"
-        ],
-        "impact": "在极其危急的情况下挽救了党，挽救了红军，挽救了中国革命。"
-      },
-      {
         "year": 1937,
         "name": "七七事变，全面抗战",
         "type": "war",
@@ -7026,19 +5968,6 @@
         ],
         "impact": "中国全民族抗战的开始，世界反法西斯战争的重要组成部分",
         "image": "images/marco_polo_bridge.jpg"
-      },
-      {
-        "year": 1937,
-        "name": "七七事变与全面抗战爆发",
-        "type": "military",
-        "significance": "high",
-        "description": "日军在卢沟桥制造事变，中国守军奋起抵抗，全面抗日战争爆发。",
-        "key_points": [
-          "七七事变",
-          "全面抗战",
-          "国共第二次合作"
-        ],
-        "impact": "中华民族空前觉醒，形成了全民族抗战的局面。"
       },
       {
         "year": 1945,
@@ -7055,19 +5984,6 @@
         "image": "images/anti_japanese_victory.jpg"
       },
       {
-        "year": 1945,
-        "name": "抗日战争胜利",
-        "type": "military",
-        "significance": "high",
-        "description": "日本宣布无条件投降，中国人民经过14年艰苦卓绝的斗争取得抗日战争的伟大胜利，台湾光复。",
-        "key_points": [
-          "抗战胜利",
-          "台湾光复",
-          "民族独立"
-        ],
-        "impact": "是近代以来中国抗击外敌入侵第一次取得完全胜利的民族解放战争。"
-      },
-      {
         "year": 1949,
         "name": "中华人民共和国成立",
         "type": "politic",
@@ -7080,19 +5996,6 @@
         ],
         "impact": "中国人民从此站起来了，开启了中华民族伟大复兴的新征程",
         "image": "images/prc_establishment.jpg"
-      },
-      {
-        "year": 1949,
-        "name": "解放战争胜利",
-        "type": "military",
-        "significance": "high",
-        "description": "经过辽沈、淮海、平津三大战役及渡江战役，人民解放军推翻了国民党政权在大陆的统治。",
-        "key_points": [
-          "三大战役",
-          "渡江战役",
-          "国民党败退"
-        ],
-        "impact": "结束了国民党在大陆的统治，为新中国的成立奠定了基础。"
       }
     ],
     "culture": [
@@ -7149,10 +6052,10 @@
       "temperature_anomaly": 0.8,
       "war_frequency": 0.1,
       "territory_sq_km": 9.6,
-      "tech_index": 95,
-      "economic_index": 90,
-      "institution_index": 85,
-      "cultural_index": 80,
+      "tech_index": 90,
+      "economic_index": 85,
+      "institution_index": 80,
+      "cultural_index": 75,
       "military_index": 85
     },
     "events": [
@@ -7199,32 +6102,6 @@
         "image": "images/taiwan_strait.jpg"
       },
       {
-        "year": 1950,
-        "name": "抗美援朝战争",
-        "type": "military",
-        "significance": "high",
-        "description": "中国人民志愿军跨过鸭绿江赴朝作战，保家卫国，于1953年签订停战协定。",
-        "key_points": [
-          "抗美援朝",
-          "保家卫国",
-          "立国之战"
-        ],
-        "impact": "极大地提高了中国的国际地位，赢得了相对稳定的和平建设环境。"
-      },
-      {
-        "year": 1952,
-        "name": "土地改革完成",
-        "type": "economy",
-        "significance": "high",
-        "description": "全国大陆基本完成土地改革，彻底废除了两千多年的封建土地所有制。",
-        "key_points": [
-          "土地改革",
-          "耕者有其田",
-          "废除封建剥削"
-        ],
-        "impact": "解放了农村生产力，巩固了新生政权。"
-      },
-      {
         "year": 1953,
         "name": "第一个五年计划",
         "type": "politic",
@@ -7265,32 +6142,6 @@
         "image": "images/hundred_flowers.jpg"
       },
       {
-        "year": 1956,
-        "name": "三大改造完成",
-        "type": "economy",
-        "significance": "high",
-        "description": "国家对农业、手工业和资本主义工商业的社会主义改造基本完成。",
-        "key_points": [
-          "三大改造",
-          "社会主义制度建立",
-          "公有制"
-        ],
-        "impact": "标志着社会主义基本制度在中国的确立，进入社会主义初级阶段。"
-      },
-      {
-        "year": 1958,
-        "name": "大跃进与人民公社化运动",
-        "type": "politics",
-        "significance": "high",
-        "description": "全国开展以高指标、瞎指挥、浮夸风和“共产风”为主要标志的“大跃进”和人民公社化运动。",
-        "key_points": [
-          "大跃进",
-          "人民公社",
-          "左倾错误"
-        ],
-        "impact": "违背了经济发展客观规律，造成了国民经济的严重困难。"
-      },
-      {
         "year": 1964,
         "name": "第一颗原子弹爆炸",
         "type": "tech",
@@ -7302,32 +6153,6 @@
           "国防实力"
         ],
         "impact": "打破了超级大国的核垄断，提高了中国的国际地位和国防实力"
-      },
-      {
-        "year": 1964,
-        "name": "第一颗原子弹爆炸成功",
-        "type": "tech",
-        "significance": "high",
-        "description": "中国第一颗原子弹在新疆罗布泊爆炸成功，打破了超级大国的核垄断。",
-        "key_points": [
-          "两弹一星",
-          "原子弹",
-          "大国重器"
-        ],
-        "impact": "极大地增强了国防力量，提升了中国的国际影响力。"
-      },
-      {
-        "year": 1966,
-        "name": "文化大革命爆发",
-        "type": "politics",
-        "significance": "high",
-        "description": "“文化大革命”全面发动，持续十年的内乱给党、国家和各族人民带来严重灾难。",
-        "key_points": [
-          "文化大革命",
-          "十年动乱",
-          "阶级斗争"
-        ],
-        "impact": "导致民主与法制遭到严重破坏，经济和文化事业遭受巨大损失。"
       },
       {
         "year": 1970,
@@ -7372,33 +6197,6 @@
         "image": "images/reform_opening.jpg"
       },
       {
-        "year": 1978,
-        "name": "恢复高考",
-        "type": "culture",
-        "significance": "high",
-        "description": "恢复高考制度，全国统一招生考试，培养人才。",
-        "key_points": [
-          "恢复高考",
-          "人才培养",
-          "教育改革"
-        ],
-        "impact": "恢复了公平选拔人才的机制，为国家培养了大批人才",
-        "image": "images/gaokao_restored.jpg"
-      },
-      {
-        "year": 1978,
-        "name": "十一届三中全会与改革开放",
-        "type": "politics",
-        "significance": "high",
-        "description": "中共十一届三中全会召开，作出把党和国家工作中心转移到经济建设上来、实行改革开放的历史性决策。",
-        "key_points": [
-          "十一届三中全会",
-          "改革开放",
-          "伟大转折"
-        ],
-        "impact": "实现了建国以来党的历史上具有深远意义的伟大转折，开启了中国特色社会主义新时代。"
-      },
-      {
         "year": 1979,
         "name": "中美建交，美国承认一个中国原则",
         "type": "politic",
@@ -7412,17 +6210,18 @@
         "impact": "中美关系正常化，为中国改革开放和现代化建设创造了良好的国际环境"
       },
       {
-        "year": 1989,
-        "name": "六四事件",
-        "type": "politics",
+        "year": 1978,
+        "name": "恢复高考",
+        "type": "culture",
         "significance": "high",
-        "description": "春夏之交，北京发生政治风波，党和政府依靠人民，采取果断措施平息了这场风波。",
+        "description": "恢复高考制度，全国统一招生考试，培养人才。",
         "key_points": [
-          "政治风波",
-          "捍卫政权",
-          "稳定大局"
+          "恢复高考",
+          "人才培养",
+          "教育改革"
         ],
-        "impact": "捍卫了社会主义国家政权，维护了国家和社会的稳定，保证了改革开放的继续进行。"
+        "impact": "恢复了公平选拔人才的机制，为国家培养了大批人才",
+        "image": "images/gaokao_restored.jpg"
       },
       {
         "year": 1992,
@@ -7466,19 +6265,6 @@
         "image": "images/1992_consensus.jpg"
       },
       {
-        "year": 1992,
-        "name": "邓小平南方谈话与社会主义市场经济体制目标确立",
-        "type": "economy",
-        "significance": "high",
-        "description": "邓小平视察南方并发表重要讲话，随后中共十四大明确提出建立社会主义市场经济体制的目标。",
-        "key_points": [
-          "南方谈话",
-          "市场经济",
-          "思想解放"
-        ],
-        "impact": "极大地解放了思想，推动了中国改革开放的深入发展。"
-      },
-      {
         "year": 1997,
         "name": "香港回归",
         "type": "politic",
@@ -7491,19 +6277,6 @@
         ],
         "impact": "结束了英国155年的殖民统治，实践了一国两制的伟大构想",
         "image": "images/hongkong_handover.jpg"
-      },
-      {
-        "year": 1997,
-        "name": "香港回归祖国",
-        "type": "politics",
-        "significance": "high",
-        "description": "7月1日，中国政府对香港恢复行使主权，香港特别行政区成立。",
-        "key_points": [
-          "香港回归",
-          "一国两制",
-          "洗雪国耻"
-        ],
-        "impact": "标志着“一国两制”构想的成功实践，在完成祖国统一大业上迈出了重要一步。"
       },
       {
         "year": 1999,
@@ -7532,19 +6305,6 @@
         "impact": "中国全面融入世界经济体系，对外贸易快速增长"
       },
       {
-        "year": 2001,
-        "name": "加入世界贸易组织（WTO）",
-        "type": "economy",
-        "significance": "high",
-        "description": "中国正式成为世界贸易组织成员，深度融入全球经济体系。",
-        "key_points": [
-          "入世",
-          "全球化",
-          "经济腾飞"
-        ],
-        "impact": "极大地促进了中国对外贸易和经济的飞速发展，中国逐步成为“世界工厂”。"
-      },
-      {
         "year": 2003,
         "name": "神舟五号载人航天",
         "type": "tech",
@@ -7556,19 +6316,6 @@
           "航天强国"
         ],
         "impact": "中国成为世界第三个掌握载人航天技术的国家，航天事业取得重大突破"
-      },
-      {
-        "year": 2003,
-        "name": "神舟五号载人飞船发射成功",
-        "type": "tech",
-        "significance": "high",
-        "description": "杨利伟乘坐神舟五号进入太空，中国成为第三个独立掌握载人航天技术的国家。",
-        "key_points": [
-          "神舟五号",
-          "载人航天",
-          "杨利伟"
-        ],
-        "impact": "实现了中华民族的飞天梦想，彰显了中国航天科技的巨大进步。"
       },
       {
         "year": 2007,
@@ -7597,19 +6344,6 @@
         ],
         "impact": "向世界展示了中国的综合国力和文化魅力，提升了国际形象",
         "image": "images/beijing_olympics.jpg"
-      },
-      {
-        "year": 2008,
-        "name": "北京奥运会成功举办",
-        "type": "culture",
-        "significance": "high",
-        "description": "第29届夏季奥林匹克运动会在北京成功举办，向世界展示了中国的发展成就和开放姿态。",
-        "key_points": [
-          "北京奥运会",
-          "百年梦圆",
-          "国家形象"
-        ],
-        "impact": "极大地增强了民族自豪感，提升了中国的国际软实力。"
       },
       {
         "year": 2010,
@@ -7665,19 +6399,6 @@
         ],
         "impact": "中国航天技术达到世界领先水平，为深空探测积累了宝贵经验",
         "image": "images/change4.jpg"
-      },
-      {
-        "year": 2019,
-        "name": "新冠疫情爆发与抗疫",
-        "type": "society",
-        "significance": "high",
-        "description": "新型冠状病毒疫情爆发，中国开展了艰苦卓绝的全民抗疫斗争，统筹疫情防控和经济社会发展。",
-        "key_points": [
-          "新冠疫情",
-          "全民抗疫",
-          "公共卫生"
-        ],
-        "impact": "对全球公共卫生和经济产生深远影响，展示了国家强大的动员能力和治理体系。"
       },
       {
         "year": 2020,
